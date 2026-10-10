@@ -16,9 +16,15 @@ can be accessed remotely and in parts, virtual datasets that combine files witho
 better curation and quality control. Ontology annotation becomes essential when no human reads every
 dataset [TODO-C29].
 
-**Multimodal data.** As in BBQS, experiments increasingly combine modalities from different communities.
-This requires linked data across archives, integration across standards (Section 8), and tools, possibly
-AI-assisted, that help map between representations.
+**Integration across modalities and archives.** As in BBQS, experiments increasingly combine
+modalities from different communities, and the resulting data are often distributed across specialized
+archives, as in BICCN and BICAN (Section 3). Making such data usable together requires integration
+across standards (Section 8), persistent identifiers and shared metadata that link records across
+archives, and tools, possibly AI-assisted, that help map between representations. Knowledge bases that
+connect data, metadata, and derived findings across archives, such as those being planned within the
+BRAIN Initiative, are a natural next step [TODO-C32]. They build on the archive and ontology layers of
+the map and depend on the standards below them, because a knowledge base can only link what has been
+described consistently.
 
 **AI and new technologies.** AI-ready data, foundation models trained on neural and behavioral data, and
 new recording technologies all create demand for standards for new modalities and for integration with
@@ -41,10 +47,6 @@ Three needs cut across these directions.
   infrastructure that must be maintained over decades, while the software around them changes much
   faster. Sustained investment in the people who maintain and integrate these resources, and in the
   integration *between* standards, is a scientific need in its own right [TODO-C31].
-
-Related community efforts, such as the BRAIN Initiative's plans for a knowledge base that connects data
-across BRAIN archives, address the archive and knowledge layers of the map and will depend on the
-standards discussed here [TODO-C32].
 
 # 10. Conclusion
 

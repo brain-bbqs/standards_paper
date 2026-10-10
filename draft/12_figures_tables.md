@@ -81,7 +81,7 @@ layout → EMBER; MRI + EEG + events → BIDS + HED → EMBER; questionnaires �
 
 **(a)** Six types of bridges placed on the map (structural; schema language; semantic — schema
 elements; semantic — values; archive linking; dataset-level common data elements). **(b)** Future
-directions (living data, data reuse, multimodal data, AI and new technologies, coordination centers)
+directions (living data, data reuse, integration across modalities and archives, AI and new technologies, coordination centers)
 and cross-cutting needs (education and training, outreach and community engagement, maintenance and
 support), redrawn from the poster.
 
