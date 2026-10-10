@@ -20,67 +20,36 @@ Item IDs (D, A, S, F, C) refer to `TODO.md`, which holds the details and owners.
 
 | Decision | Choice |
 |---|---|
-| Journal and type | **Scientific Data, Article.** No word limit; abstract ≤170 words; ≤8 figures, ≤10 tables; legends ≤350 words in total; title ≤110 characters without colons, parentheses, or uncommon acronyms; Data and Code Availability required; Nature reference style with DOIs |
-| Title | "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters) |
+| Journal and type | **Nature Scientific Data, Article.** No word limit; abstract ≤170 words; ≤8 figures, ≤10 tables; legends ≤350 words in total; title ≤110 characters without colons, parentheses, or uncommon acronyms; Data and Code Availability required; Nature reference style with DOIs |
+| Working Title | "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters) |
 | Preprint | bioRxiv at submission |
-| Target submission | ~March 1, 2027 |
+| Target submission | 12/2026 - 03/2027 |
 | Fees and pre-submission enquiry | Open (D9) |
 
-### Scope and framing
 
-| Decision | Choice |
-|---|---|
-| Structure | Part I (Sections 1–4) maps the ecosystem and is descriptive. Part II (Sections 5–8) applies the map to BBQS and gives recommendations |
-| Recommendations | Community guidance derived from the BBQS guideline, not a ranking of standards. Stated in general terms for multimodal brain–behavior studies; BBQS specifics (EMBER, DCAIC) in "Implementation in BBQS". How prescriptive: open (D4) |
-| BBQS guideline | Presented as our own work ("we developed"), since Working Group members are key authors; acknowledgements thank only non-author members (check against final author list, A1) |
-| Knowledge graph | A main result (Section 4, Fig. 3). Counts connections (pairs of technologies); undirected relations stored once per pair; lenient community rule as a sensitivity analysis (Suppl. Fig. S1). Community rule: open (D10) |
-| FAIR levels | Six levels (0–5), an illustration of why integration across layers is needed, not a new metric |
-| BRAIN Knowledge Base | Mentioned only as a future direction, without a program-specific claim unless a public source exists (C32). The roundtable materials are background only and are never quoted or cited |
-| Tone on funding | Describe scientific needs and where investment helps; no criticism of current funding |
-
-### Terminology and style
-
-| Decision | Choice |
-|---|---|
-| Layer names | Data archives; dataset organization standards; **file organization standards** ("file" in the broad sense); ontologies & terminologies (one layer, distinction explained); data formats; schema languages |
-| Video analogy | Used only in Section 2 and Fig. 1; later sections use the layer terms |
-| Style | No colons or em-dash asides in prose; no judgmental statements about other approaches; avoid framing that could read as controversial |
 
 ### Figures
 
-| Decision | Choice |
-|---|---|
-| Fig. 1 | Single panel: a generic video-sharing app with callouts to the six layers. No real platform name, logo, or look |
-| Fig. 2 | The six layers as a stack beside the FAIR staircase. The only general stack diagram; Fig. 5 reuses it with BBQS technologies highlighted |
-| Generated figures | Fig. 3, Suppl. Fig. S1, Fig. 4 are built from code (`make figures`); the others are designed |
-
-### Data handling
-
-| Decision | Choice |
-|---|---|
-| BBQS inventory | Aggregate statistics only. The workbook stays outside the repository; publication needs BBQS clearance (A2) |
-| Credentials | FAIRsharing and SciCrunch tokens are never stored in the repository; credentialed harvests are run by OR |
-| Release | Code and data on Zenodo with a DOI at submission (A6); licences to be set (S1, S3) |
-| Writing platform | Markdown + git for the core team; move to Google Docs for the full author group (A8) |
+- Fig. 3, Suppl. Fig. S1, Fig. 4 are built from code (`make figures`)
+- Other figures are currently only described as ideas/concepts in README files and captions but need to be prepared
 
 ### Authorship
 
-| Decision | Choice |
-|---|---|
-| Authors | Poster authors plus confirmed contributors ("2025 SfN – Standards" sheet); list closes **Nov 14, 2026** (A1) |
-| Roles | CRediT; corresponding authors O. Rübel and Y. Halchenko |
-| Perspective | Make international efforts (EBRAINS/openMINDS, UK, EU) visible, not only NIH |
+* Need to decide on authorship 
+   - BBQS Standard Working Group members?
+   - A subset of BBQS folks?
+   - Full ist of authors from the poster?
 
 ---
 
 ## 2. Steps to finish
 
 ### Phase 1 — Core-team review (Oct 13 – Nov 14, 2026)
-1. Core team reads the full draft and comments section by section; OR assigns section leads (A3).
-2. Settle the open framing decisions: D4 (how prescriptive), D5 (ontology wording), D8 (relation to
-   existing classifications, what the map leaves out, stack geometry), D10 (community rule).
-3. Complete the knowledge-graph inputs: FAIRsharing relations (KG 1.1), RRID gaps (KG 2.x). Re-run
+1. Complete the knowledge-graph inputs: FAIRsharing relations (KG 1.1), RRID gaps (KG 2.x). Re-run
    `make figures` and update Section 4 numbers (C25, C26, C35).
+2. Core team reads the full draft and comments section by section; OR assigns section leads (A3).
+3. Settle the open framing decisions: D4 (how prescriptive), D5 (ontology wording), D8 (relation to
+   existing classifications, what the map leaves out, stack geometry), D10 (community rule).
 4. Claude-owned claims and references: web and literature checks, resolve references marked ? or —
    (A7).
 5. OR-owned claims that need expert input: C27 (LinkML efforts), C37 (ongoing NWB/BIDS work to cite).
