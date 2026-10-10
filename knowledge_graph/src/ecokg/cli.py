@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from pathlib import Path
 
@@ -23,7 +24,7 @@ import requests
 
 from . import CACHE_DIR, HARVEST_DIR, OUTPUT_DIR
 from .build import build_graph, load_harvested
-from .http import CachedJsonClient
+from .http import USER_AGENT, CachedJsonClient
 from .model import load_curated_edges, load_seeds, load_taxonomy, validate
 from .report import export, gap_markdown, stats_markdown
 from .sources.fairsharing import FairsharingClient
@@ -106,6 +107,33 @@ def cmd_rrid_search(args) -> int:
     _write_json(out, resolved)
     print(f"{len(todo)} seeds searched; candidates written to {out}. "
           f"Copy confirmed RRIDs into seeds.yaml and run `ecokg rrid-check`.")
+    return 0
+
+
+def cmd_rrid_search_check(args) -> int:
+    """Try request variants against the SciCrunch search API; never prints the key or URLs."""
+    from .sources import rrid as rr
+
+    key = (os.environ.get("SCICRUNCH_API_KEY") or "").strip()
+    print(f"key present: {bool(key)}, length: {len(key)}, has_whitespace: {any(c.isspace() for c in key)}")
+    simple = {"size": 1, "query": {"match": {"item.name": "Brain Imaging Data Structure"}}}
+    variants = [
+        ("POST json, apikey header", "POST", rr.SEARCH_URL, {"headers": {"apikey": key}, "json": simple}),
+        ("POST json, key param", "POST", rr.SEARCH_URL, {"params": {"key": key}, "json": simple}),
+        ("GET q=, apikey header", "GET", rr.SEARCH_URL, {"headers": {"apikey": key}, "params": {"q": "BIDS"}}),
+        ("GET q=, key param", "GET", rr.SEARCH_URL, {"params": {"key": key, "q": "BIDS"}}),
+        ("POST json, key param (scicrunch.org)", "POST",
+         "https://scicrunch.org/api/1/elastic/SCR_nlx_144509-1/_search", {"params": {"key": key}, "json": simple}),
+    ]
+    session = requests.Session()
+    session.headers["User-Agent"] = USER_AGENT
+    for label, method, url, kwargs in variants:
+        try:
+            resp = session.request(method, url, timeout=60, **kwargs)
+            body = resp.text[:150].replace(key, "<key>") if key else resp.text[:150]
+            print(f"{label:40} {resp.status_code} {body!r}")
+        except requests.RequestException as exc:
+            print(f"{label:40} error {type(exc).__name__}")
     return 0
 
 
@@ -264,6 +292,8 @@ def main(argv: list[str] | None = None) -> int:
         if name == "harvest-fairsharing":
             p.add_argument("--resolve", action="store_true",
                            help="list candidate records for seeds without a FAIRsharing id")
+    sub.add_parser("rrid-search-check", help="diagnose SciCrunch search API access (never prints the key)"
+                   ).set_defaults(func=cmd_rrid_search_check)
     sub.add_parser("fairsharing-check", help="diagnose FAIRsharing authentication (never prints the token)"
                    ).set_defaults(func=cmd_fairsharing_check)
     p = sub.add_parser("report", help="build the graph and write output files")
