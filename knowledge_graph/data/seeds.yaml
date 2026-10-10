@@ -353,6 +353,16 @@ nodes:
     fairsharing: null
     homepage: https://scicrunch.org/scicrunch/interlex/
     sources: [poster]
+  - id: interlex
+    name: InterLex
+    abbreviation: InterLex
+    layer: ontology_terminology
+    kind: terminology
+    communities: [biology]
+    rrid: SCR_016178
+    fairsharing: FAIRsharing.67sssf
+    homepage: https://scicrunch.org/scicrunch/interlex/
+    sources: [expert]   # added from registry neighbours (RRID: linked from NeuroLex, NIFSTD, SPARC)
   - id: nifstd
     name: Neuroscience Information Framework Standard Ontologies
     abbreviation: NIFSTD

@@ -3825,6 +3825,38 @@
  },
  {
   "direction": "out",
+  "label": "is_used_by",
+  "node": "interlex",
+  "other_id": "SCR_017041",
+  "other_name": "SPARC Portal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "interlex",
+  "other_id": "SCR_005402",
+  "other_name": "NeuroLex",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "interlex",
+  "other_id": "SCR_005414",
+  "other_name": "NIFSTD",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "interlex",
+  "other_id": "SCR_003115",
+  "other_name": "SciCrunch",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
   "label": "is_listed_by",
   "node": "nifstd",
   "other_id": "SCR_002713",

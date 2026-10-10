@@ -118,6 +118,10 @@ edges:
   - {source: nbo, target: obo_foundry, relation: part_of, provenance: expert, evidence: "NBO is an OBO Foundry ontology.", confidence: high, verified: false}
   - {source: obo_foundry, target: rdf_owl, relation: defined_with, provenance: expert, evidence: "OBO ontologies are released in OWL.", confidence: high, verified: false}
   - {source: nifstd, target: uberon, relation: extends, provenance: expert, evidence: "NIFSTD imports/bridges to community ontologies including Uberon.", confidence: medium, verified: false}
+  - {source: interlex, target: neurolex, relation: extends, provenance: expert, evidence: "InterLex grew out of NeuroLex and absorbed its terms (RRID records link the two).", confidence: medium, verified: false}
+  - {source: openminds, target: waxholm, relation: uses_terminology, provenance: docs, evidence: "openMINDS SANDS includes the Waxholm Space rat atlas as a brain atlas/common coordinate space.", confidence: medium, verified: false}
+  - {source: openminds, target: allen_ccf, relation: uses_terminology, provenance: docs, evidence: "openMINDS SANDS includes the Allen Mouse Brain CCF as a common coordinate space.", confidence: medium, verified: false}
+  - {source: hcp_atlas, target: nifti, relation: uses_format, provenance: expert, evidence: "HCP-MMP is distributed as CIFTI (NIfTI-2 based) label files and volumetric NIfTI versions.", confidence: low, verified: false}
   - {source: neurolex, target: nifstd, relation: related_to, provenance: expert, evidence: "NeuroLex terms were integrated into NIFSTD/InterLex.", confidence: medium, verified: false}
   - {source: cognitive_atlas, target: cogpo, relation: related_to, provenance: expert, evidence: "Both describe cognitive tasks/paradigms; partially mapped.", confidence: low, verified: false}
   - {source: allen_ccf, target: uberon, relation: interoperates_with, provenance: expert, evidence: "Mappings exist between Allen mouse structures and Uberon.", confidence: low, verified: false}

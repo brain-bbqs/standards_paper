@@ -1,6 +1,6 @@
 # Knowledge graph — open issues and TODO
 
-*Status as of 2026-10-09. The graph has 71 nodes and 124 edges (97 curated, 22 from RRID, 8 from FAIRsharing);
+*Status as of 2026-10-09. The graph has 72 nodes and 133 edges (101 curated, 27 from RRID, 8 from FAIRsharing);
 see `output/stats.md` and `output/gaps.md` (`ecokg report`). Items are ordered by how much they
 affect the paper's Fig. 3 / "few cross-community bridges" claim.*
 
@@ -32,12 +32,27 @@ affect the paper's Fig. 3 / "few cross-community bridges" claim.*
 - **Problem.** Among edges between domain-specific nodes, **49%** cross community boundaries under the
   *strict* rule (compare home communities), but only **4%** under the *lenient* rule (any shared
   community). As tagged now, the claim can't be stated without picking a rule.
+- **Analysis (2026-10-09).** 30 edges are cross-community under strict but not under lenient. In every
+  case the overlap comes from a node having been tagged with *extra* communities **because it reaches
+  into them** (BIDS is tagged microscopy because it organizes OME-TIFF/OME-Zarr; EMBER is tagged
+  neurophysiology because it accepts NWB; HED is tagged neurophysiology/behavior because NWB uses it).
+  The lenient rule is therefore **circular**: it counts exactly the bridges the paper is about as
+  "within community". Overlaps come mostly via neurophysiology (17 edges) and behavior (15).
+- **Proposal for review:**
+  - `home` (first community) = where the resource **originated and is governed**, decided independently
+    of its edges. The strict rule on home communities is the measure of bridges.
+  - The remaining `communities` = communities the resource **supports/serves** (an outcome of
+    bridging). Report it separately, e.g., "BIDS now serves 5 communities", to show which resources have
+    become cross-community hubs (BIDS, NWB, HED, EMBER, openMINDS, EBRAINS), and stop using it to
+    classify edges.
+  - In Methods: home community assigned by origin/governance; checked by the domain reviewers.
 - **To do:**
-  - [ ] Define criteria for the `communities` list of a node (what makes a community "home" vs. merely
-        supported), and record them in `taxonomy.yaml`.
-  - [ ] Review each node's `communities` against those criteria (domain experts, see 2.1).
-  - [ ] Decide which rule the paper reports (likely both, with strict as the main one), and describe it
-        in Methods.
+  - [ ] Agree on the proposal above (or an alternative).
+  - [ ] Review each node's home community against it (domain experts, see 1.3); multi-community nodes
+        to check first: DANDI, EMBER, OpenNeuro, DABI, EBRAINS, SPARC, TCIA, NDA, BIDS, Psych-DS, SPARC SDS,
+        NeuroBlueprint, NWB, DICOM, openMINDS, EDF, RadLex, Cognitive Atlas, CogPO, HED, Neurobagel.
+  - [ ] If adopted: replace the lenient mode in `classify.py` / stats / figure with a per-node
+        "communities served" summary, and describe the rule in Methods.
 
 ### 1.3 Curated edges are unverified
 - **Problem.** All 97 curated edges are `verified: false`; they were compiled from the poster, notes and
@@ -80,11 +95,11 @@ json_schema, xml_schema, rdf_owl`
 - [x] `ecokg rrid-search` implemented (SciCrunch Elasticsearch index `RIN_Tool_pr`, key via
       `SCICRUNCH_API_KEY` header). Our first key gets **403 Forbidden** in every request format
       (`ecokg rrid-search-check`): the key is recognised but lacks registry-search permission.
-- [ ] Either ask SciCrunch (support@scicrunch.org) to enable search for the key, or retry later in case
-      new keys need time to activate; then run `ecokg rrid-search` and review `rrid_candidates.json`.
-- [ ] Meanwhile / alternatively: look the seeds up by hand with **`RRID_LOOKUP.md`** (search links for all
-      37 seeds). Many generic formats (JSON, YAML, TIFF) will legitimately have none; mark them as
-      checked, not missing.
+- [ ] **Decision (2026-10-09): look the remaining seeds up by hand** with **`RRID_LOOKUP.md`** (search
+      links for all 37 seeds on rrid.site, no login). Record found RRIDs in the table, copy them into
+      `seeds.yaml`, and run `ecokg rrid-check`. Many generic formats (JSON, YAML, TIFF) will legitimately
+      have none; tick them as checked, not missing.
+- [ ] Optional later: if SciCrunch enables search for the API key, `ecokg rrid-search` automates this.
 
 ### 2.3 Registry data-quality issues found (report to registries; mention in paper)
 - [ ] **HED** has two RRIDs: SCR_014074 and SCR_017630 ("HED Tags"); handled with `rrid_aliases`.
@@ -94,13 +109,18 @@ json_schema, xml_schema, rdf_owl`
 - [ ] FAIRsharing says **"BIDS extends NWB"** (on the NWB record). Probably wrong or refers to BIDS
       microelectrode extension (BEP032); confirm with NWB/BIDS maintainers.
 
-### 2.4 Seeds with no relationships (4)
-`MRIO, Allen Human Brain Atlas, Waxholm (WHS), HCP-MMP`
-- [ ] Add curated edges (e.g., which standards/archives use these atlases), or drop them from seeds.
+### 2.4 Seeds with no relationships (2)
+- [x] Added draft edges: openMINDS → Waxholm and → Allen CCF (SANDS), HCP-MMP → NIfTI (low confidence).
+- [ ] `MRIO, Allen Human Brain Atlas` still have no relationships: add edges (who uses them?) or drop them.
 
 ### 2.5 Registry neighbours that are not seeds (326, mostly RRID)
-- [ ] Review the top of the list in `output/gaps.md` for missing seeds (e.g., *HDMF Common Schema*,
-      *Cognitive Atlas Ontology*, *InterLex*, *NeuroVault*, *BALSA*, *INDI*), and ignore tools/organisations.
+- [x] Reviewed the top of the list: mostly tools and organisations. Added **InterLex** as a seed
+      (RRID SCR_016178, FAIRsharing.67sssf; linked from NeuroLex, NIFSTD, SPARC) with edge
+      InterLex extends NeuroLex.
+- [ ] Decide on: *HDMF Common Schema* (component of HDMF; HERD lives there), openMINDS sub-models
+      (components of openMINDS; probably keep them merged), *NeuroVault*, *BALSA*, *INDI* (neuroimaging
+      archives, from FAIRsharing search).
+- [ ] Harvest InterLex's FAIRsharing record on the next authenticated `ecokg harvest-fairsharing` run.
 
 ---
 
