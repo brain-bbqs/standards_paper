@@ -53,5 +53,11 @@ Ontology].
 Seen on the map, the BBQS stack is complete in the vertical
 direction. Each layer has at least one recommended technology, and the technologies are connected (EMBER
 accepts NWB, BIDS, and Psych-DS; NWB uses HDF5/Zarr and HDMF; Psych-DS uses CSV and LinkML; BIDS uses
-JSON/TSV and can include NWB). The gaps are horizontal, between NWB, BIDS, and Psych-DS, and between all
-three and the formats used by behavior-tracking tools (Section 8).
+JSON/TSV and can include NWB). The gaps are horizontal, between technologies in the same layer that come
+from different communities. NWB, BIDS, and Psych-DS can each represent behavioral events, subject
+metadata, and, with extensions, pose, but they do so in different ways and without defined mappings
+between them. A project that stores neural recordings in NWB and questionnaire data in Psych-DS must
+therefore link the two by hand. Similarly, behavior-tracking tools such as DeepLabCut and SLEAP write
+their results in their own formats, which must be converted, for example with NeuroConv for NWB, before
+they can be stored in any of the three standards. Section 8 discusses these gaps and the bridges that
+would close them.
