@@ -4,13 +4,12 @@
 
 We group the technologies that make up the neuroscience data standards ecosystem into six layers (Table
 1). Each layer is defined by the **problem it solves** and a typical **use case**, rather than
-by a particular technology. To make the layers intuitive, we pair each one with its counterpart in a
-system almost every reader uses, which is sharing video online (Fig. 1). Think of a video recorded on a
-phone and published on a platform such as YouTube. The pixels are compressed with a codec, the video and
-sound are packaged together in a single file, the file is added to a playlist, tagged so that others can
-find it, and uploaded through a form that asks for a title and a category. Each of these steps is handled
-by a different, independently developed technology, and the same is true for neuroscience data. We
-describe the layers in order, from the user toward the bytes on disk.
+by a particular technology. To illustrate the layers, we use online video sharing as an analogy
+(Fig. 1). Publishing a video on a platform such as YouTube involves several independently developed
+technologies. A codec compresses the images, a container file packages video and sound together, a
+playlist organizes related videos, categories and tags describe the content, and the upload form
+specifies which information must accompany each video. Sharing neuroscience data relies on an analogous
+combination of technologies, which we describe in order from the user toward the bytes on disk.
 
 **Data archives** solve the problem of publishing, sharing, and discovering content. In the video world,
 this is the platform itself. YouTube stores videos, makes them searchable, and accepts only certain file
