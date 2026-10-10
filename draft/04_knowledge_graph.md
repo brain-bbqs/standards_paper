@@ -44,9 +44,10 @@ such as BBQS, and it means that much of the integration work is still left to us
 (Section 8).
 
 The graph also shows how much of this knowledge is recorded in public registries. Many of the
-relationships documented by standards developers are not yet recorded in RRID or FAIRsharing [TODO-C26],
-so they cannot be found by software. The gap report produced with the graph lists these missing records
-so that the teams behind each technology can add them.
+relationships we curated from the documentation of each technology are not yet recorded in RRID or
+FAIRsharing [TODO-C26], so software that relies on these registries cannot discover them. Recording
+these relationships in the registries would make the connections between technologies machine-findable,
+in the same way that the registries already make the technologies themselves findable.
 
 The graph is a first version and has limitations. Its coverage reflects the technologies most relevant
 to this paper rather than the whole of neuroscience. Curated relationships are still being confirmed by

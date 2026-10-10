@@ -25,9 +25,9 @@ layers**. A neurophysiology dataset on DANDI is a concrete example. The DANDI ar
 findable and accessible. Within the dataset, files are organized in the DANDI layout, and each file
 follows NWB, which defines its structure and metadata. The NWB schema is written in the HDMF schema
 language, and the files are stored in HDF5 or Zarr, which makes the bytes machine-readable. Species are
-annotated with NCBI Taxonomy terms, which gives the metadata a shared meaning. The video analogy makes the same point. A
-video is easy to find and reuse only when it uses a common codec, sits in a standard container, carries
-meaningful tags, and is published on a platform, and no single one of these steps makes it shareable on
+annotated with NCBI Taxonomy terms, which gives the metadata a shared meaning. The video analogy makes the 
+same point. A video is easy to find and reuse only when it uses a common codec, sits in a standard container,
+carries meaningful tags, and is published on a platform, and no single one of these steps makes it shareable on
 its own.
 
 Large consortia show the same pattern at the scale of whole programs. The BRAIN Initiative Cell Census
@@ -41,7 +41,8 @@ each consortium builds and maintains the integration itself.
 
 ## Levels of FAIRness, and where each layer contributes
 
-To illustrate why integration across layers is needed, Table 2 describes six levels of FAIRness for neuroscience data. The levels are not a new metric. Their purpose is to show which layer of the map
+To illustrate why integration across layers is needed, Table 2 describes six levels of FAIRness for neuroscience data. 
+The levels are not a new metric. Their purpose is to illustrate which layer of the map
 contributes at each step, so each level is defined by what a third party can do with the data, mapped to
 the FAIR principles it mainly addresses, and tied to the layer whose technologies make it possible (Fig.
 2) [TODO-C6]. The idea of a staged scale is familiar from five-star Linked Open Data [REF: Berners-Lee
@@ -60,7 +61,7 @@ tools such as F-UJI, which score each principle separately [REF: Wilkinson 2019;
 | 4, interoperable | Metadata values are drawn from shared terminologies and ontologies, so that datasets can be searched and combined with others | Ontologies and terminologies | I2 (FAIR vocabularies), I3 (qualified references) | NWB or BIDS data with species from the NCBI Taxonomy, locations from an atlas, and events annotated with HED |
 | 5, findable and reusable record | Data are deposited with a persistent identifier, searchable metadata, licence, and provenance, and can be retrieved through a standard protocol | Data archives (with persistent identifiers) | F1–F4, A1–A2, R1.1 (licence), R1.2 (provenance) | An annotated BIDS and NWB dataset with a DOI on DANDI or EMBER |
 
-\* File and dataset organization standards are defined in schema languages, which make conformance at
+File and dataset organization standards are defined in schema languages, which make conformance at
 levels 2 and 3 machine-checkable by validators such as the NWB Inspector and the BIDS Validator. Schema
 languages therefore do not add a level of their own but make levels 2 and 3 verifiable.
 
