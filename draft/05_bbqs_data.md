@@ -46,8 +46,7 @@ These numbers point to three challenges that recur in the rest of this paper. Fi
 **combine standards** from communities that rarely interact, such as neurophysiology (NWB), neuroimaging
 and EEG (BIDS), psychology (Psych-DS), and computer vision (video and pose formats). Second, several of
 the **most common BBQS behaviors have no established representation** in any of these standards (Section
-7). Third, data often live outside archives during a project, so the **path from the lab to the
+8). Third, data often live outside archives during a project, so the **path from the lab to the
 archive**, including conversion, validation, and metadata entry, must be easy enough to happen
-routinely. All BBQS data are to be deposited in the EMBER archive [REF: EMBER], which accepts NWB, BIDS,
-Psych-DS, and the DANDI layout; the question for each project is therefore not *whether* to use a
-standard but *which combination*.
+routinely. Section 6 describes the standards BBQS has adopted to meet these challenges, and Section 7
+gives recommendations for choosing and combining them.
