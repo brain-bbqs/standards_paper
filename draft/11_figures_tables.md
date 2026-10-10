@@ -6,7 +6,7 @@ Status: **spec** = described only; **draft** = generated draft exists; **poster*
 |---|---|---|---|
 | Fig. 1 | Ecosystem map + analogy | poster | SfN poster, layers + video-platform analogy |
 | Table 1 | Layer definitions | spec (text below) | poster table |
-| Fig. 2 | Levels of FAIRness and the layer that adds each | spec (revised 2026-10-09; poster "FAIR Data Score" must be redrawn to match) | Section 3, Table 2 |
+| Fig. 2 | Six levels of FAIRness and the layer that adds each | spec (revised 2026-10-09; poster "FAIR Data Score" must be redrawn to match) | Section 3, Table 2 |
 | Table 2 | Levels of FAIRness mapped to layers and FAIR principles | draft (in `03_fair_integration.md`) | Section 3 |
 | Fig. 3 | BBQS standards stack on the map | spec | Section 5 |
 | Table 3 | Recommended standards by BBQS data type | draft (in `06_recommendations.md`) | guideline |
@@ -39,13 +39,15 @@ defined with schema languages). **(b)** The video analogy used throughout the te
 
 ## Fig. 2 — Levels of FAIRness and where each layer contributes
 
-A staircase of five levels (0 opaque, 1 readable, 2 interpretable, 3 interoperable, 4 findable and
-reusable record; Table 2). Each step is labeled with the layer of the map whose technologies make it
-possible (data formats; file and dataset organization standards with schema languages; ontologies and
-terminologies; archives with persistent identifiers) and with the FAIR principles it mainly addresses.
-An example neuroscience dataset is shown climbing the steps (bare HDF5 → validated NWB/BIDS →
-NCBI Taxonomy, atlas, and HED annotations → DOI on DANDI or EMBER). A side note marks that formal
-assessment scores each principle separately (RDA indicators, F-UJI).
+A staircase of six levels (0 opaque, 1 readable, 2 interpretable files, 3 organized dataset,
+4 interoperable, 5 findable and reusable record; Table 2). Each step is labeled with the layer of the
+map whose technologies make it possible (data formats; file organization standards; dataset organization
+standards; ontologies and terminologies; archives with persistent identifiers) and with the FAIR
+principles it mainly addresses. A vertical bar beside steps 2–3 marks schema languages, which make these
+levels machine-checkable through validators. An example neuroscience dataset is shown climbing the
+steps (bare HDF5 → validated NWB file → BIDS or DANDI-layout dataset → NCBI Taxonomy, atlas, and HED
+annotations → DOI on DANDI or EMBER). A side note marks that formal assessment scores each principle
+separately (RDA indicators, F-UJI).
 
 ## Fig. 3 — The BBQS standards stack
 

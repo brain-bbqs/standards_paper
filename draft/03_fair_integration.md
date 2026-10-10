@@ -40,8 +40,7 @@ each consortium builds and maintains the integration itself.
 
 ## Levels of FAIRness, and where each layer contributes
 
-To illustrate why integration across layers is needed, Table 2 describes five levels of FAIRness for
-neuroscience data. The levels are not a new metric. Their purpose is to show which layer of the map
+To illustrate why integration across layers is needed, Table 2 describes six levels of FAIRness for neuroscience data. The levels are not a new metric. Their purpose is to show which layer of the map
 contributes at each step, so each level is defined by what a third party can do with the data, mapped to
 the FAIR principles it mainly addresses, and tied to the layer whose technologies make it possible (Fig.
 2) [TODO-C6]. The idea of a staged scale is familiar from five-star Linked Open Data [REF: Berners-Lee
@@ -55,19 +54,26 @@ tools such as F-UJI, which score each principle separately [REF: Wilkinson 2019;
 |---|---|---|---|---|
 | 0, opaque | Bytes that can only be read with the original software or documentation | None | None | Proprietary acquisition files without a public specification; raw `.bin` voltage traces |
 | 1, readable | Data in an open, documented format that generic tools can read, with technical metadata such as data types and dimensions | Data formats | I1 (formal, shared representation) | Bare HDF5, Zarr, TIFF, or CSV files |
-| 2, interpretable | Data and the metadata needed to understand them, structured according to community standards and checked by validators | File and dataset organization standards, defined in schema languages | R1 (rich metadata), R1.3 (community standards), I1 | A validated NWB file or BIDS dataset |
-| 3, interoperable | Metadata values drawn from shared terminologies and ontologies, so that datasets can be searched and combined with others | Ontologies and terminologies | I2 (FAIR vocabularies), I3 (qualified references) | NWB or BIDS data with species from the NCBI Taxonomy, locations from an atlas, and events annotated with HED |
-| 4, findable and reusable record | Data deposited with a persistent identifier, searchable metadata, licence, and provenance, retrievable through a standard protocol | Data archives (with persistent identifiers) | F1–F4, A1–A2, R1.1 (licence), R1.2 (provenance) | An annotated BIDS and NWB dataset with a DOI on DANDI or EMBER |
+| 2, interpretable files | Each file, for example one recording session, has a standardized structure and contains the metadata needed to understand it | File organization standards\* | R1 (rich metadata), R1.3 (community standards) | A validated NWB file |
+| 3, organized dataset | The whole experiment can be navigated, with consistent file names, folder structure, and dataset-level metadata | Dataset organization standards\* | R1, R1.3, F2 (data described with rich metadata) | A validated BIDS or DANDI-layout dataset |
+| 4, interoperable | Metadata values are drawn from shared terminologies and ontologies, so that datasets can be searched and combined with others | Ontologies and terminologies | I2 (FAIR vocabularies), I3 (qualified references) | NWB or BIDS data with species from the NCBI Taxonomy, locations from an atlas, and events annotated with HED |
+| 5, findable and reusable record | Data are deposited with a persistent identifier, searchable metadata, licence, and provenance, and can be retrieved through a standard protocol | Data archives (with persistent identifiers) | F1–F4, A1–A2, R1.1 (licence), R1.2 (provenance) | An annotated BIDS and NWB dataset with a DOI on DANDI or EMBER |
 
-Two caveats apply. First, the levels describe a typical path, not a strict sequence. Depositing an opaque
-file in a general-purpose repository makes it findable and accessible but not interoperable or
-reusable, which is why formal assessments score each principle separately. Second, the levels describe
-data, not the standards themselves. The maturity of a standard, including its specification, tools,
-validators, and adoption, is a separate question that technology readiness scales are better suited to
-[TODO-C34].
+\* File and dataset organization standards are defined in schema languages, which make conformance at
+levels 2 and 3 machine-checkable by validators such as the NWB Inspector and the BIDS Validator. Schema
+languages therefore do not add a level of their own but make levels 2 and 3 verifiable.
 
-Read from bottom to top, the table shows that each step up requires technologies from an additional
-layer of the map. A format alone reaches level 1, file and dataset organization standards are needed for
-level 2, terminologies and ontologies for level 3, and an archive for level 4. This is the practical
-reason why **integration across the ecosystem matters more than the choice of any single standard**,
-and why the recommendations for BBQS in Section 6 cover several layers at once.
+Two caveats apply. First, the levels describe a typical path, not a strict sequence. Levels 2 and 3
+complement each other. In a BIDS dataset of NIfTI images, for example, much of the metadata lives in
+dataset-level sidecar files rather than inside the images. Depositing an opaque file in a
+general-purpose repository makes it findable and accessible but not interoperable or reusable, which is
+why formal assessments score each principle separately. Second, the levels describe data, not the
+standards themselves. The maturity of a standard, including its specification, tools, validators, and
+adoption, is a separate question that technology readiness scales are better suited to [TODO-C34].
+
+Read from top to bottom, the table shows that each step up requires technologies from an additional
+layer of the map. A format alone reaches level 1, a file organization standard is needed for level 2, a
+dataset organization standard for level 3, terminologies and ontologies for level 4, and an archive for
+level 5. This is the practical reason why **integration across the ecosystem matters more than the
+choice of any single standard**, and why the recommendations for BBQS in Section 6 cover several layers
+at once.
