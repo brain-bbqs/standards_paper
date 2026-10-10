@@ -11,11 +11,18 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
 
 ## D. Decisions for the team
 
-- [ ] **D1 — Journal.** The BBQS pivot (recommendations for one program) fits a Nature Communications
-      Perspective less well. Candidates: eLife (Review / Tools & Resources?), PLOS Computational Biology,
-      Neuroinformatics, Scientific Data, Imaging Neuroscience / Aperture Neuro. Decide before the
-      pre-submission enquiry (planned ~Nov 17). Then check word, display-item, reference, and Methods
-      limits.
+- [ ] **D1 — Journal.** Leading option (2026-10-09): **Scientific Data (Nature Portfolio)**, which has
+      published BIDS, its modality extensions, and the FAIR principles.
+      - Likely article type: **Article** (fits map + BBQS inventory analysis + knowledge graph +
+        recommendations). Alternative: **Comment** (much shorter; would need ~half the length and most
+        of the BBQS analysis removed).
+      - [ ] Verify on nature.com/sdata (could not be fetched automatically): article types, word /
+            display-item / reference limits, whether Methods count, APC and funding source (Q6), and
+            whether a pre-submission enquiry is possible or useful.
+      - Other options if needed: eLife, PLOS Computational Biology, Neuroinformatics, Nature
+        Communications (Perspective; weaker fit after the BBQS pivot).
+      - Consequence if Article: keep the knowledge graph as evidence (D3) and resolve
+        `knowledge_graph/TODO.md` 1.1–1.3 before submission.
 - [ ] **D2 — Length.** Cut ~600 words or move Table 2 / the FAIR-ladder table to display items, depending on D1.
 - [ ] **D3 — Role of the knowledge graph.** Draft uses it as supporting evidence (Section 7, Suppl.
       Fig. S1). Keep, shrink to a sentence, or drop? Depends on resolving `knowledge_graph/TODO.md` 1.1–1.3.
