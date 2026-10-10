@@ -70,6 +70,11 @@ def per_award_values(awards: dict, field: str) -> Counter:
     return counts
 
 
+def _ranked(counts: Counter) -> dict:
+    """Counts sorted by frequency, ties by name, so the output is stable across runs."""
+    return dict(sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
+
+
 def aggregate(awards: dict) -> dict:
     text = {a: " ".join(str(r.get(f) or "") for r in rows for f in TEXT_FIELDS).lower()
             for a, rows in awards.items()}
@@ -82,12 +87,12 @@ def aggregate(awards: dict) -> dict:
     return {
         "awards": len(awards),
         "mechanisms": dict(Counter(re.match(r"[A-Z]+\d+", a).group(0) for a in awards)),
-        "species": dict(Counter(s for v in species.values() for s in v).most_common()),
+        "species": _ranked(Counter(s for v in species.values() for s in v)),
         "species_groups": len(set().union(*species.values())),
         "human_only_awards": sum(v == {"human"} for v in species.values()),
         "nonhuman_only_awards": sum(bool(v) and "human" not in v for v in species.values()),
         "behavior_awards": behavior_awards,
-        "behaviors": dict(behaviors.most_common()),
+        "behaviors": _ranked(behaviors),
         "modalities": {k: sum(bool(re.search(p, t)) for t in text.values()) for k, p in MODALITY_PATTERNS.items()},
         "tools": {k: sum(bool(re.search(p, t)) for t in text.values()) for k, p in TOOL_PATTERNS.items()},
         "standards_answers": len(std),
