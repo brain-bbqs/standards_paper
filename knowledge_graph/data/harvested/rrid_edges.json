@@ -1,0 +1,5066 @@
+[
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "dandi",
+  "other_id": "SCR_015820",
+  "other_name": "BICCN",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "dandi",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "dandi",
+  "other_id": "SCR_004139",
+  "other_name": "DataCite",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "dandi",
+  "other_id": "SCR_017615",
+  "other_name": "FAIRsharing",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "dandi",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "dandi",
+  "other_id": "SCR_006491",
+  "other_name": "Allen Institute for Brain Science",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "dandi",
+  "other_id": "SCR_025466",
+  "other_name": "NeuroSift",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "dandi",
+  "other_id": "SCR_026700",
+  "other_name": "Ecosystem for Multi-modal Brain-behavior Experimentation and Research",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ember",
+  "other_id": "SCR_017571",
+  "other_name": "Distributed Archives for Neurophysiology Data Integration",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ember",
+  "other_id": "SCR_017273",
+  "other_name": "Brain Observatory Storage Service and Database (BossDB)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "ember",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "ember",
+  "other_id": "SCR_010247",
+  "other_name": "Johns Hopkins University; Maryland; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "openneuro",
+  "other_id": "SCR_016124",
+  "other_name": "Brain Imaging Data Structure (BIDs)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "openneuro",
+  "other_id": "SCR_017630",
+  "other_name": "HED Tags",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "openneuro",
+  "other_id": "SCR_003112",
+  "other_name": "studyforrest.org",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "openneuro",
+  "other_id": "SCR_003931",
+  "other_name": "DataLad",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "openneuro",
+  "other_id": "SCR_004834",
+  "other_name": "NIF Data Federation",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "openneuro",
+  "other_id": "SCR_010503",
+  "other_name": "Integrated Datasets",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "openneuro",
+  "other_id": "SCR_022808",
+  "other_name": "NIH Heal Project",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "openneuro",
+  "other_id": "SCR_027836",
+  "other_name": "Baby Open Brains",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "openneuro",
+  "other_id": "SCR_011446",
+  "other_name": "National Library of Medicine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "openneuro",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "openneuro",
+  "other_id": "SCR_001606",
+  "other_name": "NIDDK Information Network (dkNET)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "openneuro",
+  "other_id": "SCR_012895",
+  "other_name": "NIDDK - National Institute of Diabetes and Digestive and Kidney Diseases",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "openneuro",
+  "other_id": "SCR_003430",
+  "other_name": "NeuroImaging Tools and Resources Collaboratory (NITRC)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "openneuro",
+  "other_id": "SCR_006782",
+  "other_name": "re3data.org",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "openneuro",
+  "other_id": "SCR_004139",
+  "other_name": "DataCite",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "openneuro",
+  "other_id": "SCR_017615",
+  "other_name": "FAIRsharing",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_affiliated_with",
+  "node": "openneuro",
+  "other_id": "SCR_019100",
+  "other_name": " NEMAR",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openneuro",
+  "other_id": "SCR_008876",
+  "other_name": "Integrated Manually Extracted Annotation",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "openneuro",
+  "other_id": "SCR_011538",
+  "other_name": "Stanford University; Stanford; California",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "openneuro",
+  "other_id": "SCR_016684",
+  "other_name": "Stanford Center for Reproducible Neuroscience",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "openneuro",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_provided_by",
+  "node": "openneuro",
+  "other_id": "SCR_016667",
+  "other_name": "OpenNeuro",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_affiliated_with",
+  "node": "nemar",
+  "other_id": "SCR_016667",
+  "other_name": "OpenNeuro",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "bil",
+  "other_id": "SCR_015820",
+  "other_name": "BICCN",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "bil",
+  "other_id": "SCR_022794",
+  "other_name": "BRAIN Initiative Cell Atlas Network ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "bil",
+  "other_id": "SCR_011446",
+  "other_name": "National Library of Medicine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "bil",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "bil",
+  "other_id": "SCR_004139",
+  "other_name": "DataCite",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "bil",
+  "other_id": "SCR_006782",
+  "other_name": "re3data.org",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "bil",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "bil",
+  "other_id": "SCR_006491",
+  "other_name": "Allen Institute for Brain Science",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "bil",
+  "other_id": "SCR_027502",
+  "other_name": "CBI BrAinPI",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_organization_facet_of",
+  "node": "bil",
+  "other_id": "SCR_022794",
+  "other_name": "BRAIN Initiative Cell Atlas Network ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "bossdb",
+  "other_id": "SCR_015820",
+  "other_name": "BICCN",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "bossdb",
+  "other_id": "SCR_011446",
+  "other_name": "National Library of Medicine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "bossdb",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "bossdb",
+  "other_id": "SCR_018812",
+  "other_name": "Scalable Analytics for Brain Exploration Research",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "bossdb",
+  "other_id": "SCR_026700",
+  "other_name": "Ecosystem for Multi-modal Brain-behavior Experimentation and Research",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "bossdb",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "bossdb",
+  "other_id": "SCR_010247",
+  "other_name": "Johns Hopkins University; Maryland; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nemo",
+  "other_id": "SCR_022794",
+  "other_name": "BRAIN Initiative Cell Atlas Network ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nemo",
+  "other_id": "SCR_015820",
+  "other_name": "BICCN",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "nemo",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nemo",
+  "other_id": "SCR_018164",
+  "other_name": "NeMO Analytics",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nemo",
+  "other_id": "SCR_005837",
+  "other_name": "University of Maryland School of Medicine; Maryland; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "ebrains",
+  "other_id": "SCR_022818",
+  "other_name": "QuickNII and VisuAlign",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "ebrains",
+  "other_id": "SCR_016854",
+  "other_name": "QuickNII",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "ebrains",
+  "other_id": "SCR_017615",
+  "other_name": "FAIRsharing",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_023173",
+  "other_name": "openMINDS metadata framework",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_023277",
+  "other_name": "Julich-Brain Cytoarchitectonic Atlas",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_026248",
+  "other_name": "openMINDS chemicals metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_026249",
+  "other_name": "openMINDS computation metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_026252",
+  "other_name": "openMINDS specimenPrep metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_026246",
+  "other_name": "openMINDS core metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_026247",
+  "other_name": "openMINDS controlledTerms metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_026251",
+  "other_name": "openMINDS publications metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ebrains",
+  "other_id": "SCR_026253",
+  "other_name": "openMINDS stimulation metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_010490",
+  "other_name": "Protocols.io",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_016124",
+  "other_name": "Brain Imaging Data Structure (BIDs)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_017374",
+  "other_name": "Physiome Model Repository",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_017576",
+  "other_name": "SciGraph",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_018997",
+  "other_name": "o\u00b2S\u00b2PARC",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_019004",
+  "other_name": "SODA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_018068",
+  "other_name": "Blackfynn Discover",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_018998",
+  "other_name": "ApiNATOMY",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_018256",
+  "other_name": "Biolucida",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_019005",
+  "other_name": "TissueMaker",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_019003",
+  "other_name": "ScaffoldMaker",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_019002",
+  "other_name": "ScaffoldFitter",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_019001",
+  "other_name": "OpenCOR",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_018999",
+  "other_name": "Pennsieve Data Management Platform",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_016178",
+  "other_name": "InterLex",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_016788",
+  "other_name": "Neurolucida 360",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_003115",
+  "other_name": "SciCrunch",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_017321",
+  "other_name": "Tissue Mapper",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_017320",
+  "other_name": "Vesselucida 360",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "sparc_portal",
+  "other_id": "SCR_004139",
+  "other_name": "DataCite",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "sparc_portal",
+  "other_id": "SCR_022808",
+  "other_name": "NIH Heal Project",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "sparc_portal",
+  "other_id": "SCR_001606",
+  "other_name": "NIDDK Information Network (dkNET)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "sparc_portal",
+  "other_id": "SCR_012895",
+  "other_name": "NIDDK - National Institute of Diabetes and Digestive and Kidney Diseases",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "sparc_portal",
+  "other_id": "SCR_011446",
+  "other_name": "National Library of Medicine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "sparc_portal",
+  "other_id": "SCR_018709",
+  "other_name": "SPARC Anatomy Working Group",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "sparc_portal",
+  "other_id": "SCR_023681",
+  "other_name": "HORNET CENTER FOR AUTONOMIC NERVE RECORDING AND STIMULATION SYSTEMS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "sparc_portal",
+  "other_id": "SCR_025705",
+  "other_name": "NIH PRECISION Human Pain Network",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "sparc_portal",
+  "other_id": "SCR_026080",
+  "other_name": "SCKAN Explorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "sparc_portal",
+  "other_id": "SCR_027206",
+  "other_name": "SCKANNER",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "sparc_portal",
+  "other_id": "SCR_027028",
+  "other_name": "SPARC Data Standard",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_organization_facet",
+  "node": "sparc_portal",
+  "other_id": "SCR_018997",
+  "other_name": "o\u00b2S\u00b2PARC",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_organization_facet",
+  "node": "sparc_portal",
+  "other_id": "SCR_019004",
+  "other_name": "SODA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_organization_facet",
+  "node": "sparc_portal",
+  "other_id": "SCR_018709",
+  "other_name": "SPARC Anatomy Working Group",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_organization_facet",
+  "node": "sparc_portal",
+  "other_id": "SCR_018068",
+  "other_name": "Blackfynn Discover",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_organization_facet",
+  "node": "sparc_portal",
+  "other_id": "SCR_018998",
+  "other_name": "ApiNATOMY",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_organization_facet",
+  "node": "sparc_portal",
+  "other_id": "SCR_018999",
+  "other_name": "Pennsieve Data Management Platform",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "tcia",
+  "other_id": "SCR_011446",
+  "other_name": "National Library of Medicine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "tcia",
+  "other_id": "SCR_001606",
+  "other_name": "NIDDK Information Network (dkNET)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "tcia",
+  "other_id": "SCR_012895",
+  "other_name": "NIDDK - National Institute of Diabetes and Digestive and Kidney Diseases",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "tcia",
+  "other_id": "SCR_003430",
+  "other_name": "NeuroImaging Tools and Resources Collaboratory (NITRC)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "tcia",
+  "other_id": "SCR_004139",
+  "other_name": "DataCite",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "tcia",
+  "other_id": "SCR_006782",
+  "other_name": "re3data.org",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "tcia",
+  "other_id": "SCR_017615",
+  "other_name": "FAIRsharing",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_affiliated_with",
+  "node": "tcia",
+  "other_id": "SCR_014184",
+  "other_name": "BraTumIA (Brain Tumor Image Analysis)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "tcia",
+  "other_id": "SCR_003551",
+  "other_name": "NIH Data Sharing Repositories",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "tcia",
+  "other_id": "SCR_019127",
+  "other_name": "NCI Imaging Data Commons",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "tcia",
+  "other_id": "SCR_011245",
+  "other_name": "Frederick National Laboratory for Cancer Research",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "tcia",
+  "other_id": "SCR_004880",
+  "other_name": "NCI-Frederick",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "odc_tbi",
+  "other_id": "SCR_004139",
+  "other_name": "DataCite",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "odc_tbi",
+  "other_id": "SCR_016626",
+  "other_name": "University of California at San Diego; California; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "odc_tbi",
+  "other_id": "SCR_019235",
+  "other_name": "FAIR Data Informatics Laboratory",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_organization_facet_of",
+  "node": "odc_tbi",
+  "other_id": "SCR_022252",
+  "other_name": "PRE Clinical Interagency Research Resource TBI",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "odc_sci",
+  "other_id": "SCR_004139",
+  "other_name": "DataCite",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "odc_sci",
+  "other_id": "SCR_016626",
+  "other_name": "University of California at San Diego; California; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "odc_sci",
+  "other_id": "SCR_011617",
+  "other_name": "University of California; California; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "nda",
+  "other_id": "SCR_017630",
+  "other_name": "HED Tags",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nda",
+  "other_id": "SCR_013795",
+  "other_name": "National Database for Clinical Trials related to Mental Illness",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nda",
+  "other_id": "SCR_013796",
+  "other_name": "RDoCdb",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nda",
+  "other_id": "SCR_022808",
+  "other_name": "NIH Heal Project",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "nda",
+  "other_id": "SCR_011446",
+  "other_name": "National Library of Medicine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "nda",
+  "other_id": "SCR_001606",
+  "other_name": "NIDDK Information Network (dkNET)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "nda",
+  "other_id": "SCR_012895",
+  "other_name": "NIDDK - National Institute of Diabetes and Digestive and Kidney Diseases",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "nda",
+  "other_id": "SCR_003430",
+  "other_name": "NeuroImaging Tools and Resources Collaboratory (NITRC)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "nda",
+  "other_id": "SCR_006782",
+  "other_name": "re3data.org",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nda",
+  "other_id": "SCR_013795",
+  "other_name": "National Database for Clinical Trials related to Mental Illness",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nda",
+  "other_id": "SCR_013796",
+  "other_name": "RDoCdb",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nda",
+  "other_id": "SCR_011431",
+  "other_name": "National Institute of Mental Health",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "hosts",
+  "node": "nda",
+  "other_id": "SCR_014530",
+  "other_name": "GUID Tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "gin",
+  "other_id": "SCR_003932",
+  "other_name": "Git",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "gin",
+  "other_id": "SCR_007279",
+  "other_name": "German Neuroinformatics Node (G-Node)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "bids",
+  "other_id": "SCR_016667",
+  "other_name": "OpenNeuro",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "bids",
+  "other_id": "SCR_017041",
+  "other_name": "SPARC Portal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "bids",
+  "other_id": "SCR_027028",
+  "other_name": "SPARC Data Standard",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "bids",
+  "other_id": "SCR_017615",
+  "other_name": "FAIRsharing",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "bids",
+  "other_id": "SCR_022292",
+  "other_name": "BIDS-Matlab",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "bids",
+  "other_id": "SCR_027826",
+  "other_name": "NiPoppy",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "bids",
+  "other_id": "SCR_018766",
+  "other_name": "MNE-BIDS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_021150",
+  "other_name": "SpikeInterface",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_021151",
+  "other_name": "NWB Explorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_021153",
+  "other_name": "calciumImagingAnalysis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_021154",
+  "other_name": "NWBwidgets",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_021155",
+  "other_name": "EcogVIS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_021156",
+  "other_name": "MatNWB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_017452",
+  "other_name": "PyNWB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "nwb",
+  "other_id": "SCR_028050",
+  "other_name": "AqNWB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_021303",
+  "other_name": "Hierarchical Data Modeling Framework",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_021340",
+  "other_name": "Neurodata Extensions Catalog",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_021341",
+  "other_name": "HDMF Documentation Utilities",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_021342",
+  "other_name": "HDMF Common Schema",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_025466",
+  "other_name": "NeuroSift",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_025465",
+  "other_name": "NWB Inspector",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_025464",
+  "other_name": "BEADL:BEhavioral tAsk Description Language",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nwb",
+  "other_id": "SCR_025467",
+  "other_name": "NWB Graphical User Interface for Data Entry",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nwb",
+  "other_id": "SCR_004257",
+  "other_name": "Janelia Research",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nwb",
+  "other_id": "SCR_011459",
+  "other_name": "New York University School of Medicine; New York; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nwb",
+  "other_id": "SCR_011618",
+  "other_name": "University of California at Berkeley; Berkeley; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "nwb",
+  "other_id": "SCR_028050",
+  "other_name": "AqNWB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "nix",
+  "other_id": "SCR_001376",
+  "other_name": "Open metadata mark up language",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nix",
+  "other_id": "SCR_001452",
+  "other_name": "EEGbase",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nix",
+  "other_id": "SCR_007279",
+  "other_name": "German Neuroinformatics Node (G-Node)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nix",
+  "other_id": "SCR_011358",
+  "other_name": "Ludwig-Maximilians-University; Munich; Germany",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_019260",
+  "other_name": "EBRAINS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_023498",
+  "other_name": "openMINDS SANDS metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026246",
+  "other_name": "openMINDS core metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026247",
+  "other_name": "openMINDS controlledTerms metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026248",
+  "other_name": "openMINDS chemicals metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026249",
+  "other_name": "openMINDS computation metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026250",
+  "other_name": "openMINDS ephys metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026251",
+  "other_name": "openMINDS publications metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026252",
+  "other_name": "openMINDS specimenPrep metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_026253",
+  "other_name": "openMINDS stimulation metadata model",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "openminds",
+  "other_id": "SCR_027358",
+  "other_name": "openMINDS_instances",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "uberon",
+  "other_id": "SCR_002894",
+  "other_name": "Neuroscience Information Framework",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "uberon",
+  "other_id": "SCR_002713",
+  "other_name": "BioPortal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "uberon",
+  "other_id": "SCR_002811",
+  "other_name": "Gene Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "uberon",
+  "other_id": "SCR_007083",
+  "other_name": "OBO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_004834",
+  "other_name": "NIF Data Federation",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_003518",
+  "other_name": "Vertebrate Taxonomy Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_006782",
+  "other_name": "re3data.org",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_004299",
+  "other_name": "Taxonomy",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_004477",
+  "other_name": "NEWT",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_002821",
+  "other_name": "Phenoscape Knowledgebase",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_005314",
+  "other_name": "EBIMed",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_005720",
+  "other_name": "GOTaxExplorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_005824",
+  "other_name": "Whatizit",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_008876",
+  "other_name": "Integrated Manually Extracted Annotation",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_006472",
+  "other_name": "NCBI",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "ncbi_taxonomy",
+  "other_id": "SCR_000479",
+  "other_name": "NCBITaxon",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_004834",
+  "other_name": "NIF Data Federation",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_002834",
+  "other_name": "GreenPhylDB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_003062",
+  "other_name": "LIPID MAPS Proteome Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_000496",
+  "other_name": "Aging Portal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_003807",
+  "other_name": "ChannelPedia",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_005050",
+  "other_name": "Open PHACTS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_005327",
+  "other_name": "CoPub",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_013646",
+  "other_name": "PhenoGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_003033",
+  "other_name": "Database for Annotation Visualization and Integrated Discovery",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_001368",
+  "other_name": "MitoMiner",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_014392",
+  "other_name": "dcGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_002100",
+  "other_name": "Pathway Analysis Tool for Integration and Knowledge Acquisition",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_015709",
+  "other_name": "barleyGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_017330",
+  "other_name": "SynGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_017519",
+  "other_name": "Functional Annotation",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_019074",
+  "other_name": "SwissLipids",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_002713",
+  "other_name": "BioPortal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_007083",
+  "other_name": "OBO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_002250",
+  "other_name": "OMICtools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_014695",
+  "other_name": "bio.tools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "gene_ontology",
+  "other_id": "SCR_006638",
+  "other_name": "Debian",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_affiliated_with",
+  "node": "gene_ontology",
+  "other_id": "SCR_006447",
+  "other_name": "Mouse Genome Informatics: The Gene Ontology Project",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000147",
+  "other_name": "GenNav",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000157",
+  "other_name": "SynaptomeDB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000173",
+  "other_name": "High-Throughput GoMiner",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000601",
+  "other_name": "Onto-Design",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000602",
+  "other_name": "OnEx - Ontology Evolution Explorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000644",
+  "other_name": "Avadis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000653",
+  "other_name": "GONUTS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000692",
+  "other_name": "PiNGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001219",
+  "other_name": "Automated Microarray Pipeline",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001223",
+  "other_name": "categoryCompare",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001256",
+  "other_name": "globaltest",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001383",
+  "other_name": "Semantic Measures Library",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001402",
+  "other_name": "WegoLoc",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_014197",
+  "other_name": "AnimalTFDB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001783",
+  "other_name": "MEME Suite - Motif-based sequence analysis tools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001792",
+  "other_name": "Arabidopsis Hormone Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001881",
+  "other_name": "DAVID",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001896",
+  "other_name": "Arabidopsis thaliana Protein Interactome Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001915",
+  "other_name": "TM4 Microarray Software Suite - TIGR MultiExperiment Viewer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002045",
+  "other_name": "pSTIING",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002360",
+  "other_name": "GoMiner",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002729",
+  "other_name": "FunSimMat",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002779",
+  "other_name": " GeneSpeed- A Database of Unigene Domain Organization ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002785",
+  "other_name": "Centre for Modeling Human Disease Gene Trap Resource",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002868",
+  "other_name": "Patterns of Gene Expression in Drosophila Embryogenesis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002969",
+  "other_name": "Babelomics",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002989",
+  "other_name": "BioPerl",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003153",
+  "other_name": "GeneCruiser",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003191",
+  "other_name": "GOLEM An interactive, graphical gene-ontology visualization, navigation, and analysis tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003192",
+  "other_name": "GOToolBox Functional Investigation of Gene Datasets",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003301",
+  "other_name": "Cotton EST Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003357",
+  "other_name": "MouseNET",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003362",
+  "other_name": "PLANTTFDB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003452",
+  "other_name": "T-profiler",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003530",
+  "other_name": "Physico-Chemical Process",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003546",
+  "other_name": "Integrated Molecular Interaction Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003554",
+  "other_name": "SEGS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003608",
+  "other_name": "GOCat",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004065",
+  "other_name": "Quantitative Enrichment of Sequence Tags",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004120",
+  "other_name": "Neural-Immune Gene Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004173",
+  "other_name": "INMEX",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004247",
+  "other_name": "StRAnGER",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004608",
+  "other_name": "QuickGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004704",
+  "other_name": "Repository of molecular brain neoplasia data",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004795",
+  "other_name": "Cardiovascular Gene Ontology Annotation Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_015893",
+  "other_name": "PANTHER",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005016",
+  "other_name": "Short Time-series Expression Miner (STEM)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005413",
+  "other_name": "DATFAP",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005633",
+  "other_name": "GORetriever",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005662",
+  "other_name": "Gene Ontology Browsing Utility (GOBU)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_022505",
+  "other_name": "GeneTools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005665",
+  "other_name": "GOSlimViewer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005666",
+  "other_name": "go-moose",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005667",
+  "other_name": "Network Ontology Analysis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005669",
+  "other_name": "Onto-Compare",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005670",
+  "other_name": "Onto-Express",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005674",
+  "other_name": "OntoVisT",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005675",
+  "other_name": "STRAP",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005676",
+  "other_name": "CGAP GO Browser",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005677",
+  "other_name": "COBrA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005679",
+  "other_name": "Gene Class Expression",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005680",
+  "other_name": "GeneInfoViz",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005681",
+  "other_name": "GOfetcher",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005682",
+  "other_name": "GoFish",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005683",
+  "other_name": "GOProfiler",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005684",
+  "other_name": "GOanna",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005685",
+  "other_name": "Manatee",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005686",
+  "other_name": "Pandora - Protein ANnotation Diagram ORiented Analysis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005687",
+  "other_name": "TAIR Keyword Browser",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005689",
+  "other_name": "Wandora",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005720",
+  "other_name": "GOTaxExplorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005722",
+  "other_name": "Onto-Miner",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005725",
+  "other_name": "Onto-Translate",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005726",
+  "other_name": " ToppGene Suite ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005728",
+  "other_name": "DBD - Slim Gene Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005731",
+  "other_name": "ONTO-PERL",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005733",
+  "other_name": "Blip: Biomedical Logic Programming",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005734",
+  "other_name": "OWL API",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005735",
+  "other_name": "CLENCH",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005736",
+  "other_name": "BiNGO: A Biological Networks Gene Ontology tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005737",
+  "other_name": "CateGOrizer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005738",
+  "other_name": "FuSSiMeG: Functional Semantic Similarity Measure between Gene-Products",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005740",
+  "other_name": "ProteInOn",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005744",
+  "other_name": "GeneMerge",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005746",
+  "other_name": "GraphWeb",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005748",
+  "other_name": "ClueGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005752",
+  "other_name": "CLASSIFI - Cluster Assignment for Biological Inference",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005766",
+  "other_name": "GOHyperGAll",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005768",
+  "other_name": "FuncAssociate: The Gene Set Functionator",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005770",
+  "other_name": "GOdist",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005773",
+  "other_name": "FuncExpression",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005774",
+  "other_name": "FunCluster",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005776",
+  "other_name": "FIVA - Functional Information Viewer and Analyzer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005778",
+  "other_name": "GARBAN",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005779",
+  "other_name": "GOEx - Gene Ontology Explorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005784",
+  "other_name": "SGD Gene Ontology Slim Mapper",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005785",
+  "other_name": "GOArray",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005788",
+  "other_name": "SNPsandGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005789",
+  "other_name": "GoSurfer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005790",
+  "other_name": "GOtcha",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005791",
+  "other_name": "MAPPFinder",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005792",
+  "other_name": "GoAnnotator",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005794",
+  "other_name": "MetaGeneProfiler",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005795",
+  "other_name": "OntoGate",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005797",
+  "other_name": "ProfCom - Profiling of complex functionality",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005798",
+  "other_name": "SerbGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005799",
+  "other_name": "SOURCE",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005801",
+  "other_name": "Ontologizer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005802",
+  "other_name": "THEA - Tools for High-throughput Experiments Analysis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005806",
+  "other_name": "Generic GO Term Mapper",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005807",
+  "other_name": "GREAT: Genomic Regions Enrichment of Annotations Tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005808",
+  "other_name": "GoBean - a Java application for Gene Ontology enrichment analysis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005812",
+  "other_name": "TXTGate",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005813",
+  "other_name": "GO-Module",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005815",
+  "other_name": "IT-GOM: Integrated Tool for IC-based GO Semantic Similarity Measures",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005816",
+  "other_name": "G-SESAME - Gene Semantic Similarity Analysis and Measurement Tools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005817",
+  "other_name": "MalaCards",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005819",
+  "other_name": "FSST - Functional Similarity Search Tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005821",
+  "other_name": "Expression Profiler",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005822",
+  "other_name": "GOChase",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005823",
+  "other_name": "GoPubMed",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005824",
+  "other_name": "Whatizit",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005825",
+  "other_name": "REViGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005827",
+  "other_name": "WEGO - Web Gene Ontology Annotation Plot",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005828",
+  "other_name": "Blast2GO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_017117",
+  "other_name": "InterProScan",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005830",
+  "other_name": "PubSearch",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005869",
+  "other_name": "TrED",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005872",
+  "other_name": "CharProtDB: Characterized Protein Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005978",
+  "other_name": "VirHostNet: Virus-Host Network",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006141",
+  "other_name": "Pathbase",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006174",
+  "other_name": "GO Online SQL Environment (GOOSE)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006201",
+  "other_name": "Neurobehavior Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006243",
+  "other_name": "InterSpecies Analysing Application using Containers",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006350",
+  "other_name": "KOBAS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006362",
+  "other_name": "ConceptWiki",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006385",
+  "other_name": "GeneTerm Linker",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006442",
+  "other_name": "Bioconductor",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006450",
+  "other_name": "ErmineJ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006484",
+  "other_name": "Gene Ontology For Functional Analysis (GOFFA)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006489",
+  "other_name": "MGI GO Browser",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006530",
+  "other_name": "Comparative Toxicogenomics Database (CTD)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006580",
+  "other_name": "GOEAST - Gene Ontology Enrichment Analysis Software Toolkit",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006596",
+  "other_name": "Ontology Lookup Service",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006627",
+  "other_name": "LexGrid",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006786",
+  "other_name": "WebGestalt: WEB-based GEne SeT AnaLysis Toolkit",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006809",
+  "other_name": "g:Profiler",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006819",
+  "other_name": "OwlSim",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006848",
+  "other_name": "GOrilla: Gene Ontology Enrichment Analysis and Visualization Tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006893",
+  "other_name": "YeTFaSCo",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006919",
+  "other_name": "FastSemSim",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006922",
+  "other_name": "RamiGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006937",
+  "other_name": "AutismKB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006943",
+  "other_name": "GeneCodis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006952",
+  "other_name": "FunSpec",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006968",
+  "other_name": "FunNet - Transcriptional Networks Analysis",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006970",
+  "other_name": "PhenoM - Phenomics of yeast Mutants",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006989",
+  "other_name": "agriGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006998",
+  "other_name": "GOblet",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007009",
+  "other_name": "DynGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007075",
+  "other_name": "SeqExpress",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007116",
+  "other_name": "ProbeExplorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007634",
+  "other_name": "ECgene: Gene Modeling with Alternative Splicing",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007837",
+  "other_name": "Organelle DB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008007",
+  "other_name": "Gemma",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008190",
+  "other_name": "Candidate Genes to Inherited Diseases",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008234",
+  "other_name": "Proteome Analyst PA-GOSUB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008373",
+  "other_name": "Network Analysis, Visualization and Graphing TORonto",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008535",
+  "other_name": "GOstat",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008854",
+  "other_name": "Onto-Express To Go (OE2GO)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008855",
+  "other_name": "Tk-GO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008856",
+  "other_name": "EGAN: Exploratory Gene Association Networks",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008858",
+  "other_name": "Spotfire",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008864",
+  "other_name": "GOMO - Gene Ontology for Motifs",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008868",
+  "other_name": "GFINDer: Genome Function INtegrated Discoverer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008870",
+  "other_name": "Generic GO Term Finder",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008871",
+  "other_name": "Agile Protein Interactomes DataServer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_010226",
+  "other_name": "AgingDB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_010668",
+  "other_name": "UBERON",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_012034",
+  "other_name": "Algal Functional Annotation Tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_012035",
+  "other_name": "gsGator",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_012870",
+  "other_name": "Flash Gviewer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_013096",
+  "other_name": "Cerebellar Development Transcriptome Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_013278",
+  "other_name": "PlantNATsDB - Plant Natural Antisense Transcripts DataBase",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_013361",
+  "other_name": "EASE: the Expression Analysis Systematic Explorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_013394",
+  "other_name": "PiGenome",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_013440",
+  "other_name": "L2L Microarray Analysis Tool",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_000110",
+  "other_name": "MeGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001601",
+  "other_name": "CELDA Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001660",
+  "other_name": "Diabetes Disease Portal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001727",
+  "other_name": "MatrixDB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001746",
+  "other_name": "Kidney and Urinary Pathway Knowledge Base",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_001791",
+  "other_name": "MouseCyc",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002036",
+  "other_name": "Candida Genome Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002389",
+  "other_name": "Honey Bee Brain EST Project",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002477",
+  "other_name": "ECO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002694",
+  "other_name": "FlyMine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_002829",
+  "other_name": "Gramene",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003101",
+  "other_name": "3D-Interologs",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_003552",
+  "other_name": "Biomine",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004426",
+  "other_name": "UniProtKB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_004690",
+  "other_name": "NCBI BioSystems Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005314",
+  "other_name": "EBIMed",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005323",
+  "other_name": "Coremine Medical",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005391",
+  "other_name": "EMAGE Gene Expression Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_005709",
+  "other_name": "GeneMANIA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006076",
+  "other_name": "Yeast Search for Transcriptional Regulators And Consensus Tracking",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006250",
+  "other_name": "GeneTrail",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006406",
+  "other_name": "Magic",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006460",
+  "other_name": "Mouse Genome Informatics (MGI)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006549",
+  "other_name": "FlyBase",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006695",
+  "other_name": "InterPro",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006714",
+  "other_name": "InnateDB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_006794",
+  "other_name": "canSAR",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007027",
+  "other_name": "HPRD - Human Protein Reference Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007092",
+  "other_name": "CRCView",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008876",
+  "other_name": "Integrated Manually Extracted Annotation",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_008906",
+  "other_name": "LegumeIP",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_009030",
+  "other_name": "Renal Disease Portal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_013646",
+  "other_name": "PhenoGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_015666",
+  "other_name": "DOAF",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_007083",
+  "other_name": "OBO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_019214",
+  "other_name": "biomaRt",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "gene_ontology",
+  "other_id": "SCR_023723",
+  "other_name": "OncoboxPD",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_002143",
+  "other_name": "AmiGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_003939",
+  "other_name": "GOlr",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_004263",
+  "other_name": "RefGenome",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_005668",
+  "other_name": "OBO-Edit",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_005732",
+  "other_name": "OWLTools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_006941",
+  "other_name": "Gene Ontology Tools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_010327",
+  "other_name": "Gene Ontology Extension",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_004374",
+  "other_name": "SO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_005721",
+  "other_name": "go-db-perl",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_005730",
+  "other_name": "go-perl",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "gene_ontology",
+  "other_id": "SCR_014798",
+  "other_name": "topGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "gene_ontology",
+  "other_id": "SCR_017495",
+  "other_name": "DIANA-mirPath",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "gene_ontology",
+  "other_id": "SCR_018977",
+  "other_name": "GOnet",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_organization_facet_of",
+  "node": "gene_ontology",
+  "other_id": "SCR_015850",
+  "other_name": "Alliance of Genome Resources ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "cell_ontology",
+  "other_id": "SCR_002713",
+  "other_name": "BioPortal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "cell_ontology",
+  "other_id": "SCR_006596",
+  "other_name": "Ontology Lookup Service",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "cell_ontology",
+  "other_id": "SCR_001601",
+  "other_name": "CELDA Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "cell_ontology",
+  "other_id": "SCR_007083",
+  "other_name": "OBO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "cell_ontology",
+  "other_id": "SCR_005832",
+  "other_name": "Cell Line Knowledge Base",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "neurolex",
+  "other_id": "SCR_014748",
+  "other_name": "MicroDraw",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "neurolex",
+  "other_id": "SCR_002250",
+  "other_name": "OMICtools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "neurolex",
+  "other_id": "SCR_003430",
+  "other_name": "NeuroImaging Tools and Resources Collaboratory (NITRC)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "neurolex",
+  "other_id": "SCR_003549",
+  "other_name": "Program on Ontologies of Neural Structures",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "neurolex",
+  "other_id": "SCR_005414",
+  "other_name": "NIFSTD",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "neurolex",
+  "other_id": "SCR_006274",
+  "other_name": "neuroelectro",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "neurolex",
+  "other_id": "SCR_007011",
+  "other_name": "Whole Brain Catalog",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "neurolex",
+  "other_id": "SCR_003658",
+  "other_name": "Linked Neuron Data",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "neurolex",
+  "other_id": "SCR_005400",
+  "other_name": "SciCrunch Registry",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "neurolex",
+  "other_id": "SCR_016178",
+  "other_name": "InterLex",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "neurolex",
+  "other_id": "SCR_002894",
+  "other_name": "Neuroscience Information Framework",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "neurolex",
+  "other_id": "SCR_002282",
+  "other_name": "International Neuroinformatics Coordinating Facility",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "neurolex",
+  "other_id": "SCR_002187",
+  "other_name": "Integrated",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "neurolex",
+  "other_id": "SCR_003629",
+  "other_name": "Common Upper Mammalian Brain Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "neurolex",
+  "other_id": "SCR_005400",
+  "other_name": "SciCrunch Registry",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "interlex",
+  "other_id": "SCR_017041",
+  "other_name": "SPARC Portal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "interlex",
+  "other_id": "SCR_005402",
+  "other_name": "NeuroLex",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "interlex",
+  "other_id": "SCR_005414",
+  "other_name": "NIFSTD",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "interlex",
+  "other_id": "SCR_003115",
+  "other_name": "SciCrunch",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "nifstd",
+  "other_id": "SCR_002713",
+  "other_name": "BioPortal",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "nifstd",
+  "other_id": "SCR_005334",
+  "other_name": "FORCE11",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nifstd",
+  "other_id": "SCR_005402",
+  "other_name": "NeuroLex",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nifstd",
+  "other_id": "SCR_013281",
+  "other_name": "OntoQuest",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nifstd",
+  "other_id": "SCR_016178",
+  "other_name": "InterLex",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nifstd",
+  "other_id": "SCR_002894",
+  "other_name": "Neuroscience Information Framework",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "nifstd",
+  "other_id": "SCR_003977",
+  "other_name": "NIF Cell Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "provides",
+  "node": "nifstd",
+  "other_id": "SCR_017403",
+  "other_name": "Neuron Phenotype Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_002088",
+  "other_name": "CHEBI",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003563",
+  "other_name": "NCI Thesaurus",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_000134",
+  "other_name": "Porifera Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_000473",
+  "other_name": "Gazetteer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003491",
+  "other_name": "Human Disease Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_000477",
+  "other_name": "Information Artifact Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_001610",
+  "other_name": "Teleost Anatomy Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_002811",
+  "other_name": "Gene Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003117",
+  "other_name": "Spider Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003245",
+  "other_name": "Mental Functioning Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003254",
+  "other_name": "Ascomycete Phenotype Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003259",
+  "other_name": "Beta Cell Genomics Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003262",
+  "other_name": "Biological Collections Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003272",
+  "other_name": "Emotion Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003286",
+  "other_name": "Chemical Methods Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003290",
+  "other_name": "Chemical Information Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003291",
+  "other_name": "Clinical Measurement Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003296",
+  "other_name": "Common Anatomy Reference Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003306",
+  "other_name": "Experimental Conditions Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003309",
+  "other_name": "Dictyostelium Discoideum Anatomy Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003315",
+  "other_name": "Fission Yeast Phenotype Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003317",
+  "other_name": "Fly Taxonomy",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003318",
+  "other_name": "FlyBase Controlled Vocabulary",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003340",
+  "other_name": "Hymenoptera Anatomy Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003346",
+  "other_name": "Influenza Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003349",
+  "other_name": "Lipid Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003361",
+  "other_name": "Kinetic Simulation Algorithm Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003369",
+  "other_name": "Malaria Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003373",
+  "other_name": "Measurement Method Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003385",
+  "other_name": "Minimal Anatomical Terminology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003423",
+  "other_name": "Ontology for Genetic Interval",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003427",
+  "other_name": "Ontology for Parasite LifeCycle",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003428",
+  "other_name": "Ontology of Adverse Events",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003439",
+  "other_name": "Ontology of Medically Related Social Entities",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003442",
+  "other_name": "Ontology of Vaccine Adverse Events",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003473",
+  "other_name": "Rat Strain Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003460",
+  "other_name": "Plant Environmental Conditions",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003461",
+  "other_name": "Plant Trait Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003462",
+  "other_name": "Population and Community Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003470",
+  "other_name": "RNA Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003486",
+  "other_name": "Subcellular Anatomy Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003493",
+  "other_name": "Software Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003497",
+  "other_name": "Suggested Ontology for Pharmacogenomics",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003518",
+  "other_name": "Vertebrate Taxonomy Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003530",
+  "other_name": "Physico-Chemical Process",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_003571",
+  "other_name": "Adverse Event Reporting Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_004337",
+  "other_name": "Xenopus Anatomy Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_005840",
+  "other_name": "Cell Line Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_006219",
+  "other_name": "Human Phenotype Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_006201",
+  "other_name": "Neurobehavior Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_006266",
+  "other_name": "Ontology for Biomedical Investigations",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_010297",
+  "other_name": "Comparative Data Analysis Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_010384",
+  "other_name": "Ontology for General Medical Science",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_010407",
+  "other_name": "Physico-Chemical Methods and Properties",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "lists",
+  "node": "obo_foundry",
+  "other_id": "SCR_010590",
+  "other_name": "Gene Regulation Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "obo_foundry",
+  "other_id": "SCR_005334",
+  "other_name": "FORCE11",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_000110",
+  "other_name": "MeGO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_001607",
+  "other_name": "Drosophila anatomy and development ontologies",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_004251",
+  "other_name": "Cell Type Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005668",
+  "other_name": "OBO-Edit",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005730",
+  "other_name": "go-perl",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005732",
+  "other_name": "OWLTools",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005887",
+  "other_name": "Zebrafish Anatomical Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_006497",
+  "other_name": "OBO Tracker: Plant Ontology (PO) TERM requests",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_010704",
+  "other_name": "eVOC",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_000602",
+  "other_name": "OnEx - Ontology Evolution Explorer",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_002989",
+  "other_name": "BioPerl",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_004438",
+  "other_name": " dkCOIN ",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_004532",
+  "other_name": "Standards-based Infrastructure with Distributed Resources",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005674",
+  "other_name": "OntoVisT",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005677",
+  "other_name": "COBrA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005689",
+  "other_name": "Wandora",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_005731",
+  "other_name": "ONTO-PERL",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_006273",
+  "other_name": "Genomic Standards Consortium",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_006596",
+  "other_name": "Ontology Lookup Service",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_006627",
+  "other_name": "LexGrid",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_006753",
+  "other_name": "SBO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_006890",
+  "other_name": "RIKEN integrated database of mammals",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_015666",
+  "other_name": "DOAF",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_002811",
+  "other_name": "Gene Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "obo_foundry",
+  "other_id": "SCR_026919",
+  "other_name": "African Population Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "obo_foundry",
+  "other_id": "SCR_006704",
+  "other_name": "Berkeley Bioinformatics Open-Source Projects",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "obo_foundry",
+  "other_id": "SCR_004285",
+  "other_name": "OBO Relation Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "obo_foundry",
+  "other_id": "SCR_004374",
+  "other_name": "SO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "obo_foundry",
+  "other_id": "SCR_004782",
+  "other_name": "PATO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "obo_foundry",
+  "other_id": "SCR_004855",
+  "other_name": "MPO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "obo_foundry",
+  "other_id": "SCR_010287",
+  "other_name": "AEO",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "obo_foundry",
+  "other_id": "SCR_010668",
+  "other_name": "UBERON",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "cognitive_atlas",
+  "other_id": "SCR_003430",
+  "other_name": "NeuroImaging Tools and Resources Collaboratory (NITRC)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "cognitive_atlas",
+  "other_id": "SCR_001114",
+  "other_name": "Speech Perception",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "cognitive_atlas",
+  "other_id": "SCR_001639",
+  "other_name": "Brainspell",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "cognitive_atlas",
+  "other_id": "SCR_005900",
+  "other_name": "University of Texas at Austin; Texas; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_parent_organization_of",
+  "node": "cognitive_atlas",
+  "other_id": "SCR_010295",
+  "other_name": "Cognitive Atlas Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "hed",
+  "other_id": "SCR_004434",
+  "other_name": "NIMH Data Archive",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "hed",
+  "other_id": "SCR_005657",
+  "other_name": "HeadIT",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "hed",
+  "other_id": "SCR_016667",
+  "other_name": "OpenNeuro",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "hed",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "hed",
+  "other_id": "SCR_016626",
+  "other_name": "University of California at San Diego; California; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "hed",
+  "other_id": "SCR_004434",
+  "other_name": "NIMH Data Archive",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "hed",
+  "other_id": "SCR_005657",
+  "other_name": "HeadIT",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "hed",
+  "other_id": "SCR_016667",
+  "other_name": "OpenNeuro",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_recommended_by",
+  "node": "hed",
+  "other_id": "SCR_006770",
+  "other_name": "BRAIN Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "hed",
+  "other_id": "SCR_016626",
+  "other_name": "University of California at San Diego; California; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nidm",
+  "other_id": "SCR_002823",
+  "other_name": "FSL",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nidm",
+  "other_id": "SCR_007037",
+  "other_name": "SPM",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "nidm",
+  "other_id": "SCR_005927",
+  "other_name": "Analysis of Functional NeuroImages",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "nidm",
+  "other_id": "SCR_011440",
+  "other_name": "National Institute on Drug Abuse",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nidm",
+  "other_id": "SCR_001548",
+  "other_name": "Karolinska Institute; Stockholm; Sweden",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nidm",
+  "other_id": "SCR_002282",
+  "other_name": "International Neuroinformatics Coordinating Facility",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "nidm",
+  "other_id": "SCR_021022",
+  "other_name": "PyNIDM",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "allen_ccf",
+  "other_id": "SCR_021000",
+  "other_name": "Allen Mouse Reference Atlas Ontology",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "uses",
+  "node": "allen_ccf",
+  "other_id": "SCR_022910",
+  "other_name": "ccf_streamlines",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "allen_ccf",
+  "other_id": "SCR_015820",
+  "other_name": "BICCN",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "allen_ccf",
+  "other_id": "SCR_024725",
+  "other_name": "Early Postnatal Developmental Mouse Brain Atlas",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "allen_ccf",
+  "other_id": "SCR_013286",
+  "other_name": "Allen Mouse Brain Reference Atlas",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "allen_ccf",
+  "other_id": "SCR_008848",
+  "other_name": "Allen Mouse Brain Connectivity Atlas",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "allen_ccf",
+  "other_id": "SCR_005984",
+  "other_name": "Allen Brain Atlas API",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "allen_ccf",
+  "other_id": "SCR_025324",
+  "other_name": "Developmental Mouse Brain atlas",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "allen_ccf",
+  "other_id": "SCR_025544",
+  "other_name": "3D Developmental Mouse Brain Common Coordinate Framework",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "allen_ccf",
+  "other_id": "SCR_005435",
+  "other_name": "Allen Institute",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "allen_ccf",
+  "other_id": "SCR_006491",
+  "other_name": "Allen Institute for Brain Science",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "allen_human_atlas",
+  "other_id": "SCR_003655",
+  "other_name": "Speech Language Disorders Database",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "allen_human_atlas",
+  "other_id": "SCR_006491",
+  "other_name": "Allen Institute for Brain Science",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "allen_human_atlas",
+  "other_id": "SCR_017530",
+  "other_name": "Allen Brain Atlas",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_listed_by",
+  "node": "waxholm",
+  "other_id": "SCR_003430",
+  "other_name": "NeuroImaging Tools and Resources Collaboratory (NITRC)",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "waxholm",
+  "other_id": "SCR_017341",
+  "other_name": "ITK-SNAP",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "waxholm",
+  "other_id": "SCR_016547",
+  "other_name": "PMOD Software",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "waxholm",
+  "other_id": "SCR_011193",
+  "other_name": "Duke University; North Carolina; USA",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "waxholm",
+  "other_id": "SCR_006275",
+  "other_name": "University of Oslo; Oslo; Norway",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "waxholm",
+  "other_id": "SCR_017222",
+  "other_name": "MeshView",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "works_with",
+  "node": "waxholm",
+  "other_id": "SCR_017978",
+  "other_name": "VisuAlign",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "julich_brain",
+  "other_id": "SCR_001593",
+  "other_name": "BigBrain",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "julich_brain",
+  "other_id": "SCR_002241",
+  "other_name": "Human Brain Project EU",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "julich_brain",
+  "other_id": "SCR_019260",
+  "other_name": "EBRAINS",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "julich_brain",
+  "other_id": "SCR_023416",
+  "other_name": "Research Center J\u00fclich; J\u00fclich; Germany",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nifti",
+  "other_id": "SCR_003355",
+  "other_name": "Niftilib",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "nifti",
+  "other_id": "SCR_016895",
+  "other_name": "Tools for NIfTI and ANALYZE image",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "has_parent_organization",
+  "node": "nifti",
+  "other_id": "SCR_003141",
+  "other_name": "Neuroimaging Informatics Technology Initiative",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_used_by",
+  "node": "hdmf_spec",
+  "other_id": "SCR_017452",
+  "other_name": "PyNWB",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "hdmf_spec",
+  "other_id": "SCR_015242",
+  "other_name": "Neurodata Without Borders",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "hdmf_spec",
+  "other_id": "SCR_021340",
+  "other_name": "Neurodata Extensions Catalog",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "hdmf_spec",
+  "other_id": "SCR_021341",
+  "other_name": "HDMF Documentation Utilities",
+  "registry": "rrid"
+ },
+ {
+  "direction": "out",
+  "label": "is_related_to",
+  "node": "hdmf_spec",
+  "other_id": "SCR_021342",
+  "other_name": "HDMF Common Schema",
+  "registry": "rrid"
+ }
+]

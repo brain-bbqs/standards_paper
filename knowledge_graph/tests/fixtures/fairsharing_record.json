@@ -1,0 +1,16 @@
+{"data": {"id": "1131", "type": "fairsharing_records", "attributes": {
+  "name": "FAIRsharing record for: Neurodata Without Borders", "abbreviation": "NWB",
+  "doi": "10.25504/FAIRsharing.nPfuTE", "fairsharing_registry": "Standard", "record_type": "model_and_format",
+  "metadata": {"status": "ready", "name": "Neurodata Without Borders"},
+  "subjects": ["Neurophysiology"], "domains": [],
+  "linked_records": [
+    {"link_id": 1, "linked_record_id": 55, "linked_record_name": "Hierarchical Data Format",
+     "linked_record_registry": "Standard", "linked_record_type": "model_and_format", "relation": "related_to", "relation_id": 4}
+  ],
+  "linking_records": [
+    {"link_id": 2, "linking_record_id": 3322, "linking_record_name": "Distributed Archives for Neurophysiology Data Integration",
+     "linking_record_registry": "Database", "linking_record_type": "repository", "relation": "implements", "relation_id": 6},
+    {"link_id": 3, "linking_record_id": 900, "linking_record_name": "INCF Endorsed standards",
+     "linking_record_registry": "Collection", "linking_record_type": "collection", "relation": "collects", "relation_id": 10}
+  ]
+}}}

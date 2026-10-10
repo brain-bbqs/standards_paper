@@ -1,0 +1,1297 @@
+{
+ "allen_ccf": [],
+ "allen_human_atlas": [
+  {
+   "abbreviation": "HMDB",
+   "doi": "FAIRsharing.sye5js",
+   "id": 2084,
+   "name": "The Human Metabolome Database",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "TRANS",
+   "doi": "FAIRsharing.jz4ea7",
+   "id": 266,
+   "name": "Pathogen Transmission Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "DOID",
+   "doi": "FAIRsharing.8b6wfq",
+   "id": 870,
+   "name": "Disease Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "NCBI Virus",
+   "doi": "FAIRsharing.qt5ky7",
+   "id": 1984,
+   "name": "NCBI Viral Genomes Resource",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "LINCS Data Standards",
+   "doi": null,
+   "id": 3532,
+   "name": "Library of Integrated Network-Based Cellular Signatures Data Standards (LINCS)",
+   "registry": "Collection",
+   "status": "ready",
+   "type": "collection"
+  }
+ ],
+ "bam_cram": [
+  {
+   "abbreviation": "CentrosomeDB",
+   "doi": "FAIRsharing.34pfmc",
+   "id": 2139,
+   "name": "CentrosomeDB",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "knowledgebase"
+  }
+ ],
+ "bids": [
+  {
+   "abbreviation": "BIDS",
+   "doi": "FAIRsharing.rd1j6t",
+   "id": 307,
+   "name": "Brain Imaging Data Structure",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "bil": [
+  {
+   "abbreviation": "BIL",
+   "doi": "FAIRsharing.88520c",
+   "id": 4347,
+   "name": "Brain Image Library",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "bossdb": [
+  {
+   "abbreviation": "BossDB",
+   "doi": "FAIRsharing.980d94",
+   "id": 5548,
+   "name": "Brain Observatory Storage Service",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "bossdb_dm": [],
+ "cde": [
+  {
+   "abbreviation": "CMDO",
+   "doi": "FAIRsharing.eb12a9",
+   "id": 4857,
+   "name": "Clinical MetaData Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "CDMS",
+   "doi": "FAIRsharing.5fafff",
+   "id": 7881,
+   "name": "Cologne Database for Molecular Spectroscopy",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": null,
+   "doi": null,
+   "id": 366,
+   "name": "Collection Descriptions",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "LDES",
+   "doi": "FAIRsharing.24abf8",
+   "id": 4666,
+   "name": "Linked Data Event Streams",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "CDSE",
+   "doi": "FAIRsharing.25778c",
+   "id": 7532,
+   "name": "Copernicus Data Space Ecosystem Portal",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "cell_ontology": [
+  {
+   "abbreviation": "CL",
+   "doi": "FAIRsharing.j9y503",
+   "id": 1004,
+   "name": "Cell Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "cognitive_atlas": [
+  {
+   "abbreviation": "CogAt",
+   "doi": "FAIRsharing.aef0q5",
+   "id": 470,
+   "name": "Cognitive Atlas",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "cogpo": [
+  {
+   "abbreviation": "CogPO",
+   "doi": "FAIRsharing.xyj0nr",
+   "id": 205,
+   "name": "Cognitive Paradigm Ontology",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "terminology_artefact"
+  }
+ ],
+ "dabi": [
+  {
+   "abbreviation": "DABI",
+   "doi": "FAIRsharing.86b807",
+   "id": 5549,
+   "name": "Data Archive for the BRAIN Initiative",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "dandi": [
+  {
+   "abbreviation": "DANDI",
+   "doi": "FAIRsharing.f2c119",
+   "id": 3322,
+   "name": "Distributed Archives for Neurophysiology Data Integration",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "dandi_layout": [],
+ "datacite_schema": [
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.me4qwe",
+   "id": 758,
+   "name": "DataCite Metadata Schema",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "DataCite",
+   "doi": "FAIRsharing.yknezb",
+   "id": 2556,
+   "name": "DataCite Repository",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "DataCite",
+   "doi": "FAIRsharing.c06f1e",
+   "id": 3736,
+   "name": "DataCite Ontology ",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "dicom": [
+  {
+   "abbreviation": "DICOM / ISO 12052:2017",
+   "doi": "FAIRsharing.b7z8by",
+   "id": 84,
+   "name": "Digital Imaging and COmmunications in Medicine",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "ebrains": [
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.XO6ppp",
+   "id": 2975,
+   "name": "EBRAINS",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase_and_repository"
+  }
+ ],
+ "edf": [
+  {
+   "abbreviation": "EDF",
+   "doi": "FAIRsharing.21d998",
+   "id": 301,
+   "name": "European Data Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "ember": [
+  {
+   "abbreviation": "EMBER",
+   "doi": "FAIRsharing.f74c9d",
+   "id": 6376,
+   "name": "Ecosystem for Multi-modal Brain-behavior Experimentation and Research",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "fastq": [
+  {
+   "abbreviation": "fastq",
+   "doi": "FAIRsharing.r2ts5t",
+   "id": 114,
+   "name": "FASTQ Sequence and Sequence Quality Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "gene_ontology": [
+  {
+   "abbreviation": "GO",
+   "doi": "FAIRsharing.6xq0ee",
+   "id": 1417,
+   "name": "Gene Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "gin": [
+  {
+   "abbreviation": "GIN",
+   "doi": "FAIRsharing.134580",
+   "id": 7128,
+   "name": "Groundwater Information Network",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "GIN",
+   "doi": "FAIRsharing.nv6mrg",
+   "id": 2525,
+   "name": "G-Node Data Infrastructure Services",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "hcp_atlas": [
+  {
+   "abbreviation": "HMP",
+   "doi": "FAIRsharing.q04phv",
+   "id": 2255,
+   "name": "NIH Human Microbiome Project",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "MGG",
+   "doi": "FAIRsharing.fj1d4d",
+   "id": 1791,
+   "name": "Magnaporthe grisea Database",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "MAF",
+   "doi": "FAIRsharing.9sdcx8",
+   "id": 901,
+   "name": "Multiple Alignment Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "ASPGD",
+   "doi": "FAIRsharing.9k7at4",
+   "id": 1553,
+   "name": "Aspergillus Genome Database",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.nj4vca",
+   "id": 1559,
+   "name": "canSAR",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  }
+ ],
+ "hdf5": [
+  {
+   "abbreviation": "HDF5",
+   "doi": "FAIRsharing.wvgta9",
+   "id": 1136,
+   "name": "Hierarchical Data Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "hdmf_spec": [
+  {
+   "abbreviation": "NWB",
+   "doi": "FAIRsharing.nPfuTE",
+   "id": 1131,
+   "name": "Neurodata Without Borders",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "HDF5",
+   "doi": "FAIRsharing.wvgta9",
+   "id": 1136,
+   "name": "Hierarchical Data Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "WholeCellSimDB",
+   "doi": "FAIRsharing.ew61fn",
+   "id": 2228,
+   "name": "WholeCellSimDB",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "MDF",
+   "doi": "FAIRsharing.I5xHsJ",
+   "id": 3265,
+   "name": "The Materials Data Facility",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "Alopecia UK - OA Policy",
+   "doi": "FAIRsharing.6eba81",
+   "id": 8481,
+   "name": "Alopecia UK - Open Access Policy",
+   "registry": "Policy",
+   "status": "ready",
+   "type": "funder"
+  }
+ ],
+ "hed": [
+  {
+   "abbreviation": "HED",
+   "doi": "FAIRsharing.b4929b",
+   "id": 4718,
+   "name": "Hierarchical Event Descriptors",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "herd": [
+  {
+   "abbreviation": "STORMS Checklist",
+   "doi": "FAIRsharing.768d33",
+   "id": 3631,
+   "name": "Strengthening The Organization and Reporting of Microbiome Studies",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "reporting_guideline"
+  },
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.530d6a",
+   "id": 6340,
+   "name": "BERD ",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "LCSH",
+   "doi": "FAIRsharing.d31795",
+   "id": 572,
+   "name": "Library of Congress Subject Headings",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "HORD",
+   "doi": "FAIRsharing.7k29h0",
+   "id": 774,
+   "name": "Holistic Ontology of Rare Diseases",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "HERVd",
+   "doi": "FAIRsharing.jm8fzm",
+   "id": 1736,
+   "name": "Human Endogenous Retrovirus database",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "json": [
+  {
+   "abbreviation": "JSON",
+   "doi": "FAIRsharing.5bbab9",
+   "id": 475,
+   "name": "JavaScript Object Notation",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "json_schema": [
+  {
+   "abbreviation": "CSL-JSON Schema",
+   "doi": "FAIRsharing.pwk71v",
+   "id": 1385,
+   "name": "Citation Style Language JSON Schema",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "SigmaCV",
+   "doi": null,
+   "id": 8303,
+   "name": "SigmaCV Canonical CV Schema",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.NYAjYd",
+   "id": 735,
+   "name": "EBI BioSamples JSON Format ",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "HCA Data Portal",
+   "doi": "FAIRsharing.57d7f1",
+   "id": 4745,
+   "name": "Human Cell Atlas Data Portal",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "FAIR Genomes",
+   "doi": "FAIRsharing.a46a7c",
+   "id": 1423,
+   "name": "FAIR Genomes Semantic Model",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "julich_brain": [
+  {
+   "abbreviation": "openMINDS",
+   "doi": "FAIRsharing.6ac6aa",
+   "id": 5137,
+   "name": "openMINDS metadata framework",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "linkml": [
+  {
+   "abbreviation": "LinkML",
+   "doi": "FAIRsharing.cb7086",
+   "id": 3648,
+   "name": "Linked (Open) Data Modeling Language",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "loom": [
+  {
+   "abbreviation": "RNAJunction",
+   "doi": "FAIRsharing.zzgvrv",
+   "id": 1739,
+   "name": "RNAJunction",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "RNA CoSSMos",
+   "doi": "FAIRsharing.vebj4e",
+   "id": 1640,
+   "name": "RNA Characterization of Secondary Structure Motifs",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "ArchDB",
+   "doi": "FAIRsharing.tp9z4q",
+   "id": 1900,
+   "name": "ArchDB",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "R-loopDB",
+   "doi": "FAIRsharing.b09e6b",
+   "id": 2628,
+   "name": "R-loopDB",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "LOM",
+   "doi": "FAIRsharing.b6c586",
+   "id": 4664,
+   "name": "Standard for Learning Object Metadata",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "mp4": [
+  {
+   "abbreviation": "MPD",
+   "doi": "FAIRsharing.h6enr1",
+   "id": 1616,
+   "name": "Mouse Phenome Database",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase_and_repository"
+  },
+  {
+   "abbreviation": "MPO",
+   "doi": "FAIRsharing.jpxsv1",
+   "id": 785,
+   "name": "Microbial Phenotype Ontology",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "Newt-omics",
+   "doi": "FAIRsharing.k6a8e5",
+   "id": 1619,
+   "name": "Newt-omics",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "repository"
+  },
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.3fe671",
+   "id": 6950,
+   "name": "Motion Capture Database HDM05",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "TSDO",
+   "doi": null,
+   "id": 3577,
+   "name": "Toolbox for Sensitive Data Objects",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "knowledgebase"
+  }
+ ],
+ "mrio": [
+  {
+   "abbreviation": "INDI",
+   "doi": "FAIRsharing.ajpk6x",
+   "id": 2153,
+   "name": "International Neuroimaging Data-Sharing Initiative",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "BALSA",
+   "doi": "FAIRsharing.11c072",
+   "id": 3320,
+   "name": "Brain Analysis Library of Spatial maps and Atlases",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase_and_repository"
+  },
+  {
+   "abbreviation": "MIRO",
+   "doi": "FAIRsharing.0Csgcz",
+   "id": 555,
+   "name": "The Minimal Information for Reporting an Ontology Guidelines",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "reporting_guideline"
+  },
+  {
+   "abbreviation": "NeuroVault",
+   "doi": "FAIRsharing.rm14bx",
+   "id": 2151,
+   "name": "NeuroVault",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "NIfTI",
+   "doi": "FAIRsharing.jgzts3",
+   "id": 671,
+   "name": "Neuroimaging Informatics Technology Initiative",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "nbo": [
+  {
+   "abbreviation": "NBO",
+   "doi": "FAIRsharing.pktgc6",
+   "id": 1470,
+   "name": "Neuro Behavior Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "ncbi_taxonomy": [
+  {
+   "abbreviation": "VTO",
+   "doi": "FAIRsharing.akmeb9",
+   "id": 900,
+   "name": "Vertebrate Taxonomy Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "UP Taxonomy",
+   "doi": "FAIRsharing.wf28wm",
+   "id": 935,
+   "name": "UniProt Taxonomy",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "TAXRANK",
+   "doi": "FAIRsharing.p1sejz",
+   "id": 356,
+   "name": "Taxonomic Rank Vocabulary",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.1beef4",
+   "id": 7692,
+   "name": "NCBI Datasets",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "GR-TAX",
+   "doi": "FAIRsharing.fmz635",
+   "id": 932,
+   "name": "Gramene Taxonomy Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "nda": [
+  {
+   "abbreviation": "NDA",
+   "doi": "FAIRsharing.L13TT5",
+   "id": 3209,
+   "name": "National Institute of Mental Health Data Archive",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "nemar": [
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.9e34ec",
+   "id": 6759,
+   "name": "NEMAR",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  }
+ ],
+ "nemo": [
+  {
+   "abbreviation": "NEMO",
+   "doi": "FAIRsharing.n66krd",
+   "id": 30,
+   "name": "Neural ElectroMagnetic Ontologies",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "terminology_artefact"
+  }
+ ],
+ "neurobagel": [],
+ "neuroblueprint": [],
+ "neurolex": [
+  {
+   "abbreviation": "InterLex",
+   "doi": "FAIRsharing.67sssf",
+   "id": 1118,
+   "name": "InterLex",
+   "registry": "Standard",
+   "status": "in_development",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "NIFSUBCELL",
+   "doi": "FAIRsharing.exmkp8",
+   "id": 1224,
+   "name": "Neuroscience Information Framework Subcellular Ontology",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "terminology_artefact"
+  }
+ ],
+ "nidm": [
+  {
+   "abbreviation": "NIDM",
+   "doi": "FAIRsharing.75nsn6",
+   "id": 552,
+   "name": "Neuroimaging Data Model",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "nifstd": [
+  {
+   "abbreviation": "NIFSTD",
+   "doi": "FAIRsharing.vgw1m6",
+   "id": 333,
+   "name": "Neuroscience Information Framework Standard Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "nifti": [
+  {
+   "abbreviation": "NIfTI",
+   "doi": "FAIRsharing.jgzts3",
+   "id": 671,
+   "name": "Neuroimaging Informatics Technology Initiative",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "nix": [
+  {
+   "abbreviation": "NIX",
+   "doi": "FAIRsharing.kK7dbW",
+   "id": 1015,
+   "name": "Neuroscience Information Exchange Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "nwb": [
+  {
+   "abbreviation": "NWB",
+   "doi": "FAIRsharing.nPfuTE",
+   "id": 1131,
+   "name": "Neurodata Without Borders",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "obo_foundry": [
+  {
+   "abbreviation": "OBO",
+   "doi": "FAIRsharing.847069",
+   "id": 2600,
+   "name": "OBO Foundry",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "odc_sci": [
+  {
+   "abbreviation": "ODC-SCI",
+   "doi": "FAIRsharing.M6Ruz3",
+   "id": 3307,
+   "name": "Open Data Commons for Spinal Cord Injury",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "odc_tbi": [
+  {
+   "abbreviation": "ODC-TBI",
+   "doi": "FAIRsharing.fac30d",
+   "id": 3338,
+   "name": "Open Data Commons for Traumatic Brain Injury",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "odml": [
+  {
+   "abbreviation": "odML",
+   "doi": "FAIRsharing.pg4NHk",
+   "id": 385,
+   "name": "Open Metadata Markup Language",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "ome_tiff": [
+  {
+   "abbreviation": "OME-TIFF",
+   "doi": "FAIRsharing.cq8tg2",
+   "id": 922,
+   "name": "Open Microscopy Environment - Tagged Image File Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "ome_zarr": [],
+ "openminds": [
+  {
+   "abbreviation": "openMINDS",
+   "doi": "FAIRsharing.6ac6aa",
+   "id": 5137,
+   "name": "openMINDS metadata framework",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "openneuro": [
+  {
+   "abbreviation": "OpenNeuro",
+   "doi": "FAIRsharing.s1r9bw",
+   "id": 2148,
+   "name": "OpenNeuro",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "precomputed": [
+  {
+   "abbreviation": "Phylogenes",
+   "doi": "FAIRsharing.625fde",
+   "id": 3297,
+   "name": "Phylogenes",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "MitImpact",
+   "doi": "FAIRsharing.Q7gFA9",
+   "id": 3194,
+   "name": "MitImpact",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "antiSMASH-DB",
+   "doi": "FAIRsharing.43d414",
+   "id": 3663,
+   "name": "antibiotics & Secondary Metabolite Shell Database",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "qPrimerDB",
+   "doi": "FAIRsharing.qy4b7s",
+   "id": 2499,
+   "name": "real-time quantitative PCR Primer Database",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.c3521d",
+   "id": 4715,
+   "name": "EvolclustDB",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase_and_repository"
+  }
+ ],
+ "protein_ontology": [
+  {
+   "abbreviation": "PRO",
+   "doi": "FAIRsharing.4ndncv",
+   "id": 1229,
+   "name": "PRotein Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "PRO",
+   "doi": "FAIRsharing.3e88d6",
+   "id": 3730,
+   "name": "Publishing Roles Ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "psych_ds": [],
+ "radlex": [
+  {
+   "abbreviation": "RadLex",
+   "doi": "FAIRsharing.shm2f2",
+   "id": 461,
+   "name": "Radiology Lexicon",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "rdf_owl": [
+  {
+   "abbreviation": "FM - VOC2",
+   "doi": "FAIRsharing.d1f5ea",
+   "id": 6996,
+   "name": "FAIR Metric - Ontology imports or reuses well established vocabularies",
+   "registry": "FAIRassist",
+   "status": "ready",
+   "type": "metric"
+  },
+  {
+   "abbreviation": "BioPortal",
+   "doi": "FAIRsharing.4m97ah",
+   "id": 2290,
+   "name": "BioPortal",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "OPMV",
+   "doi": "FAIRsharing.3cf5bc",
+   "id": 750,
+   "name": "Open Provenance Model Vocabulary",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "Nanopub",
+   "doi": "FAIRsharing.a6dcff",
+   "id": 4396,
+   "name": "Nanopublication Schema",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "FAIR Genomes",
+   "doi": "FAIRsharing.a46a7c",
+   "id": 1423,
+   "name": "FAIR Genomes Semantic Model",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "sparc_portal": [
+  {
+   "abbreviation": "SPARC",
+   "doi": "FAIRsharing.d0307c",
+   "id": 4385,
+   "name": "Stimulating Peripheral Activity to Relieve Conditions Repository",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  }
+ ],
+ "sparc_sds": [
+  {
+   "abbreviation": "SDS",
+   "doi": "FAIRsharing.d58ea3",
+   "id": 4386,
+   "name": "SPARC Dataset Structure",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "swc": [
+  {
+   "abbreviation": "Apple Core",
+   "doi": null,
+   "id": 726,
+   "name": "Apple Core",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "reporting_guideline"
+  },
+  {
+   "abbreviation": "Allergome",
+   "doi": "FAIRsharing.w6cxgb",
+   "id": 1746,
+   "name": "Allergome",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  },
+  {
+   "abbreviation": "OBOE SBC",
+   "doi": "FAIRsharing.x13tv8",
+   "id": 1492,
+   "name": "Santa Barbara Coastal Observation Ontology",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "DwC-germplasm",
+   "doi": "FAIRsharing.hgsFLe",
+   "id": 841,
+   "name": "Darwin Core Germplasm",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "MLDCAT-AP",
+   "doi": "FAIRsharing.dfefc9",
+   "id": 7518,
+   "name": "Machine Learning Dataset Catalog Application Profile",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "tcia": [
+  {
+   "abbreviation": "TCIA",
+   "doi": "FAIRsharing.jrfd8y",
+   "id": 2065,
+   "name": "The Cancer Imaging Archive",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "TCIA",
+   "doi": "FAIRsharing.7e8f70",
+   "id": 6740,
+   "name": "The Cancer Immunome Atlas",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  }
+ ],
+ "tiff": [
+  {
+   "abbreviation": "TIFF",
+   "doi": "FAIRsharing.h1drng",
+   "id": 261,
+   "name": "Tagged Image File Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "tsv_csv": [
+  {
+   "abbreviation": "CSV",
+   "doi": "FAIRsharing.1943d4",
+   "id": 1398,
+   "name": "Comma-separated Values",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "CSV-DDF",
+   "doi": "FAIRsharing.10bab4",
+   "id": 1358,
+   "name": "CSV Dialect Description Format",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "MSV",
+   "doi": "FAIRsharing.xfje21",
+   "id": 768,
+   "name": "Metagenome Sample Vocabulary",
+   "registry": "Standard",
+   "status": "deprecated",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "CROPUSAGE",
+   "doi": "FAIRsharing.9228fv",
+   "id": 1330,
+   "name": "French Crop Usage",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": "MB",
+   "doi": "FAIRsharing.a1rp4c",
+   "id": 1604,
+   "name": "MetaBase - The wiki-database of biological databases",
+   "registry": "Database",
+   "status": "deprecated",
+   "type": "repository"
+  }
+ ],
+ "uberon": [
+  {
+   "abbreviation": "UBERON",
+   "doi": "FAIRsharing.4c0b6b",
+   "id": 1197,
+   "name": "UBER anatomy ONtology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  }
+ ],
+ "waxholm": [],
+ "xml_schema": [
+  {
+   "abbreviation": "XSD",
+   "doi": "FAIRsharing.df383c",
+   "id": 1002,
+   "name": "W3C XML Schema Definition Language Part 1: Structures",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "yaml": [
+  {
+   "abbreviation": "YAML",
+   "doi": "FAIRsharing.288192",
+   "id": 5362,
+   "name": "YAML Ain't Markup Language",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  }
+ ],
+ "zarr": [
+  {
+   "abbreviation": "NGFF",
+   "doi": "FAIRsharing.9af712",
+   "id": 3887,
+   "name": "Next Generation File Formats",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "NWB",
+   "doi": "FAIRsharing.nPfuTE",
+   "id": 1131,
+   "name": "Neurodata Without Borders",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "model_and_format"
+  },
+  {
+   "abbreviation": "CARRE",
+   "doi": "FAIRsharing.x68yjk",
+   "id": 745,
+   "name": "CARRE Risk Factor ontology",
+   "registry": "Standard",
+   "status": "ready",
+   "type": "terminology_artefact"
+  },
+  {
+   "abbreviation": null,
+   "doi": "FAIRsharing.d95ece",
+   "id": 5703,
+   "name": "Encyclopedia of Graphs",
+   "registry": "Database",
+   "status": "ready",
+   "type": "repository"
+  },
+  {
+   "abbreviation": "ABS",
+   "doi": "FAIRsharing.7mnebr",
+   "id": 1899,
+   "name": "Annotated regulatory Binding Sites from Orthologous Promoters",
+   "registry": "Database",
+   "status": "ready",
+   "type": "knowledgebase"
+  }
+ ]
+}
