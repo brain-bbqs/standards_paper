@@ -21,10 +21,11 @@ is misleading. FAIRness is a property of **data**, and each layer contributes a 
   automatically.
 
 No single technology covers all of these. FAIR data emerge from technologies **integrated across
-layers**. A neurophysiology dataset on DANDI is a concrete example. The DANDI archive (findable,
-accessible) holds NWB files (structure and metadata) organized in the DANDI layout, whose schema is
-defined in the HDMF language and stored in HDF5 or Zarr (machine-readable, interoperable bytes), with
-species annotated using NCBI Taxonomy terms (shared meaning). The video analogy makes the same point. A
+layers**. A neurophysiology dataset on DANDI is a concrete example. The DANDI archive makes the dataset
+findable and accessible. Within the dataset, files are organized in the DANDI layout, and each file
+follows NWB, which defines its structure and metadata. The NWB schema is written in the HDMF schema
+language, and the files are stored in HDF5 or Zarr, which makes the bytes machine-readable. Species are
+annotated with NCBI Taxonomy terms, which gives the metadata a shared meaning. The video analogy makes the same point. A
 video is easy to find and reuse only when it uses a common codec, sits in a standard container, carries
 meaningful tags, and is published on a platform, and no single one of these steps makes it shareable on
 its own.
