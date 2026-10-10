@@ -48,9 +48,9 @@ regions from an atlas. Ontologies additionally encode definitions and the relati
 concepts, so that software can reason about them, for example that the hippocampus is part of the
 forebrain in Uberon. Terminologies are often selected from ontologies. Annotation frameworks such as the
 Hierarchical Event Descriptors (HED) also belong here, because they define a vocabulary and grammar for
-annotating events. We keep ontologies and terminologies in one layer because, from a user's perspective,
-both are used to give metadata values a shared meaning, while making the distinction explicit
-[TODO-C4]. A typical use is to annotate data so that the meaning of each term is defined. On a video
+annotating events. Although ontologies and terminologies are distinct concepts, we group them in one
+layer because both serve the same purpose in data sharing, which is to give metadata values a shared,
+well-defined meaning [TODO-C4]. A typical use is to annotate data so that the meaning of each term is defined. On a video
 platform, a fixed list of categories corresponds to a terminology and a hierarchy of categories, in which
 "tennis" is a kind of "sport", corresponds to an ontology, in contrast to free-form hashtags that anyone
 can invent.
