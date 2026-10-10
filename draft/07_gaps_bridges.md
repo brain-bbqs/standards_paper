@@ -47,8 +47,9 @@ and over.
 
 Bridges are being built at every layer of the map, and BBQS can both use and drive them (Fig. 5).
 
-1. **Structural bridges** connect data standards and dataset organization, for example NWB files inside
-   BIDS datasets (BEP032) and BIDS-inspired layouts for NWB data (DANDI layout).
+1. **Structural bridges** connect file organization standards and dataset organization standards, for
+   example NWB files inside BIDS datasets (BEP032) and BIDS-inspired layouts for NWB data (DANDI
+   layout).
 2. **Schema-language bridges** express schemas in a common language such as LinkML, which Psych-DS
    already uses, so that equivalent concepts in different standards can be mapped and translated
    [TODO-C27].

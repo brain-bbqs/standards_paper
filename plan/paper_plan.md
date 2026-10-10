@@ -37,6 +37,7 @@ standards guideline, with the ecosystem map as the frame. Consequences:
 | Timeline | **Submit ~late Feb – early Mar 2027** |
 | Working title | ~~"The ecosystem of standards in neuroscience: Current state and future directions"~~ → **"Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization"** (2026-10-09) |
 | Framing | *Superseded for Part II by §0.* **Landscape, not a selection guide**: the focus is the parts of the ecosystem and how they relate; no single standard does everything, so integration across components is essential |
+| Layer 3 name | **"File organization standards"** (was "Data standards"; 2026-10-09), parallel to "dataset organization standards"; avoids using the overloaded term for one layer |
 | Ontology layer | **One layer** ("Ontologies & Terminologies"), with the distinction made explicit: ontologies define terms *and* encode definitions and relationships; terminologies define the set of valid terms, often selected from ontologies |
 | Funding tone | **Needs- and science-focused**: say where investment is needed, not criticize current funding |
 | Writing platform | **Markdown + git** until an outline and first draft exist, then move to Google Docs for the full author group |

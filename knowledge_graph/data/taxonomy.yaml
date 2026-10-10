@@ -17,8 +17,8 @@ layers:
     use_case: Organize data from a full experiment.
   data_standard:
     order: 3
-    label: Data standards
-    problem: Organize data and metadata using primitives (arrays, tables, dictionaries) supported by data formats.
+    label: File organization standards
+    problem: Organize data and metadata within a file using primitives (arrays, tables, dictionaries) supported by data formats.
     use_case: Organize data from a single session or modality.
   ontology_terminology:
     order: 4

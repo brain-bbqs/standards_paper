@@ -8,9 +8,9 @@ is misleading. FAIRness is a property of **data**, and each layer contributes a 
 
 - **Data formats** contribute *interoperability* at the level of bytes, because any software that reads
   HDF5 or TIFF can open the file.
-- **Data standards** contribute *structure and required metadata*. They define what the arrays mean,
-  their units, how they relate in time, and which metadata must be present, which is the basis of
-  *reusability*.
+- **File organization standards** contribute *structure and required metadata*. They define what the
+  arrays mean, their units, how they relate in time, and which metadata must be present, which is the
+  basis of *reusability*.
 - **Dataset organization standards** make the contents of a collection predictable, so people and
   software can navigate many sessions and subjects.
 - **Ontologies and terminologies** give metadata values shared meaning, enabling search and integration
@@ -48,7 +48,7 @@ To make this concrete, we describe five levels of FAIRness of a dataset (Fig. 2)
 | 4 — FAIR-aligned scientific record | Comprehensive standardized metadata with ontology annotation and persistent access through an archive; reusable without external context | Ontology-annotated BIDS + NWB + HED dataset shared on DANDI or EMBER |
 
 Each step up the ladder requires technologies from additional layers. A format alone reaches level 1; a
-data or dataset organization standard is needed for levels 2–3; and level 4 requires ontologies or
+file or dataset organization standard is needed for levels 2–3; and level 4 requires ontologies or
 terminologies and an archive in addition. This is the practical reason why **integration across the
 ecosystem matters more than the choice of any single standard**, and why the recommendations for BBQS in
 Section 6 cover several layers at once.

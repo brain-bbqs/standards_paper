@@ -52,8 +52,12 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
         persistent identifiers (DOI, RRID, ORCID, ROR), access protocols / APIs, provenance, policies /
         licences. Proposal: a cross-cutting band in Fig. 1 plus one paragraph, not more layers. State
         that modelling standards (NeuroML, SONATA, PyNN) are out of scope.
-      - *Naming:* layer 3 "data standards" clashes with the paper's point that the term is overloaded.
-        Options: "data models", "file-level data standards".
+      - [x] *Naming (decided 2026-10-09):* layer 3 renamed from "data standards" to **"file organization
+        standards"**, which parallels "dataset organization standards" (files in folders vs. data
+        within a file). "File" is used in the broad sense of a self-contained data object; the
+        single-file vs. directory (e.g., Zarr) choice belongs to the data format layer. Applied in the
+        draft, Table 1, figure specs, and the knowledge-graph taxonomy label (node id `data_standard`
+        unchanged). Fig. 1 and the poster-derived figures must use the new name (F2).
       - *Geometry:* archives → dataset organization → data standards → formats is a containment stack;
         ontologies/terminologies (semantics) and schema languages (formal definition) cut across it.
         Option: redraw Fig. 1 as a 4-level stack with two cross-cutting columns (keeps six categories).

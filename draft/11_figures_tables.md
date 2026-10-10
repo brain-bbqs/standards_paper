@@ -23,10 +23,9 @@ into Fig. 1 [TODO-F1].
 
 **(a)** The six layers, ordered from the user (archives) to storage (data formats) and formal
 description (schema languages), with representative neuroscience examples and the main relationships
-between layers (archives accept dataset organization and data standards; dataset organization standards
-organize files in data standards and formats; data standards use formats and terminologies and are
+between layers (archives accept dataset organization and file organization standards; dataset organization standards arrange files that follow file organization standards and formats; file organization standards use formats and terminologies and are
 defined with schema languages). **(b)** The video-platform analogy: YouTube (archive), playlist
-(dataset organization), MP4 container (data standard), hashtags (terminology), H.264 encoding (data
+(dataset organization), MP4 container (file organization standard), hashtags (terminology), H.264 encoding (data
 format), upload form (schema).
 
 ## Table 1 — Layers of the ecosystem
@@ -35,10 +34,10 @@ format), upload form (schema).
 |---|---|---|---|
 | Data archives | Publish, share, and discover content | Publish a series of datasets on a topic | DANDI, EMBER, OpenNeuro, NEMAR, DABI, BIL, BossDB, NDA, EBRAINS, SPARC |
 | Dataset organization standards | Organize collections of files in accepted standards and formats | Organize data from a full experiment | BIDS, Psych-DS, DANDI layout, SPARC SDS, NeuroBlueprint |
-| Data standards | Organize data and metadata using primitives supported by formats | Organize data from one session or modality | NWB, OME-TIFF/OME-Zarr, NIX, odML, openMINDS, DICOM, EDF |
+| File organization standards | Organize data and metadata within a file, using primitives supported by formats | Organize data from one session or modality | NWB, OME-TIFF/OME-Zarr, NIX, odML, openMINDS, DICOM, EDF |
 | Ontologies & terminologies | Define terms and represent domain knowledge, incl. relationships | Annotate data to define the meaning of terms | NCBI Taxonomy, Uberon, Cell Ontology, Allen CCF, HED, Cognitive Atlas, NBO |
 | Data formats | Map data to storage | Serialize generic data structures | HDF5, Zarr, TIFF, NIfTI, JSON, YAML, CSV/TSV, MP4 |
-| Schema languages | Provide a formal language for the structure and rules of data | Formally define data standards and ontologies | JSON Schema, XML Schema, RDF/OWL, LinkML, HDMF |
+| Schema languages | Provide a formal language for the structure and rules of data | Formally define file organization standards, dataset organization standards, and ontologies | JSON Schema, XML Schema, RDF/OWL, LinkML, HDMF |
 
 ## Fig. 2 — FAIR data require integration across layers
 
@@ -49,7 +48,7 @@ BIDS/DANDI layout → NWB + HED → HDF5/Zarr, HDMF schema, NCBI Taxonomy).
 ## Fig. 3 — The BBQS standards stack
 
 The map from Fig. 1 with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
-(dataset organization); NWB (data standard); HED, NCBI Taxonomy, atlases, Cell Ontology
+(dataset organization); NWB (file organization standard); HED, NCBI Taxonomy, atlases, Cell Ontology
 (terminologies); HDF5/Zarr, JSON/TSV/CSV, MP4, NIfTI (formats); HDMF, LinkML, BIDS schema (schema
 languages). Arrows show supported paths for typical BBQS data (e.g., video + pose + ephys → NWB → DANDI
 layout → EMBER; MRI + EEG + events → BIDS + HED → EMBER; questionnaires → Psych-DS → EMBER).

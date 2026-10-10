@@ -13,16 +13,20 @@ specific standards and to include rich metadata, which they then expose for sear
 archive papers].
 
 **Dataset organization standards** solve the problem of organizing a collection of files from a whole
-experiment. They define folder hierarchies, file-naming conventions, which data standards and formats
-are allowed, and additional dataset-level metadata, often in sidecar JSON and TSV files. BIDS is the
-most widely used example in neuroscience; Psych-DS adapts the approach to psychological data; and
-several archives define simplified, BIDS-inspired layouts such as the DANDI layout, the SPARC Dataset
-Structure, and NeuroBlueprint.
+experiment. They define folder hierarchies, file-naming conventions, which file organization standards
+and formats are allowed, and additional dataset-level metadata, often in sidecar JSON and TSV files.
+BIDS is the most widely used example in neuroscience; Psych-DS adapts the approach to psychological
+data; and several archives define simplified, BIDS-inspired layouts such as the DANDI layout, the SPARC
+Dataset Structure, and NeuroBlueprint.
 
-**Data standards** solve the problem of organizing data and metadata *within* a file (or file-like
-object) using the primitives a data format offers, such as arrays, tables, and dictionaries. A typical
-use is to store all data from one recording session or modality. NWB (neurophysiology and behavior),
-OME-TIFF and OME-Zarr (bioimaging), NIX, odML, openMINDS, DICOM, and EDF are examples.
+**File organization standards** solve the problem of organizing data and metadata *within* a file, using
+the primitives a data format offers, such as arrays, tables, and dictionaries, and the links between
+them. Where dataset organization standards arrange files in folders, file organization standards define
+what goes inside each file. A typical use is to store all data from one recording session or modality.
+We use "file" in the broad sense of a self-contained data object, because some of these standards can be
+stored either as a single file or as a directory, as NWB and OME do with Zarr; that choice is made at
+the data format layer. NWB (neurophysiology and behavior), OME-TIFF and OME-Zarr (bioimaging), NIX,
+odML, openMINDS, DICOM, and EDF are examples.
 
 **Ontologies and terminologies** solve the problem of defining what terms mean. Terminologies define the
 set of valid terms for a field, for example species names from the NCBI Taxonomy or brain regions from
@@ -48,27 +52,27 @@ Psych-DS in LinkML, and BIDS in a custom YAML-based schema.
 
 The layers have familiar counterparts in online video (Fig. 1b). A video platform such as YouTube is the
 *archive*; playlists and channels are the *dataset organization*; the MP4 container that packages video,
-audio, and subtitles is the *data standard*; hashtags and categories are the *terminology*; the H.264 or
-AV1 encoding of the pixels is the *data format*; and the upload form that specifies which fields a video
-needs is the *schema*. Nobody expects YouTube to define a video codec, or H.264 to decide which playlist
-a video belongs in. Yet in neuroscience the equivalent roles are often discussed as if they were one
-thing.
+audio, and subtitles is the *file organization standard*; hashtags and categories are the *terminology*;
+the H.264 or AV1 encoding of the pixels is the *data format*; and the upload form that specifies which
+fields a video needs is the *schema*. Nobody expects YouTube to define a video codec, or H.264 to decide
+which playlist a video belongs in. Yet in neuroscience the equivalent roles are often discussed as if
+they were one thing.
 
 ## Boundaries are fuzzy, and that is useful
 
-No categorization is perfect, and many technologies span layers. DICOM defines both how medical
-imaging data and metadata are organized (a data standard) and its own binary encoding (a data format).
-BIDS is primarily a dataset organization standard, but it also specifies the contents of many sidecar
-files. NWB and OME build on existing formats (HDF5, Zarr, TIFF) rather than defining their own, while
-the NWB ecosystem also provides a dataset-level layout through DANDI.
+No categorization is perfect, and many technologies span layers. DICOM defines both how medical imaging
+data and metadata are organized (a file organization standard) and its own binary encoding (a data
+format). BIDS is primarily a dataset organization standard, but it also specifies the contents of many
+sidecar files. NWB and OME build on existing formats (HDF5, Zarr, TIFF) rather than defining their own,
+while the NWB ecosystem also provides a dataset-level layout through DANDI.
 
 The point of the map is not to put each technology in exactly one box. It is to make clear which
-*problem* a given part of a technology addresses. Distinguishing "how bytes are written to disk"
-(DICOM as a format) from "which metadata fields are required" (DICOM as a data standard) makes it
+*problem* a given part of a technology addresses. Distinguishing "how bytes are written to disk" (DICOM
+as a format) from "which metadata fields are required" (DICOM as a file organization standard) makes it
 easier to discuss each aspect, to compare it with alternatives, and to reuse it. The map also makes
-boundary crossings visible. When a data standard starts to define its own folder layout, or a dataset
-organization standard starts to define the internal structure of binary files, the developers are
-crossing a layer boundary. That is sometimes the right choice, but it should be a deliberate one,
+boundary crossings visible. When a file organization standard starts to define its own folder layout, or
+a dataset organization standard starts to define the internal structure of binary files, the developers
+are crossing a layer boundary. That is sometimes the right choice, but it should be a deliberate one,
 weighed against building a bridge to an existing technology in the other layer.
 
 ## Stakeholders shape standards

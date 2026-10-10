@@ -13,8 +13,8 @@ identifiable human data such as faces and voices [TODO-C14]. Projects whose data
 community archives, such as DANDI for neurophysiology or OpenNeuro and NEMAR for imaging and EEG, can
 benefit from those archives' tools, but BBQS deposits go to EMBER.
 
-**NWB (data standard for neurophysiology and synchronized behavior).** NWB stores the data of one
-recording session in one file, including neural recordings (extracellular and intracellular
+**NWB (file organization standard for neurophysiology and synchronized behavior).** NWB stores the data
+of one recording session in one file, including neural recordings (extracellular and intracellular
 electrophysiology, optical physiology), stimuli, behavioral time series (positions, pose, eye tracking),
 events, trials, and rich metadata about subjects, devices, and processing [REF: Rübel 2022]. Because
 everything shares one timeline within the file, NWB is well suited to experiments in which behavior must

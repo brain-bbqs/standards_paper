@@ -45,10 +45,10 @@ Emerging integrations such as BEP032 (NWB within BIDS) make this easier and shou
 apply [TODO-C15].
 
 **R3. Keep raw video in standard formats and link it.** Store video in widely supported containers
-(e.g., MP4) rather than embedding it in other files, and reference it from the data standard (an
-`ImageSeries` in NWB) with timestamps that tie frames to the experiment clock. Store derived pose
-estimates in a standard representation (ndx-pose in NWB, or Motion-BIDS), not as bare arrays, so the
-link between keypoints, video, and the pose model is preserved [TODO-C18].
+(e.g., MP4) rather than embedding it in other files, and reference it from the file organization
+standard (an `ImageSeries` in NWB) with timestamps that tie frames to the experiment clock. Store
+derived pose estimates in a standard representation (ndx-pose in NWB, or Motion-BIDS), not as bare
+arrays, so the link between keypoints, video, and the pose model is preserved [TODO-C18].
 
 **R4. Make synchronization explicit.** Record which clock each device used, how clocks were aligned,
 and with what precision. NWB stores all data on a common session timeline; in BIDS and Psych-DS,
