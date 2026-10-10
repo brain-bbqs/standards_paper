@@ -7,6 +7,7 @@ Commands
     harvest-fairsharing  harvest FAIRsharing associations -> data/harvested/fairsharing_edges.json
                          (--resolve: list candidate records for seeds without a FAIRsharing id)
     report               build the graph; write output/ (graph, CSVs, stats.md, gaps.md)
+    figure               draw the layer x community figure (draft Fig. 3) -> output/fig3_ecosystem.*
 """
 
 from __future__ import annotations
@@ -180,16 +181,37 @@ def _shape(value, depth: int = 0):
     return type(value).__name__
 
 
-def cmd_report(args) -> int:
+def _build():
+    """Validate the inputs and build the graph; returns (taxonomy, nodes, result) or None."""
     taxonomy, nodes, edges, errors = _load_all()
     if errors:
         for e in errors:
             print(e)
         print("Fix validation problems first (ecokg validate).")
-        return 1
+        return None
     ids_path = HARVEST_DIR / FAIRSHARING_IDS
     fs_ids = json.loads(ids_path.read_text()) if ids_path.exists() else {}
-    result = build_graph(taxonomy, nodes, edges, load_harvested(HARVEST_DIR), fs_ids)
+    return taxonomy, nodes, build_graph(taxonomy, nodes, edges, load_harvested(HARVEST_DIR), fs_ids)
+
+
+def cmd_figure(args) -> int:
+    from .figure import draw
+
+    built = _build()
+    if built is None:
+        return 1
+    taxonomy, _, result = built
+    paths = draw(result, taxonomy, Path(args.out) / args.name, mode=args.mode, sources=args.sources,
+                 verified_only=args.verified_only)
+    print("\n".join(str(p) for p in paths))
+    return 0
+
+
+def cmd_report(args) -> int:
+    built = _build()
+    if built is None:
+        return 1
+    taxonomy, nodes, result = built
     out = Path(args.out)
     export(result, out)
     (out / "stats.md").write_text(stats_markdown(result, taxonomy))
@@ -219,6 +241,13 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("report", help="build the graph and write output files")
     p.add_argument("--out", default=str(OUTPUT_DIR))
     p.set_defaults(func=cmd_report)
+    p = sub.add_parser("figure", help="draw the layer x community figure (draft Fig. 3)")
+    p.add_argument("--out", default=str(OUTPUT_DIR))
+    p.add_argument("--name", default="fig3_ecosystem", help="file name without suffix")
+    p.add_argument("--mode", choices=("strict", "lenient"), default="strict", help="community-scope rule")
+    p.add_argument("--sources", choices=("all", "curated", "registry"), default="all", help="edge evidence")
+    p.add_argument("--verified-only", action="store_true", help="only expert-verified edges")
+    p.set_defaults(func=cmd_figure)
 
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING, format="%(levelname)s %(message)s")

@@ -73,10 +73,14 @@ edf, protein_ontology, mrio, radlex, cogpo, datacite_schema, nbo, hcp_atlas, cde
 hdf5, zarr, tiff, json, tsv_csv, yaml, mp4, swc, precomputed, fastq, bam_cram, loom, linkml,
 json_schema, xml_schema, rdf_owl`
 
-- [ ] Use FAIRsharing `metadata.cross_references` (e.g., `SciCrunch:RRID:SCR_017571` on DANDI) to
-      fill and cross-check RRIDs automatically, then run `ecokg rrid-check`.
-- [ ] Look up the rest on scicrunch.org (DABI likely has one). Many generic formats (JSON, YAML, TIFF)
-      will legitimately have none; mark them as checked, not missing.
+- [x] Checked FAIRsharing `metadata.cross_references`: only 8 seed records carry an RRID (all archives
+      that already had one) and all 8 **agree** with seeds.yaml. Fills no gaps.
+- [x] Checked RRID neighbour names against these seeds: no real matches (only substring noise; "DataCite"
+      there is the organisation, not the metadata schema).
+- [ ] Remaining lookups need SciCrunch registry **search**, which requires a (free) SciCrunch API key:
+      implement `ecokg rrid-search` (key from an env var, as for FAIRsharing), or search scicrunch.org by
+      hand (DABI likely has one). Many generic formats (JSON, YAML, TIFF) will legitimately have none;
+      mark them as checked, not missing.
 
 ### 2.3 Registry data-quality issues found (report to registries; mention in paper)
 - [ ] **HED** has two RRIDs: SCR_014074 and SCR_017630 ("HED Tags"); handled with `rrid_aliases`.
@@ -98,9 +102,11 @@ json_schema, xml_schema, rdf_owl`
 
 ## 3. Code
 
-- [ ] **Fig. 3 module.** Layered drawing of the graph (layers as rows, community colour, edge style by
-      within/cross community); `matplotlib` is already a dependency. Wait for 1.2 before finalising.
-- [ ] Use `metadata.cross_references` from FAIRsharing (see 2.2).
+- [x] **Fig. 3 draft** (`ecokg figure`, `src/ecokg/figure.py`): layers as rows, home communities as
+      columns (cross-cutting on the right), edges styled by community scope, registry-confirmed edges
+      marked. Options: `--mode strict|lenient`, `--sources all|curated|registry`, `--verified-only`.
+- [ ] Fig. 3 polish once 1.1–1.3 are settled: label collisions in dense cells, decide whether to show
+      "shared" edges (they dominate visually) or summarise them, journal size/fonts, colour-blind palette.
 - [ ] Optional: loader for manually transcribed FAIRsharing relations (see 1.1).
 - [ ] Optional: SciCrunch name search (needs an API key) to resolve RRIDs for seeds automatically.
 

@@ -25,6 +25,7 @@ read -rs FAIRSHARING_TOKEN && export FAIRSHARING_TOKEN   # or FAIRSHARING_LOGIN/
 ecokg harvest-fairsharing --resolve     # list candidate records for seeds without a FAIRsharing id
 ecokg harvest-fairsharing               # harvest associations for seeds with a FAIRsharing id
 ecokg report                            # output/: graph.{graphml,json}, nodes/edges.csv, stats.md, gaps.md
+ecokg figure [--mode lenient] [--sources curated|registry] [--verified-only]   # draft Fig. 3
 pytest
 ```
 
