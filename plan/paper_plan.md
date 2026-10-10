@@ -50,7 +50,7 @@ standards guideline, with the ecosystem map as the frame. Consequences:
 **Goal 2: A perspective on gaps and future directions.** Show where the ecosystem is strong and where the seams are, and what is needed next, with BBQS (multimodal, naturalistic behavior across many species) as the stress test.
 
 **Take-home messages (draft):**
-1. **"Data standard" means many different things.** Separating the ecosystem into layers by the *problem* each solves (archives, dataset organization, data standards, ontologies/terminologies, data formats, schema languages) gives technologists and practitioners a common map. It also shows when a project is crossing a boundary, i.e., when to build a bridge rather than expand scope.
+1. **The standards ecosystem is complex, and what counts as a "data standard" is often unclear.** Separating the ecosystem into layers by the *problem* each solves (archives, dataset organization, data standards, ontologies/terminologies, data formats, schema languages) gives technologists and practitioners a common map. It also shows when a project is crossing a boundary, i.e., when to build a bridge rather than expand scope.
 2. **FAIR is a property of the data, not of a single technology.** FAIR data emerges from *integrating* technologies across layers (e.g., DANDI ← NWB ← HDMF/HDF5 ← NCBI Taxonomy).
 3. **There is no one standard to rule them all.** Each component solves a different part of the problem, and FAIR, multimodal science needs them to work together.
 4. **Standards have built bridges *within* communities (BIDS, NWB) but rarely *across* them.** Integration across modalities and communities is still done by users and large consortia at high cost. Bridges at every layer are the next frontier and a key area for future investment.

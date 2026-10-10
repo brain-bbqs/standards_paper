@@ -1,4 +1,4 @@
-# 1. Introduction: one word, many meanings
+# 1. Introduction: a complex ecosystem
 
 *(target ~600 words)*
 
@@ -13,15 +13,18 @@ did the same for neurophysiology [REF: Teeters 2015; Rübel 2022], DICOM made cl
 interoperable across vendors [REF: Bidgood 1997], and OME did so for bioimaging [REF: Linkert 2010;
 Moore 2021].
 
-Yet the term "data standard" is used for very different things. A researcher told to "use a standard"
-may be asked to follow an archive's submission requirements, a folder and file-naming convention, a
-schema for the contents of a file, a controlled vocabulary for metadata values, a binary file format,
-or a formal language for writing schemas. These solve different problems, are built by different
-communities, and are combined in practice: an NWB file uses the HDF5 format, its schema is written in
+These successes have produced a rich but complex ecosystem. Making a dataset shareable typically
+involves several kinds of technology at once: an archive with its submission requirements, a convention
+for organizing files and folders, a schema for the contents of each file, vocabularies for metadata
+values, file formats, and formal languages in which schemas are written. Each solves a different
+problem and is often developed by a different community, and in everyday use they are all referred to
+as "data standards". As a result, it is often unclear what a data standard is and what it is expected
+to do — for a researcher asked to "use a standard" as much as for a developer deciding what a standard
+should cover. In practice the technologies are combined: an NWB file uses the HDF5 format, its schema is written in
 the HDMF schema language, its subject species is a term from the NCBI Taxonomy, and it is shared on the
-DANDI archive inside a BIDS-inspired folder layout. When these roles are conflated, users struggle to
-tell what they actually need, and developers struggle to tell when a feature belongs in their standard
-and when it is better solved by connecting to someone else's.
+DANDI archive inside a BIDS-inspired folder layout. Without a shared picture of how these pieces fit
+together, users struggle to tell what they actually need, and developers struggle to tell when a feature
+belongs in their own technology and when it is better solved by connecting to another.
 
 The stakes are rising. Programs such as the NIH BRAIN Initiative's Brain Behavior Quantification and
 Synchronization (BBQS) program aim to relate neural activity to naturalistic, multimodal behavior
