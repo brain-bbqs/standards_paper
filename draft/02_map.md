@@ -9,15 +9,14 @@ by a particular technology. To illustrate the layers, we use online video sharin
 technologies. A codec compresses the images, a container file packages video and sound together, a
 playlist organizes related videos, categories and tags describe the content, and the upload form
 specifies which information must accompany each video. Sharing neuroscience data relies on an analogous
-combination of technologies. We describe the corresponding layers in turn, beginning with data archives
-and ending with data formats and the schema languages used to define standards.
+combination of technologies.
 
-**Data archives** solve the problem of publishing, sharing, and discovering content. In the video world,
-this is the platform itself. YouTube stores videos, makes them searchable, and accepts only certain file
-types with certain information attached. Neuroscience archives such as DANDI, OpenNeuro, EMBER, NEMAR,
-BossDB, the Brain Image Library, and the NIMH Data Archive play the same role. They usually require data
-to follow specific standards and to include rich metadata, which they then expose for search [REF:
-Subash 2023; archive papers]. A typical use is to publish a series of datasets on a topic.
+**Data archives** solve the problem of publishing, sharing, and discovering data. Neuroscience archives
+such as DANDI, OpenNeuro, EMBER, NEMAR, BossDB, the Brain Image Library, and the NIMH Data Archive store
+datasets and usually require them to follow specific standards and to include rich metadata, which they
+then expose for search [REF: Subash 2023; archive papers]. A typical use is to publish a series of
+datasets on a topic. The video platform plays the analogous role, storing videos, indexing them for
+search, and accepting only certain file types with certain accompanying information.
 
 **Dataset organization standards** solve the problem of organizing a collection of files from a whole
 experiment. Their video counterpart is the playlist or the series, which groups many videos and puts them
@@ -42,8 +41,8 @@ of a self-contained data object, because some of these standards can be stored e
 or as a directory, as NWB and OME do with Zarr. As with video, where the same MP4 container can hold
 video compressed with different codecs, that choice is made at the data format layer.
 
-**Ontologies and terminologies** solve the problem of defining what terms mean. On a video platform,
-this is the difference between free-form hashtags, which anyone can invent, and the platform's fixed list
+**Ontologies and terminologies** solve the problem of defining what terms mean. The video counterpart is
+the difference between free-form hashtags, which anyone can invent, and the platform's fixed list
 of categories, which everyone must choose from and which may be arranged in a hierarchy in which
 "tennis" is a kind of "sport". Terminologies correspond to the fixed list. They define the set of valid
 terms for a field, for example species names from the NCBI Taxonomy or brain regions from an atlas.
@@ -55,9 +54,9 @@ for annotating events, much like a structured way of describing what happens in 
 ontologies and terminologies in one layer because, from a user's perspective, both are used to give
 metadata values a shared meaning, while making the distinction explicit [TODO-C4].
 
-**Data formats** solve the problem of mapping data to storage. In video, this is the codec, such as H.264
-or AV1, which defines how the pixels are encoded as bytes. Viewers rarely notice it, and the same codec is
-used by every platform. Data formats such as HDF5, Zarr, TIFF, NIfTI, JSON, YAML, CSV/TSV, and MP4
+**Data formats** solve the problem of mapping data to storage. The video counterpart is the codec, such
+as H.264 or AV1, which defines how pixels are encoded as bytes and is shared across platforms. Data
+formats such as HDF5, Zarr, TIFF, NIfTI, JSON, YAML, CSV/TSV, and MP4
 likewise define how generic data structures such as arrays, tables, key–value pairs, images, and video
 are encoded in bytes. They are usually domain-agnostic and shared across all of science.
 
