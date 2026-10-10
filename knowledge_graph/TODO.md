@@ -32,7 +32,7 @@ Everything that waits on a person, in one place; details are in the sections ref
 - [ ] Next authenticated FAIRsharing run (token, user's terminal): harvest InterLex and any new DOIs (2.1, 2.5).
 - [ ] Hand searches on fairsharing.org for the 25 seeds without a record (2.1).
 - [ ] Assign domain reviewers per community (1.3).
-- [ ] Licence/attribution check for redistributing harvested data; merge branch; Zenodo snapshot (4).
+- [ ] Licence/attribution check for redistributing harvested data; Zenodo snapshot (4).
 
 ---
 
@@ -169,7 +169,7 @@ json_schema, xml_schema, rdf_owl`
 
 ## 4. Release
 
-- [ ] Merge branch `worktree-knowledge-graph` into `main`.
+- [x] Merged into `main` (2026-10-09).
 - [ ] Freeze a snapshot (seeds, edges, harvested data, outputs) with a Zenodo DOI (plan: late Jan 2027).
 - [ ] Check FAIRsharing (CC BY-SA) and RRID licence/attribution terms for redistributing harvested data.
 

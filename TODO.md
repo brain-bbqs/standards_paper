@@ -2,7 +2,7 @@
 
 *Status 2026-10-09: first full draft in `draft/` (Sections 1–9, Methods, display-item plan, references).
 Main text ≈ 5,560 words including the two in-text tables (target ~5,000). Knowledge-graph issues are
-tracked separately in `knowledge_graph/TODO.md` on branch `worktree-knowledge-graph`.*
+tracked separately in `knowledge_graph/TODO.md`.*
 
 Conventions in the draft: `[TODO-Cn]` = claim needing support (listed below); `[REF: …]` = citation to
 insert (see `draft/12_references.md`; entries marked ? or — need work).

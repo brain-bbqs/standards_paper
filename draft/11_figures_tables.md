@@ -11,7 +11,7 @@ Status: **spec** = described only; **draft** = generated draft exists; **poster*
 | Table 2 | Recommended standards by BBQS data type | draft (in `06_recommendations.md`) | guideline |
 | Fig. 4 | BBQS data: (a) species, (b) behaviors and modalities, (c) behaviors × guideline coverage | draft | `analysis/bbqs_inventory.py` → `analysis/output/fig4_bbqs.*` |
 | Fig. 5 | Bridges at every layer + future directions wheel | spec / poster | Section 7–8, poster wheel |
-| Suppl. Fig. S1 | Ecosystem knowledge graph (layers × communities) | draft | `knowledge_graph` branch, `ecokg figure` |
+| Suppl. Fig. S1 | Ecosystem knowledge graph (layers × communities) | draft | `knowledge_graph/`, `ecokg figure` → `knowledge_graph/output/fig3_ecosystem.*` |
 | Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | poster | poster tables |
 
 Table 2 is the seventh main item; if the journal limit is 6, move Table 1 to the Supplement or merge it

@@ -17,7 +17,7 @@ standards guideline, with the ecosystem map as the frame. Consequences:
   community guidance derived from the guideline, not a universal ranking of standards. Part I stays
   descriptive.
 - **Knowledge graph:** supporting evidence (bridges/gaps section and Supplementary), no longer a headline
-  result. Its open issues are tracked in `knowledge_graph/TODO.md` (branch `worktree-knowledge-graph`).
+  result. Its open issues are tracked in `knowledge_graph/TODO.md`.
 - **Journal: Scientific Data, Article** (decided 2026-10-09). No word limit; abstract ≤170 words;
   ≤8 figures, ≤10 tables; title ≤110 characters without colons, parentheses, or uncommon acronyms
   (title updated accordingly, `TODO.md` D7); Data and Code Availability statements required.
