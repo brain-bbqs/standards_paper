@@ -48,6 +48,17 @@ with the journal).
 | BICAN data page | BRAIN Initiative Cell Atlas Network, Data, https://brain-bican.org/data (accessed 2026-10-09) | ✓ (web resource) |
 | BICCN data page | BICCN, Data, https://biccn.org/data (accessed 2026-10-09) | ✓ (web resource) |
 
+## FAIR assessment and readiness scales (Section 3, added 2026-10-09)
+
+| Key | Reference | Status |
+|---|---|---|
+| Wilkinson 2019 | Wilkinson MD et al. Evaluating FAIR maturity through a scalable, automated, community-governed framework. *Sci Data* 6, 174 (2019). | ✓ |
+| Bahim 2020 | Bahim C et al. The FAIR Data Maturity Model: an approach to harmonise FAIR assessments. *Data Sci J* 19, 41 (2020). doi:10.5334/dsj-2020-041 | ✓ |
+| Devaraju 2021 | Devaraju A, Huber R. An automated solution for measuring the progress toward FAIR research data. *Patterns* 2, 100370 (2021). | ? (volume/article number) |
+| Berners-Lee 2006 | Berners-Lee T. Linked Data — design issues (5-star Open Data). https://www.w3.org/DesignIssues/LinkedData.html (2006, updated 2009). | ✓ (web) |
+| Lawrence 2017 | Lawrence ND. Data readiness levels. arXiv:1705.02245 (2017). | ? (arXiv number) |
+| Mankins 1995 | Mankins JC. Technology readiness levels. NASA white paper (1995). | ? |
+
 ## Classifications of standards (for D8)
 
 | Key | Reference | Status |

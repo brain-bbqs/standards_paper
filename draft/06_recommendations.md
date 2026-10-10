@@ -1,13 +1,13 @@
 # 6. Recommendations for BBQS data
 
-*(target ~1,200 words; Table 2)*
+*(target ~1,200 words; Table 3)*
 
 The recommendations below summarize the BBQS data standards guideline [REF: BBQS guideline], written by
 the BBQS Data Standards Working Group, and place them on the ecosystem map. They are community guidance
 for BBQS, not a ranking of standards. Other choices can be right for other programs, and the guideline
-is updated as standards evolve. Table 2 gives an overview by data type.
+is updated as standards evolve. Table 3 gives an overview by data type.
 
-**Table 2 — Recommended standards for common BBQS data types** (✓ supported; ext. = via an extension or
+**Table 3. Recommended standards for common BBQS data types** (✓ supported; ext. = via an extension or
 proposal in progress; — no established representation yet). *Draft; to be checked by the NWB, BIDS, and
 Psych-DS teams* [TODO-C17].
 

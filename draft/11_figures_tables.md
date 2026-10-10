@@ -6,16 +6,16 @@ Status: **spec** = described only; **draft** = generated draft exists; **poster*
 |---|---|---|---|
 | Fig. 1 | Ecosystem map + analogy | poster | SfN poster, layers + video-platform analogy |
 | Table 1 | Layer definitions | spec (text below) | poster table |
-| Fig. 2 | FAIR ladder and example stack | poster | poster "FAIR Data Score" |
+| Fig. 2 | Levels of FAIRness and the layer that adds each | spec (revised 2026-10-09; poster "FAIR Data Score" must be redrawn to match) | Section 3, Table 2 |
+| Table 2 | Levels of FAIRness mapped to layers and FAIR principles | draft (in `03_fair_integration.md`) | Section 3 |
 | Fig. 3 | BBQS standards stack on the map | spec | Section 5 |
-| Table 2 | Recommended standards by BBQS data type | draft (in `06_recommendations.md`) | guideline |
+| Table 3 | Recommended standards by BBQS data type | draft (in `06_recommendations.md`) | guideline |
 | Fig. 4 | BBQS data: (a) species, (b) behaviors and modalities, (c) behaviors × guideline coverage | draft | `analysis/bbqs_inventory.py` → `analysis/output/fig4_bbqs.*` |
 | Fig. 5 | Bridges at every layer + future directions wheel | spec / poster | Section 7–8, poster wheel |
 | Suppl. Fig. S1 | Ecosystem knowledge graph (layers × communities) | draft | `knowledge_graph/`, `ecokg figure` → `knowledge_graph/output/fig3_ecosystem.*` |
 | Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | poster | poster tables |
 
-Table 2 is the seventh main item; if the journal limit is 6, move Table 1 to the Supplement or merge it
-into Fig. 1 [TODO-F1].
+Scientific Data recommends at most 8 figures and 10 tables, so the 5 figures and 3 tables fit.
 
 ---
 
@@ -37,11 +37,15 @@ defined with schema languages). **(b)** The video analogy used throughout the te
 | Data formats | Map data to storage | Serialize generic data structures | HDF5, Zarr, TIFF, NIfTI, JSON, YAML, CSV/TSV, MP4 |
 | Schema languages | Provide a formal language for the structure and rules of data | Formally define file organization standards, dataset organization standards, and ontologies | JSON Schema, XML Schema, RDF/OWL, LinkML, HDMF |
 
-## Fig. 2 — FAIR data require integration across layers
+## Fig. 2 — Levels of FAIRness and where each layer contributes
 
-Ladder of five levels (0 opaque → 4 FAIR-aligned scientific record; see table in Section 3), showing
-for each level which layers of the map are needed, and an example stack for level 4 (DANDI/EMBER →
-BIDS/DANDI layout → NWB + HED → HDF5/Zarr, HDMF schema, NCBI Taxonomy).
+A staircase of five levels (0 opaque, 1 readable, 2 interpretable, 3 interoperable, 4 findable and
+reusable record; Table 2). Each step is labeled with the layer of the map whose technologies make it
+possible (data formats; file and dataset organization standards with schema languages; ontologies and
+terminologies; archives with persistent identifiers) and with the FAIR principles it mainly addresses.
+An example neuroscience dataset is shown climbing the steps (bare HDF5 → validated NWB/BIDS →
+NCBI Taxonomy, atlas, and HED annotations → DOI on DANDI or EMBER). A side note marks that formal
+assessment scores each principle separately (RDA indicators, F-UJI).
 
 ## Fig. 3 — The BBQS standards stack
 

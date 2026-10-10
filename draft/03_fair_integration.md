@@ -1,6 +1,6 @@
 # 3. FAIR data requires integration across layers
 
-*(target ~600 words; Fig. 2)*
+*(~850 words; Fig. 2, Table 2)*
 
 The FAIR principles of findability, accessibility, interoperability, and reusability [REF: Wilkinson
 2016] are often used as if they were a property of a standard ("a FAIR format"). The map shows why this
@@ -38,20 +38,37 @@ follows the same model and adds a data catalog and a specimen metadata system th
 terminology across archives [REF: BICAN data page; BICCN data page] [TODO-C33]. Such stacks work, but
 each consortium builds and maintains the integration itself.
 
-## A ladder of FAIRness
+## Levels of FAIRness, and where each layer contributes
 
-To make this concrete, we describe five levels of FAIRness of a dataset (Fig. 2) [TODO-C6].
+FAIRness is assessed principle by principle. Community-defined maturity indicators and compliance tests
+[REF: Wilkinson 2019], the Research Data Alliance FAIR Data Maturity Model [REF: Bahim 2020], and
+automated tools such as F-UJI [REF: Devaraju 2021] score each principle separately and report a maturity
+level for each. These methods are the right basis for formal assessment, and we do not propose an
+alternative. To communicate progress, however, communities also use simple staged scales. Five-star
+Linked Open Data ranks data from "available on the web" to "linked to other data" [REF: Berners-Lee
+2006], and Data Readiness Levels adapt the Technology Readiness Levels used in engineering to describe
+how ready a dataset is for analysis [REF: Lawrence 2017; Mankins 1995]. Following these examples, Table 2
+describes five levels for neuroscience data. Each level is defined by what a third party can do with the
+data, is mapped to the FAIR principles it mainly addresses, and is tied to the layer of the map whose
+technologies make it possible (Fig. 2) [TODO-C6].
 
-| Level | Description | Example |
-|---|---|---|
-| 0 — Opaque | Raw binary data without embedded or linked metadata; cannot be interpreted without external documentation | Raw `.bin` voltage traces; proprietary formats with no public specification |
-| 1 — Minimal technical metadata | Basic structural metadata (data type, dimensions, byte order), no experimental context or provenance | Bare HDF5, Zarr, NIfTI-1, or MATLAB arrays |
-| 2 — Core experimental metadata | Basic context such as session IDs, acquisition parameters, timestamps; little provenance or standardization | NIfTI with BIDS sidecars; EDF EEG; MEF with header information |
-| 3 — Extended domain-specific metadata | Rich, structured metadata on acquisition, design, stimuli, processing and provenance, using controlled vocabularies | NWB or BIDS with complete metadata |
-| 4 — FAIR-aligned scientific record | Comprehensive standardized metadata with ontology annotation and persistent access through an archive; reusable without external context | Ontology-annotated BIDS + NWB + HED dataset shared on DANDI or EMBER |
+| Level | What the data offer | Layer that adds it | FAIR principles mainly addressed | Example |
+|---|---|---|---|---|
+| 0, opaque | Bytes that can only be read with the original software or documentation | None | None | Proprietary acquisition files without a public specification; raw `.bin` voltage traces |
+| 1, readable | Data in an open, documented format that generic tools can read, with technical metadata such as data types and dimensions | Data formats | I1 (formal, shared representation) | Bare HDF5, Zarr, TIFF, or CSV files |
+| 2, interpretable | Data and the metadata needed to understand them, structured according to community standards and checked by validators | File and dataset organization standards, defined in schema languages | R1 (rich metadata), R1.3 (community standards), I1 | A validated NWB file or BIDS dataset |
+| 3, interoperable | Metadata values drawn from shared terminologies and ontologies, so that datasets can be searched and combined with others | Ontologies and terminologies | I2 (FAIR vocabularies), I3 (qualified references) | NWB or BIDS data with species from the NCBI Taxonomy, locations from an atlas, and events annotated with HED |
+| 4, findable and reusable record | Data deposited with a persistent identifier, searchable metadata, licence, and provenance, retrievable through a standard protocol | Data archives (with persistent identifiers) | F1–F4, A1–A2, R1.1 (licence), R1.2 (provenance) | An annotated BIDS and NWB dataset with a DOI on DANDI or EMBER |
 
-Each step up the ladder requires technologies from additional layers. A format alone reaches level 1; a
-file or dataset organization standard is needed for levels 2–3; and level 4 requires ontologies or
-terminologies and an archive in addition. This is the practical reason why **integration across the
-ecosystem matters more than the choice of any single standard**, and why the recommendations for BBQS in
-Section 6 cover several layers at once.
+Two caveats apply. First, the levels describe a typical path, not a strict sequence. Depositing an opaque
+file in a general-purpose repository makes it findable and accessible but not interoperable or
+reusable, which is why formal assessments score each principle separately. Second, the levels describe
+data, not the standards themselves. The maturity of a standard, including its specification, tools,
+validators, and adoption, is a separate question that technology readiness scales are better suited to
+[TODO-C34].
+
+Read from bottom to top, the table shows that each step up requires technologies from an additional
+layer of the map. A format alone reaches level 1, file and dataset organization standards are needed for
+level 2, terminologies and ontologies for level 3, and an archive for level 4. This is the practical
+reason why **integration across the ecosystem matters more than the choice of any single standard**,
+and why the recommendations for BBQS in Section 6 cover several layers at once.

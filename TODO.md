@@ -68,7 +68,7 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
 - [ ] **A2** BBQS clearance: confirm with BARD.CC / DCAIC and program staff that the **aggregate**
       inventory statistics (Section 4, Fig. 4) may be published; agree on wording for the source.
 - [ ] **A3** Section leads to review each section (assign from contributor list).
-- [ ] **A4** NWB, BIDS, Psych-DS, HED, and EMBER teams to check Section 5, Table 2, and R1–R11.
+- [ ] **A4** NWB, BIDS, Psych-DS, HED, and EMBER teams to check Section 5, Table 3, and R1–R11.
 - [ ] **A5** Version the BBQS guideline (e.g., Zenodo release) so the paper can cite a fixed version; the
       guideline itself still has many "TODO — how to store?" entries and some unfinished parts.
 - [ ] **A6** Zenodo DOI for code and data (`ecokg`, `analysis/`).
@@ -103,7 +103,8 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
 | C3 | 1 | AI raises the value of consistently structured data | Citation (AI-readiness / foundation-model papers) or soften |
 | C4 | 2 | Ontologies vs. terminologies kept in one layer; "used the same way" | Team confirmation (D5); optional citation |
 | C5 | 2 | Origin/funding of standards (research vs. vendor vs. archive-driven) | Suppl. Table S1 from poster; check each entry |
-| C6 | 3 | FAIR ladder (levels 0–4) | Our framework from the poster: say so explicitly, or relate to existing FAIR maturity models (e.g., FAIR metrics) with citation |
+| C6 | 3 | Levels of FAIRness (Table 2), revised 2026-10-09 | Now positioned as a staged communication scale (like 5-star Linked Open Data and Data Readiness Levels) that does **not** replace per-principle assessment (FAIR maturity indicators, RDA FAIR Data Maturity Model, F-UJI). Check the FAIR-principle mapping per level with a FAIR expert; decide whether to show the poster's original "FAIR Data Score" in Supplement; consider running F-UJI on example datasets at each level as a demonstration |
+| C34 | 3 | Maturity of standards themselves is better described by technology readiness scales | Citation (TRL; any TRL-like scale for software or standards); or remove |
 | C7 | 4, Methods | BBQS inventory statistics | Clearance (A2); name and date of the inventory; who collected it |
 | C8 | 4 | 13 species groups; fish/fly entries | Check the source entries for "fish" and "fly" (one award lists "Fly, Fish"; is "fish" zebrafish?) and whether any award is missed |
 | C9 | 4 | Terminologies/atlases sparse for many BBQS species | Citation or examples (e.g., atlases exist for mouse, rat, human, marmoset; few for cowbird, cichlid, acoel) |
@@ -114,7 +115,7 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
 | C14 | 5 | EMBER privacy levels; many projects record identifiable human data | EMBER documentation/citation; count of human projects with video/audio (aggregate) |
 | C15 | 5, 6 | BEP032 brings NWB into BIDS; status | Current BEP032 status and citation |
 | C16 | 5 | HED available for NWB via ndx-hed; "one of few annotation systems that works across standards" | ndx-hed citation/link; soften "one of few" or support |
-| C17 | 6 | Table 2 entries | Check by NWB/BIDS/Psych-DS teams (A4); BIDS status for video (BEP044 / issue 1771), audio, GPS |
+| C17 | 6 | Table 3 entries | Check by NWB/BIDS/Psych-DS teams (A4); BIDS status for video (BEP044 / issue 1771), audio, GPS |
 | C18 | 6 | Pose should be stored in ndx-pose or Motion-BIDS | Confirm Motion-BIDS suits 2D/3D pose from video (it targets motion capture); cite ndx-pose |
 | C19 | 6 | Synchronization must be documented; "cannot be reconstructed after the fact" | Citation or soften; check whether any standard defines clock-alignment metadata |
 | C20 | 6 | Behavior ontologies (NBO) exist but are not widely used in BBQS | Inventory shows 1 award considering NBO; cite NBO; check other behavior vocabularies (e.g., ABO, NeuroBehavior) |
