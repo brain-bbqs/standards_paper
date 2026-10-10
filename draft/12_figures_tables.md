@@ -1,22 +1,22 @@
 # Display items
 
-Status: **spec** = described only; **draft** = generated draft exists; **poster** = redraw from poster.
+Files: `figures/` (one folder per item; `figures/README.md`). Status: **spec** = described only; **draft** = generated draft exists; **poster** = redraw from poster.
 Scientific Data recommends at most 8 figures and 10 tables; the 6 figures and 3 tables fit. Figure legends
 must total ≤350 words (F6).
 
 | # | Item | Section | Status | Source / file |
 |---|---|---|---|---|
-| Fig. 1 | Ecosystem map + video analogy | 2 | poster | SfN poster, layers + analogy |
+| Fig. 1 | Ecosystem map + video analogy | 2 | poster | `figures/fig1_ecosystem_map/` |
 | Table 1 | Layer definitions | 2 | draft (below) | poster table |
-| Fig. 2 | Six levels of FAIRness and the layer that adds each | 3 | spec (poster "FAIR Data Score" to be redrawn to match) | Table 2 |
+| Fig. 2 | Six levels of FAIRness and the layer that adds each | 3 | spec (poster "FAIR Data Score" to be redrawn to match) | `figures/fig2_fair_levels/` |
 | Table 2 | Levels of FAIRness mapped to layers and FAIR principles | 3 | draft (in `03_fair_integration.md`) | |
-| Fig. 3 | Ecosystem knowledge graph (layers × communities) | 4 | draft | `knowledge_graph/`: `ecokg figure` → `knowledge_graph/output/fig3_knowledge_graph.*` |
-| Fig. 4 | BBQS data: (a) species, (b) modalities, (c) behaviors × guideline coverage | 5, 8 | draft | `analysis/bbqs_inventory.py` → `analysis/output/fig4_bbqs.*` |
-| Fig. 5 | BBQS standards stack on the map | 6 | spec | |
+| Fig. 3 | Ecosystem knowledge graph (layers × communities) | 4 | draft | `figures/fig3_knowledge_graph/` (`make fig3`) |
+| Fig. 4 | BBQS data: (a) species, (b) modalities, (c) behaviors × guideline coverage | 5, 8 | draft | `figures/fig4_bbqs_data/` (`make fig4`) |
+| Fig. 5 | BBQS standards stack on the map | 6 | spec | `figures/fig5_bbqs_stack/` |
 | Table 3 | Recommended standards by BBQS data type | 7 | draft (in `07_recommendations.md`) | BBQS guideline |
-| Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | poster wheel |
-| Suppl. Fig. S1 | Knowledge graph with the lenient community rule (sensitivity) | 4 | draft | `ecokg figure --mode lenient` → `knowledge_graph/output/figS1_knowledge_graph_lenient.*` |
-| Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | poster | poster tables |
+| Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | `figures/fig6_bridges_future/` |
+| Suppl. Fig. S1 | Knowledge graph with the lenient community rule (sensitivity) | 4 | draft | `figures/supplementary/figS1_knowledge_graph_lenient/` (`make figS1`) |
+| Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | poster | `figures/supplementary/tableS1_standards_comparison/` |
 
 ---
 

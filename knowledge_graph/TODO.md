@@ -2,7 +2,9 @@
 
 *Status as of 2026-10-09. The graph has 72 nodes and 133 edges (101 curated, 27 from RRID, 8 from FAIRsharing);
 see `output/stats.md` and `output/gaps.md` (`ecokg report`). Items are ordered by how much they
-affect the paper's Fig. 3 / "few cross-community bridges" claim.*
+affect the paper's Section 4 and Fig. 3 ("bridges between communities concentrate in a few hubs").
+Paper-level decisions and claims that depend on this list are tracked in `../TODO.md` (D10, C25, C26,
+C35, F5).*
 
 ---
 
@@ -11,7 +13,7 @@ affect the paper's Fig. 3 / "few cross-community bridges" claim.*
 Everything that waits on a person, in one place; details are in the sections referenced.
 
 **Decisions**
-- [ ] Community rule for bridges: adopt the home-community proposal (1.2)?
+- [ ] Community rule for bridges: adopt the home-community proposal (1.2)? (= paper decision D10)
 - [ ] FAIRsharing relations: contact FAIRsharing and/or transcribe by hand (1.1)?
 - [ ] RRID gaps: option A (by hand) or B (API permission via help desk) (2.2)?
 - [ ] Show or summarise "shared infrastructure" edges in Fig. 3 (3)?
@@ -19,7 +21,8 @@ Everything that waits on a person, in one place; details are in the sections ref
       MRIO and Allen Human Brain Atlas have no edges (2.4).
 
 **Reviews**
-- [ ] Fig. 3 drafts: `output/fig3_knowledge_graph.pdf` (strict; paper Fig. 3) and `figS1_knowledge_graph_lenient.pdf` (Suppl. Fig. S1) — layout,
+- [ ] Figure drafts: `../figures/fig3_knowledge_graph/fig3_knowledge_graph.pdf` (strict; paper Fig. 3) and
+      `../figures/supplementary/figS1_knowledge_graph_lenient/figS1_knowledge_graph_lenient.pdf` (Suppl. Fig. S1); rebuild with `make figures` from the paper root — layout,
       misplaced nodes, missing bridges (3).
 - [ ] Home community of the 21 multi-community nodes (1.2).
 - [ ] All 101 curated edges (`verified: false`) and node layers/kinds, by domain experts (1.3).

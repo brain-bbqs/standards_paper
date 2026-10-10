@@ -3,10 +3,11 @@
 Reads the inventory workbook (kept outside this repository; project-level data are not committed) and
 writes only aggregate, per-award counts:
 
-    output/bbqs_aggregates.json   counts used in the paper text (Section 4)
-    output/fig4_bbqs.{pdf,png}    draft Fig. 4
+    analysis/output/bbqs_aggregates.json               counts used in the paper text (Section 5)
+    figures/fig4_bbqs_data/fig4_bbqs_data.{pdf,png}    draft Fig. 4
 
-Run:  uv run --no-project --with openpyxl --with matplotlib python analysis/bbqs_inventory.py
+Run from the paper root with `make fig4`, or:
+    uv run --no-project --with openpyxl --with matplotlib python analysis/bbqs_inventory.py
 """
 
 from __future__ import annotations
@@ -21,6 +22,7 @@ HERE = Path(__file__).resolve().parent
 INVENTORY = HERE.parents[1] / "bbqs_projects" / "Information ingest-BBQS_All_Projects_OneSheet.xlsx"
 COVERAGE = HERE / "behavior_coverage.csv"
 OUT = HERE / "output"
+FIG_OUT = HERE.parent / "figures" / "fig4_bbqs_data" / "fig4_bbqs_data"
 
 # Case-insensitive patterns matched against the modality, device, tool, and data-sharing fields.
 MODALITY_PATTERNS = {
@@ -171,7 +173,7 @@ def main() -> None:
     agg = aggregate(load_awards())
     OUT.mkdir(exist_ok=True)
     (OUT / "bbqs_aggregates.json").write_text(json.dumps(agg, indent=1) + "\n")
-    for p in figure(agg, load_coverage(), OUT / "fig4_bbqs"):
+    for p in figure(agg, load_coverage(), FIG_OUT):
         print(p)
 
 

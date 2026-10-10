@@ -8,8 +8,11 @@ quantification and synchronization"* (target: Scientific Data, Article).
 | `plan/paper_plan.md` | Paper plan, decisions, timeline (see §0 for the BBQS pivot) |
 | `draft/` | First full draft, one Markdown file per section (`draft/README.md`) |
 | `TODO.md` | Review list: decisions, actions, figures, and claims marked `[TODO-Cn]` in the draft |
-| `analysis/` | BBQS inventory aggregates and Fig. 4 draft (`analysis/bbqs_inventory.py`; aggregate data only) |
-| `knowledge_graph/` | Ecosystem knowledge graph package `ecokg` (README, `TODO.md`, tests); Suppl. Fig. S1 |
+| `analysis/` | BBQS inventory aggregates for Section 5 and Fig. 4 (`analysis/bbqs_inventory.py`; aggregate data only) |
+| `figures/` | One folder per figure and supplementary item (`figures/README.md`); legends in `draft/12_figures_tables.md` |
+| `knowledge_graph/` | Ecosystem knowledge graph package `ecokg` (README, `TODO.md`, tests); Fig. 3 and Suppl. Fig. S1 |
+| `tools/check_todo.py` | Consistency check between `TODO.md` and the draft |
+| `Makefile` | `make figures` rebuilds generated figures; `make check` checks the TODO list |
 
 Source materials (poster, guideline, BBQS inventory, BRAIN KB documents) live in the parent folder and
 are not part of this repository.

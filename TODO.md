@@ -1,151 +1,183 @@
-# Paper TODO — first draft review
+# Paper TODO
 
-*Status 2026-10-09: first full draft in `draft/` (Sections 1–10, Methods, display-item plan, references).
-Main text ≈ 5,560 words including the two in-text tables (target ~5,000). Knowledge-graph issues are
-tracked separately in `knowledge_graph/TODO.md`.*
+*Last updated 2026-10-09. Draft: `draft/` (Sections 1–10, statements, Methods, figure registry,
+references; main text ≈ 7,700 words incl. tables, abstract 169/170 words). Figures: `figures/`.
+Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below).*
 
-Conventions in the draft: `[TODO-Cn]` = claim needing support (listed below); `[REF: …]` = citation to
-insert (see `draft/12_references.md`; entries marked ? or — need work).
+## How to use this list
 
----
+- Tick `[x]` when done and move the item to **6. Resolved** with a one-line note and date.
+- **Owner** says who has to act: **OR** (Oliver Rübel), **core** (core writing team), **authors**
+  (all co-authors), **WG** (BBQS Data Standards Working Group), **BBQS** (BARD.CC / DCAIC / program
+  staff), **teams** (NWB, BIDS, Psych-DS, HED, EMBER, DANDI maintainers), **Claude** (can be done by
+  Claude on request, e.g., literature or web checks, text edits, scripts).
+- In the draft, `[TODO-Cn]` marks a claim listed in section 4, and `[REF: …]` a citation still to be
+  inserted (see `draft/13_references.md`).
+- Run `make check` after editing. It reports claim markers without an entry, entries without a marker,
+  and file paths in this list that no longer exist.
 
-## D. Decisions for the team
+## Summary
 
-- [x] **D1 — Journal: Scientific Data, article type "Article"** (confirmed 2026-10-09 against
-      nature.com/sdata/submission-guidelines). Requirements found there:
-      - Articles cover data standards, repositories, curation, and policy, and may be shorter or
-        speculative; the journal no longer has a Comment format. Peer reviewed.
-      - **No word limit**; Methods have no length limit.
-      - **Abstract ≤170 words** (draft now 160).
-      - **≤8 figures and ≤10 tables** recommended; **figure legends ≤350 words in total**.
-      - **Title ≤110 characters**, no colons, parentheses, or uncommon acronyms → D7.
-      - Required statements: Data Availability, Code Availability, Author Contributions, Competing
-        Interests, Funding, Ethics where relevant (draft in `draft/09_statements.md`).
-      - Nature reference style, numbered, DOIs as URLs; journal abbreviation *Sci. Data*.
-      - Data/code sharing required for Articles "if relevant to the results" → applies to the KG and
-        the BBQS aggregates.
-      - Not stated on the page: APC amount (Q6) and pre-submission enquiries — check "Open Access Fees
-        and Funding" and whether to replace the planned Nov 17 enquiry.
-- [ ] **D2 — Length.** No word limit at Scientific Data; no cuts needed for length. Still tighten for
-      readability, and move the in-text tables to formal tables (≤10 allowed).
-- [x] **D3 — Role of the knowledge graph (decided 2026-10-09):** main **Fig. 3** with its own
-      **Section 4** ("Mapping the connections in the ecosystem") in Part I, before the BBQS part; the
-      lenient-rule version is Suppl. Fig. S1. Its results now carry claims C25, C26, C35, so
-      `knowledge_graph/TODO.md` 1.1–1.3 (FAIRsharing relations, community rule, expert verification)
-      must be resolved before submission.
-- [ ] **D4 — How prescriptive.** Part II now gives recommendations R1–R11 "derived from the BBQS
-      guideline". Confirm the framing (community guidance vs. program requirements) with the BBQS
-      Data Standards WG and program staff.
-- [ ] **D5 — Ontology layer.** Kept as one layer with the distinction explained (Section 2) per Q1;
-      confirm wording.
-- [x] **D6 — Figure count:** 6 figures (Fig. 1–6), 3 tables, plus Suppl. Fig. S1 and Suppl. Table S1;
-      within Scientific Data's limits (≤8 figures, ≤10 tables). Figures are numbered in order of first
-      citation (Fig. 4 = BBQS data, Fig. 5 = BBQS stack).
-- [x] **D7 — Title (decided 2026-10-09):** "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters).
-
-- [ ] **D8 — Six layers vs. literature (review 2026-10-09).**
-      - *Alignment:* the usual life-science distinction is reporting guidelines / models & formats /
-        terminologies (+ repositories, policies) [REF: Sansone 2012 Nat Genet 44:121; Sansone 2019].
-        FAIRsharing record types match this (in our harvest: 314 model/format, 257 terminology,
-        62 reporting guideline, 14 identifier schema). Our ontology and archive layers correspond directly.
-      - *Our contribution:* splitting FAIRsharing's single "model and format" bucket into dataset
-        organization, data standards, data formats, and schema languages. Say this explicitly and add a
-        short "relation to existing classifications" paragraph to Section 2 (currently missing).
-      - *Missing vs. literature:* reporting guidelines / minimum information (COBIDAS, ARRIVE, CDEs),
-        persistent identifiers (DOI, RRID, ORCID, ROR), access protocols / APIs, provenance, policies /
-        licences. Proposal: a cross-cutting band in Fig. 1 plus one paragraph, not more layers. State
-        that modelling standards (NeuroML, SONATA, PyNN) are out of scope.
-      - [x] *Naming (decided 2026-10-09):* layer 3 renamed from "data standards" to **"file organization
-        standards"**, which parallels "dataset organization standards" (files in folders vs. data
-        within a file). "File" is used in the broad sense of a self-contained data object; the
-        single-file vs. directory (e.g., Zarr) choice belongs to the data format layer. Applied in the
-        draft, Table 1, figure specs, and the knowledge-graph taxonomy label (node id `data_standard`
-        unchanged). Fig. 1 and the poster-derived figures must use the new name (F2).
-      - *Geometry:* archives → dataset organization → data standards → formats is a containment stack;
-        ontologies/terminologies (semantics) and schema languages (formal definition) cut across it.
-        Option: redraw Fig. 1 as a 4-level stack with two cross-cutting columns (keeps six categories).
-
-## A. Actions
-
-- [ ] **A1** Author list and CRediT roles (poster authors + confirmed contributors; close Nov 14).
-- [ ] **A2** BBQS clearance: confirm with BARD.CC / DCAIC and program staff that the **aggregate**
-      inventory statistics (Section 5, Fig. 4) may be published; agree on wording for the source.
-- [ ] **A3** Section leads to review each section (assign from contributor list).
-- [ ] **A4** NWB, BIDS, Psych-DS, HED, and EMBER teams to check Section 6, Table 3, and R1–R11.
-- [ ] **A5** Version the BBQS guideline (e.g., Zenodo release) so the paper can cite a fixed version; the
-      guideline itself still has many "TODO — how to store?" entries and some unfinished parts.
-- [ ] **A6** Zenodo DOI for code and data (`ecokg`, `analysis/`).
-- [ ] **A7** Resolve references marked ? or — in `draft/12_references.md`.
-- [ ] **S1** Licence terms for redistributing RRID and FAIRsharing data (FAIRsharing CC BY-SA?).
-- [ ] **S2** Contact for access to the BBQS project inventory (Data Availability).
-- [ ] **S3** Licence for code (e.g., BSD-3 or MIT) and data (e.g., CC BY 4.0).
-- [ ] **S4** Competing-interest statements from all authors.
-- [ ] **S5** Complete funding list for all authors.
-- [ ] **S6** Convert references to Nature style with DOIs at the end (Zotero/BibTeX).
-- [ ] **A8** Move to Google Docs for the full author group once the core team has reviewed this draft.
-
-## F. Figures
-
-- [x] **F1** Main-item budget: fits (≤8 figures, ≤10 tables).
-- [ ] **F6** Shorten legends: all figure legends together ≤350 words (draft legends in
-      `draft/11_figures_tables.md` are longer). Sans-serif fonts, white backgrounds.
-- [ ] **F2** Fig. 1, Fig. 2, Fig. 6b, Suppl. Table S1: redraw from the poster (designer / figure lead).
-- [ ] **F3** Fig. 5 (BBQS stack on the map): design from the spec in `draft/11_figures_tables.md`.
-- [ ] **F4** Fig. 4 draft (`analysis/output/fig4_bbqs.pdf`): review; decide whether to keep species
-      panel (a), and whether "Exploratory behavior" (no guideline entry) should be shown as a gap.
-- [ ] **F5** Fig. 3 (knowledge graph, `knowledge_graph/output/fig3_knowledge_graph.pdf`) and Suppl. Fig. S1
-      (`figS1_knowledge_graph_lenient.pdf`): polish (label collisions, shared-edge styling, palette) once
-      the community rule and edge verification are settled.
+| Section | Open items | Blocking submission? |
+|---|---|---|
+| 1. Decisions | D2, D4, D5, D8, D9, D10 | D4, D8, D10 |
+| 2. Actions | A1–A8, S1–S6 | A1, A2, A4, A5, A6, S1–S5 |
+| 3. Figures | F2–F6 | all |
+| 4. Claims | C1–C35 (35) | all, before submission |
+| 5. Knowledge graph | see `knowledge_graph/TODO.md` | 1.1–1.3 (Fig. 3, Section 4 results) |
 
 ---
 
-## C. Claims that need support
+## 1. Decisions (open)
 
-| ID | Section | Claim / text | What is needed |
-|---|---|---|---|
-| C1 | 1 | Experiments now generate terabytes each | Citation(s) with concrete numbers (e.g., Neuropixels, whole-brain imaging, multi-camera video) |
-| C2 | 1 | BRAIN archive sizes (researched 2026-10-09) | **DANDI** 1,197 Dandisets, 2.44 PB — from `api.dandiarchive.org/api/stats/` (authoritative; cite with access date). **BossDB** ~1.03 PB, >10 petavoxels — web search snippet of bossdb.org; site is JS-only, verify. **NeMO** >1 PB, >3 M files — search snippet (NeMO paper, Ament 2023 / NIH newsletter); verify. **BIL** "first petascale brain microscopy resource", ~7,000 datasets — Kenney 2024 *Sci Data* (full text not reachable); verify. **OpenNeuro** ~1,000 datasets, >40,000 participants — only from third-party docs; get an official figure (OpenNeuro team). Consider DABI, NEMAR, EMBER sizes too. Avoid the BRAIN KB roundtable summary (not for distribution). |
-| C3 | 1 | AI raises the value of consistently structured data | Citation (AI-readiness / foundation-model papers) or soften |
-| C4 | 2 | Ontologies vs. terminologies kept in one layer; "used the same way" | Team confirmation (D5); optional citation |
-| C5 | 2 | Origin/funding of standards (research vs. vendor vs. archive-driven) | Suppl. Table S1 from poster; check each entry |
-| C6 | 3 | Levels of FAIRness (Table 2), revised 2026-10-09; six levels (0–5), one per layer that adds a user-visible capability, schema languages as enabler of levels 2–3 | Now positioned as a staged communication scale (like 5-star Linked Open Data and Data Readiness Levels) that does **not** replace per-principle assessment (FAIR maturity indicators, RDA FAIR Data Maturity Model, F-UJI). Check the FAIR-principle mapping per level with a FAIR expert; decide whether to show the poster's original "FAIR Data Score" in Supplement; consider running F-UJI on example datasets at each level as a demonstration |
-| C34 | 3 | Maturity of standards themselves is better described by technology readiness scales | Citation (TRL; any TRL-like scale for software or standards); or remove |
-| C7 | 5, Methods | BBQS inventory statistics | Clearance (A2); name and date of the inventory; who collected it |
-| C8 | 5 | 13 species groups; fish/fly entries | Check the source entries for "fish" and "fly" (one award lists "Fly, Fish"; is "fish" zebrafish?) and whether any award is missed |
-| C9 | 5 | Terminologies/atlases sparse for many BBQS species | Citation or examples (e.g., atlases exist for mouse, rat, human, marmoset; few for cowbird, cichlid, acoel) |
-| C10 | 5, Methods | Modality counts from keyword matching (video 25, wearables 18, pose 13, audio 13, eye tracking 10, ephys 13, EEG 8, ophys 5) | Manual check against source entries; adjust keywords |
-| C11 | 5 | 18 standards answers: NWB 11, BIDS 4, none 3; 3D pose stored as NumPy | Check; questionnaire may be outdated — re-survey? |
-| C12 | 5 | Sharing: archive 13/18, cloud drives 14/18, GitHub 14/18 | Check; clarify whether cloud/GitHub are for data or code |
-| C13 | 6 | Why these standards were selected (open, community-governed, BRAIN-supported, accepted by EMBER, extensible) | Confirm with BBQS Data Standards WG; cite charter/minutes if any |
-| C14 | 6 | EMBER privacy levels; many projects record identifiable human data | EMBER documentation/citation; count of human projects with video/audio (aggregate) |
-| C15 | 6, 7 | BEP032 brings NWB into BIDS; status | Current BEP032 status and citation |
-| C16 | 6 | HED available for NWB via ndx-hed; "one of few annotation systems that works across standards" | ndx-hed citation/link; soften "one of few" or support |
-| C17 | 7 | Table 3 entries | Check by NWB/BIDS/Psych-DS teams (A4); BIDS status for video (BEP044 / issue 1771), audio, GPS |
-| C18 | 7 | Pose should be stored in ndx-pose or Motion-BIDS | Confirm Motion-BIDS suits 2D/3D pose from video (it targets motion capture); cite ndx-pose |
-| C19 | 7 | Synchronization must be documented; "cannot be reconstructed after the fact" | Citation or soften; check whether any standard defines clock-alignment metadata |
-| C20 | 7 | Behavior ontologies (NBO) exist but are not widely used in BBQS | Inventory shows 1 award considering NBO; cite NBO; check other behavior vocabularies (e.g., ABO, NeuroBehavior) |
-| C21 | 7 | Large/continuous recordings: split raw/processed; multi-day data | Guideline section is unfinished — needs content from the WG |
-| C22 | 7 | Early standardization is cheaper than end-of-project conversion | Citation (e.g., NWB/BIDS experience papers) or soften |
-| C23 | 8, Methods | Behavior × guideline coverage (`analysis/behavior_coverage.csv`) | Check coding against guideline; note "cognitive tasks" Psych-DS entry is TODO in the guideline although Psych-DS lists task data as supported; "reproductive b" truncated entry in inventory (possibly a 4th award) |
-| C24 | 8 | Technologies lacking guidance (EMG, force plates, VR, home-cage, coding software, thermal, smart devices); BEP042 for EMG | Check current status in NWB/BIDS; cite BEP042 |
-| C25 | 4, 8, Methods | KG results (2026-10-09): 72 technologies, 133 relationships; 100/133 connect layers; 65/133 involve shared infrastructure; of 68 domain-specific relationships 33 cross communities, 30 of them through BIDS, NWB, HED, or EMBER (21 through BIDS or NWB) | Depends on knowledge_graph TODO 1.1–1.3 (FAIRsharing relations, community rule, expert verification) |
-| C26 | 4 | Many documented relationships are not recorded in registries | Currently 7–12% of curated edges, but FAIRsharing API omits relations (KG TODO 1.1) — **do not state a number until resolved** |
-| C27 | 8 | LinkML as a bridge; Psych-DS uses LinkML | Cite LinkML; examples of cross-standard mapping |
-| C28 | 8 | Highest-value bridges for BBQS (behavior representation, behavior terminology, conversion tools) | Team agreement; this is a recommendation of the paper |
-| C29 | 9 | Data reuse at scale needs remote/partial access, virtual datasets, curation | Citations (cloud-native formats, DataLad, etc.) |
-| C30 | 9 | Minimal required metadata still needed with AI-generated annotation | Citation, or frame explicitly as our position |
-| C31 | 9 | Standards are long-lived infrastructure; software changes faster | Citation (research software sustainability) or frame as position |
-| C32 | 9 | BRAIN knowledge base plans | Cite public source only (KB position paper when available) |
-| C35 | 4 | Lenient community rule hides most bridges (Suppl. Fig. S1) | Depends on the community-rule decision (`knowledge_graph/TODO.md` 1.2); currently 33 vs. 3 cross-community relationships (strict vs. lenient) |
-| C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; data inventory/catalog; specimen metadata system NIMP) | From brain-bican.org/data and biccn.org/data (read 2026-10-09). Confirm that NIMP is the right name/description and that BICAN still uses BossDB; cite BICCN 2021 *Nature* and the portals |
+- [ ] **D2 — Length and tables** *(core; Claude can draft edits)*. No word limit at Scientific Data, so
+      no cuts are required. Tighten for readability; Tables 2 and 3 already sit in the text as formal
+      tables.
+- [ ] **D4 — How prescriptive are the recommendations?** *(OR, WG, BBQS)*. Section 7 gives R1–R11
+      "derived from the BBQS guideline". Confirm the framing (community guidance vs. program
+      requirements) with the WG and program staff.
+- [ ] **D5 — Ontology layer wording** *(core)*. One layer with the ontology/terminology distinction
+      explained (Section 2, video analogy: fixed category list vs. category hierarchy). Confirm wording
+      (claim C4).
+- [ ] **D8 — Six layers vs. the literature** *(OR, core; Claude can draft)*. Remaining sub-decisions
+      (the layer-3 name is resolved, see section 6):
+      - [ ] Add a short "relation to existing classifications" paragraph to Section 2. The usual
+            life-science distinction is reporting guidelines / models and formats / terminologies, plus
+            repositories and policies [REF: Sansone 2012; Sansone 2019]; FAIRsharing record types match it
+            (our harvest: 314 model/format, 257 terminology, 62 reporting guideline, 14 identifier
+            schema). Our contribution is splitting FAIRsharing's single "model and format" type into
+            dataset organization, file organization, formats, and schema languages.
+      - [ ] Cover what the map leaves out (reporting guidelines / minimum information such as COBIDAS,
+            ARRIVE, CDEs; persistent identifiers; access protocols / APIs; provenance; policies and
+            licences) as a cross-cutting band in Fig. 1 plus one paragraph, not as more layers. State that
+            modelling standards (NeuroML, SONATA, PyNN) are out of scope.
+      - [ ] Fig. 1 geometry: keep six stacked layers, or draw a four-level structural stack (archives,
+            dataset organization, file organization, formats) with ontologies/terminologies and schema
+            languages as cross-cutting columns.
+- [ ] **D9 — Journal logistics** *(OR)*. Scientific Data APC and who pays (plan Q6); whether to send a
+      pre-submission enquiry (planned ~Nov 17) or submit directly.
+- [ ] **D10 — Community rule for bridges** *(OR, core)*. Adopt the proposal in
+      `knowledge_graph/TODO.md` 1.2: a technology's *home* community is where it originated and is
+      governed; other tags mean "communities served" and are reported separately. Determines the
+      numbers in Section 4 (claims C25, C35) and Fig. 3 / Suppl. Fig. S1.
+
+## 2. Actions (open)
+
+**People and authorship**
+- [ ] **A1** Author list and CRediT roles: poster authors + confirmed contributors; close Nov 14 *(OR)*.
+- [ ] **A3** Assign section leads from the contributor list to review each section *(OR)*.
+- [ ] **S4** Competing-interest statements from all authors; several authors lead standards or archives
+      discussed in the paper *(authors)*.
+- [ ] **S5** Complete funding list for all authors (`draft/10_statements.md`) *(authors)*.
+- [ ] **A8** Move to Google Docs for the full author group once the core team has reviewed *(OR)*.
+
+**External input**
+- [ ] **A2** BBQS clearance to publish the **aggregate** inventory statistics (Section 5, Fig. 4), and
+      agreed wording for the source *(BBQS)*.
+- [ ] **A4** NWB, BIDS, Psych-DS, HED, and EMBER teams check Section 6, Table 3, and R1–R11 *(teams)*.
+- [ ] **A5** Versioned release of the BBQS guideline (e.g., Zenodo) to cite; the guideline still has many
+      "TODO — how to store?" entries *(WG)*.
+- [ ] **S2** Contact for access to the BBQS project inventory (Data Availability statement) *(BBQS)*.
+
+**Release and licensing**
+- [ ] **A6** Zenodo DOI for code and data (`knowledge_graph/`, `analysis/`, `figures/`) *(OR; Claude can prepare)*.
+- [ ] **S1** Licence terms for redistributing RRID and FAIRsharing data (FAIRsharing CC BY-SA?) *(OR; Claude can check)*.
+- [ ] **S3** Licences for code (e.g., BSD-3 or MIT) and data (e.g., CC BY 4.0) *(OR)*.
+
+**References**
+- [ ] **A7** Resolve references marked ? or — in `draft/13_references.md` *(Claude)*.
+- [ ] **S6** Convert references to Nature style with DOIs (BibTeX/Zotero) *(Claude)*.
+
+## 3. Figures (open)
+
+Files: `figures/` (one folder per item, see `figures/README.md`). Legends: `draft/12_figures_tables.md`.
+Rebuild generated figures with `make figures`.
+
+- [ ] **F2** Redraw from the poster: Fig. 1 (`figures/fig1_ecosystem_map/`), Fig. 6b
+      (`figures/fig6_bridges_future/`), Suppl. Table S1 (`figures/supplementary/tableS1_standards_comparison/`).
+      Use "file organization standards" and the outcome of D8 *(designer / figure lead)*.
+- [ ] **F3** Design Fig. 2 (six FAIR levels, `figures/fig2_fair_levels/`) and Fig. 5 (BBQS stack,
+      `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
+- [ ] **F4** Review Fig. 4 (`figures/fig4_bbqs_data/fig4_bbqs_data.pdf`): keep the species panel? show
+      "exploratory behavior" (no guideline entry) as a gap? *(OR, core)*.
+- [ ] **F5** Polish Fig. 3 and Suppl. Fig. S1 (`figures/fig3_knowledge_graph/`,
+      `figures/supplementary/figS1_knowledge_graph_lenient/`): label collisions, how to show shared
+      infrastructure edges, colour-blind palette; after D10 and edge verification *(Claude, then OR)*.
+- [ ] **F6** Shorten legends to ≤350 words in total; sans-serif fonts, white backgrounds *(Claude)*.
+
+## 4. Claims that need support
+
+| ID | Section | Claim / text | What is needed | Owner |
+|---|---|---|---|---|
+| C1 | 1 | Experiments now generate terabytes each | Citations with concrete numbers (Neuropixels, whole-brain imaging, multi-camera video) | Claude |
+| C2 | 1 | BRAIN archive sizes | **DANDI** 1,197 Dandisets, 2.44 PB from `api.dandiarchive.org/api/stats/` (authoritative; cite with access date). **BossDB** ~1.03 PB, >10 petavoxels and **NeMO** >1 PB, >3 M files: from search snippets, verify. **BIL** petascale, ~7,000 datasets (Kenney 2024): verify. **OpenNeuro**: get an official figure. Consider DABI, NEMAR, EMBER. Do not use the BRAIN KB roundtable summary (not for distribution) | core (archive contacts); Claude for re-checks |
+| C3 | 1 | AI raises the value of consistently structured data | Citation (AI-readiness / foundation models) or soften | Claude |
+| C4 | 2 | Ontologies and terminologies in one layer | Team confirmation (D5); optional citation | core |
+| C5 | 2 | Origin and funding of standards (research vs. vendor vs. archive) | Suppl. Table S1 from the poster; check each entry | core |
+| C6 | 3 | Six levels of FAIRness (Table 2), one per layer that adds a capability; schema languages enable levels 2–3 | Check the FAIR-principle mapping with a FAIR expert; optionally run F-UJI on an example dataset at each level as a demonstration | core (FAIR expert); Claude for F-UJI |
+| C7 | 5, Methods | BBQS inventory statistics | Clearance (A2); name, date, and maintainer of the inventory | BBQS |
+| C8 | 5 | 13 species groups | Check "fish" and "fly" entries (is "fish" zebrafish?) and whether any award is missed | Claude |
+| C9 | 5 | Terminologies and atlases are sparse for many BBQS species | Citation or examples (atlases for mouse, rat, human, marmoset; few for cowbird, cichlid, acoel) | Claude |
+| C10 | 5, Methods | Modality counts from keyword matching (video 25, wearables 18, pose 13, audio 13, eye tracking 10, ephys 13, EEG 8, ophys 5) | Manual check against the source entries; adjust keywords | Claude |
+| C11 | 5 | 18 standards answers: NWB 11, BIDS 4, none 3; 3D pose stored as NumPy | Check; the questionnaire may be outdated (re-survey?) | Claude; BBQS |
+| C12 | 5 | Sharing: archive 13/18, cloud drives 14/18, GitHub 14/18 | Check; are cloud drives and GitHub used for data or code? | Claude; BBQS |
+| C13 | 6 | Why these standards were chosen (open, community-governed, BRAIN-supported, accepted by EMBER, extensible) | Confirm with the WG; cite charter or minutes if any | WG |
+| C14 | 6 | EMBER privacy levels; many projects record identifiable human data | EMBER documentation; aggregate count of human projects with video or audio | teams (EMBER); Claude for count |
+| C15 | 6, 7 | BEP032 brings NWB into BIDS | Current BEP032 status and citation | Claude; teams |
+| C16 | 6 | HED for NWB via ndx-hed; "one of few annotation systems that work across standards" | ndx-hed citation; soften or support "one of few" | Claude; teams (HED) |
+| C17 | 7 | Table 3 entries | Check by NWB/BIDS/Psych-DS teams (A4); BIDS status for video (BEP044, issue 1771), audio, GPS | teams; Claude for web check |
+| C18 | 7 | Store pose with ndx-pose or Motion-BIDS | Does Motion-BIDS suit 2D/3D pose from video (it targets motion capture)? Cite ndx-pose | Claude; teams |
+| C19 | 7 | Synchronization must be documented; cannot be reconstructed afterwards | Citation or soften; does any standard define clock-alignment metadata? | core; Claude for search |
+| C20 | 7 | Behavior ontologies (NBO) exist but are rarely used in BBQS | Cite NBO; check other behavior vocabularies; inventory shows one award considering NBO | Claude |
+| C21 | 7 | Large and continuous recordings (split raw/processed; multi-day data) | Guideline section is unfinished; needs WG content | WG |
+| C22 | 7 | Early standardization is cheaper than conversion at the end | Citation or soften | Claude |
+| C23 | 8, Methods | Behavior × guideline coverage (`analysis/behavior_coverage.csv`) | Check coding against the guideline; "cognitive tasks" Psych-DS entry is TODO in the guideline although Psych-DS lists task data; truncated "reproductive b" entry may be a 4th award | Claude; WG |
+| C24 | 8 | Technologies without guidance (EMG, force plates, VR, home cage, coding software, thermal, smart devices); BEP042 for EMG | Current NWB/BIDS status; cite BEP042 | Claude; teams |
+| C25 | 4, 8, Methods | Knowledge-graph results: 72 technologies, 133 relationships; 100/133 connect layers; 65/133 involve shared infrastructure; 33 of 68 domain-specific relationships cross communities, 30 of them through BIDS, NWB, HED, or EMBER (21 through BIDS or NWB) | Resolve `knowledge_graph/TODO.md` 1.1–1.3 and D10, then update the numbers | core; Claude for re-run |
+| C26 | 4 | Many documented relationships are not recorded in registries | Do not state a number until the FAIRsharing relations are complete (`knowledge_graph/TODO.md` 1.1) | OR (FAIRsharing contact) |
+| C27 | 8 | LinkML as a bridge; Psych-DS uses LinkML | Cite LinkML; examples of cross-standard mapping | Claude |
+| C28 | 8 | Highest-value bridges for BBQS | Team agreement (a recommendation of the paper) | core |
+| C29 | 9 | Reuse at scale needs remote/partial access, virtual datasets, curation | Citations (cloud-native formats, DataLad) | Claude |
+| C30 | 9 | Minimal required metadata still needed with AI-generated annotation | Citation, or frame as our position | core |
+| C31 | 9 | Standards are long-lived infrastructure; software changes faster | Citation (research software sustainability) or frame as position | Claude |
+| C32 | 9 | BRAIN knowledge base plans | Cite a public source only (KB paper when available) | core |
+| C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; catalog; NIMP) | Confirm NIMP description and whether BICAN uses BossDB; cite BICCN 2021 and the portals | core (BICAN contact); Claude for citations |
+| C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
+| C35 | 4 | The lenient community rule hides most bridges (33 vs. 3) | Depends on D10 | core |
+
+## 5. Knowledge graph (summary of `knowledge_graph/TODO.md`)
+
+These carry the Section 4 results and Fig. 3, so they block submission. Details and the full checklist
+are in `knowledge_graph/TODO.md`, section 0.
+
+- [ ] **1.1 FAIRsharing relations.** The REST API omits relations shown on fairsharing.org. Contact
+      FAIRsharing and/or transcribe the relations of the 46 seed records by hand *(OR)*.
+- [ ] **1.2 Community rule** = decision D10 above *(OR, core)*.
+- [ ] **1.3 Expert verification** of all curated edges and node layers/communities *(domain reviewers)*.
+- [ ] **2.1–2.5 Data gaps:** RRIDs by hand (`knowledge_graph/RRID_LOOKUP.md`) or via SciCrunch API
+      permission; 25 seeds without FAIRsharing record; candidate seeds to add or drop *(OR / Claude)*.
 
 ---
+
+## 6. Resolved
+
+| Date | Item | Resolution |
+|---|---|---|
+| 2026-10-09 | Pivot | Map of the ecosystem first, then recommendations for BBQS (`plan/paper_plan.md` §0) |
+| 2026-10-09 | D1 Journal | Scientific Data, article type "Article". No word limit; Methods unlimited; abstract ≤170 words; ≤8 figures, ≤10 tables; legends ≤350 words in total; title ≤110 characters without colons, parentheses, or uncommon acronyms; required statements (Data/Code Availability, contributions, competing interests, funding, ethics) in `draft/10_statements.md`; Nature reference style with DOIs; data/code sharing required where relevant to results |
+| 2026-10-09 | D7 Title | "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters) |
+| 2026-10-09 | D8 layer name | Layer 3 renamed "file organization standards" (parallel to "dataset organization standards"); "file" in the broad sense, single file vs. directory is a format choice; knowledge-graph taxonomy label updated (node id `data_standard` unchanged) |
+| 2026-10-09 | FAIR levels | Six levels (0–5) mapped to layers and FAIR principles; presented as an illustration of integration, not a new metric; related to 5-star Linked Open Data, Data Readiness Levels, and FAIR assessment tools |
+| 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
+| 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table; numbered in order of first citation; within journal limits |
+| 2026-10-09 | Figures folder | `figures/` with one folder per item, `make figures`, `make check` |
+| 2026-10-09 | Style | Prose colons and em-dash asides removed; opening reframed around the complexity of the ecosystem; video analogy woven through Section 2 with callbacks |
 
 ## Notes for reviewers
 
-- Part I (Sections 1–3) is descriptive; Part II (Sections 5–8) gives BBQS recommendations; Section 9 is
-  the outlook. See `plan/paper_plan.md` §0 for the pivot.
+- Part I (Sections 1–4) maps the ecosystem; Part II (Sections 5–8) applies it to BBQS; Section 9 is the
+  outlook and Section 10 the conclusion. See `plan/paper_plan.md` §0 for the pivot.
 - The BRAIN KB roundtable materials in `../brain_knowledge_base/` are marked "not for further
   distribution" and are used only as background; nothing from them is quoted or cited.
-- BBQS inventory: only aggregate counts are in the repo (`analysis/output/bbqs_aggregates.json`); the
-  workbook stays outside the repo.
+- BBQS inventory: only aggregate counts are in the repository (`analysis/output/bbqs_aggregates.json`);
+  the workbook stays outside it.
