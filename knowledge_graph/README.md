@@ -32,7 +32,8 @@ Registry responses are cached in `data/cache/`; pass `--refresh` to re-fetch.
 
 ## Notes
 
-- The FAIRsharing client was written without live credentials; check the GraphQL field names on the
+- FAIRsharing API access requires linking your account to an organisation (fairsharing.org/profiles/edit).
+  Check the REST association field names on the
   first authenticated run (raw responses are kept in `data/cache/fairsharing/`).
 - Community scope is reported in two modes (strict = home community; lenient = any shared community).
   The results are very sensitive to the mode (see `output/stats.md`), so node community tags need careful review.

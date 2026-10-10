@@ -10,13 +10,14 @@ The FAIRsharing API requires a (free) account. Authentication, in order of prefe
 
 The token is only kept in the session headers; it is never written to the cache or logs.
 
-Record relationships are requested through the GraphQL endpoint using the field names
-used by FAIRsharing's own web front-end (``recordAssociations`` /
-``reverseRecordAssociations`` with ``linkedRecord`` / ``fairsharingRecord`` and
-``recordAssocLabel``). ``parse_record`` also accepts snake_case variants so REST
-responses can be parsed if the GraphQL route is unavailable.
+API access also requires the account to be linked to an organisation
+(https://fairsharing.org/profiles/edit); otherwise every request returns 401.
 
-NOTE: written without live credentials; verify field names on first authenticated run
+Records are fetched from the REST API (``GET /fairsharing_records/{id}``); the GraphQL
+endpoint used by the FAIRsharing web front-end is not available to API users (501).
+``parse_record`` accepts both snake_case (REST) and camelCase field names.
+
+NOTE: verify the association field names on the first authenticated run
 (raw responses are cached under data/cache/fairsharing/ for inspection).
 """
 
@@ -30,22 +31,6 @@ from ..http import CachedJsonClient
 API_URL = "https://api.fairsharing.org"
 DOI_PREFIX = "10.25504/"
 
-RECORD_QUERY = """
-query($id: Int!) {
-  fairsharingRecord(id: $id) {
-    id name abbreviation doi registry type status homepage
-    subjects { label } domains { label } taxonomies { label }
-    recordAssociations {
-      recordAssocLabel
-      linkedRecord { id name abbreviation doi registry type status }
-    }
-    reverseRecordAssociations {
-      recordAssocLabel
-      fairsharingRecord { id name abbreviation doi registry type status }
-    }
-  }
-}
-"""
 
 
 @dataclass
@@ -210,17 +195,14 @@ class FairsharingClient:
         return [parse_record(item) for item in items]
 
     def get_record(self, record_id: int, refresh: bool = False) -> FairsharingRecord:
-        """Fetch one record, including associations (GraphQL)."""
+        """Fetch one record, including associations (REST)."""
         cache_key = f"fairsharing_record_{record_id}"
         raw = None if refresh else self.http.cached(cache_key)
         if raw is None:
             self._authenticate()
-            raw = self.http.request("POST", f"{API_URL}/graphql",
-                                    json={"query": RECORD_QUERY, "variables": {"id": int(record_id)}})
-            if raw.get("errors"):
-                raise RuntimeError(f"FAIRsharing GraphQL error for {record_id}: {raw['errors']}")
-            self.http.store(cache_key, raw)  # only successful responses are cached
-        return parse_record(raw.get("data", raw))
+            raw = self.http.request("GET", f"{API_URL}/fairsharing_records/{int(record_id)}",
+                                    cache_key=cache_key, refresh=True)
+        return parse_record(raw)
 
     def resolve(self, name: str, abbreviation: str | None) -> list[FairsharingRecord]:
         """Candidate records whose name or abbreviation matches a seed (case-insensitive)."""

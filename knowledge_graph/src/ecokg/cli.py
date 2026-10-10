@@ -147,14 +147,32 @@ def cmd_fairsharing_check(args) -> int:
     client._authenticate()
     session = client.http.session
     probes = [
-        ("GET", f"{fs.API_URL}/fairsharing_records/1", {}),
-        ("POST", f"{fs.API_URL}/search/fairsharing_records", {"params": {"q": "NWB"}}),
-        ("POST", f"{fs.API_URL}/graphql", {"json": {"query": "{ fairsharingRecord(id: 1) { id name } }"}}),
+        ("GET", "/fairsharing_records/1", {}, "fairsharing_check_record"),
+        ("POST", "/search/fairsharing_records", {"params": {"q": "NWB"}}, "fairsharing_check_search"),
     ]
-    for method, url, kwargs in probes:
-        resp = session.request(method, url, timeout=60, **kwargs)
-        print(f"{method:4} {url.replace(fs.API_URL, '')}: {resp.status_code} {resp.text[:200]!r}")
-    return 0
+    ok = True
+    for method, path, kwargs, cache_key in probes:
+        resp = session.request(method, fs.API_URL + path, timeout=60, **kwargs)
+        print(f"{method:4} {path}: {resp.status_code}")
+        if not resp.ok:
+            print(f"     {resp.text[:200]!r}")
+            ok = False
+            continue
+        data = resp.json()
+        client.http.store(cache_key, data)  # kept for inspecting the response structure
+        print(f"     structure: {_shape(data)}")
+    return 0 if ok else 1
+
+
+def _shape(value, depth: int = 0):
+    """Key names (not values) of a JSON response, a few levels deep."""
+    if depth > 2:
+        return "..."
+    if isinstance(value, dict):
+        return {k: _shape(v, depth + 1) for k, v in list(value.items())[:40]}
+    if isinstance(value, list):
+        return [_shape(value[0], depth + 1), f"({len(value)} items)"] if value else []
+    return type(value).__name__
 
 
 def cmd_report(args) -> int:

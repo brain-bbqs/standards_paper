@@ -96,17 +96,20 @@ def test_fairsharing_requires_credentials(monkeypatch, tmp_path):
         raise AssertionError("expected RuntimeError")
 
 
-def test_fairsharing_graphql_errors_not_cached(monkeypatch, tmp_path):
+def test_fairsharing_get_record_uses_rest(monkeypatch, tmp_path):
     from ecokg.http import CachedJsonClient
 
     http = CachedJsonClient(tmp_path)
-    monkeypatch.setattr(http, "request", lambda *a, **k: {"errors": [{"message": "bad field"}]})
-    client = fairsharing.FairsharingClient(http, token="t")
-    try:
-        client.get_record(1)
-    except RuntimeError:
-        pass
-    assert http.cached("fairsharing_record_1") is None
+    calls = []
+
+    def fake_request(method, url, **kwargs):
+        calls.append((method, url))
+        return {"data": {"id": "5", "attributes": {"name": "X", "record_associations": []}}}
+
+    monkeypatch.setattr(http, "request", fake_request)
+    rec = fairsharing.FairsharingClient(http, token="t").get_record(5)
+    assert calls == [("GET", f"{fairsharing.API_URL}/fairsharing_records/5")]
+    assert (rec.id, rec.name) == (5, "X")
 
 
 def test_clean_token_and_summary():
