@@ -9,7 +9,8 @@ by a particular technology. To illustrate the layers, we use online video sharin
 technologies. A codec compresses the images, a container file packages video and sound together, a
 playlist organizes related videos, categories and tags describe the content, and the upload form
 specifies which information must accompany each video. Sharing neuroscience data relies on an analogous
-combination of technologies, which we describe in order from the user toward the bytes on disk.
+combination of technologies. We describe the corresponding layers in turn, beginning with data archives
+and ending with data formats and the schema languages used to define standards.
 
 **Data archives** solve the problem of publishing, sharing, and discovering content. In the video world,
 this is the platform itself. YouTube stores videos, makes them searchable, and accepts only certain file
