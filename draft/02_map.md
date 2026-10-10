@@ -79,9 +79,9 @@ neurophysiology, neuroimaging, and microscopy, to meet the immediate needs of ea
 result, a single technology often takes on the roles of several layers, and similar problems are solved
 separately in different communities. We argue that separating concerns across layers must be
 combined with deliberate integration in two directions. Integration across layers connects the
-technologies that together make a dataset FAIR (Section 3). Integration across communities allows data
-from different subdomains to be combined, as multimodal programs such as BBQS require. Section 4
-examines how well both kinds of connection exist today, and Sections 5–8 apply this view to BBQS.
+technologies that together make a dataset FAIR (Section 3). Integration across communities allows 
+multimodal data and datasets from different subdomains to be combined, as multimodal programs
+such as BBQS require.
 
 ## Boundaries are fuzzy, and that is useful
 
