@@ -20,4 +20,4 @@ be drawn or redrawn by hand should be saved here together with their editable so
 | Suppl. Table S1 | [`supplementary/tableS1_standards_comparison/`](supplementary/tableS1_standards_comparison/) | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | to transcribe from poster |
 
 If figures are renumbered, rename the folder and the files in it, and update this table, the
-Makefile, `draft/12_figures_tables.md`, and `TODO.md` (`make check` reports broken paths).
+Makefile, `draft/12_figures_tables.md`, and `plan/TODO.md` (`make check` reports broken paths).

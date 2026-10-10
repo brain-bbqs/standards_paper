@@ -1,10 +1,10 @@
-"""Check TODO.md against the draft.
+"""Check plan/TODO.md against the draft.
 
 Reports:
-  * claim markers [TODO-Cn] in draft/ without a row in TODO.md (missing entries)
-  * claim rows in TODO.md whose marker no longer appears in draft/ (stale entries)
+  * claim markers [TODO-Cn] in draft/ without a row in plan/TODO.md (missing entries)
+  * claim rows in plan/TODO.md whose marker no longer appears in draft/ (stale entries)
   * open (unchecked) items per section of TODO.md
-  * paths in backticks in TODO.md and draft/12_figures_tables.md that do not exist
+  * paths in backticks in plan/TODO.md and draft/12_figures_tables.md that do not exist
 
 Run from the paper root:  make check   (or: python3 tools/check_todo.py)
 """
@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DRAFT = ROOT / "draft"
-TODO = ROOT / "TODO.md"
+TODO = ROOT / "plan" / "TODO.md"
 
 
 def draft_markers() -> dict[str, list[str]]:
@@ -73,10 +73,10 @@ def main() -> int:
     missing = sorted(set(markers) - set(rows), key=lambda c: int(c[1:]))
     stale = sorted(set(rows) - set(markers), key=lambda c: int(c[1:]))
     for cid in missing:
-        print(f"MISSING  {cid} is marked in {', '.join(sorted(set(markers[cid])))} but has no row in TODO.md")
+        print(f"MISSING  {cid} is marked in {', '.join(sorted(set(markers[cid])))} but has no row in plan/TODO.md")
     for cid in stale:
         if "| resolved |" not in rows[cid]:
-            print(f"STALE    {cid} has a row in TODO.md but no marker in draft/ (resolve or remove)")
+            print(f"STALE    {cid} has a row in plan/TODO.md but no marker in draft/ (resolve or remove)")
     for p in missing_paths(TODO, DRAFT / "12_figures_tables.md"):
         print(f"PATH     {p} does not exist")
     problems = len(missing) + len(stale)
@@ -84,7 +84,7 @@ def main() -> int:
     print("\nOpen items by section:")
     for section, n in open_items(text).items():
         print(f"  {n:3}  {section}")
-    print(f"\n{len(markers)} claim markers in draft/, {len(rows)} claim rows in TODO.md")
+    print(f"\n{len(markers)} claim markers in draft/, {len(rows)} claim rows in plan/TODO.md")
     return 1 if problems else 0
 
 

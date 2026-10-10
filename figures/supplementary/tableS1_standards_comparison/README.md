@@ -7,4 +7,4 @@
 | Source | SfN 2025 poster comparison tables. |
 | Build | Not generated; place the table (Markdown/CSV/XLSX) here. |
 | Legend | `draft/12_figures_tables.md` (single source for all legends) |
-| Open tasks | `TODO.md`, section "F. Figures" |
+| Open tasks | `plan/TODO.md`, section "3. Figures" |

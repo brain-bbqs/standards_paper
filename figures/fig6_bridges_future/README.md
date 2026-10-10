@@ -7,4 +7,4 @@
 | Source | Panel b redraws the poster's future-directions wheel; panel a from Section 8 (six bridge types). |
 | Build | Not generated; place the final artwork here. |
 | Legend | `draft/12_figures_tables.md` (single source for all legends) |
-| Open tasks | `TODO.md`, section "F. Figures" |
+| Open tasks | `plan/TODO.md`, section "3. Figures" |

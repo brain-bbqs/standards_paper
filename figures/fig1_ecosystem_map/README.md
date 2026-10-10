@@ -9,4 +9,4 @@
 | Source | Analogy table on SfN 2025 poster slide 6 (`../SFN Poster Data Standards.pptx`). Use the layer name "file organization standards". |
 | Build | Not generated; place the final artwork (PDF/SVG + editable source) here. |
 | Legend | `draft/12_figures_tables.md` (single source for all legends) |
-| Open tasks | `TODO.md`, section "3. Figures" (F2) |
+| Open tasks | `plan/TODO.md`, section "3. Figures" (F2) |

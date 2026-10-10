@@ -9,4 +9,4 @@
 | Source | Table 2 in `draft/03_fair_integration.md`; legend in `draft/12_figures_tables.md`. Replaces the poster's "FAIR Data Score" graphic. |
 | Build | Not generated; place the final artwork here. |
 | Legend | `draft/12_figures_tables.md` (single source for all legends) |
-| Open tasks | `TODO.md`, section "3. Figures" (F3) |
+| Open tasks | `plan/TODO.md`, section "3. Figures" (F3) |

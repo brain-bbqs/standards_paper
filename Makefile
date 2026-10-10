@@ -1,7 +1,7 @@
 # Build generated figures and check the TODO list against the draft.
 #
 #   make figures   regenerate all generated figures into figures/
-#   make check     check that every [TODO-Cn] marker in draft/ has an entry in TODO.md and vice versa
+#   make check     check that every [TODO-Cn] marker in draft/ has an entry in plan/TODO.md and vice versa
 #   make kg-env    set up the knowledge-graph Python environment (first time only)
 
 KG       := knowledge_graph

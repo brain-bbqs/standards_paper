@@ -4,11 +4,11 @@
 parentheses, or acronyms).*
 
 **Authors:** O. Rübel*, …, Y. O. Halchenko* — *full list from the SfN 2025 poster plus confirmed contributors
-(close by Nov 14, 2026; see `TODO.md` A1).*
+(close by Nov 14, 2026; see `plan/TODO.md` A1).*
 
 **Draft status:** first full draft, 2026-10-09. Markers like `[TODO-C3]` flag claims that need a
 citation, data, or expert confirmation; `[REF: …]` marks citations still to be inserted. Both are listed
-in `../TODO.md`.
+in `../plan/TODO.md`.
 
 ---
 

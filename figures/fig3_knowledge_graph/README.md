@@ -7,4 +7,4 @@
 | Source | `knowledge_graph/` (`ecokg figure`); data in `knowledge_graph/data/`. |
 | Build | `make fig3` (from the paper root). |
 | Legend | `draft/12_figures_tables.md` (single source for all legends) |
-| Open tasks | `TODO.md`, section "F. Figures" |
+| Open tasks | `plan/TODO.md`, section "3. Figures" |

@@ -7,4 +7,4 @@
 | Source | Spec in `draft/12_figures_tables.md`; should reuse the visual language of Fig. 1. |
 | Build | Not generated; place the final artwork here. |
 | Legend | `draft/12_figures_tables.md` (single source for all legends) |
-| Open tasks | `TODO.md`, section "F. Figures" |
+| Open tasks | `plan/TODO.md`, section "3. Figures" |

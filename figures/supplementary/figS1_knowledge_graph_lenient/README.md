@@ -7,4 +7,4 @@
 | Source | `knowledge_graph/` (`ecokg figure --mode lenient`). |
 | Build | `make figS1`. |
 | Legend | `draft/12_figures_tables.md` (single source for all legends) |
-| Open tasks | `TODO.md`, section "F. Figures" |
+| Open tasks | `plan/TODO.md`, section "3. Figures" |

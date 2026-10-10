@@ -1,9 +1,5 @@
 # Paper plan
 
-*Updated 2026-10-10. A full first draft exists, so this plan no longer describes content. It records
-(1) decisions that are not visible in the draft itself and (2) the steps needed to finish and submit.
-Item IDs (D, A, S, F, C) refer to `TODO.md`, which holds the details and owners.*
-
 | What | Where |
 |---|---|
 | Draft (one file per section) | `draft/` |
@@ -60,7 +56,7 @@ Item IDs (D, A, S, F, C) refer to `TODO.md`, which holds the details and owners.
 
 ### Phase 2 — Journal and author review (Nov 17 – Dec 19, 2026)
 1. Decide on a pre-submission enquiry and the fee source (D9).
-2. Move to Google Docs and open author review round 1 (A8).
+2. Move to Google Docs and open author review round 1 (optional)(A8).
 3. Standards teams check Section 6, Table 3, and R1–R11 (A4); domain experts verify knowledge-graph
    edges and node assignments (KG 1.3).
 4. Designed figures in first versions (F2, F3); review Fig. 4 (F4).
@@ -86,13 +82,3 @@ Item IDs (D, A, S, F, C) refer to `TODO.md`, which holds the details and owners.
   verification, final numbers, responses to reviewers)?
 - **Large source files.** The poster `.pptx`, BBQS workbook, and BRAIN KB materials stay outside the
   repository (in the parent folder). Confirm this before the repository is shared or made public.
-
-## 4. Risks
-
-| Risk | Mitigation |
-|---|---|
-| Knowledge-graph results depend on incomplete registry data | Complete FAIRsharing relations (KG 1.1), report coverage, keep the sensitivity analysis, frame as a first version |
-| BBQS clearance delayed or restricted | Only aggregate counts in the paper; Section 5 can be reduced to qualitative statements if needed |
-| Standards teams disagree with Table 3 or the recommendations | Early review by the teams (A4); recommendations framed as community guidance |
-| 30+ authors slow the review rounds | Fixed review windows, section leads, silence-is-consent sign-off |
-| Overlap with the BRAIN KB community paper | Mention knowledge bases only as a future direction; cite the KB paper when public |
