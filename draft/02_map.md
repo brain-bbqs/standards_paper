@@ -75,7 +75,8 @@ through shared conventions, which is why a video recorded on any phone can be pl
 neuroscience, technologies more often cross these boundaries, with a single project taking on the roles
 of several layers, or with the roles of different layers treated as one problem. The rest of this paper
 argues that separating concerns across layers, combined with deliberate integration between them, is
-what makes data FAIR (Section 3) and what a multimodal program such as BBQS needs (Sections 4–7).
+what makes data FAIR (Section 3) and what a multimodal program such as BBQS needs (Sections 5–8).
+Section 4 first examines how well the layers are connected today.
 
 ## Boundaries are fuzzy, and that is useful
 

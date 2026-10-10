@@ -1,9 +1,9 @@
-# 8. Future directions and needs
+# 9. Future directions and needs
 
-*(target ~600 words; Fig. 5)*
+*(target ~600 words; Fig. 6)*
 
 Looking beyond the current gaps, we see five scientific directions that will shape the next generation
-of data standards, and three cross-cutting needs that determine whether they succeed (Fig. 5).
+of data standards, and three cross-cutting needs that determine whether they succeed (Fig. 6).
 
 **Living data.** Data are increasingly updated after publication with new annotations, re-processed
 versions, and corrected metadata. Standards need to support provenance, modular data that can be
@@ -16,7 +16,7 @@ better curation and quality control. Ontology annotation becomes essential when 
 dataset [TODO-C29].
 
 **Multimodal data.** As in BBQS, experiments increasingly combine modalities from different communities.
-This requires linked data across archives, integration across standards (Section 7), and tools, possibly
+This requires linked data across archives, integration across standards (Section 8), and tools, possibly
 AI-assisted, that help map between representations.
 
 **AI and new technologies.** AI-ready data, foundation models trained on neural and behavioral data, and
@@ -45,7 +45,7 @@ Related community efforts, such as the BRAIN Initiative's plans for a knowledge 
 across BRAIN archives, address the archive and knowledge layers of the map and will depend on the
 standards discussed here [TODO-C32].
 
-# 9. Conclusion
+# 10. Conclusion
 
 *(target ~200 words)*
 

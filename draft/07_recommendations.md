@@ -1,4 +1,4 @@
-# 6. Recommendations for BBQS data
+# 7. Recommendations for BBQS data
 
 *(target ~1,200 words; Table 3)*
 
@@ -26,7 +26,7 @@ Psych-DS teams* [TODO-C17].
 | Audio / vocalizations | ✓ (TimeSeries + intervals) | — | — | |
 | Structured tasks / events | ✓ (ndx-structured-behavior, ndx-events) | ✓ (task events) | — | HED in both |
 | Questionnaires / surveys | — | partial | ✓ (recommended) | |
-| Social interactions, feeding, facial expressions, home-cage monitoring, VR, force plates, EMG | — | — / ext. | — | **Gaps** (Section 7) |
+| Social interactions, feeding, facial expressions, home-cage monitoring, VR, force plates, EMG | — | — / ext. | — | **Gaps** (Section 8) |
 
 ## Choosing standards
 

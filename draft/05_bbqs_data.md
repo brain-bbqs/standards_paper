@@ -1,6 +1,6 @@
-# 4. BBQS data are multimodal, naturalistic, and span many species
+# 5. BBQS data are multimodal, naturalistic, and span many species
 
-*(target ~600 words; Fig. 4a–b)*
+*(target ~600 words; Fig. 4)*
 
 The NIH BRAIN Initiative's Brain Behavior Quantification and Synchronization (BBQS) program funds
 projects that develop tools to measure behavior precisely and to synchronize it with neural activity,
@@ -13,25 +13,25 @@ statistics only (Methods) [TODO-C7]. The inventory covers **28 awards** (15 R34,
 
 **Many species.** Projects study **13 species groups**, mostly humans (11 awards) and mice (8), as well
 as rats, gerbils, ferrets, sheep, marmosets, wild capuchin monkeys, songbirds (cowbirds), cichlid fish,
-other fish, flies, and an acoel worm (one award each) [TODO-C8]. Seventeen awards study only non-human
-animals and eleven only humans. Species diversity matters for standards, because terminologies for
-anatomy, atlases, and behavior are well developed for humans and a few model organisms but sparse for
-many of these species [TODO-C9].
+other fish, flies, and an acoel worm (one award each) (Fig. 4a) [TODO-C8]. Seventeen awards study only
+non-human animals and eleven only humans. Species diversity matters for standards, because terminologies
+for anatomy, atlases, and behavior are well developed for humans and a few model organisms but sparse
+for many of these species [TODO-C9].
 
 **Many modalities, captured together.** Video is the dominant behavioral modality (mentioned by 25 of 28
 awards), followed by wearable or inertial sensors (18), pose estimation (13; most often with DeepLabCut
-[REF: Mathis 2018] or SLEAP [REF: Pereira 2022]), audio (13), and eye tracking (10) [TODO-C10]. Neural
-data include extracellular electrophysiology (13 awards), EEG (8), and optical physiology (5), and
-several projects add EMG, GPS, RFID, or physiological sensors. Most projects record several of these
-streams at once, so that **synchronization across devices**, with a shared time base and metadata that
-say how clocks were aligned, is as important as the format of any single stream.
+[REF: Mathis 2018] or SLEAP [REF: Pereira 2022]), audio (13), and eye tracking (10) (Fig. 4b)
+[TODO-C10]. Neural data include extracellular electrophysiology (13 awards), EEG (8), and optical
+physiology (5), and several projects add EMG, GPS, RFID, or physiological sensors. Most projects record
+several of these streams at once, so that **synchronization across devices**, with a shared time base
+and metadata that say how clocks were aligned, is as important as the format of any single stream.
 
 **Naturalistic behavior.** Projects describe the behaviors they measure using a common list (22 awards
 answered). The most frequent are locomotion and movement (16 awards), social interactions (15),
 exploratory behavior (14), feeding and drinking (9), posture and balance (8), vocalizations and speech
 (8), and emotional and stress responses (8); less frequent are cognitive and memory tasks (6), gait (5),
 eye movements (5), facial expressions (4), reproductive behaviors, physical activity levels, and operant
-conditioning (3 each), sleep (2), and pain indicators (1) (Fig. 4b). Many of these are continuous,
+conditioning (3 each), sleep (2), and pain indicators (1) (Fig. 4c). Many of these are continuous,
 unconstrained, and long-lasting, recorded over hours or days in home cages, aviaries, homes, or the wild
 rather than as structured trials in a task.
 

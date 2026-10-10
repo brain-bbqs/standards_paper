@@ -29,7 +29,7 @@ Psych-DS (supported), points to an extension or proposal in progress (in progres
 entry as "TODO" or gives no entry (no guidance). The coding is in `analysis/behavior_coverage.csv`
 [TODO-C23].
 
-## Ecosystem knowledge graph (Supplementary Fig. S1)
+## Ecosystem knowledge graph (Fig. 3, Supplementary Fig. S1)
 
 Nodes are technologies selected from the SfN 2025 poster, the guideline, and the BBQS inventory, each
 assigned to one primary layer (with optional secondary layers) and to one or more research communities;

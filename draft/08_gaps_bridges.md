@@ -1,13 +1,13 @@
-# 7. Gaps and the bridges BBQS needs
+# 8. Gaps and the bridges BBQS needs
 
-*(target ~900 words; Fig. 4c, Fig. 5; Supplementary Fig. S1 = knowledge graph)*
+*(target ~800 words; Fig. 4c, Fig. 6)*
 
 ## Behaviors without a home
 
 The BBQS guideline lists, for each common recording technology and behavior type, how to store it in
 NWB, BIDS, and Psych-DS. Where no established representation exists, the guideline says so explicitly
 ("TODO — how to store?"). Comparing these entries with the behaviors BBQS projects actually record
-(Section 4) shows a clear mismatch (Fig. 4c) [TODO-C23].
+(Section 5) shows a clear mismatch (Fig. 4c) [TODO-C23].
 
 - **Social interactions** (15 of 22 awards), **feeding and drinking** (9), **posture and balance** (8),
   **emotional and stress responses** (8), **facial expressions** (4), **reproductive behaviors** (3),
@@ -29,15 +29,10 @@ annotations to the underlying video, pose, and neural data.
 
 ## Few bridges across communities
 
-The map also helps locate where integration happens today. Relationships between technologies in
-*different layers* within a community are common and well documented. NWB uses HDF5 and HDMF, BIDS uses
-JSON and TSV, archives accept the standards of their community. Relationships *between communities* are
-rarer. To make this visible, we compiled a knowledge graph of 72 technologies and 133 relationships from
-expert curation and the RRID and FAIRsharing registries (Supplementary Fig. S1; Methods). Drawn with
-communities as columns, most cross-community links run through a few hubs, which are BIDS (which now
-organizes EEG, microscopy, motion, and NWB data), NWB, HED, and multi-modal archives such as EMBER and
-DANDI [TODO-C25]. The registries record only a small fraction of these relationships [TODO-C26], so much
-of this integration knowledge currently lives in documentation and in the heads of developers.
+The knowledge graph in Section 4 showed that connections between layers are common, while bridges
+between communities are concentrated in a few hubs, namely BIDS, NWB, HED, and EMBER (Fig. 3). Every
+BBQS project combines data from several communities, so BBQS depends on these hubs and is exposed
+wherever they do not reach, for example for behavioral annotations, pose, and audio.
 
 Integration across modalities is therefore still done largely by users and large consortia, at
 considerable cost to each project. For BBQS, where every project is multimodal, this cost is paid over
@@ -48,7 +43,7 @@ and over.
 Video technology shows what such bridges achieve. A video from one platform can be embedded in another,
 subtitles in a common format play in any player, and a single container can carry several audio tracks
 recorded on different devices. Bridges of this kind are being built at every layer of the neuroscience
-map, and BBQS can both use and drive them (Fig. 5).
+map, and BBQS can both use and drive them (Fig. 6).
 
 1. **Structural bridges** connect file organization standards and dataset organization standards, for
    example NWB files inside BIDS datasets (BEP032) and BIDS-inspired layouts for NWB data (DANDI

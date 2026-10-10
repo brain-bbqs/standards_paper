@@ -4,17 +4,18 @@
 |---|---|
 | `00_title_abstract.md` | Title, authors, abstract |
 | `01_introduction.md` | 1. Introduction |
-| `02_map.md` | 2. A map of the ecosystem (Fig. 1, Table 1) |
-| `03_fair_integration.md` | 3. FAIR requires integration across layers (Fig. 2, Table 2) |
-| `04_bbqs_data.md` | 4. The BBQS challenge (Fig. 4a–b) |
-| `05_bbqs_stack.md` | 5. The BBQS standards stack (Fig. 3) |
-| `06_recommendations.md` | 6. Recommendations (Table 3, R1–R11) |
-| `07_gaps_bridges.md` | 7. Gaps and bridges (Fig. 4c, Fig. 5, Suppl. Fig. S1) |
-| `08_future_conclusion.md` | 8. Future directions; 9. Conclusion |
-| `09_statements.md` | Data/Code Availability, contributions, competing interests, funding, ethics |
-| `10_methods.md` | Methods |
-| `11_figures_tables.md` | Display items: status, legends, Table 1 |
-| `12_references.md` | Working reference list |
+| `02_map.md` | 2. A map of the data standards ecosystem (Fig. 1, Table 1) |
+| `03_fair_integration.md` | 3. FAIR data requires integration across layers (Fig. 2, Table 2) |
+| `04_knowledge_graph.md` | 4. Mapping the connections in the ecosystem (Fig. 3, Suppl. Fig. S1) |
+| `05_bbqs_data.md` | 5. BBQS data (Fig. 4) |
+| `06_bbqs_stack.md` | 6. The BBQS standards stack (Fig. 5) |
+| `07_recommendations.md` | 7. Recommendations (Table 3, R1–R11) |
+| `08_gaps_bridges.md` | 8. Gaps and bridges (Fig. 4c, Fig. 6) |
+| `09_future_conclusion.md` | 9. Future directions; 10. Conclusion |
+| `10_statements.md` | Data/Code Availability, contributions, competing interests, funding, ethics |
+| `11_methods.md` | Methods |
+| `12_figures_tables.md` | Display items: registry, legends, Table 1 |
+| `13_references.md` | Working reference list |
 
 Open claims and decisions: `../TODO.md`. Build a single file with
-`cat 0*.md 10_methods.md > /tmp/draft.md` (or pandoc).
+`cat 0*.md 10_statements.md 11_methods.md > /tmp/draft.md` (or pandoc).

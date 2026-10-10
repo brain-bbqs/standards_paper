@@ -1,8 +1,8 @@
-# 5. The BBQS standards stack
+# 6. The BBQS standards stack
 
-*(target ~700 words; Fig. 3)*
+*(target ~700 words; Fig. 5)*
 
-BBQS has converged on a small set of standards that together cover the layers of the map (Fig. 3).
+BBQS has converged on a small set of standards that together cover the layers of the map (Fig. 5).
 They were selected by the BBQS Data Standards Working Group because they are open, community-governed,
 supported by the BRAIN Initiative, accepted by the EMBER archive, and extensible [TODO-C13].
 
@@ -56,4 +56,4 @@ shared terminologies are the categories and tags. Seen on the map, the stack is 
 direction. Each layer has at least one recommended technology, and the technologies are connected (EMBER
 accepts NWB, BIDS, and Psych-DS; NWB uses HDF5/Zarr and HDMF; Psych-DS uses CSV and LinkML; BIDS uses
 JSON/TSV and can include NWB). The gaps are horizontal, between NWB, BIDS, and Psych-DS, and between all
-three and the formats used by behavior-tracking tools (Section 7).
+three and the formats used by behavior-tracking tools (Section 8).

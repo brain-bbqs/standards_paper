@@ -8,7 +8,7 @@ Commands
     harvest-fairsharing  harvest FAIRsharing associations -> data/harvested/fairsharing_edges.json
                          (--resolve: list candidate records for seeds without a FAIRsharing id)
     report               build the graph; write output/ (graph, CSVs, stats.md, gaps.md)
-    figure               draw the layer x community figure (draft Fig. 3) -> output/fig3_ecosystem.*
+    figure               draw the layer x community figure (paper Fig. 3) -> output/fig3_knowledge_graph.*
 """
 
 from __future__ import annotations
@@ -301,7 +301,7 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=cmd_report)
     p = sub.add_parser("figure", help="draw the layer x community figure (draft Fig. 3)")
     p.add_argument("--out", default=str(OUTPUT_DIR))
-    p.add_argument("--name", default="fig3_ecosystem", help="file name without suffix")
+    p.add_argument("--name", default="fig3_knowledge_graph", help="file name without suffix")
     p.add_argument("--mode", choices=("strict", "lenient"), default="strict", help="community-scope rule")
     p.add_argument("--sources", choices=("all", "curated", "registry"), default="all", help="edge evidence")
     p.add_argument("--verified-only", action="store_true", help="only expert-verified edges")

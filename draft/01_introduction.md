@@ -42,14 +42,15 @@ not [TODO-C3].
 This paper has two goals. First, we propose a **map of the data standards ecosystem** (Fig. 1, Table 1)
 that separates six layers by the problem each solves, illustrates each with its counterpart in online
 video sharing, and we use it to explain why FAIR data [REF: Wilkinson 2016] require integration across
-layers (Section 3). The map is meant to give technologists and practitioners a shared vocabulary, and to
-make visible when a project crosses a boundary, which is the point at which building a bridge to an
-existing solution may be better than expanding scope. Second, we apply the map to **BBQS** (Sections
-4–7). We characterize the data BBQS projects collect, describe the standards stack BBQS has adopted,
-give recommendations by data type based on the BBQS data standards guideline developed by the program's
-Data Standards Working Group [REF: BBQS guideline], and identify where standards support is still
-missing. We end with the bridges and investments needed for multimodal brain–behavior science (Section
-8).
+layers (Section 3). We then use a knowledge graph of the ecosystem to show where technologies are
+connected today, and where they are not (Section 4). The map is meant to give technologists and
+practitioners a shared vocabulary, and to make visible when a project crosses a boundary, which is the
+point at which building a bridge to an existing solution may be better than expanding scope. Second, we
+apply the map to **BBQS** (Sections 5–8). We characterize the data BBQS projects collect, describe the
+standards stack BBQS has adopted, give recommendations by data type based on the BBQS data standards
+guideline developed by the program's Data Standards Working Group [REF: BBQS guideline], and identify
+where standards support is still missing. We end with the bridges and investments needed for multimodal
+brain–behavior science (Section 9).
 
 This is not a review of every standard. The map and examples focus on technologies used in
 neuroscience and, in the second part, on those relevant to BBQS; comprehensive and continuously
