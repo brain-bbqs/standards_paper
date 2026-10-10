@@ -147,7 +147,7 @@ Rebuild generated figures with `make figures`.
 | C29 | 9 | Reuse at scale needs remote/partial access, virtual datasets, curation | Citations (cloud-native formats, DataLad) | Claude |
 | C30 | 9 | Minimal required metadata still needed with AI-generated annotation | Citation, or frame as our position | core |
 | C31 | 9 | Standards are long-lived infrastructure; software changes faster | Citation (research software sustainability) or frame as position | Claude |
-| C32 | 9 | Knowledge bases connecting data across archives are being planned within the BRAIN Initiative (now part of the "Integration across modalities and archives" direction) | Cite a public source only (KB paper when available); never the roundtable summary. If no public source exists by submission, drop "being planned within the BRAIN Initiative" | core |
+| C32 | 9 | Knowledge bases connecting data, metadata, and derived findings across archives are a natural next step (BRAIN Initiative mention removed by OR) | Cite a public source only (e.g., the BRAIN KB paper when available); never the roundtable summary | core |
 | C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; catalog; NIMP) | Confirm NIMP description and whether BICAN uses BossDB; cite BICCN 2021 and the portals | core (BICAN contact); Claude for citations |
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
 | C35 | 4 | The lenient community rule hides most bridges (26 vs. 2 connections) | Depends on D10 | core |

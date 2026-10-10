@@ -21,10 +21,9 @@ modalities from different communities, and the resulting data are often distribu
 archives, as in BICCN and BICAN (Section 3). Making such data usable together requires integration
 across standards (Section 8), persistent identifiers and shared metadata that link records across
 archives, and tools, possibly AI-assisted, that help map between representations. Knowledge bases that
-connect data, metadata, and derived findings across archives, such as those being planned within the
-BRAIN Initiative, are a natural next step [TODO-C32]. They build on the archive and ontology layers of
-the map and depend on the standards below them, because a knowledge base can only link what has been
-described consistently.
+connect data, metadata, and derived findings across archives are a natural next step [TODO-C32]. 
+They build on the archive and ontology layers of the map and depend on the standards below them, 
+because a knowledge base can only link what has been described consistently.
 
 **AI and new technologies.** AI-ready data, foundation models trained on neural and behavioral data, and
 new recording technologies all create demand for standards for new modalities and for integration with
