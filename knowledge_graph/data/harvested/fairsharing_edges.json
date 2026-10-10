@@ -1,0 +1,1234 @@
+[
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dandi",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "openneuro",
+  "other_id": 3500,
+  "other_name": "Data Citation Implementation",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "openneuro",
+  "other_id": 3504,
+  "other_name": "Open Science Prize",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "openneuro",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dabi",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "bil",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "bossdb",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "sparc_portal",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tcia",
+  "other_id": 4940,
+  "other_name": "NFDI4Health collection - Standards for Health Research Studies",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tcia",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tcia",
+  "other_id": 3500,
+  "other_name": "Data Citation Implementation",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tcia",
+  "other_id": 3504,
+  "other_name": "Open Science Prize",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tcia",
+  "other_id": 7193,
+  "other_name": "Artificial Intelligence Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tcia",
+  "other_id": 7486,
+  "other_name": "RDMkit Cancer data Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "odc_tbi",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "odc_sci",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nda",
+  "other_id": 3493,
+  "other_name": "NIH-Supported Data Sharing Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "bids",
+  "other_id": 3539,
+  "other_name": "INCF Endorsed standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "bids",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "bids",
+  "other_id": 6224,
+  "other_name": "Social Sciences Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "bids",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "sparc_sds",
+  "other_id": 3539,
+  "other_name": "INCF Endorsed standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "sparc_sds",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "out",
+  "label": "related_to",
+  "node": "nwb",
+  "other_id": 6376,
+  "other_name": "Ecosystem for Multi-modal Brain-behavior Experimentation and Research",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "out",
+  "label": "related_to",
+  "node": "nwb",
+  "other_id": 3322,
+  "other_name": "Distributed Archives for Neurophysiology Data Integration",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "out",
+  "label": "related_to",
+  "node": "nwb",
+  "other_id": 307,
+  "other_name": "Brain Imaging Data Structure",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "out",
+  "label": "related_to",
+  "node": "nwb",
+  "other_id": 4718,
+  "other_name": "Hierarchical Event Descriptors",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "out",
+  "label": "related_to",
+  "node": "nwb",
+  "other_id": 1136,
+  "other_name": "Hierarchical Data Format",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "out",
+  "label": "related_to",
+  "node": "nwb",
+  "other_id": 4998,
+  "other_name": "ISO 8601 Date and time format",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nwb",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "implements",
+  "node": "nwb",
+  "other_id": 2975,
+  "other_name": "EBRAINS",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "implements",
+  "node": "nwb",
+  "other_id": 3322,
+  "other_name": "Distributed Archives for Neurophysiology Data Integration",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nwb",
+  "other_id": 3539,
+  "other_name": "INCF Endorsed standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nwb",
+  "other_id": 6224,
+  "other_name": "Social Sciences Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nwb",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "extends",
+  "node": "nwb",
+  "other_id": 307,
+  "other_name": "Brain Imaging Data Structure",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_tiff",
+  "other_id": 3773,
+  "other_name": "BY-COVID Data Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_tiff",
+  "other_id": 3497,
+  "other_name": "Cell Migration Standardisation Organisation",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_tiff",
+  "other_id": 3502,
+  "other_name": "Open Microscopy Environment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_tiff",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_tiff",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_zarr",
+  "other_id": 3502,
+  "other_name": "Open Microscopy Environment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_zarr",
+  "other_id": 3508,
+  "other_name": "Euro-BioImaging ERIC ",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_zarr",
+  "other_id": 5796,
+  "other_name": "AgroServ",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "ome_zarr",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dicom",
+  "other_id": 4940,
+  "other_name": "NFDI4Health collection - Standards for Health Research Studies",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dicom",
+  "other_id": 3536,
+  "other_name": "Systems Medicine",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dicom",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dicom",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dicom",
+  "other_id": 6286,
+  "other_name": "Integration of Heterogeneous Data and Evidence towards Regulatory and HTA Acceptance Consortium",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "dicom",
+  "other_id": 7486,
+  "other_name": "RDMkit Cancer data Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nix",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nix",
+  "other_id": 3539,
+  "other_name": "INCF Endorsed standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nix",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "openminds",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "edf",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "edf",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 3773,
+  "other_name": "BY-COVID Data Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 3528,
+  "other_name": "Genomic Standards Consortium",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 3526,
+  "other_name": "AIRR Data Commons",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 3536,
+  "other_name": "Systems Medicine",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 3610,
+  "other_name": "Translational Medicine at AstraZeneca FAIR Implementation Profile",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 3611,
+  "other_name": "Clinical Developments at AstraZeneca FAIR Implementation Profile",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 7489,
+  "other_name": "RDMkit Human pathogen genomics Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "uberon",
+  "other_id": 8014,
+  "other_name": "Systems Biology  Identifier Systems and Ontologies",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3773,
+  "other_name": "BY-COVID Data Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3497,
+  "other_name": "Cell Migration Standardisation Organisation",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3504,
+  "other_name": "Open Science Prize",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3505,
+  "other_name": "FAIRDOM Community Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3509,
+  "other_name": "EMBL-ABR",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3536,
+  "other_name": "Systems Medicine",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 3540,
+  "other_name": "RDA Covid-19 WG Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 4566,
+  "other_name": "Global Biodata Coalition  - Global Core Biodata Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 4741,
+  "other_name": "Plant research data resources for european infrastructures",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 5796,
+  "other_name": "AgroServ",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 7487,
+  "other_name": "RDMkit Single-cell sequencing Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "gene_ontology",
+  "other_id": 8014,
+  "other_name": "Systems Biology  Identifier Systems and Ontologies",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 3497,
+  "other_name": "Cell Migration Standardisation Organisation",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 3510,
+  "other_name": "eTRIKS Standards Starter Pack",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 3526,
+  "other_name": "AIRR Data Commons",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 3536,
+  "other_name": "Systems Medicine",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 7484,
+  "other_name": "RDMkit Enzymology and biocatalysis Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cell_ontology",
+  "other_id": 8014,
+  "other_name": "Systems Biology  Identifier Systems and Ontologies",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "protein_ontology",
+  "other_id": 3773,
+  "other_name": "BY-COVID Data Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "protein_ontology",
+  "other_id": 3497,
+  "other_name": "Cell Migration Standardisation Organisation",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "protein_ontology",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "protein_ontology",
+  "other_id": 3536,
+  "other_name": "Systems Medicine",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "protein_ontology",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "protein_ontology",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "protein_ontology",
+  "other_id": 7484,
+  "other_name": "RDMkit Enzymology and biocatalysis Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nifstd",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "obo_foundry",
+  "other_id": 3504,
+  "other_name": "Open Science Prize",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "obo_foundry",
+  "other_id": 3536,
+  "other_name": "Systems Medicine",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "obo_foundry",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "obo_foundry",
+  "other_id": 7193,
+  "other_name": "Artificial Intelligence Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "radlex",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "radlex",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "radlex",
+  "other_id": 3540,
+  "other_name": "RDA Covid-19 WG Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "radlex",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cognitive_atlas",
+  "other_id": 6224,
+  "other_name": "Social Sciences Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "cognitive_atlas",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hed",
+  "other_id": 6224,
+  "other_name": "Social Sciences Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hed",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nidm",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 4940,
+  "other_name": "NFDI4Health collection - Standards for Health Research Studies",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 3773,
+  "other_name": "BY-COVID Data Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 3506,
+  "other_name": "bioCADDIE",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 3543,
+  "other_name": "Crosswalk of most used metadata schemes and guidelines for metadata interoperability",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 3641,
+  "other_name": "Research Metadata Schema Crosswalk Mappings to Schema.org",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 3634,
+  "other_name": "Common Metadata Framework PROJECT",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 3644,
+  "other_name": "Crosswalk of mappings to the most current version of Dataverse",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 6443,
+  "other_name": "ESRF - Resources for FAIR Assessment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "datacite_schema",
+  "other_id": 6550,
+  "other_name": "Astronomy, astrophysics, heliophysics and planetary sciences - Resources for FAIR Assessment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nbo",
+  "other_id": 6224,
+  "other_name": "Social Sciences Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nbo",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hdf5",
+  "other_id": 3502,
+  "other_name": "Open Microscopy Environment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hdf5",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hdf5",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hdf5",
+  "other_id": 6443,
+  "other_name": "ESRF - Resources for FAIR Assessment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hdf5",
+  "other_id": 6550,
+  "other_name": "Astronomy, astrophysics, heliophysics and planetary sciences - Resources for FAIR Assessment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "hdf5",
+  "other_id": 7487,
+  "other_name": "RDMkit Single-cell sequencing Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nifti",
+  "other_id": 4940,
+  "other_name": "NFDI4Health collection - Standards for Health Research Studies",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nifti",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "nifti",
+  "other_id": 6286,
+  "other_name": "Integration of Heterogeneous Data and Evidence towards Regulatory and HTA Acceptance Consortium",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 3773,
+  "other_name": "BY-COVID Data Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 3613,
+  "other_name": "Bio-assay management at Novartis FAIR Implementation Profile",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 3502,
+  "other_name": "Open Microscopy Environment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 6443,
+  "other_name": "ESRF - Resources for FAIR Assessment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "json",
+  "other_id": 6550,
+  "other_name": "Astronomy, astrophysics, heliophysics and planetary sciences - Resources for FAIR Assessment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tsv_csv",
+  "other_id": 3502,
+  "other_name": "Open Microscopy Environment",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "tsv_csv",
+  "other_id": 7811,
+  "other_name": "RDMkit Agroecology Domain",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "yaml",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "fastq",
+  "other_id": 3773,
+  "other_name": "BY-COVID Data Resources",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "fastq",
+  "other_id": 3505,
+  "other_name": "FAIRDOM Community Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "fastq",
+  "other_id": 3529,
+  "other_name": "Wheat Data Interoperability Guidelines",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "fastq",
+  "other_id": 3533,
+  "other_name": "ISO 20691 - Requirements for data formatting and description in the life sciences",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "fastq",
+  "other_id": 4787,
+  "other_name": "EDITH standards collection for Virtual Human Twins in Health",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "fastq",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "fastq",
+  "other_id": 6225,
+  "other_name": "Life Science Standards",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "linkml",
+  "other_id": 5742,
+  "other_name": "Multi-Omics Metadata Standards Integration Working Group Iterative Collection",
+  "registry": "fairsharing"
+ },
+ {
+  "direction": "in",
+  "label": "collects",
+  "node": "xml_schema",
+  "other_id": 3502,
+  "other_name": "Open Microscopy Environment",
+  "registry": "fairsharing"
+ }
+]
