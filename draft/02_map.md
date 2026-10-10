@@ -74,11 +74,13 @@ The analogy also shows why these distinctions matter. The video ecosystem works 
 separation of concerns. Nobody expects YouTube to invent a video codec, or H.264 to decide which
 playlist a video belongs in. Each layer does one job well and integrates with the layers around it
 through shared conventions, which is why a video recorded on any phone can be played on any platform. In
-neuroscience, technologies more often cross these boundaries, with a single project taking on the roles
-of several layers, or with the roles of different layers treated as one problem. The rest of this paper
-argues that separating concerns across layers, combined with deliberate integration between them, is
-what makes data FAIR (Section 3) and what a multimodal program such as BBQS needs (Sections 5–8).
-Section 4 first examines how well the layers are connected today.
+neuroscience, many technologies were developed independently within individual subdomains, such as
+neurophysiology, neuroimaging, and microscopy, to meet the immediate needs of each community. As a
+result, a single technology often takes on the roles of several layers, and similar problems are solved
+separately in different communities. We argue that separating concerns across layers, combined with
+deliberate integration between them, is what makes data FAIR (Section 3) and what multimodal programs
+such as BBQS need (Sections 5–8). Section 4 first examines how well technologies are connected across
+layers and communities today.
 
 ## Boundaries are fuzzy, and that is useful
 
