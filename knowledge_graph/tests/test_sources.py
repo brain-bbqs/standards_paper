@@ -135,3 +135,34 @@ def test_clean_token_and_summary():
     assert 8 <= info["expires_in_minutes"] <= 10
     assert jwt not in str(info) and payload not in str(info)
     assert fairsharing.token_summary(None) == {"present": False}
+
+
+def test_rrid_search_parses_hits_and_keeps_key_out_of_url(monkeypatch, tmp_path, fixture_json):
+    from ecokg.http import CachedJsonClient
+
+    http = CachedJsonClient(tmp_path)
+    calls = []
+
+    def fake_request(method, url, **kwargs):
+        calls.append((method, url, kwargs))
+        return fixture_json("rrid_record.json")
+
+    monkeypatch.setattr(http, "request", fake_request)
+    client = rrid.RridClient(http, api_key=" secret-key ")
+    hits = client.resolve("Neurodata Without Borders", "NWB")
+    assert [r.rrid for r in hits] == ["SCR_015242"]
+    assert [c[1] for c in calls] == [rrid.SEARCH_URL, rrid.SEARCH_URL]  # abbreviation, then name
+    assert http.session.headers["apikey"] == "secret-key"
+    assert all("secret-key" not in str(c) for c in calls)
+
+
+def test_rrid_search_requires_key(monkeypatch, tmp_path):
+    from ecokg.http import CachedJsonClient
+
+    monkeypatch.delenv("SCICRUNCH_API_KEY", raising=False)
+    try:
+        rrid.RridClient(CachedJsonClient(tmp_path)).search("BIDS")
+    except RuntimeError as exc:
+        assert "SCICRUNCH_API_KEY" in str(exc)
+    else:
+        raise AssertionError("expected RuntimeError")

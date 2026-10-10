@@ -3,6 +3,7 @@
 Commands
     validate             check seeds.yaml / curated_edges.yaml against taxonomy.yaml
     rrid-check           resolve every seed RRID and flag name mismatches
+    rrid-search          search SciCrunch for seeds without an RRID (needs SCICRUNCH_API_KEY)
     harvest-rrid         harvest RRID relationships -> data/harvested/rrid_edges.json
     harvest-fairsharing  harvest FAIRsharing associations -> data/harvested/fairsharing_edges.json
                          (--resolve: list candidate records for seeds without a FAIRsharing id)
@@ -17,6 +18,8 @@ import json
 import logging
 import sys
 from pathlib import Path
+
+import requests
 
 from . import CACHE_DIR, HARVEST_DIR, OUTPUT_DIR
 from .build import build_graph, load_harvested
@@ -80,6 +83,30 @@ def cmd_rrid_check(args) -> int:
                 print(f"ok        {n.id:24} {rrid}: {rec.name}")
     print(f"{checked} RRIDs checked, {problems} problems")
     return 1 if problems else 0
+
+
+def cmd_rrid_search(args) -> int:
+    """Search the SciCrunch Registry for seeds without an RRID; write candidates for review."""
+    _, nodes, _, _ = _load_all()
+    client = RridClient(CachedJsonClient(CACHE_DIR / "rrid_search"))
+    todo = [n for n in nodes.values() if not n.rrid]
+    resolved = {}
+    for n in todo:
+        try:
+            hits = client.resolve(n.name, n.abbreviation)
+        except requests.HTTPError as exc:  # report the server message once and stop (e.g., bad key)
+            resp = exc.response
+            print(f"{n.id}: HTTP {resp.status_code if resp is not None else '?'} "
+                  f"{(resp.text[:200] if resp is not None else '')!r}")
+            return 1
+        resolved[n.id] = [{"rrid": r.rrid, "name": r.name, "abbreviations": r.abbreviations, "types": r.types}
+                          for r in hits]
+        print(f"{n.id:20} " + ("; ".join(f"{r.rrid} {r.name}" for r in hits[:3]) or "-"))
+    out = HARVEST_DIR / "rrid_candidates.json"
+    _write_json(out, resolved)
+    print(f"{len(todo)} seeds searched; candidates written to {out}. "
+          f"Copy confirmed RRIDs into seeds.yaml and run `ecokg rrid-check`.")
+    return 0
 
 
 def cmd_harvest_rrid(args) -> int:
@@ -228,6 +255,7 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("validate", help="validate the curated YAML inputs").set_defaults(func=cmd_validate)
     for name, func, help_ in (("rrid-check", cmd_rrid_check, "check seed RRIDs resolve to the right resource"),
+                              ("rrid-search", cmd_rrid_search, "search SciCrunch for seeds without an RRID"),
                               ("harvest-rrid", cmd_harvest_rrid, "harvest RRID relationships"),
                               ("harvest-fairsharing", cmd_harvest_fairsharing, "harvest FAIRsharing associations")):
         p = sub.add_parser(name, help=help_)

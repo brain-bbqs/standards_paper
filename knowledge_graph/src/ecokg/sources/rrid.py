@@ -5,19 +5,24 @@ Records are fetched anonymously from the public resolver
 relationships to other registry resources under ``_source.graph`` (e.g.,
 ``is_related_to``, ``works_with``, ``lists``, ``has_parent_organization``).
 
-Searching the registry by name requires a SciCrunch API key and is not implemented yet;
-RRIDs for seeds are therefore curated in seeds.yaml and checked with ``ecokg rrid-check``.
+Searching the registry by name (``ecokg rrid-search``) uses the SciCrunch Elasticsearch API
+(``SEARCH_URL``) and needs a free API key (scicrunch.org > My Account > API Keys), read from the
+``SCICRUNCH_API_KEY`` environment variable. The key is sent only in the ``apikey`` request header,
+never in the URL, so it does not appear in error messages, logs, or the cache.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+import os
+
 import requests
 
 from ..http import CachedJsonClient
 
 RESOLVER_URL = "https://scicrunch.org/resolver/RRID:{rrid}.json"
+SEARCH_URL = "https://api.scicrunch.io/elastic/v1/SCR_nlx_144509-1/_search"  # SciCrunch Registry index
 
 
 @dataclass
@@ -40,10 +45,17 @@ def normalize_rrid(rrid: str) -> str:
 
 
 def parse_record(raw: dict) -> RridRecord | None:
+    """Parse a resolver response (first hit)."""
     hits = raw.get("hits", {}).get("hits", [])
-    if not hits:
-        return None
-    src = hits[0]["_source"]
+    return parse_source(hits[0]["_source"]) if hits else None
+
+
+def parse_search(raw: dict) -> list[RridRecord]:
+    """Parse all hits of a registry search response."""
+    return [parse_source(h["_source"]) for h in raw.get("hits", {}).get("hits", []) if "_source" in h]
+
+
+def parse_source(src: dict) -> RridRecord:
     item = src.get("item", {})
     relations = []
     seen = set()
@@ -69,9 +81,45 @@ def parse_record(raw: dict) -> RridRecord | None:
     )
 
 
+def search_query(text: str, size: int = 10) -> dict:
+    """Elasticsearch query: match name/abbreviation/synonyms, boosting exact name matches."""
+    return {
+        "size": size,
+        "query": {"bool": {"should": [
+            {"multi_match": {"query": text, "type": "phrase", "boost": 3,
+                             "fields": ["item.name", "item.abbreviations.name", "item.synonyms.name"]}},
+            {"multi_match": {"query": text,
+                             "fields": ["item.name^2", "item.abbreviations.name^2", "item.synonyms.name"]}},
+        ]}},
+    }
+
+
 class RridClient:
-    def __init__(self, http: CachedJsonClient):
+    def __init__(self, http: CachedJsonClient, api_key: str | None = None):
         self.http = http
+        self.api_key = (api_key or os.environ.get("SCICRUNCH_API_KEY") or "").strip() or None
+
+    def search(self, text: str, refresh: bool = False) -> list[RridRecord]:
+        """Search the registry by name or abbreviation (needs an API key unless cached)."""
+        cache_key = f"rrid_search_{text}"
+        raw = None if refresh else self.http.cached(cache_key)
+        if raw is None:
+            if not self.api_key:
+                raise RuntimeError("Registry search needs a SciCrunch API key: set SCICRUNCH_API_KEY "
+                                   "(scicrunch.org > My Account > API Keys).")
+            self.http.session.headers["apikey"] = self.api_key
+            raw = self.http.request("POST", SEARCH_URL, json=search_query(text), cache_key=cache_key, refresh=True)
+        return parse_search(raw)
+
+    def resolve(self, name: str, abbreviation: str | None) -> list[RridRecord]:
+        """Candidate records for a seed: exact name/abbreviation matches first, else the top hits."""
+        wanted = {s.lower() for s in (name, abbreviation) if s}
+        hits: dict[str, RridRecord] = {}
+        for query in dict.fromkeys(q for q in (abbreviation, name) if q):
+            for r in self.search(query):
+                hits.setdefault(r.rrid, r)
+        exact = [r for r in hits.values() if {r.name.lower(), *(a.lower() for a in r.abbreviations)} & wanted]
+        return exact or list(hits.values())[:5]
 
     def fetch(self, rrid: str, refresh: bool = False) -> RridRecord | None:
         """Return the record, or None if the RRID does not resolve (e.g., retired IDs)."""

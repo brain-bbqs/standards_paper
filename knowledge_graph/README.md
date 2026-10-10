@@ -21,6 +21,8 @@ uv venv && uv pip install -e '.[test]'
 ecokg validate                          # check YAML against the taxonomy
 ecokg -v rrid-check                     # resolve every RRID and flag name mismatches
 ecokg harvest-rrid                      # no account needed
+read -rs SCICRUNCH_API_KEY && export SCICRUNCH_API_KEY   # free key: scicrunch.org > My Account > API Keys
+ecokg rrid-search                       # candidates for seeds without an RRID -> data/harvested/rrid_candidates.json
 read -rs FAIRSHARING_TOKEN && export FAIRSHARING_TOKEN   # or FAIRSHARING_LOGIN/PASSWORD (see sources/fairsharing.py)
 ecokg harvest-fairsharing --resolve     # list candidate records for seeds without a FAIRsharing id
 ecokg harvest-fairsharing               # harvest associations for seeds with a FAIRsharing id
