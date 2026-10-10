@@ -77,7 +77,7 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
 | ID | Section | Claim / text | What is needed |
 |---|---|---|---|
 | C1 | 1 | Experiments now generate terabytes each | Citation(s) with concrete numbers (e.g., Neuropixels, whole-brain imaging, multi-camera video) |
-| C2 | 1 | Neuroscience archives hold petabytes | Public figure with citation (archive reports; avoid the BRAIN KB roundtable summary, which is not for distribution) |
+| C2 | 1 | BRAIN archive sizes (researched 2026-10-09) | **DANDI** 1,197 Dandisets, 2.44 PB — from `api.dandiarchive.org/api/stats/` (authoritative; cite with access date). **BossDB** ~1.03 PB, >10 petavoxels — web search snippet of bossdb.org; site is JS-only, verify. **NeMO** >1 PB, >3 M files — search snippet (NeMO paper, Ament 2023 / NIH newsletter); verify. **BIL** "first petascale brain microscopy resource", ~7,000 datasets — Kenney 2024 *Sci Data* (full text not reachable); verify. **OpenNeuro** ~1,000 datasets, >40,000 participants — only from third-party docs; get an official figure (OpenNeuro team). Consider DABI, NEMAR, EMBER sizes too. Avoid the BRAIN KB roundtable summary (not for distribution). |
 | C3 | 1 | AI raises the value of consistently structured data | Citation (AI-readiness / foundation-model papers) or soften |
 | C4 | 2 | Ontologies vs. terminologies kept in one layer; "used the same way" | Team confirmation (D5); optional citation |
 | C5 | 2 | Origin/funding of standards (research vs. vendor vs. archive-driven) | Suppl. Table S1 from poster; check each entry |
@@ -108,6 +108,7 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
 | C30 | 8 | Minimal required metadata still needed with AI-generated annotation | Citation, or frame explicitly as our position |
 | C31 | 8 | Standards are long-lived infrastructure; software changes faster | Citation (research software sustainability) or frame as position |
 | C32 | 8 | BRAIN knowledge base plans | Cite public source only (KB position paper when available) |
+| C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; data inventory/catalog; specimen metadata system NIMP) | From brain-bican.org/data and biccn.org/data (read 2026-10-09). Confirm that NIMP is the right name/description and that BICAN still uses BossDB; cite BICCN 2021 *Nature* and the portals |
 
 ---
 

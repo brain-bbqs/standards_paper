@@ -4,7 +4,11 @@
 
 Neuroscience is producing data faster than it can turn them into knowledge. Large-scale
 electrophysiology, whole-brain imaging, and continuous video of freely behaving animals now generate
-terabytes per experiment [TODO-C1], and public archives for neuroscience data hold petabytes
+terabytes per experiment [TODO-C1]. The BRAIN Initiative's data archives alone now hold several
+petabytes: as of October 2026, DANDI holds about 2.4 PB of neurophysiology data in nearly 1,200
+datasets [REF: DANDI stats], BossDB about 1 PB of volumetric electron microscopy and X-ray data [REF:
+Hider 2022; BossDB], the Neuroscience Multi-Omic Archive (NeMO) more than 1 PB of omics data [REF: Ament
+2023], and the Brain Image Library (BIL) is a petascale microscopy resource [REF: Kenney 2024]
 [TODO-C2]. Whether these data can be found, understood, combined, and reused depends less on how much
 is stored than on how it is described and organized. Data standards are the community's main tool for
 this, and they have clear success stories: the Brain Imaging Data Structure (BIDS) reorganized how

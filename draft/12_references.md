@@ -36,6 +36,18 @@ with the journal).
 | NIX / odML | Grewe J et al. A bottom-up approach to data annotation in neurophysiology. *Front Neuroinform* 5, 16 (2011) (odML); NIX citation? | ? |
 | Halchenko 2021 | Halchenko YO et al. DataLad: distributed system for joint management of code, data, and their relationship. *J Open Source Softw* 6, 3262 (2021). | ✓ (if cited) |
 
+## Archive sizes and consortia (added 2026-10-09)
+
+| Key | Reference | Status |
+|---|---|---|
+| DANDI stats | DANDI Archive statistics API, https://api.dandiarchive.org/api/stats/ (accessed 2026-10-09): 1,197 Dandisets, 2,436,088,720,146,689 bytes | ✓ (web resource) |
+| Hider 2022 | Hider R et al. The Brain Observatory Storage Service and Database (BossDB): a cloud-native approach for petascale neuroscience discovery. *Front Neuroinform* 16, 828787 (2022). | ? |
+| Ament 2023 | Ament SA et al. The Neuroscience Multi-Omic Archive: a BRAIN Initiative resource for single-cell transcriptomic and epigenomic data from the mammalian brain. *Nucleic Acids Res* 51, D1075–D1085 (2023). | ? |
+| Kenney 2024 | Kenney M et al. The Brain Image Library: a community-contributed microscopy resource for neuroscientists. *Sci Data* 11 (2024). | ? (article number/DOI) |
+| BICCN 2021 | BRAIN Initiative Cell Census Network (BICCN). A multimodal cell census and atlas of the mammalian primary motor cortex. *Nature* 598, 86–102 (2021). | ✓ |
+| BICAN data page | BRAIN Initiative Cell Atlas Network, Data, https://brain-bican.org/data (accessed 2026-10-09) | ✓ (web resource) |
+| BICCN data page | BICCN, Data, https://biccn.org/data (accessed 2026-10-09) | ✓ (web resource) |
+
 ## Terminologies and ontologies
 
 | Key | Reference | Status |
