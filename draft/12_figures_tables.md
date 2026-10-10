@@ -8,7 +8,7 @@ must total ≤350 words (F6).
 |---|---|---|---|---|
 | Fig. 1 | The ecosystem seen through a video-sharing app (single panel) | 2 | spec (analogy from poster slide 6) | `figures/fig1_ecosystem_map/` |
 | Table 1 | Layer definitions | 2 | draft (below) | poster table |
-| Fig. 2 | Six levels of FAIRness and the layer that adds each | 3 | spec (poster "FAIR Data Score" to be redrawn to match) | `figures/fig2_fair_levels/` |
+| Fig. 2 | The six layers as a stack, and the levels of FAIRness each enables | 3 | spec (replaces poster "FAIR Data Score") | `figures/fig2_fair_levels/` |
 | Table 2 | Levels of FAIRness mapped to layers and FAIR principles | 3 | draft (in `03_fair_integration.md`) | |
 | Fig. 3 | Ecosystem knowledge graph (layers × communities) | 4 | draft | `figures/fig3_knowledge_graph/` (`make fig3`) |
 | Fig. 4 | BBQS data: (a) species, (b) modalities, (c) behaviors × guideline coverage | 5, 8 | draft | `figures/fig4_bbqs_data/` (`make fig4`) |
@@ -41,17 +41,16 @@ and rules come from a specification (schema languages; LinkML, JSON Schema). Tab
 | Data formats | Map data to storage | Serialize generic data structures | HDF5, Zarr, TIFF, NIfTI, JSON, YAML, CSV/TSV, MP4 |
 | Schema languages | Provide a formal language for the structure and rules of data | Formally define file organization standards, dataset organization standards, and ontologies | JSON Schema, XML Schema, RDF/OWL, LinkML, HDMF |
 
-## Fig. 2 — Levels of FAIRness and where each layer contributes
+## Fig. 2 — The layers of the ecosystem and the levels of FAIRness they enable
 
-A staircase of six levels (0 opaque, 1 readable, 2 interpretable files, 3 organized dataset,
-4 interoperable, 5 findable and reusable record; Table 2). Each step is labeled with the layer of the
-map whose technologies make it possible (data formats; file organization standards; dataset organization
-standards; ontologies and terminologies; archives with persistent identifiers) and with the FAIR
-principles it mainly addresses. A vertical bar beside steps 2–3 marks schema languages, which make these
-levels machine-checkable through validators. An example neuroscience dataset is shown climbing the
-steps (bare HDF5 → validated NWB file → BIDS or DANDI-layout dataset → NCBI Taxonomy, atlas, and HED
-annotations → DOI on DANDI or EMBER). A side note marks that formal assessment scores each principle
-separately (RDA indicators, F-UJI).
+**Left**, the six layers of the map drawn as a stack in the order of Table 1, from data archives to data
+formats, with schema languages as a column alongside the file and dataset organization standards they
+define. **Right**, a staircase of six levels of FAIRness (0 opaque, 1 readable, 2 interpretable files,
+3 organized dataset, 4 interoperable, 5 findable and reusable record; Table 2), each labeled with the
+FAIR principles it mainly addresses. Connectors link each step to the layer whose technologies make it
+possible. An example neuroscience dataset climbs the steps (bare HDF5 → validated NWB file → BIDS or
+DANDI-layout dataset → NCBI Taxonomy, atlas, and HED annotations → DOI on DANDI or EMBER). Formal
+assessment scores each principle separately (RDA indicators, F-UJI).
 
 ## Fig. 3 — Connections in the ecosystem
 
@@ -72,7 +71,7 @@ only.
 
 ## Fig. 5 — The BBQS standards stack
 
-The six layers of the map (Table 1) with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
+The layer stack from Fig. 2 with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
 (dataset organization); NWB (file organization standard); HED, NCBI Taxonomy, atlases, Cell Ontology
 (terminologies); HDF5/Zarr, JSON/TSV/CSV, MP4, NIfTI (formats); HDMF, LinkML, BIDS schema (schema
 languages). Arrows show supported paths for typical BBQS data (e.g., video + pose + ephys → NWB → DANDI

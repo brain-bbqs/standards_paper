@@ -103,7 +103,7 @@ Rebuild generated figures with `make figures`.
       No real platform name, logo, or look in the artwork. Redraw from the poster: Fig. 6b
       (`figures/fig6_bridges_future/`), Suppl. Table S1 (`figures/supplementary/tableS1_standards_comparison/`).
       Use "file organization standards" and the outcome of D8 *(designer / figure lead)*.
-- [ ] **F3** Design Fig. 2 (six FAIR levels, `figures/fig2_fair_levels/`) and Fig. 5 (BBQS stack,
+- [ ] **F3** Design Fig. 2 (layer stack beside the six FAIR levels, `figures/fig2_fair_levels/`) and Fig. 5 (BBQS stack,
       `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
 - [ ] **F4** Review Fig. 4 (`figures/fig4_bbqs_data/fig4_bbqs_data.pdf`): keep the species panel? show
       "exploratory behavior" (no guideline entry) as a gap? *(OR, core)*.
@@ -182,6 +182,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | KG unit | Section 4 counts connections (pairs of technologies), matching Fig. 3; the stats report gives both connections and relationships |
 | 2026-10-09 | Style | Prose colons and em-dash asides removed; opening reframed around the complexity of the ecosystem; video analogy woven through Section 2 with callbacks |
 | 2026-10-10 | Fig. 1 | Single panel: a generic video-sharing app with callouts to the six layers, not a layered diagram. Layers are defined in Table 1 and shown as a stack in Fig. 2 and Fig. 5; Section 2 cites Fig. 1 for the analogy and Table 1 for the layers |
+| 2026-10-10 | Fig. 2 | Shows the six layers as a stack beside the FAIR staircase, with connectors from each step to its layer; the only general stack diagram, reused for Fig. 5 |
 
 ## Notes for reviewers
 

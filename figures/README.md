@@ -11,7 +11,7 @@ be drawn or redrawn by hand should be saved here together with their editable so
 | Item | Folder | Content | Section | Status |
 |---|---|---|---|---|
 | Fig. 1 | [`fig1_ecosystem_map/`](fig1_ecosystem_map/) | The data standards ecosystem seen through a video-sharing app (single panel) | 2 | to design (designer) |
-| Fig. 2 | [`fig2_fair_levels/`](fig2_fair_levels/) | Six levels of FAIRness and the layer that adds each | 3 | to design (spec only) |
+| Fig. 2 | [`fig2_fair_levels/`](fig2_fair_levels/) | The six layers as a stack, and the levels of FAIRness each enables | 3 | to design (spec only) |
 | Fig. 3 | [`fig3_knowledge_graph/`](fig3_knowledge_graph/) | Connections in the ecosystem (knowledge graph, strict community rule) | 4 | generated draft |
 | Fig. 4 | [`fig4_bbqs_data/`](fig4_bbqs_data/) | BBQS data: species, modalities, behaviors × guideline coverage | 5, 8 | generated draft |
 | Fig. 5 | [`fig5_bbqs_stack/`](fig5_bbqs_stack/) | The BBQS standards stack on the map | 6 | to design (spec only) |
