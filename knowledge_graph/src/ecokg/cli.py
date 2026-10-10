@@ -117,16 +117,21 @@ def cmd_harvest_fairsharing(args) -> int:
         print(f"Candidates written to {out}. Copy confirmed DOIs into seeds.yaml (`fairsharing:`).")
         return 0
 
+    # Numeric record ids for DOIs seen by --resolve; anything else is looked up by search.
+    cand_path = HARVEST_DIR / "fairsharing_candidates.json"
+    known = {h["doi"]: h["id"] for hits in (json.loads(cand_path.read_text()) if cand_path.exists() else {}).values()
+             for h in hits if h["doi"] and h["id"]}
     ids: dict[str, str] = {}
     items = []
     for n in nodes.values():
         if not n.fairsharing:
             continue
-        match = [r for r in client.resolve(n.name, n.abbreviation) if r.doi == n.fairsharing and r.id]
-        if not match:
+        record_id = known.get(n.fairsharing) or next(
+            (r.id for r in client.resolve(n.name, n.abbreviation) if r.doi == n.fairsharing and r.id), None)
+        if record_id is None:
             log.warning("%s: could not find numeric id for %s", n.id, n.fairsharing)
             continue
-        rec = client.get_record(match[0].id, refresh=args.refresh)
+        rec = client.get_record(record_id, refresh=args.refresh)
         ids[str(rec.id)] = n.id
         for label, direction, other_id, other_name in rec.associations:
             items.append({"registry": "fairsharing", "node": n.id, "label": label, "direction": direction,
