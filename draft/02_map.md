@@ -68,10 +68,14 @@ XML Schema, RDF/OWL, LinkML, and the HDMF specification language play this role 
 allow standards to be documented, validated, and processed by software. NWB is defined in the HDMF
 language, Psych-DS in LinkML, and BIDS in a custom YAML-based schema.
 
-The analogy also explains why the distinctions matter. Nobody expects YouTube to invent a video codec,
-or H.264 to decide which playlist a video belongs in, and because each layer does one job well, a video
-recorded on any phone can be played on any platform. In neuroscience, the equivalent roles are often
-discussed as if they were one thing, and the next sections show what is gained by keeping them apart.
+The analogy also shows why these distinctions matter. The video ecosystem works because of a clear
+separation of concerns. Nobody expects YouTube to invent a video codec, or H.264 to decide which
+playlist a video belongs in. Each layer does one job well and integrates with the layers around it
+through shared conventions, which is why a video recorded on any phone can be played on any platform. In
+neuroscience, technologies more often cross these boundaries, with a single project taking on the roles
+of several layers, or with the roles of different layers treated as one problem. The rest of this paper
+argues that separating concerns across layers, combined with deliberate integration between them, is
+what makes data FAIR (Section 3) and what a multimodal program such as BBQS needs (Sections 4–7).
 
 ## Boundaries are fuzzy, and that is useful
 
