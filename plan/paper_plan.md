@@ -1,8 +1,26 @@
 # Paper Plan: The Neuroscience Data Standards Ecosystem
 
-*Working plan — drafted 2026-10-09; updated 2026-10-09 with answers to open questions. Sources: SfN 2025 poster ("The Ecosystem of Standards in Neuroscience: Which Ones Are For You?"), `data standards perspective paper 2026.md`, `Guidelines_Data_standards.md`, `bbqs_projects/`, `brain_knowledge_base/`.*
+*Working plan — drafted 2026-10-09; updated 2026-10-09 with answers to open questions, and again on 2026-10-09 with the **BBQS pivot** (see §0). Sources: SfN 2025 poster ("The Ecosystem of Standards in Neuroscience: Which Ones Are For You?"), `data standards perspective paper 2026.md`, `Guidelines_Data_standards.md`, `bbqs_projects/`, `brain_knowledge_base/`.*
 
 ---
+
+## 0. Pivot (2026-10-09): from ecosystem survey to BBQS recommendations
+
+The overall direction stays (start with the map and classification of the ecosystem), but the later parts
+now focus on **standards for BBQS**: recommendations for the BBQS community derived from the BBQS data
+standards guideline, with the ecosystem map as the frame. Consequences:
+
+- **Title:** *"Navigating the neuroscience data standards ecosystem: a map and recommendations for
+  multimodal Brain Behavior Quantification and Synchronization (BBQS)"*.
+- **Q3 reversed for Part II:** the paper now *does* give recommendations (for BBQS data), presented as
+  community guidance derived from the guideline, not a universal ranking of standards. Part I stays
+  descriptive.
+- **Knowledge graph:** supporting evidence (bridges/gaps section and Supplementary), no longer a headline
+  result. Its open issues are tracked in `knowledge_graph/TODO.md` (branch `worktree-knowledge-graph`).
+- **Journal:** to be revisited; a program-focused recommendations paper fits a Nature Communications
+  Perspective less well (see `TODO.md`, decision D1).
+- **Draft:** `draft/` (one Markdown file per section); open claims and questions in `TODO.md`.
+- Sections 1–4 below are kept for history; where they conflict with this section, this section wins.
 
 ## 1. Decisions so far
 
@@ -15,8 +33,8 @@
 | Primary journal | **Nature Communications, Perspective** (open access) |
 | Preprint | **bioRxiv at submission** |
 | Timeline | **Submit ~late Feb – early Mar 2027** |
-| Working title | **"The ecosystem of standards in neuroscience: Current state and future directions"** |
-| Framing | **Landscape, not a selection guide**: the focus is the parts of the ecosystem and how they relate; no single standard does everything, so integration across components is essential |
+| Working title | ~~"The ecosystem of standards in neuroscience: Current state and future directions"~~ → **"Navigating the neuroscience data standards ecosystem: a map and recommendations for multimodal Brain Behavior Quantification and Synchronization (BBQS)"** (2026-10-09) |
+| Framing | *Superseded for Part II by §0.* **Landscape, not a selection guide**: the focus is the parts of the ecosystem and how they relate; no single standard does everything, so integration across components is essential |
 | Ontology layer | **One layer** ("Ontologies & Terminologies"), with the distinction made explicit: ontologies define terms *and* encode definitions and relationships; terminologies define the set of valid terms, often selected from ontologies |
 | Funding tone | **Needs- and science-focused**: say where investment is needed, not criticize current funding |
 | Writing platform | **Markdown + git** until an outline and first draft exist, then move to Google Docs for the full author group |
