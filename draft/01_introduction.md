@@ -36,8 +36,9 @@ measured with video, pose estimation, audio, wearable sensors, and other devices
 settings that existing standards were not designed for [REF: BBQS program; Datta 2019; Pereira 2020].
 Such projects cannot rely on a single standard. They must combine several, from communities that
 developed their tools largely independently. At the same time, machine learning and AI-assisted analysis
-increase the value of data that are consistently structured and annotated, and the cost of data that are
-not [TODO-C3].
+make consistent structure and annotation more important. These methods can combine data from many
+datasets and laboratories, but only when software can interpret how each dataset is organized and what
+it contains. Data without that structure are difficult to include, however valuable they are [TODO-C3].
 
 This paper has two goals. First, we propose a **map of the data standards ecosystem** (Fig. 1, Table 1)
 that separates six layers by the problem each solves, illustrates each with its counterpart in online
