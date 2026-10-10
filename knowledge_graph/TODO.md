@@ -6,6 +6,36 @@ affect the paper's Fig. 3 / "few cross-community bridges" claim.*
 
 ---
 
+## 0. Review checklist (decisions and input needed from the team)
+
+Everything that waits on a person, in one place; details are in the sections referenced.
+
+**Decisions**
+- [ ] Community rule for bridges: adopt the home-community proposal (1.2)?
+- [ ] FAIRsharing relations: contact FAIRsharing and/or transcribe by hand (1.1)?
+- [ ] RRID gaps: option A (by hand) or B (API permission via help desk) (2.2)?
+- [ ] Show or summarise "shared infrastructure" edges in Fig. 3 (3)?
+- [ ] Add or drop candidate seeds: HDMF Common Schema, openMINDS sub-models, NeuroVault, BALSA, INDI (2.5);
+      MRIO and Allen Human Brain Atlas have no edges (2.4).
+
+**Reviews**
+- [ ] Fig. 3 drafts: `output/fig3_ecosystem.pdf` (strict) and `fig3_ecosystem_lenient.pdf` — layout,
+      misplaced nodes, missing bridges (3).
+- [ ] Home community of the 21 multi-community nodes (1.2).
+- [ ] All 101 curated edges (`verified: false`) and node layers/kinds, by domain experts (1.3).
+- [ ] FAIRsharing matches to confirm: OME-Zarr → NGFF, TSV/CSV → CSV; NeMO (rejected match) (2.1).
+- [ ] "BIDS extends NWB" in FAIRsharing: confirm with NWB/BIDS maintainers (2.3).
+- [ ] Draft edges added 2026-10-09: InterLex extends NeuroLex; openMINDS → Waxholm, → Allen CCF;
+      HCP-MMP → NIfTI (2.4, 2.5).
+
+**Actions needing credentials or people**
+- [ ] Next authenticated FAIRsharing run (token, user's terminal): harvest InterLex and any new DOIs (2.1, 2.5).
+- [ ] Hand searches on fairsharing.org for the 25 seeds without a record (2.1).
+- [ ] Assign domain reviewers per community (1.3).
+- [ ] Licence/attribution check for redistributing harvested data; merge branch; Zenodo snapshot (4).
+
+---
+
 ## 1. Blockers for using the graph as evidence
 
 ### 1.1 FAIRsharing REST API omits record relations
@@ -95,11 +125,14 @@ json_schema, xml_schema, rdf_owl`
 - [x] `ecokg rrid-search` implemented (SciCrunch Elasticsearch index `RIN_Tool_pr`, key via
       `SCICRUNCH_API_KEY` header). Our first key gets **403 Forbidden** in every request format
       (`ecokg rrid-search-check`): the key is recognised but lacks registry-search permission.
-- [ ] **Decision (2026-10-09): look the remaining seeds up by hand** with **`RRID_LOOKUP.md`** (search
-      links for all 37 seeds on rrid.site, no login). Record found RRIDs in the table, copy them into
-      `seeds.yaml`, and run `ecokg rrid-check`. Many generic formats (JSON, YAML, TIFF) will legitimately
-      have none; tick them as checked, not missing.
-- [ ] Optional later: if SciCrunch enables search for the API key, `ecokg rrid-search` automates this.
+- [ ] Fill the remaining RRIDs. Two options (choose when we get to it):
+  - **Option A — by hand:** use **`RRID_LOOKUP.md`** (search links for all 37 seeds on rrid.site, no
+    login). Record found RRIDs in the table, copy them into `seeds.yaml`, and run `ecokg rrid-check`.
+  - **Option B — API:** request registry-search permission for our SciCrunch API key via the SciCrunch
+    help desk (support@scicrunch.org); then run `ecokg rrid-search-check` (expect 200) and
+    `ecokg rrid-search`, and review `data/harvested/rrid_candidates.json`.
+  - Either way, many generic formats (JSON, YAML, TIFF) will legitimately have no RRID; tick them as
+    checked, not missing.
 
 ### 2.3 Registry data-quality issues found (report to registries; mention in paper)
 - [ ] **HED** has two RRIDs: SCR_014074 and SCR_017630 ("HED Tags"); handled with `rrid_aliases`.
