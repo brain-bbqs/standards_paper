@@ -42,13 +42,16 @@ it contains. Data without that structure are difficult to include, however valua
 
 Here we address these challenges in two parts. In the first part, we develop a **map of the data
 standards ecosystem** (Fig. 1, Table 1) that distinguishes six layers by the problem each layer solves,
-from public archives to the schema languages in which standards are defined. The map provides a common
-vocabulary for developers and users of standards, and it identifies where a technology reaches beyond
-its layer, the point at which integrating an existing solution is often preferable to extending its
-scope. Using this map, we show that FAIR data [REF: Wilkinson 2016] are achieved not by a single
-technology but by integration across layers (Section 3). We then analyze a knowledge graph of the
-ecosystem to quantify how technologies are connected across layers and across research communities
-(Section 4).
+from public archives to the schema languages in which standards are defined. Comprehensive registries
+such as FAIRsharing [REF: Sansone 2019] and the Research Resource Identifier (RRID) registry
+[REF: Bandrowski 2016] already catalog research standards and resources, and we use them as the basis
+for the map, focusing on the technologies used in neuroscience. The map provides a common vocabulary for
+developers and users of standards, and it identifies where a technology reaches beyond its layer, the
+point at which integrating an existing solution is often preferable to extending its scope. Using this
+map, we show that FAIR data [REF: Wilkinson 2016] are achieved not by a single technology but by
+integration across layers (Section 3). We then combine the relationships recorded in these registries
+with expert curation in a knowledge graph of the ecosystem, which quantifies how technologies are
+connected across layers and across research communities (Section 4).
 
 In the second part, we apply this framework to **BBQS** (Sections 5–8). From an inventory of BBQS
 projects, we characterize the data modalities, species, and standards in use, and we describe the
@@ -56,8 +59,3 @@ standards stack adopted by the program. Building on the BBQS data standards guid
 in the program's Data Standards Working Group [REF: BBQS guideline], we derive recommendations by data
 type and identify where standards support is still missing. We conclude with the bridges and investments
 needed to make multimodal brain–behavior data FAIR (Section 9).
-
-This is not a review of every standard. The map and examples focus on technologies used in
-neuroscience and, in the second part, on those relevant to BBQS; comprehensive and continuously
-updated registries of standards already exist [REF: FAIRsharing, Sansone 2019; RRID, Bandrowski
-2016], and we point to them rather than duplicate them.

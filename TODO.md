@@ -41,6 +41,8 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
       (claim C4).
 - [ ] **D8 — Six layers vs. the literature** *(OR, core; Claude can draft)*. Remaining sub-decisions
       (the layer-3 name is resolved, see section 6):
+      - [ ] The introduction now says we "use [FAIRsharing and RRID] as the basis for the map". Keep that
+            claim only if Section 2 makes the link explicit (see the next item).
       - [ ] Add a short "relation to existing classifications" paragraph to Section 2. The usual
             life-science distinction is reporting guidelines / models and formats / terminologies, plus
             repositories and policies [REF: Sansone 2012; Sansone 2019]; FAIRsharing record types match it
