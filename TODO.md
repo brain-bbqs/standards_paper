@@ -152,7 +152,7 @@ Rebuild generated figures with `make figures`.
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
 | C35 | 4 | The lenient community rule hides most bridges (26 vs. 2 connections) | Depends on D10 | core |
 | C36 | 7 | R11: DANDI accepts NWB; OpenNeuro, NEMAR, and DABI accept BIDS | Check which standards each archive accepts (DABI: BIDS and NWB?); cite archive pages | Claude |
-| C37 | 8 | Ongoing efforts to represent data from several interacting subjects (multi-subject / multi-animal) | OR to name the efforts (NWB proposal? BIDS? others) and how to cite them; also decide whether to mention BIDS/Psych-DS work on events and behavior annotation | OR |
+| C37 | 8 | Gaps are being addressed: events/annotations, links to external vocabularies, multi-subject data, via NWB proposals/extensions and BIDS BEPs | OR to pick 2–4 representative examples to cite (e.g., NWBEP001 / PyNWB 4.0 core events; relevant BEPs such as BEP042 or behavior/multi-subject BEPs; NWB multi-subject work) | OR |
 
 ## 5. Knowledge graph (summary of `knowledge_graph/TODO.md`)
 

@@ -21,20 +21,27 @@ Comparing these entries with the behaviors BBQS projects actually record
 
 In short, the standards support the *raw signals* of behavior well, including video, positions, time
 series, and events, but not yet the *behavioral constructs* that BBQS projects study, which are
-inherently multi-animal, multi-modal, and defined by annotation. Representing them needs three things
-that cut across the map. The first is a data structure for annotated behavior over time, with intervals
-and events that carry labels, confidence, and provenance and may involve several individuals. The second
-is a shared vocabulary for behavior labels, and the third is a set of conventions for linking these
-annotations to the underlying video, pose, and neural data.
+inherently multi-animal, multi-modal, and defined by annotation. This reflects a general pattern.
+Standardization usually begins with raw signals, whose structure is largely determined by the
+acquisition hardware, and slows as data become more derived, because there is often no agreed way to
+perform a given analysis and many tools exist for each step. Behavioral constructs such as a social
+interaction are the result of such analyses, from pose estimation to classification and manual
+annotation. Extending standards toward derived data therefore requires more than common data
+structures. It also requires agreement on analysis protocols, and tools that produce and consume
+standardized results.
 
-Work on these needs is under way. NWB 2.10, released with PyNWB 4.0 in June 2026, adds core data types
-for events, including an events table with timestamp and duration columns and a table that documents
-the meaning of categorical values, developed through the first NWB Enhancement Proposal to become part
-of the core standard (NWBEP001) [REF: NWBEP001; PyNWB 4.0 release]. The same release adds a standard
-way to link NWB data to external ontologies and controlled vocabularies. Efforts to represent data from
-several interacting subjects are also ongoing [TODO-C37]. These developments address parts of the first
-and third needs. A shared vocabulary for behavior labels, and a representation of annotated behavior
-that works across NWB, BIDS, and Psych-DS, remain open.
+Representing behavioral constructs needs three things that cut across the map. The first is a data
+structure for annotated behavior over time, with intervals and events that carry labels, confidence, and
+provenance and may involve several individuals. The second is a shared vocabulary for behavior labels,
+and the third is a set of conventions for linking these annotations to the underlying video, pose, and
+neural data.
+
+Several of these gaps are recognized and are being actively addressed. Standards communities are
+extending their support for events and annotations, for links to external vocabularies, and for data
+from several interacting subjects, through NWB Enhancement Proposals and extensions and through BIDS
+Extension Proposals [REF: e.g., NWBEP001 and PyNWB 4.0 release; relevant BEPs] [TODO-C37]. Much remains
+to be done, in particular a shared vocabulary for behavior labels and a representation of annotated
+behavior that works across NWB, BIDS, and Psych-DS.
 
 ## Few bridges across communities
 
