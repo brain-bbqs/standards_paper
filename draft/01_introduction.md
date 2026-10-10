@@ -53,9 +53,15 @@ integration across layers (Section 3). We then combine the relationships recorde
 with expert curation in a knowledge graph of the ecosystem, which quantifies how technologies are
 connected across layers and across research communities (Section 4).
 
-In the second part, we apply this framework to **BBQS** (Sections 5–8). From an inventory of BBQS
-projects, we characterize the data modalities, species, and standards in use, and we describe the
-standards stack adopted by the program. Building on the BBQS data standards guideline that we developed
-in the program's Data Standards Working Group [REF: BBQS guideline], we derive recommendations by data
-type and identify where standards support is still missing. We conclude with the bridges and investments
-needed to make multimodal brain–behavior data FAIR (Section 9).
+In the second part, we apply this framework to **BBQS**, a program whose data cut across almost every
+community on the map. From an inventory of BBQS projects, we characterize the data the program collects,
+which span many species, are dominated by video, and combine neural and behavioral recordings that must
+be synchronized (Section 5). We then describe the standards stack BBQS has adopted, consisting of the
+EMBER archive, NWB, BIDS, Psych-DS, and HED together with shared terminologies, and show how it covers
+the layers of the map (Section 6). Building on the BBQS data standards guideline that we developed in
+the program's Data Standards Working Group [REF: BBQS guideline], we give recommendations by data type
+for choosing, combining, extending, and validating standards (Section 7). By comparing the guideline
+with the behaviors that projects actually record, we identify where standards support is still missing,
+for example for social interactions and other naturalistic behaviors, and which bridges between
+communities would close these gaps (Section 8). We conclude with the scientific directions and
+investments that will shape data standards for multimodal brain–behavior research (Section 9).
