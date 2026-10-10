@@ -77,10 +77,14 @@ json_schema, xml_schema, rdf_owl`
       that already had one) and all 8 **agree** with seeds.yaml. Fills no gaps.
 - [x] Checked RRID neighbour names against these seeds: no real matches (only substring noise; "DataCite"
       there is the organisation, not the metadata schema).
-- [ ] Remaining lookups need SciCrunch registry **search**, which requires a (free) SciCrunch API key:
-      implement `ecokg rrid-search` (key from an env var, as for FAIRsharing), or search scicrunch.org by
-      hand (DABI likely has one). Many generic formats (JSON, YAML, TIFF) will legitimately have none;
-      mark them as checked, not missing.
+- [x] `ecokg rrid-search` implemented (SciCrunch Elasticsearch index `RIN_Tool_pr`, key via
+      `SCICRUNCH_API_KEY` header). Our first key gets **403 Forbidden** in every request format
+      (`ecokg rrid-search-check`): the key is recognised but lacks registry-search permission.
+- [ ] Either ask SciCrunch (support@scicrunch.org) to enable search for the key, or retry later in case
+      new keys need time to activate; then run `ecokg rrid-search` and review `rrid_candidates.json`.
+- [ ] Meanwhile / alternatively: look the seeds up by hand with **`RRID_LOOKUP.md`** (search links for all
+      37 seeds). Many generic formats (JSON, YAML, TIFF) will legitimately have none; mark them as
+      checked, not missing.
 
 ### 2.3 Registry data-quality issues found (report to registries; mention in paper)
 - [ ] **HED** has two RRIDs: SCR_014074 and SCR_017630 ("HED Tags"); handled with `rrid_aliases`.
