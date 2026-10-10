@@ -75,5 +75,5 @@ Read from top to bottom, the table shows that each step up requires technologies
 layer of the map. A format alone reaches level 1, a file organization standard is needed for level 2, a
 dataset organization standard for level 3, terminologies and ontologies for level 4, and an archive for
 level 5. This is the practical reason why **integration across the ecosystem matters more than the
-choice of any single standard**, and why the recommendations for BBQS in Section 7 cover several layers
+choice of any single standard**, and why the recommendations in Section 7 cover several layers
 at once.

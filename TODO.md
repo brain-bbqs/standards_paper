@@ -151,7 +151,7 @@ Rebuild generated figures with `make figures`.
 | C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; catalog; NIMP) | Confirm NIMP description and whether BICAN uses BossDB; cite BICCN 2021 and the portals | core (BICAN contact); Claude for citations |
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
 | C35 | 4 | The lenient community rule hides most bridges (26 vs. 2 connections) | Depends on D10 | core |
-| C36 | 7 | Beyond BBQS: DANDI, OpenNeuro, NEMAR, and DABI accept the same standards (NWB and/or BIDS); the guideline process can be adopted by other consortia | Check which standards each archive accepts (DABI: BIDS and NWB?); cite archive pages | Claude |
+| C36 | 7 | R11: DANDI accepts NWB; OpenNeuro, NEMAR, and DABI accept BIDS | Check which standards each archive accepts (DABI: BIDS and NWB?); cite archive pages | Claude |
 
 ## 5. Knowledge graph (summary of `knowledge_graph/TODO.md`)
 
@@ -185,6 +185,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-10 | Fig. 1 | Single panel: a generic video-sharing app with callouts to the six layers, not a layered diagram. Layers are defined in Table 1 and shown as a stack in Fig. 2 and Fig. 5; Section 2 cites Fig. 1 for the analogy and Table 1 for the layers |
 | 2026-10-10 | Fig. 2 | Shows the six layers as a stack beside the FAIR staircase, with connectors from each step to its layer; the only general stack diagram, reused for Fig. 5 |
 | 2026-10-10 | Analogy | The video analogy is used only in Section 2 and Fig. 1; callbacks in Sections 3, 6, 8, and 10 removed |
+| 2026-10-10 | Section 7 scope | Recommendations stated in general terms for multimodal brain–behavior studies; BBQS specifics (EMBER, DCAIC, synchronization) in a closing "Implementation in BBQS" subsection; title changed accordingly |
 
 ## Notes for reviewers
 

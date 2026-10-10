@@ -9,7 +9,7 @@
 | `04_knowledge_graph.md` | 4. Mapping the connections in the ecosystem (Fig. 3, Suppl. Fig. S1) |
 | `05_bbqs_data.md` | 5. BBQS data (Fig. 4) |
 | `06_bbqs_stack.md` | 6. The BBQS standards stack (Fig. 5) |
-| `07_recommendations.md` | 7. Recommendations (Table 3, R1–R11) |
+| `07_recommendations.md` | 7. Recommendations for multimodal brain–behavior data (Table 3, R1–R11; implementation in BBQS) |
 | `08_gaps_bridges.md` | 8. Gaps and bridges (Fig. 4c, Fig. 6) |
 | `09_future_conclusion.md` | 9. Future directions; 10. Conclusion |
 | `10_statements.md` | Data/Code Availability, contributions, competing interests, funding, ethics |

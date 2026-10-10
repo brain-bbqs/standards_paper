@@ -1,11 +1,12 @@
-# 7. Recommendations for BBQS data
+# 7. Recommendations for multimodal brain–behavior data
 
 *(target ~1,200 words; Table 3)*
 
 The recommendations below summarize the BBQS data standards guideline [REF: BBQS guideline], which we
-developed in the BBQS Data Standards Working Group, and place them on the ecosystem map. They are community guidance
-for BBQS, not a ranking of standards, and the guideline is updated as standards evolve. Most of them
-also apply to multimodal neuroscience studies outside BBQS, as discussed at the end of this section.
+developed in the BBQS Data Standards Working Group, and place them on the ecosystem map. Although they
+were developed for BBQS, they apply to any study that combines neural and behavioral data, so we state
+them in general terms and describe how BBQS implements them at the end of this section. They are
+community guidance, not a ranking of standards, and the guideline is updated as standards evolve.
 Table 3 gives an overview by data type.
 
 **Table 3. Recommended standards for common BBQS data types** (✓ supported; ext. = via an extension or
@@ -39,7 +40,7 @@ where supported. If behavioral data are mainly tables, such as questionnaires, t
 ratings, use **Psych-DS**. The guideline gives detailed choices by recording technology and by behavior
 type [REF: BBQS guideline].
 
-**R2. Expect to combine standards, and link them explicitly.** Multimodal BBQS studies will often need
+**R2. Expect to combine standards, and link them explicitly.** Multimodal studies will often need
 more than one standard, for example BIDS for MRI and NWB for electrophysiology in the same
 participants. Use the same subject and session identifiers throughout, and record how datasets relate.
 Emerging integrations such as BEP032 (NWB within BIDS) make this easier and should be used where they
@@ -53,8 +54,8 @@ arrays, so the link between keypoints, video, and the pose model is preserved [T
 
 **R4. Make synchronization explicit.** Record which clock each device used, how clocks were aligned,
 and with what precision. NWB stores all data on a common session timeline; in BIDS and Psych-DS,
-timing columns and sidecar metadata should state the reference clock. Synchronization is the "S" in
-BBQS, and it cannot be reconstructed after the fact if it is not documented [TODO-C19].
+timing columns and sidecar metadata should state the reference clock. Synchronization cannot be
+reconstructed after the fact if it is not documented [TODO-C19].
 
 ## Describing data
 
@@ -64,7 +65,7 @@ the most direct way to make behavioral annotations comparable between projects [
 
 **R6. Use shared terminologies for common metadata.** Use NCBI Taxonomy terms for species, a standard
 atlas for anatomical locations, and the Cell Ontology for cell types. For behavior, ontologies such as
-the Neuro Behavior Ontology exist but are not yet widely used in BBQS [TODO-C20]; projects should at
+the Neuro Behavior Ontology exist but are not yet widely used [TODO-C20]; projects should at
 least define their behavior labels in machine-readable form so they can be mapped later.
 
 **R7. Describe every custom field.** All three standards allow custom metadata, for example additional
@@ -80,8 +81,8 @@ fields or "unspecified data" files following BIDS naming in BIDS, and documented
 If a new data type is needed, check the NWB Extension Catalog and the list of BIDS Extension Proposals
 before creating a new one, and develop extensions in the open, as Neurodata Extensions (NDX) and NWB
 Enhancement Proposals for NWB, as BIDS Extension Proposals for BIDS [REF: BBQS guideline; NWB
-extensions; BIDS BEP process]. Ask the BBQS Data Coordination and AI Center (DCAIC) and the standards'
-help desks early; others may already be working on the same data type.
+extensions; BIDS BEP process]. Contact the standards' help desks, and the data coordination center of
+the program if there is one, early; others may already be working on the same data type.
 
 ## Validating and sharing
 
@@ -93,23 +94,23 @@ can fix them still remember the details.
 different files that share metadata. For continuous, multi-day recordings, decide early how to split
 data into manageable pieces while keeping annotations that span them [TODO-C21].
 
-**R11. Archive in EMBER, and standardize early.** Converting data at the end of a project is costly
-and error-prone. Projects that adopt standards during acquisition and analysis also benefit from the
+**R11. Deposit in an archive that accepts the standards, and standardize early.** Choose an archive
+that accepts the chosen standards and the privacy requirements of the data, for example DANDI for NWB,
+or OpenNeuro, NEMAR, or DABI for BIDS [TODO-C36]. Converting data at the end of a project is costly and
+error-prone. Projects that adopt standards during acquisition and analysis also benefit from the
 standards' analysis tools, and can share data with collaborators through the archive rather than
 through general cloud storage [TODO-C22].
 
-## Beyond BBQS
+## Implementation in BBQS
 
-Although written for BBQS, most of these recommendations do not depend on the program. Choosing
-standards by the structure of the experiment (R1), linking standards explicitly (R2), keeping video in
-standard formats (R3), documenting synchronization (R4), using shared annotations and terminologies
-(R5–R7), extending standards before inventing new ones (R8), and validating early (R9, R10) apply to any
-study that combines neural and behavioral data, and Table 3 serves as a general overview of where common
-data types fit in NWB, BIDS, and Psych-DS. Only two recommendations are specific to BBQS. Outside the
-program, the choice of archive (R11) depends on the data and the funder, with archives such as DANDI,
-OpenNeuro, NEMAR, and DABI accepting the same standards [TODO-C36], and the role of the DCAIC (R8) is filled by the
-help desks of the standards and by data coordination centers of other programs. More generally, the
-process behind the guideline can be adopted by other consortia. A working group of project
+In BBQS, several of these recommendations are made concrete by the program's infrastructure. All BBQS
+data are deposited in EMBER, which accepts NWB, BIDS, Psych-DS, and DANDI-layout datasets and supports
+the privacy levels needed for identifiable human data (Section 6), so archive choice (R11) is settled
+for BBQS projects. The BBQS Data Coordination and AI Center (DCAIC) is the first point of contact for
+questions about standards and extensions (R8) and connects projects with standards developers.
+Synchronization (R4) is central to the program's scientific goals and is the "S" in its name.
+
+The process behind the guideline can also be adopted by other programs. A working group of project
 representatives and standards developers places the program's data types on the map, chooses a small
 set of interoperable standards for each layer, records where no standard yet exists, and maintains the
 guideline as a living document.
