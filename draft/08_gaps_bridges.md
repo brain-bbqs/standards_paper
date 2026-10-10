@@ -5,8 +5,8 @@
 ## Behaviors without a home
 
 The BBQS guideline lists, for each common recording technology and behavior type, how to store it in
-NWB, BIDS, and Psych-DS. Where no established representation exists, the guideline says so explicitly
-("TODO — how to store?"). Comparing these entries with the behaviors BBQS projects actually record
+NWB, BIDS, and Psych-DS. Where no established representation exists, the guideline says so explicitly.
+Comparing these entries with the behaviors BBQS projects actually record
 (Section 5) shows a clear mismatch (Fig. 4c) [TODO-C23].
 
 - **Social interactions** (15 of 22 awards), **feeding and drinking** (9), **posture and balance** (8),
@@ -26,6 +26,15 @@ that cut across the map. The first is a data structure for annotated behavior ov
 and events that carry labels, confidence, and provenance and may involve several individuals. The second
 is a shared vocabulary for behavior labels, and the third is a set of conventions for linking these
 annotations to the underlying video, pose, and neural data.
+
+Work on these needs is under way. NWB 2.10, released with PyNWB 4.0 in June 2026, adds core data types
+for events, including an events table with timestamp and duration columns and a table that documents
+the meaning of categorical values, developed through the first NWB Enhancement Proposal to become part
+of the core standard (NWBEP001) [REF: NWBEP001; PyNWB 4.0 release]. The same release adds a standard
+way to link NWB data to external ontologies and controlled vocabularies. Efforts to represent data from
+several interacting subjects are also ongoing [TODO-C37]. These developments address parts of the first
+and third needs. A shared vocabulary for behavior labels, and a representation of annotated behavior
+that works across NWB, BIDS, and Psych-DS, remain open.
 
 ## Few bridges across communities
 

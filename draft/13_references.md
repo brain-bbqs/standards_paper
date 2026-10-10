@@ -83,6 +83,8 @@ with the journal).
 
 | Key | Reference | Status |
 |---|---|---|
+| NWBEP001 | NWB Enhancement Proposal 001: event data types (proposal document; cite the published version or the NWB 2.10 schema release). Link from OR: docs.google.com/document/d/1qcsjyFVX9oI_746RdMoDdmQPu940s0YtDjb1en1Xtdw | ? (need citable form) |
+| PyNWB 4.0 release | NWB team. PyNWB 4.0.0 release (NWB schema 2.10.0), 30 June 2026. https://nwb.org/news/pynwb-4.0.0-release/ | ✓ (checked 2026-10-10: EventsTable, TimestampVectorData, DurationVectorData, MeaningsTable, HERD external_resources) |
 | BBQS program | NIH BRAIN Initiative BBQS program description / RFA; brain-bbqs.org | — |
 | BBQS guideline | BBQS Data Standards Working Group. Guidelines for BBQS data standards (living document; cite a versioned release, e.g., Zenodo) | — (TODO-A5) |
 | Datta 2019 | Datta SR, Anderson DJ, Branson K, Perona P, Leifer A. Computational neuroethology: a call to action. *Neuron* 104, 11–24 (2019). | ✓ |

@@ -2,10 +2,11 @@
 
 *(target ~1,200 words; Table 3)*
 
-The recommendations below summarize the BBQS data standards guideline [REF: BBQS guideline], which we
-developed in the BBQS Data Standards Working Group, and place them on the ecosystem map. Although they
-were developed for BBQS, they apply to any study that combines neural and behavioral data, so we state
-them in general terms and describe how BBQS implements them at the end of this section. They are
+We developed the below recommendations as part of the BBQS Data Standards Working Group
+as part of the BBQS data standards guideline [REF: BBQS guideline]. Although they
+were developed for BBQS, they apply much more broadly to any study that combines neural 
+and behavioral data, so we state them in general terms. We then describe afterwards
+how BBQS implements these recommendation at the end of this section. They are
 community guidance, not a ranking of standards, and the guideline is updated as standards evolve.
 Table 3 gives an overview by data type.
 
@@ -26,7 +27,7 @@ Psych-DS teams* [TODO-C17].
 | Eye tracking | ✓ | ext. (BEP020) | tabular only | |
 | Wearable sensors | ✓ (TimeSeries) | ✓ (physio recordings) | ✓ (CSV) | |
 | Audio / vocalizations | ✓ (TimeSeries + intervals) | — | — | |
-| Structured tasks / events | ✓ (ndx-structured-behavior, ndx-events) | ✓ (task events) | — | HED in both |
+| Structured tasks / events | ✓ (core events since NWB 2.10; ndx-structured-behavior) | ✓ (task events) | — | HED in both |
 | Questionnaires / surveys | — | partial | ✓ (recommended) | |
 | Social interactions, feeding, facial expressions, home-cage monitoring, VR, force plates, EMG | — | — / ext. | — | **Gaps** (Section 8) |
 
