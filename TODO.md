@@ -151,6 +151,7 @@ Rebuild generated figures with `make figures`.
 | C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; catalog; NIMP) | Confirm NIMP description and whether BICAN uses BossDB; cite BICCN 2021 and the portals | core (BICAN contact); Claude for citations |
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
 | C35 | 4 | The lenient community rule hides most bridges (26 vs. 2 connections) | Depends on D10 | core |
+| C36 | 7 | Beyond BBQS: DANDI, OpenNeuro, NEMAR, and DABI accept the same standards (NWB and/or BIDS); the guideline process can be adopted by other consortia | Check which standards each archive accepts (DABI: BIDS and NWB?); cite archive pages | Claude |
 
 ## 5. Knowledge graph (summary of `knowledge_graph/TODO.md`)
 

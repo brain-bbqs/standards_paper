@@ -107,7 +107,7 @@ standard formats (R3), documenting synchronization (R4), using shared annotation
 study that combines neural and behavioral data, and Table 3 serves as a general overview of where common
 data types fit in NWB, BIDS, and Psych-DS. Only two recommendations are specific to BBQS. Outside the
 program, the choice of archive (R11) depends on the data and the funder, with archives such as DANDI,
-OpenNeuro, NEMAR, and DABI accepting the same standards, and the role of the DCAIC (R8) is filled by the
+OpenNeuro, NEMAR, and DABI accepting the same standards [TODO-C36], and the role of the DCAIC (R8) is filled by the
 help desks of the standards and by data coordination centers of other programs. More generally, the
 process behind the guideline can be adopted by other consortia. A working group of project
 representatives and standards developers places the program's data types on the map, chooses a small
