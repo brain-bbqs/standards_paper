@@ -26,9 +26,10 @@ Standardization usually begins with raw signals, whose structure is largely dete
 acquisition hardware, and slows as data become more derived, because there is often no agreed way to
 perform a given analysis and many tools exist for each step. Behavioral constructs such as a social
 interaction are the result of such analyses, from pose estimation to classification and manual
-annotation. Extending standards toward derived data therefore requires more than common data
-structures. It also requires agreement on analysis protocols, and tools that produce and consume
-standardized results.
+annotation. Common analysis protocols and tools that produce standardized results are therefore
+synergistic with data standards. Where a community converges on how an analysis is done, a standard
+representation of its results follows more easily, and a standard representation in turn makes results
+from different tools easier to compare.
 
 Representing behavioral constructs needs three things that cut across the map. The first is a data
 structure for annotated behavior over time, with intervals and events that carry labels, confidence, and
