@@ -183,6 +183,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | Style | Prose colons and em-dash asides removed; opening reframed around the complexity of the ecosystem; video analogy woven through Section 2 with callbacks |
 | 2026-10-10 | Fig. 1 | Single panel: a generic video-sharing app with callouts to the six layers, not a layered diagram. Layers are defined in Table 1 and shown as a stack in Fig. 2 and Fig. 5; Section 2 cites Fig. 1 for the analogy and Table 1 for the layers |
 | 2026-10-10 | Fig. 2 | Shows the six layers as a stack beside the FAIR staircase, with connectors from each step to its layer; the only general stack diagram, reused for Fig. 5 |
+| 2026-10-10 | Analogy | The video analogy is used only in Section 2 and Fig. 1; callbacks in Sections 3, 6, 8, and 10 removed |
 
 ## Notes for reviewers
 

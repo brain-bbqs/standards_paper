@@ -25,10 +25,8 @@ layers**. A neurophysiology dataset on DANDI is a concrete example. The DANDI ar
 findable and accessible. Within the dataset, files are organized in the DANDI layout, and each file
 follows NWB, which defines its structure and metadata. The NWB schema is written in the HDMF schema
 language, and the files are stored in HDF5 or Zarr, which makes the bytes machine-readable. Species are
-annotated with NCBI Taxonomy terms, which gives the metadata a shared meaning. The video analogy makes the 
-same point. A video is easy to find and reuse only when it uses a common codec, sits in a standard container,
-carries meaningful tags, and is published on a platform, and no single one of these steps makes it shareable on
-its own.
+annotated with NCBI Taxonomy terms, which gives the metadata a shared meaning. No single one of these technologies makes the
+dataset FAIR on its own.
 
 Large consortia show the same pattern at the scale of whole programs. The BRAIN Initiative Cell Census
 Network (BICCN) [REF: BICCN 2021] distributed its data by modality across specialized archives, with
