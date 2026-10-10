@@ -1,0 +1,130 @@
+# Expert-curated relationships between seed nodes.
+#
+# These capture relationships documented in the poster, the paper notes, the BBQS
+# guideline, or the standards' own documentation. Registries (FAIRsharing, RRID) often
+# do not record them; comparing curated vs. registry edges is part of the gap analysis.
+#
+# Fields
+#   source, target  node ids from seeds.yaml (direction: source <relation> target)
+#   relation        see taxonomy.yaml `relations`
+#   provenance      poster | notes | guideline | docs | expert
+#   evidence        short justification and/or URL
+#   confidence      high | medium | low
+#   verified        false until a domain expert confirms the edge (record who in `verified_by`)
+#
+# DRAFT: initial edges compiled by Claude from the project materials. Every edge needs
+# expert verification before being used in the paper.
+
+edges:
+  # ----------------------------------------------------------------- NWB
+  - {source: nwb, target: hdf5, relation: uses_format, provenance: notes, evidence: "NWB files are stored in HDF5 (poster, notes).", confidence: high, verified: false}
+  - {source: nwb, target: zarr, relation: uses_format, provenance: poster, evidence: "NWB supports Zarr storage via hdmf-zarr (guideline glossary).", confidence: high, verified: false}
+  - {source: nwb, target: hdmf_spec, relation: defined_with, provenance: notes, evidence: "NWB schema is defined with the HDMF specification language (notes: 'NWB uses HDMF').", confidence: high, verified: false}
+  - {source: nwb, target: ncbi_taxonomy, relation: uses_terminology, provenance: notes, evidence: "Subject species recommended as NCBI Taxonomy terms (notes: 'DANDI/NWB uses NCBI Taxonomy').", confidence: high, verified: false}
+  - {source: nwb, target: mp4, relation: uses_format, provenance: guideline, evidence: "Behavior video stored externally (MP4/AVI) and linked via ImageSeries (BBQS guideline).", confidence: high, verified: false}
+  - {source: nwb, target: hed, relation: uses_terminology, provenance: docs, evidence: "ndx-hed extension adds HED annotations to NWB event tables.", confidence: medium, verified: false}
+  - {source: nwb, target: allen_ccf, relation: uses_terminology, provenance: expert, evidence: "Electrode/ROI locations commonly annotated with Allen CCF regions; recommended, not required.", confidence: low, verified: false}
+  - {source: herd, target: nwb, relation: annotates, provenance: poster, evidence: "HERD links NWB (meta)data to external ontology terms (poster 'Linked Data and Annotation').", confidence: high, verified: false}
+  - {source: herd, target: hdmf_spec, relation: part_of, provenance: docs, evidence: "HERD is part of HDMF common.", confidence: high, verified: false}
+
+  # ----------------------------------------------------------------- BIDS
+  - {source: bids, target: nifti, relation: organizes, provenance: poster, evidence: "MRI data stored as NIfTI in BIDS (poster, guideline).", confidence: high, verified: false}
+  - {source: bids, target: json, relation: uses_format, provenance: poster, evidence: "Sidecar metadata in JSON.", confidence: high, verified: false}
+  - {source: bids, target: tsv_csv, relation: uses_format, provenance: poster, evidence: "Tabular metadata (participants, events) in TSV.", confidence: high, verified: false}
+  - {source: bids, target: edf, relation: organizes, provenance: docs, evidence: "EDF is a permitted EEG/iEEG format in BIDS.", confidence: high, verified: false}
+  - {source: bids, target: nwb, relation: organizes, provenance: docs, evidence: "NWB permitted for iEEG and in BIDS microelectrode electrophysiology (BEP032).", confidence: medium, verified: false}
+  - {source: bids, target: ome_tiff, relation: organizes, provenance: docs, evidence: "BIDS microscopy permits OME-TIFF.", confidence: high, verified: false}
+  - {source: bids, target: ome_zarr, relation: organizes, provenance: docs, evidence: "BIDS microscopy permits OME-Zarr.", confidence: high, verified: false}
+  - {source: bids, target: hed, relation: uses_terminology, provenance: poster, evidence: "HED annotation of BIDS events.tsv (poster archive table, BBQS inventory).", confidence: high, verified: false}
+  - {source: bids, target: dicom, relation: interoperates_with, provenance: expert, evidence: "Standard conversion path DICOM -> BIDS (dcm2niix, heudiconv, ezBIDS).", confidence: high, verified: false}
+  - {source: bids, target: yaml, relation: uses_format, provenance: docs, evidence: "Machine-readable BIDS schema is maintained in YAML.", confidence: medium, verified: false}
+  - {source: nidm, target: bids, relation: annotates, provenance: docs, evidence: "NIDM-Experiment / PyNIDM annotate BIDS datasets with semantic metadata.", confidence: medium, verified: false}
+  - {source: nidm, target: rdf_owl, relation: defined_with, provenance: docs, evidence: "NIDM is an RDF/PROV-based model.", confidence: high, verified: false}
+  - {source: neurobagel, target: bids, relation: annotates, provenance: poster, evidence: "Neurobagel annotates BIDS phenotypic data (poster 'Linked Data and Annotation').", confidence: high, verified: false}
+  - {source: neurobagel, target: cognitive_atlas, relation: uses_terminology, provenance: docs, evidence: "Neurobagel uses Cognitive Atlas terms for assessments.", confidence: medium, verified: false}
+
+  # ----------------------------------------------------------------- Psych-DS
+  - {source: psych_ds, target: tsv_csv, relation: uses_format, provenance: guideline, evidence: "Standardized CSV data files (BBQS guideline).", confidence: high, verified: false}
+  - {source: psych_ds, target: json, relation: uses_format, provenance: guideline, evidence: "dataset_description.json metadata (schema.org JSON-LD).", confidence: high, verified: false}
+  - {source: psych_ds, target: linkml, relation: defined_with, provenance: notes, evidence: "Notes: 'PsychDS uses LinkML'.", confidence: medium, verified: false}
+  - {source: psych_ds, target: bids, relation: inspired_by, provenance: poster, evidence: "Poster: 'BIDS-inspired standard'.", confidence: high, verified: false}
+
+  # ----------------------------------------------------- other dataset organizations
+  - {source: dandi_layout, target: nwb, relation: organizes, provenance: poster, evidence: "Poster: 'Neurophysiology data organization using NWB and inspired by BIDS'.", confidence: high, verified: false}
+  - {source: dandi_layout, target: bids, relation: inspired_by, provenance: poster, evidence: "Poster: 'inspired by BIDS'.", confidence: high, verified: false}
+  - {source: neuroblueprint, target: bids, relation: inspired_by, provenance: poster, evidence: "Poster: 'Simplified, BIDS-inspired organization standard'.", confidence: high, verified: false}
+  - {source: sparc_sds, target: nwb, relation: organizes, provenance: poster, evidence: "SPARC archive key standards: SPARC SDS, NWB (poster).", confidence: medium, verified: false}
+  - {source: sparc_sds, target: tsv_csv, relation: uses_format, provenance: docs, evidence: "SDS metadata files (dataset_description, subjects, samples) as tabular files.", confidence: medium, verified: false}
+  - {source: bossdb_dm, target: precomputed, relation: organizes, provenance: poster, evidence: "BossDB key standards: BossDB Data Model, Precomputed (poster).", confidence: medium, verified: false}
+
+  # ------------------------------------------------------- microscopy / imaging standards
+  - {source: ome_tiff, target: tiff, relation: uses_format, provenance: notes, evidence: "OME-TIFF stores OME-XML metadata within TIFF.", confidence: high, verified: false}
+  - {source: ome_tiff, target: xml_schema, relation: defined_with, provenance: docs, evidence: "OME data model is defined as OME-XML schema.", confidence: high, verified: false}
+  - {source: ome_zarr, target: zarr, relation: uses_format, provenance: notes, evidence: "OME-NGFF specification over Zarr.", confidence: high, verified: false}
+  - {source: ome_zarr, target: json_schema, relation: defined_with, provenance: docs, evidence: "OME-NGFF metadata validated with JSON Schema.", confidence: medium, verified: false}
+  - {source: dicom, target: radlex, relation: uses_terminology, provenance: expert, evidence: "Radiology reporting uses RadLex; DICOM primarily uses its own DCM/SNOMED codes.", confidence: low, verified: false}
+
+  # ----------------------------------------------------------------- NIX / odML / openMINDS
+  - {source: nix, target: hdf5, relation: uses_format, provenance: poster, evidence: "Poster: 'NIX provides ... data models for storing scientific data ... in HDF5'.", confidence: high, verified: false}
+  - {source: nix, target: odml, relation: uses_terminology, provenance: docs, evidence: "NIX embeds odML-style metadata sections.", confidence: medium, verified: false}
+  - {source: openminds, target: json_schema, relation: defined_with, provenance: docs, evidence: "openMINDS schemas are expressed as JSON-Schema-like templates, serialized as JSON-LD.", confidence: medium, verified: false}
+  - {source: openminds, target: uberon, relation: uses_terminology, provenance: docs, evidence: "openMINDS controlled terms map to Uberon and other ontologies.", confidence: medium, verified: false}
+  - {source: openminds, target: ncbi_taxonomy, relation: uses_terminology, provenance: docs, evidence: "openMINDS species terms map to NCBI Taxonomy.", confidence: medium, verified: false}
+  - {source: openminds, target: julich_brain, relation: uses_terminology, provenance: docs, evidence: "openMINDS SANDS references EBRAINS atlases.", confidence: medium, verified: false}
+
+  # ----------------------------------------------------------------- archives
+  - {source: dandi, target: nwb, relation: accepts, provenance: poster, evidence: "Poster archive table: DANDI key standards NWB, DANDI Layout, BIDS, OME.", confidence: high, verified: false}
+  - {source: dandi, target: dandi_layout, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: dandi, target: bids, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: dandi, target: ome_zarr, relation: accepts, provenance: poster, evidence: "Poster archive table (OME TIFF/Zarr).", confidence: high, verified: false}
+  - {source: dandi, target: ncbi_taxonomy, relation: uses_terminology, provenance: notes, evidence: "Notes: 'DANDI/NWB uses NCBI Taxonomy'.", confidence: high, verified: false}
+  - {source: dandi, target: json_schema, relation: defined_with, provenance: expert, evidence: "DANDI metadata model published as JSON Schema (dandischema).", confidence: medium, verified: false}
+  - {source: dandi, target: datacite_schema, relation: uses_terminology, provenance: expert, evidence: "Published Dandisets receive DataCite DOIs.", confidence: high, verified: false}
+  - {source: ember, target: nwb, relation: accepts, provenance: poster, evidence: "Poster archive table: EMBER key standards NWB, BIDS, Psych-DS, DANDI Layout.", confidence: high, verified: false}
+  - {source: ember, target: bids, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: ember, target: psych_ds, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: ember, target: dandi_layout, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: openneuro, target: bids, relation: accepts, provenance: poster, evidence: "Poster archive table: OpenNeuro key standards BIDS, NIfTI, HED, NWB.", confidence: high, verified: false}
+  - {source: openneuro, target: nifti, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: openneuro, target: hed, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: openneuro, target: nwb, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: medium, verified: false}
+  - {source: openneuro, target: datacite_schema, relation: uses_terminology, provenance: expert, evidence: "OpenNeuro datasets receive DataCite DOIs.", confidence: high, verified: false}
+  - {source: nemar, target: bids, relation: accepts, provenance: poster, evidence: "Poster archive table: NEMAR key standards BIDS, HED.", confidence: high, verified: false}
+  - {source: nemar, target: hed, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: nemar, target: openneuro, relation: interoperates_with, provenance: expert, evidence: "NEMAR mirrors OpenNeuro EEG/MEG/iEEG datasets.", confidence: high, verified: false}
+  - {source: dabi, target: nwb, relation: accepts, provenance: poster, evidence: "Poster archive table: invasive neurophysiology, NWB, BIDS.", confidence: high, verified: false}
+  - {source: dabi, target: bids, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: bil, target: tiff, relation: accepts, provenance: poster, evidence: "Poster archive table: BIL key standards TIFF, SWC.", confidence: high, verified: false}
+  - {source: bil, target: swc, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: bossdb, target: bossdb_dm, relation: accepts, provenance: poster, evidence: "Poster archive table: BossDB Data Model, Precomputed.", confidence: high, verified: false}
+  - {source: bossdb, target: precomputed, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: nemo, target: fastq, relation: accepts, provenance: poster, evidence: "Poster archive table: FASTQ, BAM/CRAM, VCF, Loom.", confidence: high, verified: false}
+  - {source: nemo, target: bam_cram, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: nemo, target: loom, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: high, verified: false}
+  - {source: ebrains, target: openminds, relation: accepts, provenance: poster, evidence: "EBRAINS Knowledge Graph metadata uses openMINDS.", confidence: high, verified: false}
+  - {source: sparc_portal, target: sparc_sds, relation: accepts, provenance: poster, evidence: "Poster archive table: SPARC SDS, NWB.", confidence: high, verified: false}
+  - {source: sparc_portal, target: nwb, relation: accepts, provenance: poster, evidence: "Poster archive table.", confidence: medium, verified: false}
+  - {source: tcia, target: dicom, relation: accepts, provenance: poster, evidence: "Poster archive table: TCIA key standard DICOM.", confidence: high, verified: false}
+  - {source: odc_tbi, target: cde, relation: uses_terminology, provenance: poster, evidence: "Poster archive table: ODC-TBI uses Common Data Elements.", confidence: high, verified: false}
+  - {source: odc_sci, target: cde, relation: uses_terminology, provenance: poster, evidence: "Poster: SCI Common Data Elements.", confidence: medium, verified: false}
+  - {source: gin, target: nix, relation: accepts, provenance: expert, evidence: "GIN (G-Node) hosts NIX/odML data; general-purpose otherwise.", confidence: medium, verified: false}
+  - {source: nda, target: cde, relation: uses_terminology, provenance: expert, evidence: "NDA data dictionaries / data structures function as CDEs.", confidence: medium, verified: false}
+
+  # ----------------------------------------------------------- ontologies & schema languages
+  - {source: uberon, target: obo_foundry, relation: part_of, provenance: poster, evidence: "Uberon is an OBO Foundry ontology.", confidence: high, verified: false}
+  - {source: cell_ontology, target: obo_foundry, relation: part_of, provenance: poster, evidence: "CL is an OBO Foundry ontology.", confidence: high, verified: false}
+  - {source: gene_ontology, target: obo_foundry, relation: part_of, provenance: poster, evidence: "GO is an OBO Foundry ontology.", confidence: high, verified: false}
+  - {source: protein_ontology, target: obo_foundry, relation: part_of, provenance: poster, evidence: "PRO is an OBO Foundry ontology.", confidence: high, verified: false}
+  - {source: nbo, target: obo_foundry, relation: part_of, provenance: expert, evidence: "NBO is an OBO Foundry ontology.", confidence: high, verified: false}
+  - {source: obo_foundry, target: rdf_owl, relation: defined_with, provenance: expert, evidence: "OBO ontologies are released in OWL.", confidence: high, verified: false}
+  - {source: nifstd, target: uberon, relation: extends, provenance: expert, evidence: "NIFSTD imports/bridges to community ontologies including Uberon.", confidence: medium, verified: false}
+  - {source: neurolex, target: nifstd, relation: related_to, provenance: expert, evidence: "NeuroLex terms were integrated into NIFSTD/InterLex.", confidence: medium, verified: false}
+  - {source: cognitive_atlas, target: cogpo, relation: related_to, provenance: expert, evidence: "Both describe cognitive tasks/paradigms; partially mapped.", confidence: low, verified: false}
+  - {source: allen_ccf, target: uberon, relation: interoperates_with, provenance: expert, evidence: "Mappings exist between Allen mouse structures and Uberon.", confidence: low, verified: false}
+  - {source: linkml, target: yaml, relation: uses_format, provenance: docs, evidence: "LinkML schemas are authored in YAML.", confidence: high, verified: false}
+  - {source: linkml, target: json_schema, relation: interoperates_with, provenance: docs, evidence: "LinkML generates JSON Schema.", confidence: high, verified: false}
+  - {source: linkml, target: rdf_owl, relation: interoperates_with, provenance: docs, evidence: "LinkML generates OWL/RDF.", confidence: high, verified: false}
+  - {source: hdmf_spec, target: yaml, relation: uses_format, provenance: docs, evidence: "HDMF/NWB specifications are authored in YAML (or JSON).", confidence: high, verified: false}
+  - {source: hdmf_spec, target: hdf5, relation: uses_format, provenance: docs, evidence: "HDMF maps specifications to HDF5 (and Zarr).", confidence: high, verified: false}
+  - {source: hdmf_spec, target: zarr, relation: uses_format, provenance: docs, evidence: "hdmf-zarr backend.", confidence: high, verified: false}
+  - {source: hed, target: tsv_csv, relation: uses_format, provenance: expert, evidence: "HED annotations live in events TSV files / JSON sidecars.", confidence: medium, verified: false}

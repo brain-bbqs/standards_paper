@@ -1,0 +1,702 @@
+# Seed nodes for the neuroscience data standards ecosystem knowledge graph.
+#
+# Initial list compiled from the SfN 2025 poster, the paper notes, and the BBQS data
+# standards guideline. Draft: every entry needs review by someone who knows the resource.
+#
+# Fields
+#   id            stable slug used by curated_edges.yaml
+#   name          full name
+#   abbreviation  short name used in figures (optional)
+#   layer         primary layer (see taxonomy.yaml `layers`)
+#   also_layers   other layers the technology also spans (fuzzy boundaries, e.g., DICOM)
+#   kind          optional sub-type, used mainly in the ontology_terminology layer
+#   communities   one or more communities (see taxonomy.yaml `communities`); the FIRST
+#                 entry is the node's home community, used for strict edge classification
+#   rrid          SciCrunch RRID (SCR_xxxxxx). Only IDs whose resolved name was checked
+#                 are filled in; null = not yet looked up (run `ecokg rrid-check`).
+#   rrid_aliases  further RRIDs registered for the same resource (duplicate registry records);
+#                 optional. Edges to any alias are attributed to this node.
+#   fairsharing   FAIRsharing DOI suffix (e.g., FAIRsharing.abc123); null = resolve via
+#                 `ecokg harvest-fairsharing --resolve` (needs a FAIRsharing account).
+#   homepage      landing page
+#   sources       where the node comes from: poster | notes | guideline | bbqs_inventory | expert
+
+nodes:
+  # --------------------------------------------------------------------- archives
+  - id: dandi
+    name: Distributed Archives for Neurophysiology Data Integration
+    abbreviation: DANDI
+    layer: archive
+    communities: [neurophysiology, behavior, microscopy]
+    rrid: SCR_017571
+    fairsharing: null
+    homepage: https://dandiarchive.org
+    sources: [poster, notes]
+  - id: ember
+    name: Ecosystem for Multi-modal Brain-behavior Experimentation and Research
+    abbreviation: EMBER
+    layer: archive
+    communities: [behavior, neurophysiology, neuroimaging, psychology]
+    rrid: SCR_026700
+    fairsharing: null
+    homepage: https://emberarchive.org
+    sources: [poster, guideline]
+  - id: openneuro
+    name: OpenNeuro
+    abbreviation: OpenNeuro
+    layer: archive
+    communities: [neuroimaging, electromagnetic]
+    rrid: SCR_005031
+    fairsharing: null
+    homepage: https://openneuro.org
+    sources: [poster]
+  - id: nemar
+    name: NeuroElectroMagnetic data Archive and tools Resource
+    abbreviation: NEMAR
+    layer: archive
+    communities: [electromagnetic]
+    rrid: SCR_019100
+    fairsharing: null
+    homepage: https://nemar.org
+    sources: [poster]
+  - id: dabi
+    name: Data Archive for the BRAIN Initiative
+    abbreviation: DABI
+    layer: archive
+    communities: [neurophysiology, electromagnetic, clinical]
+    rrid: null
+    fairsharing: null
+    homepage: https://dabi.loni.usc.edu
+    sources: [poster, bbqs_inventory]
+  - id: bil
+    name: Brain Image Library
+    abbreviation: BIL
+    layer: archive
+    communities: [microscopy]
+    rrid: SCR_017272
+    fairsharing: null
+    homepage: https://www.brainimagelibrary.org
+    sources: [poster]
+  - id: bossdb
+    name: Brain Observatory Storage Service and Database
+    abbreviation: BossDB
+    layer: archive
+    communities: [microscopy]
+    rrid: SCR_017273
+    fairsharing: null
+    homepage: https://bossdb.org
+    sources: [poster]
+  - id: nemo
+    name: Neuroscience Multi-omic Archive
+    abbreviation: NeMO
+    layer: archive
+    communities: [omics]
+    rrid: SCR_016152
+    fairsharing: null
+    homepage: https://nemoarchive.org
+    sources: [poster]
+  - id: ebrains
+    name: EBRAINS Knowledge Graph
+    abbreviation: EBRAINS
+    layer: archive
+    communities: [neurophysiology, neuroimaging, microscopy, biology]
+    rrid: SCR_019260
+    fairsharing: null
+    homepage: https://search.kg.ebrains.eu
+    sources: [poster]
+  - id: sparc_portal
+    name: SPARC Portal
+    abbreviation: SPARC
+    layer: archive
+    communities: [neurophysiology, microscopy]
+    rrid: SCR_017041
+    fairsharing: null
+    homepage: https://sparc.science
+    sources: [poster]
+  - id: tcia
+    name: The Cancer Imaging Archive
+    abbreviation: TCIA
+    layer: archive
+    communities: [clinical, neuroimaging]
+    rrid: SCR_008927
+    fairsharing: null
+    homepage: https://www.cancerimagingarchive.net
+    sources: [poster]
+  - id: odc_tbi
+    name: Open Data Commons for Traumatic Brain Injury
+    abbreviation: ODC-TBI
+    layer: archive
+    communities: [clinical]
+    rrid: SCR_021736
+    fairsharing: null
+    homepage: https://odc-tbi.org
+    sources: [poster]
+  - id: odc_sci
+    name: Open Data Commons for Spinal Cord Injury
+    abbreviation: ODC-SCI
+    layer: archive
+    communities: [clinical]
+    rrid: SCR_016673
+    fairsharing: null
+    homepage: https://odc-sci.org
+    sources: [poster]
+  - id: nda
+    name: NIMH Data Archive
+    abbreviation: NDA
+    layer: archive
+    communities: [clinical, psychology, neuroimaging]
+    rrid: SCR_004434
+    fairsharing: null
+    homepage: https://nda.nih.gov
+    sources: [bbqs_inventory]
+  - id: gin
+    name: G-Node Infrastructure
+    abbreviation: GIN
+    layer: archive
+    communities: [neurophysiology]
+    rrid: SCR_015864
+    fairsharing: null
+    homepage: https://gin.g-node.org
+    sources: [poster]
+
+  # ------------------------------------------------------ dataset organization standards
+  - id: bids
+    name: Brain Imaging Data Structure
+    abbreviation: BIDS
+    layer: dataset_organization
+    communities: [neuroimaging, electromagnetic, microscopy, behavior, neurophysiology]
+    rrid: SCR_016124
+    fairsharing: null
+    homepage: https://bids.neuroimaging.io
+    sources: [poster, notes, guideline]
+  - id: psych_ds
+    name: Psych-DS
+    abbreviation: Psych-DS
+    layer: dataset_organization
+    communities: [psychology, behavior]
+    rrid: null
+    fairsharing: null
+    homepage: https://psych-ds.github.io
+    sources: [poster, notes, guideline]
+  - id: dandi_layout
+    name: DANDI Layout
+    abbreviation: DANDI Layout
+    layer: dataset_organization
+    communities: [neurophysiology]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.dandiarchive.org/handbook/
+    sources: [poster, guideline]
+  - id: sparc_sds
+    name: SPARC Dataset Structure
+    abbreviation: SPARC SDS
+    layer: dataset_organization
+    communities: [neurophysiology, microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://sparc.science/help/3FXikFXC8shPRd8xZqhjVT
+    sources: [poster]
+  - id: neuroblueprint
+    name: NeuroBlueprint
+    abbreviation: NeuroBlueprint
+    layer: dataset_organization
+    communities: [neurophysiology, behavior, microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://neuroblueprint.neuroinformatics.dev
+    sources: [poster]
+  - id: bossdb_dm
+    name: BossDB Data Model
+    abbreviation: BossDB DM
+    layer: dataset_organization
+    communities: [microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://bossdb.org
+    sources: [poster]
+
+  # ------------------------------------------------------------------ data standards
+  - id: nwb
+    name: Neurodata Without Borders
+    abbreviation: NWB
+    layer: data_standard
+    communities: [neurophysiology, behavior]
+    rrid: SCR_015242
+    fairsharing: null
+    homepage: https://nwb.org
+    sources: [poster, notes, guideline]
+  - id: ome_tiff
+    name: OME-TIFF
+    abbreviation: OME-TIFF
+    layer: data_standard
+    communities: [microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://ome-model.readthedocs.io/en/stable/ome-tiff/
+    sources: [poster]
+  - id: ome_zarr
+    name: OME-Zarr (OME-NGFF)
+    abbreviation: OME-Zarr
+    layer: data_standard
+    communities: [microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://ngff.openmicroscopy.org
+    sources: [poster]
+  - id: dicom
+    name: Digital Imaging and Communications in Medicine
+    abbreviation: DICOM
+    layer: data_standard
+    also_layers: [data_format]
+    communities: [clinical, neuroimaging]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.dicomstandard.org
+    sources: [poster, notes]
+  - id: nix
+    name: Neuroscience Information Exchange format
+    abbreviation: NIX
+    layer: data_standard
+    communities: [neurophysiology]
+    rrid: SCR_016196
+    fairsharing: null
+    homepage: https://github.com/G-Node/nix
+    sources: [poster]
+  - id: odml
+    name: Open metadata Markup Language
+    abbreviation: odML
+    layer: data_standard
+    communities: [neurophysiology]
+    rrid: null
+    fairsharing: null
+    homepage: https://g-node.github.io/python-odml/
+    sources: [expert]
+  - id: openminds
+    name: openMINDS metadata framework
+    abbreviation: openMINDS
+    layer: data_standard
+    also_layers: [ontology_terminology]
+    communities: [neurophysiology, neuroimaging, microscopy, biology]
+    rrid: SCR_023173
+    fairsharing: null
+    homepage: https://openminds.ebrains.eu
+    sources: [poster]
+  - id: edf
+    name: European Data Format (EDF/EDF+)
+    abbreviation: EDF
+    layer: data_standard
+    also_layers: [data_format]
+    communities: [electromagnetic, clinical]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.edfplus.info
+    sources: [poster, guideline]
+
+  # ----------------------------------------------------- ontologies & terminologies
+  - id: uberon
+    name: Uberon multi-species anatomy ontology
+    abbreviation: Uberon
+    layer: ontology_terminology
+    kind: ontology
+    communities: [biology]
+    rrid: SCR_010668
+    fairsharing: null
+    homepage: http://obophenotype.github.io/uberon/
+    sources: [poster]
+  - id: ncbi_taxonomy
+    name: NCBI Taxonomy
+    abbreviation: NCBI Taxonomy
+    layer: ontology_terminology
+    kind: terminology
+    communities: [biology]
+    rrid: SCR_003256
+    fairsharing: null
+    homepage: https://www.ncbi.nlm.nih.gov/taxonomy
+    sources: [poster, notes, bbqs_inventory]
+  - id: gene_ontology
+    name: Gene Ontology
+    abbreviation: GO
+    layer: ontology_terminology
+    kind: ontology
+    communities: [biology, omics]
+    rrid: SCR_002811
+    fairsharing: null
+    homepage: https://geneontology.org
+    sources: [poster]
+  - id: cell_ontology
+    name: Cell Ontology
+    abbreviation: CL
+    layer: ontology_terminology
+    kind: ontology
+    communities: [biology]
+    rrid: SCR_004251
+    fairsharing: null
+    homepage: https://obophenotype.github.io/cell-ontology/
+    sources: [poster]
+  - id: protein_ontology
+    name: Protein Ontology
+    abbreviation: PRO
+    layer: ontology_terminology
+    kind: ontology
+    communities: [biology, omics]
+    rrid: null
+    fairsharing: null
+    homepage: https://proconsortium.org
+    sources: [poster]
+  - id: neurolex
+    name: NeuroLex
+    abbreviation: NeuroLex
+    layer: ontology_terminology
+    kind: terminology
+    communities: [biology]
+    rrid: SCR_005402
+    fairsharing: null
+    homepage: https://scicrunch.org/scicrunch/interlex/
+    sources: [poster]
+  - id: nifstd
+    name: Neuroscience Information Framework Standard Ontologies
+    abbreviation: NIFSTD
+    layer: ontology_terminology
+    kind: ontology
+    communities: [biology]
+    rrid: SCR_005414
+    fairsharing: null
+    homepage: https://github.com/SciCrunch/NIF-Ontology
+    sources: [poster]
+  - id: obo_foundry
+    name: OBO Foundry
+    abbreviation: OBO Foundry
+    layer: ontology_terminology
+    kind: ontology
+    communities: [biology, general]
+    rrid: SCR_007083
+    fairsharing: null
+    homepage: https://obofoundry.org
+    sources: [poster]
+  - id: mrio
+    name: Magnetic Resonance Imaging Ontology
+    abbreviation: MRIO
+    layer: ontology_terminology
+    kind: ontology
+    communities: [neuroimaging]
+    rrid: null
+    fairsharing: null
+    homepage: https://bioportal.bioontology.org/ontologies/MRIO
+    sources: [poster]
+  - id: radlex
+    name: RadLex radiology lexicon
+    abbreviation: RadLex
+    layer: ontology_terminology
+    kind: terminology
+    communities: [clinical, neuroimaging]
+    rrid: null
+    fairsharing: null
+    homepage: https://radlex.org
+    sources: [poster]
+  - id: cognitive_atlas
+    name: Cognitive Atlas
+    abbreviation: Cognitive Atlas
+    layer: ontology_terminology
+    kind: ontology
+    communities: [psychology, neuroimaging]
+    rrid: SCR_002793
+    fairsharing: null
+    homepage: https://www.cognitiveatlas.org
+    sources: [poster]
+  - id: cogpo
+    name: Cognitive Paradigm Ontology
+    abbreviation: CogPO
+    layer: ontology_terminology
+    kind: ontology
+    communities: [psychology, neuroimaging]
+    rrid: null
+    fairsharing: null
+    homepage: http://www.cogpo.org
+    sources: [poster]
+  - id: hed
+    name: Hierarchical Event Descriptors
+    abbreviation: HED
+    layer: ontology_terminology
+    kind: metadata_vocabulary
+    communities: [electromagnetic, neuroimaging, behavior, neurophysiology]
+    rrid: SCR_014074
+    rrid_aliases: [SCR_017630]
+    fairsharing: null
+    homepage: https://www.hedtags.org
+    sources: [poster, guideline, bbqs_inventory]
+  - id: nidm
+    name: NeuroImaging Data Model
+    abbreviation: NIDM
+    layer: ontology_terminology
+    kind: metadata_vocabulary
+    communities: [neuroimaging]
+    rrid: SCR_013667
+    fairsharing: null
+    homepage: http://nidm.nidash.org
+    sources: [poster]
+  - id: datacite_schema
+    name: DataCite Metadata Schema
+    abbreviation: DataCite
+    layer: ontology_terminology
+    kind: metadata_vocabulary
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://schema.datacite.org
+    sources: [poster]
+  - id: nbo
+    name: Neuro Behavior Ontology
+    abbreviation: NBO
+    layer: ontology_terminology
+    kind: ontology
+    communities: [behavior]
+    rrid: null
+    fairsharing: null
+    homepage: https://github.com/obo-behavior/behavior-ontology
+    sources: [bbqs_inventory]
+  - id: allen_ccf
+    name: Allen Mouse Brain Common Coordinate Framework
+    abbreviation: Allen CCF
+    layer: ontology_terminology
+    kind: atlas
+    communities: [biology, microscopy, neurophysiology]
+    rrid: SCR_020999
+    fairsharing: null
+    homepage: https://atlas.brain-map.org
+    sources: [poster, bbqs_inventory]
+  - id: allen_human_atlas
+    name: Allen Human Brain Atlas
+    abbreviation: Allen Human
+    layer: ontology_terminology
+    kind: atlas
+    communities: [biology, neuroimaging]
+    rrid: SCR_007416
+    fairsharing: null
+    homepage: https://human.brain-map.org
+    sources: [poster]
+  - id: waxholm
+    name: Waxholm Space Atlas of the Sprague Dawley Rat Brain
+    abbreviation: Waxholm (WHS)
+    layer: ontology_terminology
+    kind: atlas
+    communities: [biology, neuroimaging, microscopy]
+    rrid: SCR_017124
+    fairsharing: null
+    homepage: https://www.nitrc.org/projects/whs-sd-atlas
+    sources: [poster]
+  - id: julich_brain
+    name: EBRAINS Julich-Brain human atlas
+    abbreviation: Julich-Brain
+    layer: ontology_terminology
+    kind: atlas
+    communities: [biology, neuroimaging]
+    rrid: SCR_023277
+    fairsharing: null
+    homepage: https://www.ebrains.eu/tools/human-brain-atlas
+    sources: [poster]
+  - id: hcp_atlas
+    name: HCP Multi-Modal Parcellation
+    abbreviation: HCP-MMP
+    layer: ontology_terminology
+    kind: atlas
+    communities: [neuroimaging]
+    rrid: null
+    fairsharing: null
+    homepage: https://balsa.wustl.edu/study/RVVG
+    sources: [bbqs_inventory]
+  - id: cde
+    name: Common Data Elements (NIH/NINDS)
+    abbreviation: CDEs
+    layer: ontology_terminology
+    kind: common_data_elements
+    communities: [clinical]
+    rrid: null
+    fairsharing: null
+    homepage: https://cde.nlm.nih.gov
+    sources: [poster, notes]
+  - id: neurobagel
+    name: Neurobagel
+    abbreviation: Neurobagel
+    layer: ontology_terminology
+    kind: annotation_framework
+    communities: [neuroimaging, clinical, psychology]
+    rrid: null
+    fairsharing: null
+    homepage: https://neurobagel.org
+    sources: [poster]
+  - id: herd
+    name: HDMF External Resources Data structure
+    abbreviation: HERD
+    layer: ontology_terminology
+    kind: annotation_framework
+    communities: [neurophysiology, general]
+    rrid: null
+    fairsharing: null
+    homepage: https://hdmf.readthedocs.io
+    sources: [poster]
+
+  # ------------------------------------------------------------------- data formats
+  - id: hdf5
+    name: Hierarchical Data Format 5
+    abbreviation: HDF5
+    layer: data_format
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.hdfgroup.org/solutions/hdf5/
+    sources: [poster, notes]
+  - id: zarr
+    name: Zarr
+    abbreviation: Zarr
+    layer: data_format
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://zarr.dev
+    sources: [poster]
+  - id: tiff
+    name: Tagged Image File Format
+    abbreviation: TIFF
+    layer: data_format
+    communities: [general, microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.loc.gov/preservation/digital/formats/fdd/fdd000022.shtml
+    sources: [poster]
+  - id: nifti
+    name: Neuroimaging Informatics Technology Initiative format
+    abbreviation: NIfTI
+    layer: data_format
+    communities: [neuroimaging]
+    rrid: SCR_007117
+    fairsharing: null
+    homepage: https://nifti.nimh.nih.gov
+    sources: [poster, guideline]
+  - id: json
+    name: JavaScript Object Notation
+    abbreviation: JSON
+    layer: data_format
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.json.org
+    sources: [poster]
+  - id: tsv_csv
+    name: Delimited text tables (TSV/CSV)
+    abbreviation: TSV/CSV
+    layer: data_format
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.rfc-editor.org/rfc/rfc4180
+    sources: [poster]
+  - id: yaml
+    name: YAML
+    abbreviation: YAML
+    layer: data_format
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://yaml.org
+    sources: [poster]
+  - id: mp4
+    name: MPEG-4 Part 14 video container
+    abbreviation: MP4
+    layer: data_format
+    communities: [general, behavior]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.loc.gov/preservation/digital/formats/fdd/fdd000155.shtml
+    sources: [poster, guideline]
+  - id: swc
+    name: SWC neuron morphology format
+    abbreviation: SWC
+    layer: data_format
+    communities: [microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://swc-specification.readthedocs.io
+    sources: [poster]
+  - id: precomputed
+    name: Neuroglancer Precomputed format
+    abbreviation: Precomputed
+    layer: data_format
+    communities: [microscopy]
+    rrid: null
+    fairsharing: null
+    homepage: https://github.com/google/neuroglancer/tree/master/src/datasource/precomputed
+    sources: [poster]
+  - id: fastq
+    name: FASTQ
+    abbreviation: FASTQ
+    layer: data_format
+    communities: [omics]
+    rrid: null
+    fairsharing: null
+    homepage: https://en.wikipedia.org/wiki/FASTQ_format
+    sources: [poster]
+  - id: bam_cram
+    name: BAM/CRAM sequence alignment formats
+    abbreviation: BAM/CRAM
+    layer: data_format
+    communities: [omics]
+    rrid: null
+    fairsharing: null
+    homepage: https://samtools.github.io/hts-specs/
+    sources: [poster]
+  - id: loom
+    name: Loom
+    abbreviation: Loom
+    layer: data_format
+    communities: [omics]
+    rrid: null
+    fairsharing: null
+    homepage: http://loompy.org
+    sources: [poster]
+
+  # --------------------------------------------------------------- schema languages
+  - id: linkml
+    name: Linked data Modeling Language
+    abbreviation: LinkML
+    layer: schema_language
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://linkml.io
+    sources: [poster, notes]
+  - id: json_schema
+    name: JSON Schema
+    abbreviation: JSON Schema
+    layer: schema_language
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://json-schema.org
+    sources: [poster]
+  - id: xml_schema
+    name: XML Schema
+    abbreviation: XSD
+    layer: schema_language
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.w3.org/XML/Schema
+    sources: [poster]
+  - id: rdf_owl
+    name: RDF Schema / OWL
+    abbreviation: RDFS/OWL
+    layer: schema_language
+    communities: [general]
+    rrid: null
+    fairsharing: null
+    homepage: https://www.w3.org/OWL/
+    sources: [poster]
+  - id: hdmf_spec
+    name: HDMF specification language / Hierarchical Data Modeling Framework
+    abbreviation: HDMF
+    layer: schema_language
+    communities: [general, neurophysiology]
+    rrid: SCR_021303
+    fairsharing: null
+    homepage: https://hdmf-schema-language.readthedocs.io
+    sources: [notes]

@@ -1,0 +1,15 @@
+{"hits": {"hits": [{"_source": {
+  "item": {"identifier": "SCR_015242", "name": "Neurodata Without Borders",
+           "description": "Data standard for neurophysiology.",
+           "abbreviations": [{"name": "NWB"}], "keywords": [{"keyword": "data standard"}],
+           "types": [{"name": "data or information resource"}]},
+  "graph": {
+    "parent": [{"relationship": {"name": "has_parent_organization"},
+                "resource": {"identifier": "SCR_004257", "name": "Janelia Research"}}],
+    "related": [{"relationship": {"name": "is_related_to"},
+                 "resource": {"identifier": "SCR_021303", "name": "Hierarchical Data Modeling Framework"}},
+                {"relationship": {"name": "is_related_to"},
+                 "resource": {"identifier": "rrid:scr_021303", "name": "Hierarchical Data Modeling Framework"}}],
+    "relationships": [{"relationship": {"name": "is_used_by"},
+                       "resource": {"identifier": "SCR_017571", "name": "DANDI"}}]
+  }}}]}}

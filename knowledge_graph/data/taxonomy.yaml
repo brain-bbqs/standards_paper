@@ -1,0 +1,114 @@
+# Controlled vocabularies for the neuroscience data standards ecosystem knowledge graph.
+# Every node and edge in seeds.yaml / curated_edges.yaml must use values defined here
+# (enforced by `ecokg validate` and the test suite).
+
+# The six layers of the ecosystem map (paper Fig. 1 / Table 1). `order` is used for
+# plotting (top = closest to the user, bottom = closest to the bytes on disk).
+layers:
+  archive:
+    order: 1
+    label: Data archives
+    problem: Publish, share, and discover content.
+    use_case: Publish a series of datasets on a particular topic.
+  dataset_organization:
+    order: 2
+    label: Dataset organization standards
+    problem: Organize collections of files in accepted data standards and formats.
+    use_case: Organize data from a full experiment.
+  data_standard:
+    order: 3
+    label: Data standards
+    problem: Organize data and metadata using primitives (arrays, tables, dictionaries) supported by data formats.
+    use_case: Organize data from a single session or modality.
+  ontology_terminology:
+    order: 4
+    label: Ontologies & terminologies
+    problem: Define terms and represent domain knowledge, including relationships between concepts.
+    use_case: Annotate data to define the meaning of terms.
+    note: >-
+      One layer (paper decision Q1). Ontologies define terms *and* encode definitions and
+      relationships; terminologies define the set of valid terms, often selected from ontologies.
+      Use the node field `kind` (ontology | terminology | atlas | metadata_vocabulary |
+      annotation_framework | common_data_elements) to distinguish them.
+  data_format:
+    order: 5
+    label: Data formats
+    problem: Map data to storage.
+    use_case: Serialize generic data structures (tables, arrays).
+  schema_language:
+    order: 6
+    label: Schema languages
+    problem: Provide a formal language to describe the structure and rules for data.
+    use_case: Formally define data standards and ontologies.
+
+# Research communities / data modalities. A node may belong to several communities;
+# the FIRST community listed for a node is its "home" community (where it originated /
+# is primarily governed). Edge scope is computed two ways (see ecokg.classify):
+#   strict  - compares home communities only
+#   lenient - compares the full community lists (any overlap = within-community)
+communities:
+  neurophysiology: Extracellular/intracellular electrophysiology and optical physiology
+  neuroimaging: MRI, PET, and related macroscale imaging
+  electromagnetic: EEG, MEG, iEEG (neuroelectromagnetic data)
+  microscopy: Light, electron, and X-ray microscopy; anatomy and morphology
+  behavior: Behavioral measurements (video, pose, tracking, tasks)
+  psychology: Psychological and survey/assessment data
+  clinical: Clinical and medical imaging, injury and disease data
+  omics: Genomics, transcriptomics, and other molecular data
+  biology: Organism-, anatomy-, and cell-level biological knowledge
+  general: Domain-agnostic infrastructure
+
+# Communities whose resources are shared by everyone (domain-agnostic technology such as
+# HDF5/JSON/LinkML, and cross-domain biological knowledge such as NCBI Taxonomy/Uberon).
+# Edges to such nodes are classified as "shared" rather than as within-/cross-community.
+cross_cutting_communities: [general, biology]
+
+# Normalized relation types. Convention: `source --relation--> target` reads as
+# "source <relation> target", e.g., NWB --uses_format--> HDF5.
+relations:
+  uses_format: Stores or serializes data using the target format.
+  defined_with: The specification is formally expressed in the target schema language.
+  uses_terminology: Uses terms from the target ontology/terminology/atlas for (meta)data values.
+  organizes: A dataset organization standard that includes/permits files in the target standard or format.
+  accepts: An archive that accepts or requires data in the target standard/organization/format.
+  annotates: Adds semantic annotation/linked data to data in the target standard.
+  extends: Builds on, specializes, or is derived from the target.
+  inspired_by: Adopts design conventions from the target without formally extending it.
+  part_of: Is a component or member of the target (e.g., an ontology within OBO Foundry).
+  interoperates_with: Documented conversion/mapping/crosswalk between the two (symmetric).
+  related_to: Generic relationship (typically harvested from a registry without finer semantics).
+
+# How raw relation labels from external registries map to normalized relations.
+# `null` means: drop the edge (not an ecosystem relationship, e.g., tool listings
+# or parent organizations). `by_layer` means: infer the relation from the layers of
+# the two endpoints (see ecokg.build.infer_relation), e.g., archive->standard = accepts,
+# standard->format = uses_format. Unknown labels map to `related_to` and are logged.
+relation_label_map:
+  rrid:
+    is_related_to: related_to
+    works_with: interoperates_with
+    uses: by_layer
+    is_used_by: null            # reversed duplicate of `uses`
+    lists: null                 # resource lists a tool
+    is_listed_by: null
+    has_parent_organization: null
+    is_parent_organization_of: null
+    is_affiliated_with: null
+    has_affiliation: null
+    is_recommended_by: null     # funder/organization recommends the resource
+    hosts: null
+    is_provided_by: null
+    provides: null
+    has_organization_facet: null
+    is_organization_facet_of: null
+  fairsharing:
+    related_to: related_to
+    implements: by_layer
+    uses: by_layer
+    extends: extends
+    collects: null              # FAIRsharing collections, not ecosystem relations
+    recommends: null            # policy recommendations
+    has_component: null         # reversed by part_of
+    part_of: part_of
+    can_implement: related_to
+    undefined: related_to

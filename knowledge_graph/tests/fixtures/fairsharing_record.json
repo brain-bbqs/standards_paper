@@ -1,0 +1,11 @@
+{"data": {"fairsharingRecord": {
+  "id": "1234", "name": "Neurodata Without Borders", "abbreviation": "NWB",
+  "doi": "10.25504/FAIRsharing.nwb000", "registry": "Standard", "type": "model_and_format",
+  "status": "ready", "subjects": [{"label": "Neurophysiology"}], "domains": [],
+  "recordAssociations": [
+    {"recordAssocLabel": "uses", "linkedRecord": {"id": "55", "name": "Hierarchical Data Format 5", "doi": "https://doi.org/10.25504/FAIRsharing.hdf500"}}
+  ],
+  "reverseRecordAssociations": [
+    {"recordAssocLabel": "implements", "fairsharingRecord": {"id": "77", "name": "DANDI Archive", "doi": null}}
+  ]
+}}}
