@@ -40,6 +40,24 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
       within the limits (≤8 figures, ≤10 tables).
 - [x] **D7 — Title (decided 2026-10-09):** "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters).
 
+- [ ] **D8 — Six layers vs. literature (review 2026-10-09).**
+      - *Alignment:* the usual life-science distinction is reporting guidelines / models & formats /
+        terminologies (+ repositories, policies) [REF: Sansone 2012 Nat Genet 44:121; Sansone 2019].
+        FAIRsharing record types match this (in our harvest: 314 model/format, 257 terminology,
+        62 reporting guideline, 14 identifier schema). Our ontology and archive layers correspond directly.
+      - *Our contribution:* splitting FAIRsharing's single "model and format" bucket into dataset
+        organization, data standards, data formats, and schema languages. Say this explicitly and add a
+        short "relation to existing classifications" paragraph to Section 2 (currently missing).
+      - *Missing vs. literature:* reporting guidelines / minimum information (COBIDAS, ARRIVE, CDEs),
+        persistent identifiers (DOI, RRID, ORCID, ROR), access protocols / APIs, provenance, policies /
+        licences. Proposal: a cross-cutting band in Fig. 1 plus one paragraph, not more layers. State
+        that modelling standards (NeuroML, SONATA, PyNN) are out of scope.
+      - *Naming:* layer 3 "data standards" clashes with the paper's point that the term is overloaded.
+        Options: "data models", "file-level data standards".
+      - *Geometry:* archives → dataset organization → data standards → formats is a containment stack;
+        ontologies/terminologies (semantics) and schema languages (formal definition) cut across it.
+        Option: redraw Fig. 1 as a 4-level stack with two cross-cutting columns (keeps six categories).
+
 ## A. Actions
 
 - [ ] **A1** Author list and CRediT roles (poster authors + confirmed contributors; close Nov 14).

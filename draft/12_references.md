@@ -48,6 +48,15 @@ with the journal).
 | BICAN data page | BRAIN Initiative Cell Atlas Network, Data, https://brain-bican.org/data (accessed 2026-10-09) | ✓ (web resource) |
 | BICCN data page | BICCN, Data, https://biccn.org/data (accessed 2026-10-09) | ✓ (web resource) |
 
+## Classifications of standards (for D8)
+
+| Key | Reference | Status |
+|---|---|---|
+| Sansone 2012 | Sansone S-A et al. Toward interoperable bioscience data. *Nat Genet* 44, 121–126 (2012). | ✓ |
+| Nichols 2017 (COBIDAS) | Nichols TE et al. Best practices in data analysis and sharing in neuroimaging using MRI. *Nat Neurosci* 20, 299–303 (2017). | ✓ |
+| ARRIVE 2020 | Percie du Sert N et al. The ARRIVE guidelines 2.0. *PLoS Biol* 18, e3000410 (2020). | ✓ |
+| Abrams 2022 (INCF) | Abrams MB et al. A standards organization for open and FAIR neuroscience: the International Neuroinformatics Coordinating Facility. *Neuroinformatics* 20, 25–36 (2022). | ? |
+
 ## Terminologies and ontologies
 
 | Key | Reference | Status |
