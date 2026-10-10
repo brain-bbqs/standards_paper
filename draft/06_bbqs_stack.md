@@ -50,9 +50,7 @@ Taxonomy for species, brain atlases (e.g., the Allen Mouse Brain Common Coordina
 anatomical locations, and the Cell Ontology for cell types [REF: Federhen 2012; Wang 2020; Cell
 Ontology].
 
-In the terms of the video analogy, EMBER is the platform, NWB is the container that keeps all streams of
-a session in sync, BIDS and Psych-DS are the playlists that organize many recordings, and HED and the
-shared terminologies are the categories and tags. Seen on the map, the stack is complete in the vertical
+Seen on the map, the BBQS stack is complete in the vertical
 direction. Each layer has at least one recommended technology, and the technologies are connected (EMBER
 accepts NWB, BIDS, and Psych-DS; NWB uses HDF5/Zarr and HDMF; Psych-DS uses CSV and LinkML; BIDS uses
 JSON/TSV and can include NWB). The gaps are horizontal, between NWB, BIDS, and Psych-DS, and between all

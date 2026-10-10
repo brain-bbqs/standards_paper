@@ -47,6 +47,6 @@ These numbers point to three challenges that recur in the rest of this paper. Fi
 and EEG (BIDS), psychology (Psych-DS), and computer vision (video and pose formats). Second, several of
 the **most common BBQS behaviors have no established representation** in any of these standards (Section
 8). Third, data often live outside archives during a project, so the **path from the lab to the
-archive**, including conversion, validation, and metadata entry, must be easy enough to happen
-routinely. Section 6 describes the standards BBQS has adopted to meet these challenges, and Section 7
-gives recommendations for choosing and combining them.
+archive** (EMBER in the case  BBQS), including conversion, validation, and metadata entry, must be easy
+enough to happen routinely. Section 6 describes the standards BBQS has adopted to meet these challenges, 
+and Section 7 gives recommendations for choosing and combining them.
