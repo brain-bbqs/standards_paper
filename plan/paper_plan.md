@@ -50,9 +50,11 @@ Item IDs (D, A, S, F, C) refer to `TODO.md`, which holds the details and owners.
 2. Core team reads the full draft and comments section by section; OR assigns section leads (A3).
 3. Settle the open framing decisions: D4 (how prescriptive), D5 (ontology wording), D8 (relation to
    existing classifications, what the map leaves out, stack geometry), D10 (community rule).
-4. Claude-owned claims and references: web and literature checks, resolve references marked ? or —
-   (A7).
-5. OR-owned claims that need expert input: C27 (LinkML efforts), C37 (ongoing NWB/BIDS work to cite).
+4. General check of all claims (`TODO.md` §4, C1–C37). For each claim, verify it against a source,
+   add the citation, or soften or remove it. Claude does a first pass (literature and web checks,
+   proposed citations and wording) and records the result in each row; claims that need expert input
+   (e.g., C27 LinkML efforts, C37 ongoing NWB/BIDS work, Table 3 entries) go to OR or the teams.
+5. Resolve references marked ? or — in `draft/13_references.md` (A7).
 6. Request BBQS clearance for the aggregate statistics (A2) and a versioned guideline release (A5).
 7. Close the author list (A1, Nov 14). Brief the figure designer (F2, F3).
 
