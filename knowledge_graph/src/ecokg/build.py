@@ -92,6 +92,8 @@ def build_graph(taxonomy: Taxonomy, nodes: dict[str, Node], curated: list[Edge],
                    rrid=n.rrid or "", fairsharing=n.fairsharing or "")
 
     def add(src: str, tgt: str, relation: str, **attrs):
+        if relation in taxonomy.symmetric and tgt < src:
+            src, tgt = tgt, src  # one edge per pair for undirected relations
         if g.has_edge(src, tgt, key=relation):
             data = g.edges[src, tgt, relation]
             data["sources"] |= attrs.pop("sources")

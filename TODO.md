@@ -133,7 +133,7 @@ Rebuild generated figures with `make figures`.
 | C22 | 7 | Early standardization is cheaper than conversion at the end | Citation or soften | Claude |
 | C23 | 8, Methods | Behavior × guideline coverage (`analysis/behavior_coverage.csv`) | Check coding against the guideline; "cognitive tasks" Psych-DS entry is TODO in the guideline although Psych-DS lists task data; truncated "reproductive b" entry may be a 4th award | Claude; WG |
 | C24 | 8 | Technologies without guidance (EMG, force plates, VR, home cage, coding software, thermal, smart devices); BEP042 for EMG | Current NWB/BIDS status; cite BEP042 | Claude; teams |
-| C25 | 4, 8, Methods | Knowledge-graph results: 72 technologies, 133 relationships; 100/133 connect layers; 65/133 involve shared infrastructure; 33 of 68 domain-specific relationships cross communities, 30 of them through BIDS, NWB, HED, or EMBER (21 through BIDS or NWB) | Resolve `knowledge_graph/TODO.md` 1.1–1.3 and D10, then update the numbers | core; Claude for re-run |
+| C25 | 4, 8, Methods | Knowledge-graph results (updated 2026-10-09 after counting undirected relations once): 72 technologies, 122 relationships; 97/122 connect layers; 57/122 involve shared infrastructure; 31 of 65 domain-specific relationships cross communities, 28 of them through BIDS, NWB, HED, or EMBER (21 through BIDS or NWB). Two of the 31 are generic RRID "related to" links (BossDB–EMBER, DANDI–EMBER) whose meaning is unconfirmed | Resolve `knowledge_graph/TODO.md` 1.1–1.3 and D10, then update the numbers | core; Claude for re-run |
 | C26 | 4 | Many documented relationships are not recorded in registries | Do not state a number until the FAIRsharing relations are complete (`knowledge_graph/TODO.md` 1.1) | OR (FAIRsharing contact) |
 | C27 | 8 | LinkML as a bridge; Psych-DS uses LinkML | Cite LinkML; examples of cross-standard mapping | Claude |
 | C28 | 8 | Highest-value bridges for BBQS | Team agreement (a recommendation of the paper) | core |
@@ -143,7 +143,7 @@ Rebuild generated figures with `make figures`.
 | C32 | 9 | BRAIN knowledge base plans | Cite a public source only (KB paper when available) | core |
 | C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; catalog; NIMP) | Confirm NIMP description and whether BICAN uses BossDB; cite BICCN 2021 and the portals | core (BICAN contact); Claude for citations |
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
-| C35 | 4 | The lenient community rule hides most bridges (33 vs. 3) | Depends on D10 | core |
+| C35 | 4 | The lenient community rule hides most bridges (31 vs. 2) | Depends on D10 | core |
 
 ## 5. Knowledge graph (summary of `knowledge_graph/TODO.md`)
 
@@ -171,6 +171,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
 | 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table; numbered in order of first citation; within journal limits |
 | 2026-10-09 | Figures folder | `figures/` with one folder per item, `make figures`, `make check` |
+| 2026-10-09 | KG counting | Undirected relations (*related to*, *interoperates with*) counted once per pair; 11 RRID links had been stored in both directions (133 → 122 relationships, 33 → 31 bridges) |
 | 2026-10-09 | Style | Prose colons and em-dash asides removed; opening reframed around the complexity of the ecosystem; video analogy woven through Section 2 with callbacks |
 
 ## Notes for reviewers

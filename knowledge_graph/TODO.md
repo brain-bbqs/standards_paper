@@ -1,6 +1,6 @@
 # Knowledge graph — open issues and TODO
 
-*Status as of 2026-10-09. The graph has 72 nodes and 133 edges (101 curated, 27 from RRID, 8 from FAIRsharing);
+*Status as of 2026-10-09. The graph has 72 nodes and 122 edges (undirected relations counted once);
 see `output/stats.md` and `output/gaps.md` (`ecokg report`). Items are ordered by how much they
 affect the paper's Section 4 and Fig. 3 ("bridges between communities concentrate in a few hubs").
 Paper-level decisions and claims that depend on this list are tracked in `../TODO.md` (D10, C25, C26,
@@ -142,6 +142,10 @@ json_schema, xml_schema, rdf_owl`
 - [ ] **OpenNeuro** duplicate SCR_016667 no longer resolves (404) but is still linked from other records.
 - [ ] **Allen CCF** seed originally used SCR_002978 (Allen Mouse Brain Reference Atlas); corrected to
       SCR_020999.
+- [ ] Generic RRID `is_related_to` links between archives, **BossDB–EMBER** and **DANDI–EMBER**, count as
+      bridges between communities. They probably reflect shared infrastructure or teams (EMBER "extends
+      established BRAIN Initiative data infrastructure") rather than a data-standards relationship. Confirm
+      with the EMBER, BossDB, and DANDI teams; replace with a typed curated edge or drop.
 - [ ] FAIRsharing says **"BIDS extends NWB"** (on the NWB record). Probably wrong or refers to BIDS
       microelectrode extension (BEP032); confirm with NWB/BIDS maintainers.
 

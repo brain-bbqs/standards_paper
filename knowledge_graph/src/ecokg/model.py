@@ -20,6 +20,7 @@ class Taxonomy:
     cross_cutting: set[str]
     relations: dict
     relation_label_map: dict
+    symmetric: set[str] = field(default_factory=set)
 
     def layer_order(self, layer: str) -> int:
         return self.layers[layer]["order"]
@@ -79,6 +80,7 @@ def load_taxonomy(path: Path = DATA_DIR / "taxonomy.yaml") -> Taxonomy:
         cross_cutting=set(d.get("cross_cutting_communities", [])),
         relations=d["relations"],
         relation_label_map=d.get("relation_label_map", {}),
+        symmetric=set(d.get("symmetric_relations", [])),
     )
 
 
@@ -130,7 +132,8 @@ def validate(taxonomy: Taxonomy, nodes: dict[str, Node], edges: list[Edge]) -> l
             errors.append(f"{where}: confidence must be one of {CONFIDENCE_LEVELS}")
         if e.source == e.target:
             errors.append(f"{where}: self-loop")
-        key = (e.source, e.target, e.relation)
+        key = ((min(e.source, e.target), max(e.source, e.target), e.relation)
+               if e.relation in taxonomy.symmetric else (e.source, e.target, e.relation))
         if key in seen:
             errors.append(f"{where}: duplicate edge")
         seen.add(key)

@@ -37,7 +37,9 @@ the first community is the node's home community. Edges are typed relationships 
 *defined with*, *uses terminology*, *accepts*, *organizes*, *extends*) from two sources, expert curation
 (with provenance and confidence) and relationships harvested from the RRID registry (SciCrunch resolver)
 and FAIRsharing (REST API) on 2026-10-09. Registry relation labels were mapped to the same relation
-types; organizational relations (e.g., parent organization, collection membership) were dropped. Each
-edge is classified by **layer span** (within or across layers) and **community scope** (within or across
-home communities, or *shared* when one end is domain-agnostic infrastructure such as HDF5 or a
-cross-species ontology). Code and data are available as the `ecokg` package [REF: Zenodo DOI, TODO-A6] [TODO-C25, C26].
+types, and undirected relations (*related to*, *interoperates with*) were counted once per pair of
+technologies even when both registry records list them; organizational relations (e.g., parent
+organization, collection membership) were dropped. Each edge is classified by **layer span** (within or
+across layers) and **community scope** (within or across home communities, or *shared* when one end is
+domain-agnostic infrastructure such as HDF5 or a cross-species ontology). Code and data are available as
+the `ecokg` package [REF: Zenodo DOI, TODO-A6] [TODO-C25, C26].

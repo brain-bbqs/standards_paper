@@ -36,15 +36,15 @@ def test_harvested_edges_merge_and_classify(taxonomy, nodes, curated):
     result = build_graph(taxonomy, nodes, curated, harvested, fairsharing_ids={"77": "dandi"})
     g = result.graph
 
-    assert g.edges["nwb", "hdmf_spec", "related_to"]["sources"] == {"rrid"}
+    assert g.edges["hdmf_spec", "nwb", "related_to"]["sources"] == {"rrid"}  # symmetric: canonical order
     accepts = g.edges["dandi", "nwb", "accepts"]
     assert accepts["sources"] == {"curated", "rrid", "fairsharing"}
     assert accepts["registry_labels"] == {"rrid:uses", "fairsharing:implements"}
     assert accepts["provenance"] == "poster"
     assert accepts["in_registry"]
     assert g.edges["nwb", "hdf5", "uses_format"]["sources"] == {"curated", "fairsharing"}
-    assert g.has_edge("nwb", "bids", "related_to")
-    assert g.has_edge("nwb", "dandi", "related_to")
+    assert g.has_edge("bids", "nwb", "related_to")
+    assert g.has_edge("dandi", "nwb", "related_to")
     assert not any(u == v for u, v in g.edges())
 
     # Curated edge whose node pair has some registry link (any relation) counts as confirmed.
@@ -53,3 +53,14 @@ def test_harvested_edges_merge_and_classify(taxonomy, nodes, curated):
 
     assert [(c.other_id, c.linked_from) for c in result.candidates] == [("SCR_888888", {"nwb", "dandi"})]
     assert result.unknown_labels == {"rrid": {"brand_new_label"}}
+
+
+def test_symmetric_relations_stored_once(taxonomy, nodes, curated):
+    harvested = [
+        h("rrid", "dandi", "is_related_to", "SCR_015242"),   # dandi -> nwb
+        h("rrid", "nwb", "is_related_to", "SCR_017571"),     # nwb -> dandi (same undirected relation)
+    ]
+    g = build_graph(taxonomy, nodes, curated, harvested).graph
+    related = [(u, v) for u, v, d in g.edges(data=True) if d["relation"] == "related_to"]
+    assert related == [("dandi", "nwb")]
+    assert "related_to" in taxonomy.symmetric and "accepts" not in taxonomy.symmetric

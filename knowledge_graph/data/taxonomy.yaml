@@ -83,6 +83,10 @@ relations:
 # or parent organizations). `by_layer` means: infer the relation from the layers of
 # the two endpoints (see ecokg.build.infer_relation), e.g., archive->standard = accepts,
 # standard->format = uses_format. Unknown labels map to `related_to` and are logged.
+# Relations without a direction. Each is stored once per pair of nodes (in a canonical order), even if
+# a registry lists it on both records (e.g., RRID `is_related_to` appears on both resources).
+symmetric_relations: [related_to, interoperates_with]
+
 relation_label_map:
   rrid:
     is_related_to: related_to
