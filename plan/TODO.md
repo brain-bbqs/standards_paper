@@ -30,7 +30,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 
 ## 1. Decisions (open)
 
-- [ ] **D2 — Length and tables** *(core; Claude can draft edits)*. No word limit at Scientific Data, so
+- [ ] **D2 — Length and tables** No word limit at Scientific Data, so
       no cuts are required. Tighten for readability; Tables 2 and 3 already sit in the text as formal
       tables.
 - [ ] **D4 — How prescriptive are the recommendations?** *(OR, WG, BBQS)*. Section 7 gives R1–R11
@@ -39,7 +39,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 - [ ] **D5 — Ontology layer wording** *(core)*. One layer with the ontology/terminology distinction
       explained (Section 2, video analogy: fixed category list vs. category hierarchy). Confirm wording
       (claim C4).
-- [ ] **D8 — Six layers vs. the literature** *(OR, core; Claude can draft)*. Remaining sub-decisions
+- [ ] **D8 — Six layers vs. the literature**. Remaining sub-decisions
       (the layer-3 name is resolved, see section 6):
       - [ ] The introduction now says we "use [FAIRsharing and RRID] as the basis for the map". Keep that
             claim only if Section 2 makes the link explicit (see the next item).
