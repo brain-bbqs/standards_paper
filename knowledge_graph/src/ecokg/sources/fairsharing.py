@@ -136,11 +136,37 @@ def parse_record(raw: dict) -> FairsharingRecord:
 
 
 def _clean_token(token: str | None) -> str | None:
-    """Accept a bare JWT or a pasted header value (``Bearer eyJ...``)."""
+    """Accept a bare JWT or a pasted header (``Authorization: Bearer eyJ...``, optionally quoted)."""
     if not token:
         return None
-    token = token.strip()
-    return token.split(None, 1)[1] if token.lower().startswith("bearer ") else token
+    token = token.strip().strip("'\"").strip()
+    if token.lower().startswith("authorization:"):
+        token = token.split(":", 1)[1].strip()
+    if token.lower().startswith("bearer "):
+        token = token.split(None, 1)[1]
+    return token.strip().strip("'\"") or None
+
+
+def token_summary(token: str | None) -> dict:
+    """Describe a JWT without revealing it: shape, claim names, and expiry."""
+    import base64
+    import json
+    import time
+
+    if not token:
+        return {"present": False}
+    parts = token.split(".")
+    info = {"present": True, "length": len(token), "segments": len(parts), "starts_with_eyJ": token.startswith("eyJ"),
+            "has_whitespace": any(c.isspace() for c in token)}
+    if len(parts) == 3:
+        try:
+            payload = json.loads(base64.urlsafe_b64decode(parts[1] + "=" * (-len(parts[1]) % 4)))
+            info["claims"] = sorted(payload)
+            if "exp" in payload:
+                info["expires_in_minutes"] = round((payload["exp"] - time.time()) / 60)
+        except ValueError:
+            info["payload_decodable"] = False
+    return info
 
 
 class FairsharingClient:

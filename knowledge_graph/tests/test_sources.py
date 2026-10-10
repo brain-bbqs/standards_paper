@@ -107,3 +107,19 @@ def test_fairsharing_graphql_errors_not_cached(monkeypatch, tmp_path):
     except RuntimeError:
         pass
     assert http.cached("fairsharing_record_1") is None
+
+
+def test_clean_token_and_summary():
+    import base64
+    import json
+    import time
+
+    payload = base64.urlsafe_b64encode(json.dumps({"exp": time.time() + 600, "sub": "1"}).encode()).decode().rstrip("=")
+    jwt = f"eyJhbGciOiJIUzI1NiJ9.{payload}.sig"
+    for pasted in (jwt, f"Bearer {jwt}", f"Authorization: Bearer {jwt}", f'"Bearer {jwt}"\n'):
+        assert fairsharing._clean_token(pasted) == jwt
+    info = fairsharing.token_summary(jwt)
+    assert info["segments"] == 3 and info["starts_with_eyJ"] and info["claims"] == ["exp", "sub"]
+    assert 8 <= info["expires_in_minutes"] <= 10
+    assert jwt not in str(info) and payload not in str(info)
+    assert fairsharing.token_summary(None) == {"present": False}

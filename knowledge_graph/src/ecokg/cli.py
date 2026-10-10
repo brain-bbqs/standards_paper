@@ -137,6 +137,26 @@ def cmd_harvest_fairsharing(args) -> int:
     return 0
 
 
+def cmd_fairsharing_check(args) -> int:
+    """Diagnose FAIRsharing authentication without printing the token."""
+    from .sources import fairsharing as fs
+
+    client = fs.FairsharingClient(CachedJsonClient(CACHE_DIR / "fairsharing"))
+    for k, v in fs.token_summary(client._jwt).items():
+        print(f"token {k}: {v}")
+    client._authenticate()
+    session = client.http.session
+    probes = [
+        ("GET", f"{fs.API_URL}/fairsharing_records/1", {}),
+        ("POST", f"{fs.API_URL}/search/fairsharing_records", {"params": {"q": "NWB"}}),
+        ("POST", f"{fs.API_URL}/graphql", {"json": {"query": "{ fairsharingRecord(id: 1) { id name } }"}}),
+    ]
+    for method, url, kwargs in probes:
+        resp = session.request(method, url, timeout=60, **kwargs)
+        print(f"{method:4} {url.replace(fs.API_URL, '')}: {resp.status_code} {resp.text[:200]!r}")
+    return 0
+
+
 def cmd_report(args) -> int:
     taxonomy, nodes, edges, errors = _load_all()
     if errors:
@@ -171,6 +191,8 @@ def main(argv: list[str] | None = None) -> int:
         if name == "harvest-fairsharing":
             p.add_argument("--resolve", action="store_true",
                            help="list candidate records for seeds without a FAIRsharing id")
+    sub.add_parser("fairsharing-check", help="diagnose FAIRsharing authentication (never prints the token)"
+                   ).set_defaults(func=cmd_fairsharing_check)
     p = sub.add_parser("report", help="build the graph and write output files")
     p.add_argument("--out", default=str(OUTPUT_DIR))
     p.set_defaults(func=cmd_report)
