@@ -5,7 +5,7 @@
 We group the technologies that make up the neuroscience data standards ecosystem into six layers (Table
 1). Each layer is defined by the **problem it solves** and a typical **use case**, rather than
 by a particular technology. To illustrate the layers, we use online video sharing as an analogy
-(Fig. 1). Publishing a video on a platform such as YouTube involves several independently developed
+(Fig. 1). Publishing a video on a platform such as YouTube also involves several independently developed
 technologies. A codec compresses the images, a container file packages video and sound together, a
 playlist organizes related videos, categories and tags describe the content, and the upload form
 specifies which information must accompany each video. Sharing neuroscience data relies on an analogous
@@ -15,11 +15,11 @@ combination of technologies.
 such as DANDI, OpenNeuro, EMBER, NEMAR, BossDB, the Brain Image Library, and the NIMH Data Archive store
 datasets and usually require them to follow specific standards and to include rich metadata, which they
 then expose for search [REF: Subash 2023; archive papers]. A typical use is to publish a series of
-datasets on a topic. The video platform plays the analogous role, storing videos, indexing them for
-search, and accepting only certain file types with certain accompanying information.
+datasets on a topic. The video platform (e.g., YouTube) plays the analogous role, storing videos, indexing 
+them for search, and accepting only certain file types with certain accompanying information.
 
-**Dataset organization standards** solve the problem of organizing the collection of files from a whole
-experiment. They define folder hierarchies and file names that encode the experimental design, specify
+**Dataset organization standards** solve the problem of organizing collections of files from whole
+experiments. They define folder hierarchies and file names that encode the experimental design, specify
 which file organization standards and formats are allowed, and define the dataset-level metadata that
 must accompany the files, often in sidecar JSON and TSV files. BIDS is the most widely used example in
 neuroscience. Its file names, such as `sub-01_ses-02_task-rest`, encode the subject, session, and task.
@@ -37,7 +37,8 @@ measurements, stimuli, trials and events, and metadata of one session, all align
 OME-TIFF and OME-Zarr (bioimaging), NIX, odML, openMINDS, DICOM, and EDF are further examples. A typical
 use is to organize the data from one session or modality. We use "file" in the broad sense of a
 self-contained data object, because some of these standards can be stored either as a single file or as a
-directory, as NWB and OME do with Zarr. That choice is made at the data format layer. The video
+directory. NWB, for example, can be stored as a single HDF5 file or as a Zarr directory, and the choice
+between the two is made at the data format layer, not by the file organization standard. The video
 counterpart is a container such as MP4, which holds video, audio, subtitle, and chapter tracks on a
 shared timeline so that they stay in sync, regardless of the codec used to compress the video.
 
