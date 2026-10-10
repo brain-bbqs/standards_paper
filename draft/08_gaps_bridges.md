@@ -48,8 +48,9 @@ map, and BBQS can both use and drive them (Fig. 6).
 1. **Structural bridges** connect file organization standards and dataset organization standards, for
    example NWB files inside BIDS datasets (BEP032) and BIDS-inspired layouts for NWB data (DANDI
    layout).
-2. **Schema-language bridges** express schemas in a common language such as LinkML, which Psych-DS
-   already uses, so that equivalent concepts in different standards can be mapped and translated
+2. **Schema-language bridges** express schemas in a common language such as LinkML, so that equivalent
+   concepts in different standards can be mapped and translated. Psych-DS is already defined in LinkML,
+   efforts are under way to express the NWB schema in LinkML, and exploratory work has begun for BIDS
    [TODO-C27].
 3. **Semantic bridges for schema elements** define what a field *means* by linking it to ontology terms,
    so that, for example, "subject species" in NWB, BIDS, and Psych-DS can be recognized as the same

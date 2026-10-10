@@ -65,7 +65,9 @@ as H.264 or AV1, which defines how pixels are encoded as bytes and is supported 
 such as JSON Schema, XML Schema, RDF/OWL, LinkML, and the HDMF specification language specify which
 elements exist, which are required, and which values each may take, in a form that software can check.
 They allow standards to be documented, validated, and processed by software. NWB is defined in the HDMF
-language, Psych-DS in LinkML, and BIDS in a custom YAML-based schema. A typical use is to formally define
+language, Psych-DS in LinkML, and BIDS in a custom YAML-based schema. Ongoing efforts to express the NWB
+schema in LinkML, and exploratory work for BIDS, aim to describe these standards in a common schema
+language (Section 8) [TODO-C27]. A typical use is to formally define
 file organization standards, dataset organization standards, and ontologies. The video counterpart is
 the specification behind a platform's upload form, which determines which fields exist, which are
 required, and which values each may take.
