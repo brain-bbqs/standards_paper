@@ -24,7 +24,10 @@ No single technology covers all of these. FAIR data emerge from technologies **i
 layers**. A neurophysiology dataset on DANDI is a concrete example. The DANDI archive (findable,
 accessible) holds NWB files (structure and metadata) organized in the DANDI layout, whose schema is
 defined in the HDMF language and stored in HDF5 or Zarr (machine-readable, interoperable bytes), with
-species annotated using NCBI Taxonomy terms (shared meaning).
+species annotated using NCBI Taxonomy terms (shared meaning). The video analogy makes the same point. A
+video is easy to find and reuse only when it uses a common codec, sits in a standard container, carries
+meaningful tags, and is published on a platform, and no single one of these steps makes it shareable on
+its own.
 
 Large consortia show the same pattern at the scale of whole programs. The BRAIN Initiative Cell Census
 Network (BICCN) [REF: BICCN 2021] distributed its data by modality across specialized archives, with

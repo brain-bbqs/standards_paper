@@ -59,8 +59,9 @@ expanding its scope.
 
 Applied to BBQS, the map shows a stack that is complete in the vertical direction, with EMBER, NWB,
 BIDS, Psych-DS, HED, and shared terminologies on top of common formats and schema languages, and gives
-concrete choices for most neural and behavioral data. It also shows where the ecosystem falls short. The
-behavioral constructs that BBQS studies most, such as social interactions and feeding, have no
+concrete choices for most neural and behavioral data, in the same way that a video creator can choose a
+codec, a container, and a platform that work together. It also shows where the ecosystem falls short.
+The behavioral constructs that BBQS studies most, such as social interactions and feeding, have no
 established representation, and integration between communities is still done project by project.
 Closing these gaps requires bridges at every layer, built together by the standards communities and the
 programs that depend on them. BBQS, which combines the needs of all these communities in a single

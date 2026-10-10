@@ -24,9 +24,7 @@ into Fig. 1 [TODO-F1].
 **(a)** The six layers, ordered from the user (archives) to storage (data formats) and formal
 description (schema languages), with representative neuroscience examples and the main relationships
 between layers (archives accept dataset organization and file organization standards; dataset organization standards arrange files that follow file organization standards and formats; file organization standards use formats and terminologies and are
-defined with schema languages). **(b)** The video-platform analogy: YouTube (archive), playlist
-(dataset organization), MP4 container (file organization standard), hashtags (terminology), H.264 encoding (data
-format), upload form (schema).
+defined with schema languages). **(b)** The video analogy used throughout the text, drawn as the path of one video from phone to platform, with each step aligned to its layer: YouTube (archive), playlist or series with episode names (dataset organization, cf. BIDS file names), MP4 container keeping video, audio, and subtitles in sync (file organization standard, cf. NWB), categories and hashtags (terminologies and ontologies), H.264/AV1 codec (data format), and the specification behind the upload form (schema language).
 
 ## Table 1 — Layers of the ecosystem
 

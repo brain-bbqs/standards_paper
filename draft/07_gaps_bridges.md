@@ -45,7 +45,10 @@ and over.
 
 ## Bridges at every layer
 
-Bridges are being built at every layer of the map, and BBQS can both use and drive them (Fig. 5).
+Video technology shows what such bridges achieve. A video from one platform can be embedded in another,
+subtitles in a common format play in any player, and a single container can carry several audio tracks
+recorded on different devices. Bridges of this kind are being built at every layer of the neuroscience
+map, and BBQS can both use and drive them (Fig. 5).
 
 1. **Structural bridges** connect file organization standards and dataset organization standards, for
    example NWB files inside BIDS datasets (BEP032) and BIDS-inspired layouts for NWB data (DANDI
