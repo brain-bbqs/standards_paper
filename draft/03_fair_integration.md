@@ -40,17 +40,16 @@ each consortium builds and maintains the integration itself.
 
 ## Levels of FAIRness, and where each layer contributes
 
-FAIRness is assessed principle by principle. Community-defined maturity indicators and compliance tests
-[REF: Wilkinson 2019], the Research Data Alliance FAIR Data Maturity Model [REF: Bahim 2020], and
-automated tools such as F-UJI [REF: Devaraju 2021] score each principle separately and report a maturity
-level for each. These methods are the right basis for formal assessment, and we do not propose an
-alternative. To communicate progress, however, communities also use simple staged scales. Five-star
-Linked Open Data ranks data from "available on the web" to "linked to other data" [REF: Berners-Lee
-2006], and Data Readiness Levels adapt the Technology Readiness Levels used in engineering to describe
-how ready a dataset is for analysis [REF: Lawrence 2017; Mankins 1995]. Following these examples, Table 2
-describes five levels for neuroscience data. Each level is defined by what a third party can do with the
-data, is mapped to the FAIR principles it mainly addresses, and is tied to the layer of the map whose
-technologies make it possible (Fig. 2) [TODO-C6].
+To illustrate why integration across layers is needed, Table 2 describes five levels of FAIRness for
+neuroscience data. The levels are not a new metric. Their purpose is to show which layer of the map
+contributes at each step, so each level is defined by what a third party can do with the data, mapped to
+the FAIR principles it mainly addresses, and tied to the layer whose technologies make it possible (Fig.
+2) [TODO-C6]. The idea of a staged scale is familiar from five-star Linked Open Data [REF: Berners-Lee
+2006] and from Data Readiness Levels, which adapt the Technology Readiness Levels used in engineering to
+data [REF: Lawrence 2017; Mankins 1995]. For assessing the FAIRness of a specific dataset, the community
+has developed maturity indicators, the Research Data Alliance FAIR Data Maturity Model, and automated
+tools such as F-UJI, which score each principle separately [REF: Wilkinson 2019; Bahim 2020; Devaraju
+2021].
 
 | Level | What the data offer | Layer that adds it | FAIR principles mainly addressed | Example |
 |---|---|---|---|---|
