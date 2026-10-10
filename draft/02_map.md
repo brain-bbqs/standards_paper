@@ -18,54 +18,56 @@ then expose for search [REF: Subash 2023; archive papers]. A typical use is to p
 datasets on a topic. The video platform plays the analogous role, storing videos, indexing them for
 search, and accepting only certain file types with certain accompanying information.
 
-**Dataset organization standards** solve the problem of organizing a collection of files from a whole
-experiment. Their video counterpart is the playlist or the series, which groups many videos and puts them
-in order, often with names such as "season 1, episode 2" that tell the viewer where each one belongs.
-BIDS works the same way. It defines folder hierarchies and file names such as `sub-01_ses-02_task-rest`
-that encode the subject, session, and task, and it specifies which file organization standards and
-formats are allowed and which dataset-level metadata must accompany them, often in sidecar JSON and TSV
-files. BIDS is the most widely used example in neuroscience. Psych-DS adapts the approach to
-psychological data, and several archives define simplified, BIDS-inspired layouts such as the DANDI
-layout, the SPARC Dataset Structure, and NeuroBlueprint.
+**Dataset organization standards** solve the problem of organizing the collection of files from a whole
+experiment. They define folder hierarchies and file names that encode the experimental design, specify
+which file organization standards and formats are allowed, and define the dataset-level metadata that
+must accompany the files, often in sidecar JSON and TSV files. BIDS is the most widely used example in
+neuroscience. Its file names, such as `sub-01_ses-02_task-rest`, encode the subject, session, and task.
+Psych-DS adapts the approach to psychological data, and several archives define simplified,
+BIDS-inspired layouts such as the DANDI layout, the SPARC Dataset Structure, and NeuroBlueprint. A typical
+use is to organize the data from a full experiment. The video counterpart is a playlist or series, which
+groups related videos and names them, for example "season 1, episode 2", so that viewers know where each
+one belongs.
 
 **File organization standards** solve the problem of organizing data and metadata *within* a file, using
 the primitives a data format offers, such as arrays, tables, and dictionaries, and the links between
-them. Their video counterpart is the container, such as MP4. An MP4 file holds the video track, one or
-more audio tracks, subtitles, and chapter markers, and it keeps all of them on a shared timeline so that
-sound and subtitles stay in sync with the picture. NWB does the same for an experiment. One NWB file
-holds the neural recordings, the behavioral measurements, the stimuli, the trials and events, and the
-metadata of one session, all aligned in time. Where dataset organization standards arrange files in
-folders, file organization standards define what goes inside each file. OME-TIFF and OME-Zarr
-(bioimaging), NIX, odML, openMINDS, DICOM, and EDF are further examples. We use "file" in the broad sense
-of a self-contained data object, because some of these standards can be stored either as a single file
-or as a directory, as NWB and OME do with Zarr. As with video, where the same MP4 container can hold
-video compressed with different codecs, that choice is made at the data format layer.
+them. Where dataset organization standards arrange files in folders, file organization standards define
+what goes inside each file. An NWB file, for example, holds the neural recordings, behavioral
+measurements, stimuli, trials and events, and metadata of one session, all aligned on a common timeline.
+OME-TIFF and OME-Zarr (bioimaging), NIX, odML, openMINDS, DICOM, and EDF are further examples. A typical
+use is to organize the data from one session or modality. We use "file" in the broad sense of a
+self-contained data object, because some of these standards can be stored either as a single file or as a
+directory, as NWB and OME do with Zarr. That choice is made at the data format layer. The video
+counterpart is a container such as MP4, which holds video, audio, subtitle, and chapter tracks on a
+shared timeline so that they stay in sync, regardless of the codec used to compress the video.
 
-**Ontologies and terminologies** solve the problem of defining what terms mean. The video counterpart is
-the difference between free-form hashtags, which anyone can invent, and the platform's fixed list
-of categories, which everyone must choose from and which may be arranged in a hierarchy in which
-"tennis" is a kind of "sport". Terminologies correspond to the fixed list. They define the set of valid
-terms for a field, for example species names from the NCBI Taxonomy or brain regions from an atlas.
-Ontologies correspond to the hierarchy. They additionally encode definitions and the relationships
-between concepts, so that software can reason about them, for example that the hippocampus is part of
-the forebrain in Uberon. Terminologies are often selected from ontologies. Annotation frameworks such as
-the Hierarchical Event Descriptors (HED) also belong here, because they define a vocabulary and grammar
-for annotating events, much like a structured way of describing what happens in each scene. We keep
-ontologies and terminologies in one layer because, from a user's perspective, both are used to give
-metadata values a shared meaning, while making the distinction explicit [TODO-C4].
+**Ontologies and terminologies** solve the problem of defining what terms mean. Terminologies define the
+set of valid terms for a metadata field, for example species names from the NCBI Taxonomy or brain
+regions from an atlas. Ontologies additionally encode definitions and the relationships between
+concepts, so that software can reason about them, for example that the hippocampus is part of the
+forebrain in Uberon. Terminologies are often selected from ontologies. Annotation frameworks such as the
+Hierarchical Event Descriptors (HED) also belong here, because they define a vocabulary and grammar for
+annotating events. We keep ontologies and terminologies in one layer because, from a user's perspective,
+both are used to give metadata values a shared meaning, while making the distinction explicit
+[TODO-C4]. A typical use is to annotate data so that the meaning of each term is defined. On a video
+platform, a fixed list of categories corresponds to a terminology and a hierarchy of categories, in which
+"tennis" is a kind of "sport", corresponds to an ontology, in contrast to free-form hashtags that anyone
+can invent.
 
-**Data formats** solve the problem of mapping data to storage. The video counterpart is the codec, such
-as H.264 or AV1, which defines how pixels are encoded as bytes and is shared across platforms. Data
-formats such as HDF5, Zarr, TIFF, NIfTI, JSON, YAML, CSV/TSV, and MP4
-likewise define how generic data structures such as arrays, tables, key–value pairs, images, and video
-are encoded in bytes. They are usually domain-agnostic and shared across all of science.
+**Data formats** solve the problem of mapping data to storage. Formats such as HDF5, Zarr, TIFF, NIfTI,
+JSON, YAML, CSV/TSV, and MP4 define how generic data structures such as arrays, tables, key–value pairs,
+images, and video are encoded as bytes. They are usually domain-agnostic and shared across all of
+science. A typical use is to serialize generic data structures. The video counterpart is the codec, such
+as H.264 or AV1, which defines how pixels are encoded as bytes and is shared across platforms.
 
-**Schema languages** solve the problem of describing the structure and rules of data formally. Behind a
-platform's upload form is a precise specification of which fields exist, which are required, and which
-values each may take, written in a form that software can check. Schema languages such as JSON Schema,
-XML Schema, RDF/OWL, LinkML, and the HDMF specification language play this role for neuroscience. They
-allow standards to be documented, validated, and processed by software. NWB is defined in the HDMF
-language, Psych-DS in LinkML, and BIDS in a custom YAML-based schema.
+**Schema languages** solve the problem of describing the structure and rules of data formally. Languages
+such as JSON Schema, XML Schema, RDF/OWL, LinkML, and the HDMF specification language specify which
+elements exist, which are required, and which values each may take, in a form that software can check.
+They allow standards to be documented, validated, and processed by software. NWB is defined in the HDMF
+language, Psych-DS in LinkML, and BIDS in a custom YAML-based schema. A typical use is to formally define
+file organization standards, dataset organization standards, and ontologies. The video counterpart is
+the specification behind a platform's upload form, which determines which fields exist, which are
+required, and which values each may take.
 
 The analogy also shows why these distinctions matter. The video ecosystem works because of a clear
 separation of concerns. Nobody expects YouTube to invent a video codec, or H.264 to decide which
