@@ -4,8 +4,9 @@
 
 The recommendations below summarize the BBQS data standards guideline [REF: BBQS guideline], which we
 developed in the BBQS Data Standards Working Group, and place them on the ecosystem map. They are community guidance
-for BBQS, not a ranking of standards. Other choices can be right for other programs, and the guideline
-is updated as standards evolve. Table 3 gives an overview by data type.
+for BBQS, not a ranking of standards, and the guideline is updated as standards evolve. Most of them
+also apply to multimodal neuroscience studies outside BBQS, as discussed at the end of this section.
+Table 3 gives an overview by data type.
 
 **Table 3. Recommended standards for common BBQS data types** (✓ supported; ext. = via an extension or
 proposal in progress; — no established representation yet). *Draft; to be checked by the NWB, BIDS, and
@@ -96,3 +97,19 @@ data into manageable pieces while keeping annotations that span them [TODO-C21].
 and error-prone. Projects that adopt standards during acquisition and analysis also benefit from the
 standards' analysis tools, and can share data with collaborators through the archive rather than
 through general cloud storage [TODO-C22].
+
+## Beyond BBQS
+
+Although written for BBQS, most of these recommendations do not depend on the program. Choosing
+standards by the structure of the experiment (R1), linking standards explicitly (R2), keeping video in
+standard formats (R3), documenting synchronization (R4), using shared annotations and terminologies
+(R5–R7), extending standards before inventing new ones (R8), and validating early (R9, R10) apply to any
+study that combines neural and behavioral data, and Table 3 serves as a general overview of where common
+data types fit in NWB, BIDS, and Psych-DS. Only two recommendations are specific to BBQS. Outside the
+program, the choice of archive (R11) depends on the data and the funder, with archives such as DANDI,
+OpenNeuro, NEMAR, and DABI accepting the same standards, and the role of the DCAIC (R8) is filled by the
+help desks of the standards and by data coordination centers of other programs. More generally, the
+process behind the guideline can be adopted by other consortia. A working group of project
+representatives and standards developers places the program's data types on the map, chooses a small
+set of interoperable standards for each layer, records where no standard yet exists, and maintains the
+guideline as a living document.

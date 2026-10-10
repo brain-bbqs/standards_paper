@@ -54,6 +54,6 @@ Seen on the map, the BBQS stack is complete in the vertical
 direction. Each layer has at least one recommended technology, and the technologies are connected (EMBER
 accepts NWB, BIDS, and Psych-DS; NWB uses HDF5/Zarr and HDMF; Psych-DS uses CSV and LinkML; BIDS uses
 JSON/TSV and can include NWB). The gaps are horizontal, between technologies in the same layer
-from different communities. NWB, BIDS, and Psych-DS represent shared concepts such as behavioral events
-in different ways, without mappings between them, and the outputs of behavior-tracking tools must be
-converted before they fit any of the three (Section 8).
+from different communities. For example, NWB, BIDS, and Psych-DS represent shared concepts such as 
+behavioral events in different ways, without mappings between them, and the outputs of 
+behavior-tracking tools must be converted before they fit any of the three (Section 8).
