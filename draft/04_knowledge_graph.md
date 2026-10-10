@@ -10,28 +10,29 @@ in which it originated, such as neurophysiology, neuroimaging, microscopy, behav
 to shared, domain-agnostic infrastructure such as HDF5, JSON, and cross-species ontologies. Its edges
 are 122 typed relationships, for example that NWB *uses the format* HDF5, that BIDS *organizes* EEG data
 in EDF, or that DANDI *accepts* NWB. They come from expert curation, documented with their source, and
-from the RRID and FAIRsharing registries [REF: Bandrowski 2016; Sansone 2019]. Each relationship is
-classified by whether it connects different layers and whether it connects different communities. Fig. 3
-draws the graph with layers as rows and communities as columns, so that relationships between layers run
-vertically and relationships between communities run across the columns.
+from the RRID and FAIRsharing registries [REF: Bandrowski 2016; Sansone 2019]. Together, these
+relationships connect 110 pairs of technologies, which we call connections. A pair can be linked by
+several relationships, as BIDS and NWB are, but counts as one connection. Each connection is classified
+by whether it links different layers and whether it links different communities. Fig. 3 draws the graph
+with layers as rows and communities as columns, so that connections between layers run vertically and
+connections between communities run across the columns.
 
 Three patterns stand out [TODO-C25].
 
-**Connections between layers are the norm.** Four in five relationships (97 of 122) connect technologies
-in different layers, for example a file organization standard and the format it uses, or an archive and
-the standards it accepts. Within each community, the vertical stack from archive to bytes is well
-connected, which is what allows datasets in that community to reach the higher levels of FAIRness in
-Table 2.
+**Connections between layers are the norm.** Four in five connections (88 of 110) link technologies in
+different layers, for example a file organization standard and the format it uses, or an archive and the
+standards it accepts. Within each community, the vertical stack from archive to bytes is well connected,
+which is what allows datasets in that community to reach the higher levels of FAIRness in Table 2.
 
-**Shared infrastructure ties the ecosystem together.** Almost half of all relationships (57 of 122) link
-a domain-specific technology to shared infrastructure, such as a data format, a schema language, or a
+**Shared infrastructure ties the ecosystem together.** Almost half of all connections (52 of 110) link a
+domain-specific technology to shared infrastructure, such as a data format, a schema language, or a
 cross-species ontology like the NCBI Taxonomy. These shared layers are where the communities already
 meet, and they are the natural foundation for further integration.
 
-**Bridges between communities are concentrated in a few hubs.** Of the 65 relationships between
-domain-specific technologies, 31 connect technologies from different communities. Twenty-eight of these
-31 involve one of only four technologies, namely BIDS, NWB, HED, and the EMBER archive, and 21 involve
-BIDS or NWB alone. BIDS, which began in neuroimaging, now organizes EEG, MEG, iEEG, microscopy, motion,
+**Bridges between communities are concentrated in a few hubs.** Of the 58 connections between
+domain-specific technologies, 26 link technologies from different communities. Twenty-three of these 26
+involve one of only four technologies, namely BIDS, NWB, HED, and the EMBER archive, and BIDS alone
+takes part in 14. BIDS, which began in neuroimaging, now organizes EEG, MEG, iEEG, microscopy, motion,
 and NWB data. HED, which began in EEG, is used by BIDS, NWB, and several archives. EMBER accepts NWB,
 BIDS, Psych-DS, and the DANDI layout. Most other technologies connect only within their own community or
 to shared infrastructure.
@@ -47,9 +48,9 @@ relationships documented by standards developers are not yet recorded in RRID or
 so they cannot be found by software. The gap report produced with the graph lists these missing records
 so that the teams behind each technology can add them.
 
-The graph is a first version and has limitations. Its coverage reflects the technologies most relevant to
-this paper rather than the whole of neuroscience. Curated relationships are still being confirmed by
-domain experts, and registry coverage is incomplete. Whether a relationship crosses communities also
+The graph is a first version and has limitations. Its coverage reflects the technologies most relevant
+to this paper rather than the whole of neuroscience. Curated relationships are still being confirmed by
+domain experts, and registry coverage is incomplete. Whether a connection crosses communities also
 depends on how each technology's community is assigned. We classify by the community in which a
 technology originated. A more lenient classification, which treats any shared community as within
 community, hides most bridges because technologies are often tagged with the communities they have

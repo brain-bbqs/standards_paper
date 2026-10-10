@@ -20,3 +20,16 @@ def test_names_match():
     assert cli._names_match(n, "Neurodata Without Borders", [])
     assert cli._names_match(n, "Something else", ["NWB"])
     assert not cli._names_match(n, "Allen Mouse Brain Reference Atlas", ["ABA"])
+
+
+def test_stats_count_connections_and_relationships(taxonomy, nodes, curated):
+    from ecokg.build import build_graph
+    from ecokg.report import stats_markdown
+
+    harvested = [{"registry": "rrid", "node": "bids", "label": "is_related_to", "direction": "out",
+                  "other_id": "SCR_015242", "other_name": "NWB"}]
+    md = stats_markdown(build_graph(taxonomy, nodes, curated, harvested), taxonomy)
+    # bids-nwb now has two relationships (organizes, related_to) but is one connection
+    assert "5 pairs of technologies linked by at least one of the 6 typed relationships" in md
+    assert "## Connections: layer span × community scope (strict)" in md
+    assert "## Hubs" in md

@@ -52,7 +52,8 @@ separately (RDA indicators, F-UJI).
 
 ## Fig. 3 — Connections in the ecosystem
 
-Knowledge graph of 72 technologies (nodes) and their relationships (edges), drawn with the six layers as
+Knowledge graph of 72 technologies (nodes) and the 110 connections between them (edges; one line per pair
+of technologies, which may be linked by several relationships), drawn with the six layers as
 rows and the community in which each technology originated as columns; shared, domain-agnostic
 infrastructure (general, cross-species biology) is on the right. Edges are styled by scope: relationships
 between communities (red), within a community (grey), and with shared infrastructure (dashed). Dots mark

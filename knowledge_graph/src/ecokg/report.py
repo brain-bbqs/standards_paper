@@ -85,17 +85,28 @@ def stats_markdown(result: BuildResult, taxonomy: Taxonomy) -> str:
     home_counts = Counter(d["home"] for _, d in g.nodes(data=True))
     out.append(_table(["Community", "Nodes"], [[c, home_counts[c]] for c in taxonomy.communities if home_counts[c]]))
 
-    for mode in ("strict", "lenient"):
-        out.append(f"\n\n## Edges: layer span × community scope ({mode})\n")
-        counts = Counter((d["span"], d[f"scope_{mode}"]) for *_, d in edges)
-        rows = [[span] + [counts[(span, s)] for s in SCOPES] + [sum(counts[(span, s)] for s in SCOPES)]
-                for span in SPANS]
-        rows.append(["total"] + [sum(counts[(sp, s)] for sp in SPANS) for s in SCOPES] + [len(edges)])
-        out.append(_table(["", *SCOPES, "total"], rows))
-        within = sum(counts[(sp, "within_community")] for sp in SPANS)
-        cross = sum(counts[(sp, "cross_community")] for sp in SPANS)
-        out.append(f"\n\nAmong edges between domain-specific nodes, **{_pct(cross, within + cross)} "
-                   f"cross community boundaries** ({mode} classification).")
+    # Layer span and community scope depend only on the two nodes, so one edge per pair represents it.
+    pairs = list({frozenset((u, v)): d for u, v, d in edges}.items())
+    out.append("\n\n## Connections (pairs of technologies)\n")
+    out.append(f"The paper counts **connections**: {len(pairs)} pairs of technologies linked by at least one of "
+               f"the {len(edges)} typed relationships. Tables for both units follow.\n")
+    for unit, items in (("connections", [d for _, d in pairs]), ("relationships", [d for *_, d in edges])):
+        for mode in ("strict", "lenient"):
+            out.append(f"\n\n## {unit.capitalize()}: layer span × community scope ({mode})\n")
+            counts = Counter((d["span"], d[f"scope_{mode}"]) for d in items)
+            rows = [[span] + [counts[(span, sc)] for sc in SCOPES] + [sum(counts[(span, sc)] for sc in SCOPES)]
+                    for span in SPANS]
+            rows.append(["total"] + [sum(counts[(sp, sc)] for sp in SPANS) for sc in SCOPES] + [len(items)])
+            out.append(_table(["", *SCOPES, "total"], rows))
+            within = sum(counts[(sp, "within_community")] for sp in SPANS)
+            cross = sum(counts[(sp, "cross_community")] for sp in SPANS)
+            out.append(f"\n\nAmong {unit} between domain-specific technologies, **{_pct(cross, within + cross)} "
+                       f"cross community boundaries** ({mode} classification).")
+
+    hubs = Counter(n for pair, d in pairs if d["scope_strict"] == "cross_community" for n in pair)
+    out.append("\n\n## Hubs: technologies in most cross-community connections (strict)\n")
+    out.append(_table(["Technology", "Cross-community connections"],
+                      [[g.nodes[n]["label"], c] for n, c in hubs.most_common(10)]))
 
     out.append("\n\n## Edges by relation\n")
     rel_counts = Counter(d["relation"] for *_, d in edges)

@@ -39,7 +39,10 @@ the first community is the node's home community. Edges are typed relationships 
 and FAIRsharing (REST API) on 2026-10-09. Registry relation labels were mapped to the same relation
 types, and undirected relations (*related to*, *interoperates with*) were counted once per pair of
 technologies even when both registry records list them; organizational relations (e.g., parent
-organization, collection membership) were dropped. Each edge is classified by **layer span** (within or
-across layers) and **community scope** (within or across home communities, or *shared* when one end is
-domain-agnostic infrastructure such as HDF5 or a cross-species ontology). Code and data are available as
-the `ecokg` package [REF: Zenodo DOI, TODO-A6] [TODO-C25, C26].
+organization, collection membership) were dropped. Results are reported per **connection**, that is, per
+pair of technologies linked by at least one relationship, because a pair may be linked by several
+relationships of different types; the statistics report also gives counts per relationship. Each
+connection is classified by **layer span** (within or across layers) and **community scope** (within or
+across home communities, or *shared* when one end is domain-agnostic infrastructure such as HDF5 or a
+cross-species ontology). Code and data are available as the `ecokg` package [REF: Zenodo DOI, TODO-A6]
+[TODO-C25, C26].
