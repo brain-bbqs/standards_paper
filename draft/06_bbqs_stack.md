@@ -3,7 +3,7 @@
 *(target ~700 words; Fig. 5)*
 
 BBQS has converged on a small set of standards that together cover the layers of the map (Fig. 5).
-They were selected by the BBQS Data Standards Working Group because they are open, community-governed,
+The BBQS Data Standards Working Group selected them because they are open, community-governed,
 supported by the BRAIN Initiative, accepted by the EMBER archive, and extensible [TODO-C13].
 
 **EMBER (archive).** The Ecosystem for Multi-modal Brain-behavior Experimentation and Research (EMBER)

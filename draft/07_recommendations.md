@@ -2,8 +2,8 @@
 
 *(target ~1,200 words; Table 3)*
 
-The recommendations below summarize the BBQS data standards guideline [REF: BBQS guideline], written by
-the BBQS Data Standards Working Group, and place them on the ecosystem map. They are community guidance
+The recommendations below summarize the BBQS data standards guideline [REF: BBQS guideline], which we
+developed in the BBQS Data Standards Working Group, and place them on the ecosystem map. They are community guidance
 for BBQS, not a ranking of standards. Other choices can be right for other programs, and the guideline
 is updated as standards evolve. Table 3 gives an overview by data type.
 

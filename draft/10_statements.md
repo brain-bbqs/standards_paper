@@ -38,7 +38,8 @@ European Union Horizon Europe Grant Agreement No. 101147319 (EBRAINS 2.0, openMI
 
 ## Acknowledgements
 
-We thank the members of the BBQS Data Standards Working Group for their feedback and input.
+We thank the members of the BBQS Data Standards Working Group who are not authors of this paper for
+their feedback and input.
 
 ## Ethics
 

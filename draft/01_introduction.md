@@ -52,10 +52,10 @@ ecosystem to quantify how technologies are connected across layers and across re
 
 In the second part, we apply this framework to **BBQS** (Sections 5–8). From an inventory of BBQS
 projects, we characterize the data modalities, species, and standards in use, and we describe the
-standards stack adopted by the program. Building on the data standards guideline of the BBQS Data
-Standards Working Group [REF: BBQS guideline], we derive recommendations by data type and identify
-where standards support is still missing. We conclude with the bridges and investments needed to make
-multimodal brain–behavior data FAIR (Section 9).
+standards stack adopted by the program. Building on the BBQS data standards guideline that we developed
+in the program's Data Standards Working Group [REF: BBQS guideline], we derive recommendations by data
+type and identify where standards support is still missing. We conclude with the bridges and investments
+needed to make multimodal brain–behavior data FAIR (Section 9).
 
 This is not a review of every standard. The map and examples focus on technologies used in
 neuroscience and, in the second part, on those relevant to BBQS; comprehensive and continuously
