@@ -51,11 +51,12 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
             dataset organization, file organization, formats, and schema languages.
       - [ ] Cover what the map leaves out (reporting guidelines / minimum information such as COBIDAS,
             ARRIVE, CDEs; persistent identifiers; access protocols / APIs; provenance; policies and
-            licences) as a cross-cutting band in Fig. 1 plus one paragraph, not as more layers. State that
+            licences) in one paragraph and a note under Table 1, not as more layers. State that
             modelling standards (NeuroML, SONATA, PyNN) are out of scope.
-      - [ ] Fig. 1 geometry: keep six stacked layers, or draw a four-level structural stack (archives,
-            dataset organization, file organization, formats) with ontologies/terminologies and schema
-            languages as cross-cutting columns.
+      - [ ] Stack geometry for Fig. 2 and Fig. 5 (Fig. 1 is no longer a layered diagram): keep six stacked
+            layers, or draw a four-level structural stack (archives, dataset organization, file
+            organization, formats) with ontologies/terminologies and schema languages as cross-cutting
+            columns.
 - [ ] **D9 — Journal logistics** *(OR)*. Scientific Data APC and who pays (plan Q6); whether to send a
       pre-submission enquiry (planned ~Nov 17) or submit directly.
 - [ ] **D10 — Community rule for bridges** *(OR, core)*. Adopt the proposal in
@@ -97,7 +98,9 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 Files: `figures/` (one folder per item, see `figures/README.md`). Legends: `draft/12_figures_tables.md`.
 Rebuild generated figures with `make figures`.
 
-- [ ] **F2** Redraw from the poster: Fig. 1 (`figures/fig1_ecosystem_map/`), Fig. 6b
+- [ ] **F2** Design Fig. 1 as a single panel: a generic video-sharing app with callouts to the six
+      layers and neuroscience examples (`figures/fig1_ecosystem_map/README.md`; analogy from poster slide 6).
+      No real platform name, logo, or look in the artwork. Redraw from the poster: Fig. 6b
       (`figures/fig6_bridges_future/`), Suppl. Table S1 (`figures/supplementary/tableS1_standards_comparison/`).
       Use "file organization standards" and the outcome of D8 *(designer / figure lead)*.
 - [ ] **F3** Design Fig. 2 (six FAIR levels, `figures/fig2_fair_levels/`) and Fig. 5 (BBQS stack,
@@ -178,6 +181,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | KG counting | Undirected relations (*related to*, *interoperates with*) counted once per pair; 11 RRID links had been stored in both directions (133 → 122 relationships, 33 → 31 bridges) |
 | 2026-10-09 | KG unit | Section 4 counts connections (pairs of technologies), matching Fig. 3; the stats report gives both connections and relationships |
 | 2026-10-09 | Style | Prose colons and em-dash asides removed; opening reframed around the complexity of the ecosystem; video analogy woven through Section 2 with callbacks |
+| 2026-10-10 | Fig. 1 | Single panel: a generic video-sharing app with callouts to the six layers, not a layered diagram. Layers are defined in Table 1 and shown as a stack in Fig. 2 and Fig. 5; Section 2 cites Fig. 1 for the analogy and Table 1 for the layers |
 
 ## Notes for reviewers
 

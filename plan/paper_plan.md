@@ -98,9 +98,9 @@ standards guideline, with the ecosystem map as the frame. Consequences:
 | — | Methods (KG) | ~400, may sit outside the word count (verify) | Data sources, harvest date, schema, edge classification, code/data DOI | |
 
 ### Display items (6 max)
-1. **Fig. 1 — The ecosystem map.** Layered diagram of the six categories and the relationships between them, side by side with the video-platform analogy. *(Redraw from the poster.)*
+1. **Fig. 1 — The ecosystem seen through a video-sharing app.** Single panel: a generic video-sharing app with callouts from each element to its layer and neuroscience examples. Not a layered diagram; the layers are defined in Table 1 and shown as a stack in Fig. 2 (FAIR levels) and Fig. 5 (BBQS stack).
 2. **Table 1 — Layer definitions.** Problem, use case, description, and key neuroscience examples per layer.
-3. **Fig. 2 — The FAIR ladder.** Levels 0–4, with how each level requires technologies from additional layers and an example stack.
+3. **Fig. 2 — Levels of FAIRness.** Levels 0–5, with how each level requires technologies from additional layers and an example stack.
 4. **Fig. 3 — Ecosystem knowledge graph.** Nodes colored by layer, edges colored within-community vs. cross-community; inset quantifying edge types.
 5. **Fig. 4 — BBQS case study.** (a) Species × modality coverage of BBQS projects; (b) standards chosen; (c) heatmap of behavior types × standard support (NWB / BIDS / Psych-DS), showing gaps.
 6. **Fig. 5 — Bridges and future directions.** The six bridge types placed on the map, plus the future-needs wheel.

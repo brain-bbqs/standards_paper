@@ -2,10 +2,10 @@
 
 *(~1,450 words; Fig. 1, Table 1)*
 
-We group the technologies that make up the neuroscience data standards ecosystem into six layers (Fig.
-1, Table 1). Each layer is defined by the **problem it solves** and a typical **use case**, rather than
+We group the technologies that make up the neuroscience data standards ecosystem into six layers (Table
+1). Each layer is defined by the **problem it solves** and a typical **use case**, rather than
 by a particular technology. To make the layers intuitive, we pair each one with its counterpart in a
-system almost every reader uses, which is sharing video online (Fig. 1b). Think of a video recorded on a
+system almost every reader uses, which is sharing video online (Fig. 1). Think of a video recorded on a
 phone and published on a platform such as YouTube. The pixels are compressed with a codec, the video and
 sound are packaged together in a single file, the file is added to a playlist, tagged so that others can
 find it, and uploaded through a form that asks for a title and a category. Each of these steps is handled

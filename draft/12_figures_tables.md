@@ -6,7 +6,7 @@ must total ≤350 words (F6).
 
 | # | Item | Section | Status | Source / file |
 |---|---|---|---|---|
-| Fig. 1 | Ecosystem map + video analogy | 2 | poster | `figures/fig1_ecosystem_map/` |
+| Fig. 1 | The ecosystem seen through a video-sharing app (single panel) | 2 | spec (analogy from poster slide 6) | `figures/fig1_ecosystem_map/` |
 | Table 1 | Layer definitions | 2 | draft (below) | poster table |
 | Fig. 2 | Six levels of FAIRness and the layer that adds each | 3 | spec (poster "FAIR Data Score" to be redrawn to match) | `figures/fig2_fair_levels/` |
 | Table 2 | Levels of FAIRness mapped to layers and FAIR principles | 3 | draft (in `03_fair_integration.md`) | |
@@ -20,12 +20,15 @@ must total ≤350 words (F6).
 
 ---
 
-## Fig. 1 — A map of the neuroscience data standards ecosystem
+## Fig. 1 — The data standards ecosystem seen through a video-sharing app
 
-**(a)** The six layers, ordered from the user (archives) to storage (data formats) and formal
-description (schema languages), with representative neuroscience examples and the main relationships
-between layers (archives accept dataset organization and file organization standards; dataset organization standards arrange files that follow file organization standards and formats; file organization standards use formats and terminologies and are
-defined with schema languages). **(b)** The video analogy used throughout the text, drawn as the path of one video from phone to platform, with each step aligned to its layer: YouTube (archive), playlist or series with episode names (dataset organization, cf. BIDS file names), MP4 container keeping video, audio, and subtitles in sync (file organization standard, cf. NWB), categories and hashtags (terminologies and ontologies), H.264/AV1 codec (data format), and the specification behind the upload form (schema language).
+One screen of a generic video-sharing app, with callouts to the technologies behind each element. Each
+callout names the matching layer of the map and neuroscience examples: the platform that hosts and
+searches videos (data archives; DANDI, EMBER, OpenNeuro); a series with episodes named S1E2 (dataset
+organization standards; BIDS, Psych-DS); the MP4 file that keeps video, audio, and subtitles in sync
+(file organization standards; NWB, OME-Zarr); categories and hashtags (ontologies and terminologies;
+NCBI Taxonomy, HED); the H.264 or AV1 codec (data formats; HDF5, Zarr); and the upload form, whose fields
+and rules come from a specification (schema languages; LinkML, JSON Schema). Table 1 defines the layers.
 
 ## Table 1 — Layers of the ecosystem
 
@@ -69,7 +72,7 @@ only.
 
 ## Fig. 5 — The BBQS standards stack
 
-The map from Fig. 1 with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
+The six layers of the map (Table 1) with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
 (dataset organization); NWB (file organization standard); HED, NCBI Taxonomy, atlases, Cell Ontology
 (terminologies); HDF5/Zarr, JSON/TSV/CSV, MP4, NIfTI (formats); HDMF, LinkML, BIDS schema (schema
 languages). Arrows show supported paths for typical BBQS data (e.g., video + pose + ephys → NWB → DANDI
