@@ -15,10 +15,8 @@ API access also requires the account to be linked to an organisation
 
 Records are fetched from the REST API (``GET /fairsharing_records/{id}``); the GraphQL
 endpoint used by the FAIRsharing web front-end is not available to API users (501).
-``parse_record`` accepts both snake_case (REST) and camelCase field names.
-
-NOTE: verify the association field names on the first authenticated run
-(raw responses are cached under data/cache/fairsharing/ for inspection).
+Search hits and records share the same JSON:API shape (see ``parse_record``). Raw responses
+are cached under data/cache/fairsharing/.
 """
 
 from __future__ import annotations
@@ -30,7 +28,7 @@ from ..http import CachedJsonClient
 
 API_URL = "https://api.fairsharing.org"
 DOI_PREFIX = "10.25504/"
-
+NAME_PREFIX = "FAIRsharing record for: "   # the REST API prepends this to every record name
 
 
 @dataclass
@@ -44,8 +42,8 @@ class FairsharingRecord:
     status: str | None = None
     subjects: list[str] = field(default_factory=list)
     domains: list[str] = field(default_factory=list)
-    # (raw relation label, direction 'out'|'in', other record id, other DOI, other name)
-    associations: list[tuple[str, str, int | None, str | None, str]] = field(default_factory=list)
+    # (raw relation label, direction 'out'|'in', other record id, other record name)
+    associations: list[tuple[str, str, int, str]] = field(default_factory=list)
 
 
 def strip_doi(doi: str | None) -> str | None:
@@ -55,67 +53,36 @@ def strip_doi(doi: str | None) -> str | None:
     return doi[len(DOI_PREFIX):] if doi.startswith(DOI_PREFIX) else doi
 
 
-def _get(d: dict, *names, default=None):
-    for n in names:
-        if isinstance(d, dict) and n in d and d[n] is not None:
-            return d[n]
-    return default
-
-
-def _labels(items) -> list[str]:
-    out = []
-    for it in items or []:
-        label = it.get("label") if isinstance(it, dict) else it
-        if label:
-            out.append(label)
-    return out
-
-
-def _type_name(value) -> str | None:
-    if isinstance(value, dict):
-        return value.get("name") or value.get("label")
-    return value
+def strip_name(name: str | None) -> str:
+    name = name or ""
+    return name[len(NAME_PREFIX):] if name.startswith(NAME_PREFIX) else name
 
 
 def parse_record(raw: dict) -> FairsharingRecord:
-    """Parse a GraphQL ``fairsharingRecord`` or a REST JSON:API record."""
-    rec = raw
-    for key in ("data", "fairsharingRecord"):
-        if isinstance(rec, dict) and key in rec and isinstance(rec[key], dict):
-            rec = rec[key]
-    attrs = rec.get("attributes", rec)
+    """Parse a REST JSON:API record (``{"data": {...}}`` or a single search hit).
 
+    Outgoing links are in ``linked_records`` (``linked_record_id``/``_name``), incoming links
+    in ``linking_records`` (``linking_record_id``/``_name``); each has a ``relation`` label.
+    """
+    rec = raw.get("data", raw)
+    attrs = rec.get("attributes", {})
     associations = []
-    for direction, list_keys, other_keys in (
-        ("out", ("recordAssociations", "record_associations"), ("linkedRecord", "linked_record")),
-        ("in", ("reverseRecordAssociations", "reverse_record_associations"),
-         ("fairsharingRecord", "fairsharing_record")),
-    ):
-        for assoc in _get(attrs, *list_keys, default=[]) or []:
-            other = _get(assoc, *other_keys, default={}) or {}
-            label = _get(assoc, "recordAssocLabel", "record_assoc_label", "relation", default="undefined")
-            if isinstance(label, dict):
-                label = label.get("relation") or label.get("label") or "undefined"
-            other_id = _get(other, "id")
-            associations.append((
-                str(label),
-                direction,
-                int(other_id) if other_id is not None and str(other_id).isdigit() else None,
-                strip_doi(_get(other, "doi")),
-                _get(other, "name", default=""),
-            ))
-
-    rec_id = _get(rec, "id")
+    for direction, list_key, prefix in (("out", "linked_records", "linked_record"),
+                                        ("in", "linking_records", "linking_record")):
+        for link in attrs.get(list_key) or []:
+            associations.append((link.get("relation") or "undefined", direction,
+                                 int(link[f"{prefix}_id"]), link.get(f"{prefix}_name", "")))
+    metadata = attrs.get("metadata") or {}
     return FairsharingRecord(
-        id=int(rec_id) if rec_id is not None and str(rec_id).isdigit() else None,
-        name=_get(attrs, "name", default=""),
-        abbreviation=_get(attrs, "abbreviation"),
-        doi=strip_doi(_get(attrs, "doi")),
-        registry=_type_name(_get(attrs, "registry", "fairsharing_registry")),
-        type=_type_name(_get(attrs, "type", "record_type")),
-        status=_get(attrs, "status"),
-        subjects=_labels(_get(attrs, "subjects", default=[])),
-        domains=_labels(_get(attrs, "domains", default=[])),
+        id=int(rec["id"]) if str(rec.get("id", "")).isdigit() else None,
+        name=strip_name(attrs.get("name")),
+        abbreviation=attrs.get("abbreviation"),
+        doi=strip_doi(attrs.get("doi")),
+        registry=attrs.get("fairsharing_registry"),
+        type=attrs.get("record_type"),
+        status=metadata.get("status"),
+        subjects=list(attrs.get("subjects") or []),
+        domains=list(attrs.get("domains") or []),
         associations=associations,
     )
 
@@ -207,6 +174,9 @@ class FairsharingClient:
     def resolve(self, name: str, abbreviation: str | None) -> list[FairsharingRecord]:
         """Candidate records whose name or abbreviation matches a seed (case-insensitive)."""
         wanted = {s.lower() for s in (name, abbreviation) if s}
-        hits = self.search(abbreviation or name)
-        exact = [r for r in hits if {(r.name or "").lower(), (r.abbreviation or "").lower()} & wanted]
-        return exact or hits[:5]
+        hits: dict[int, FairsharingRecord] = {}
+        for query in dict.fromkeys(q for q in (abbreviation, name) if q):  # abbreviation first
+            for r in self.search(query):
+                hits.setdefault(r.id, r)
+        exact = [r for r in hits.values() if {r.name.lower(), (r.abbreviation or "").lower()} & wanted]
+        return exact or list(hits.values())[:5]

@@ -46,25 +46,34 @@ def test_rrid_fetch_other_errors_raise():
 
 
 def test_parse_fairsharing_record(fixture_json):
-    rec = fairsharing.parse_record(fixture_json("fairsharing_record.json"))
-    assert rec.id == 1234
-    assert rec.doi == "FAIRsharing.nwb000"
-    assert rec.registry == "Standard"
+    raw = fixture_json("fairsharing_record.json")
+    rec = fairsharing.parse_record(raw)
+    assert rec.id == 1131
+    assert rec.name == "Neurodata Without Borders"  # "FAIRsharing record for: " prefix stripped
+    assert rec.doi == "FAIRsharing.nPfuTE"
+    assert (rec.registry, rec.type, rec.status) == ("Standard", "model_and_format", "ready")
     assert rec.subjects == ["Neurophysiology"]
     assert rec.associations == [
-        ("uses", "out", 55, "FAIRsharing.hdf500", "Hierarchical Data Format 5"),
-        ("implements", "in", 77, None, "DANDI Archive"),
+        ("related_to", "out", 55, "Hierarchical Data Format"),
+        ("implements", "in", 3322, "Distributed Archives for Neurophysiology Data Integration"),
+        ("collects", "in", 900, "INCF Endorsed standards"),
     ]
+    # Search hits are the bare record objects (no "data" wrapper).
+    assert fairsharing.parse_record(raw["data"]) == rec
 
 
-def test_parse_fairsharing_rest_snake_case():
-    raw = {"data": {"id": "9", "attributes": {
-        "name": "X", "fairsharing_registry": {"name": "Standard"}, "record_type": "terminology_artefact",
-        "record_associations": [{"record_assoc_label": {"relation": "extends"},
-                                 "linked_record": {"id": "3", "name": "Y"}}]}}}
-    rec = fairsharing.parse_record(raw)
-    assert (rec.id, rec.registry, rec.type) == (9, "Standard", "terminology_artefact")
-    assert rec.associations == [("extends", "out", 3, None, "Y")]
+def test_resolve_matches_name_without_prefix(monkeypatch, tmp_path, fixture_json):
+    from ecokg.http import CachedJsonClient
+
+    nwb = fixture_json("fairsharing_record.json")["data"]
+    other = {"id": "7", "attributes": {"name": "FAIRsharing record for: Nucleic acid format", "abbreviation": None}}
+    client = fairsharing.FairsharingClient(CachedJsonClient(tmp_path), token="t")
+    queries = []
+    monkeypatch.setattr(client, "search", lambda q, refresh=False: queries.append(q) or [
+        fairsharing.parse_record(other), fairsharing.parse_record(nwb)])
+    hits = client.resolve("Neurodata Without Borders", "NWB")
+    assert queries == ["NWB", "Neurodata Without Borders"]
+    assert [r.id for r in hits] == [1131]
 
 
 def test_strip_doi():

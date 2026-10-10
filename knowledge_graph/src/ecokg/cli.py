@@ -128,9 +128,9 @@ def cmd_harvest_fairsharing(args) -> int:
             continue
         rec = client.get_record(match[0].id, refresh=args.refresh)
         ids[str(rec.id)] = n.id
-        for label, direction, other_id, other_doi, other_name in rec.associations:
+        for label, direction, other_id, other_name in rec.associations:
             items.append({"registry": "fairsharing", "node": n.id, "label": label, "direction": direction,
-                          "other_id": other_doi or other_id, "other_name": other_name})
+                          "other_id": other_id, "other_name": other_name})
     _write_json(HARVEST_DIR / FAIRSHARING_IDS, ids)
     _write_json(HARVEST_DIR / "fairsharing_edges.json", items)
     print(f"{len(ids)} records, {len(items)} associations -> {HARVEST_DIR / 'fairsharing_edges.json'}")
