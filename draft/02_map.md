@@ -105,17 +105,19 @@ else is needed. For developers of standards and tools, the map makes boundary cr
 file organization standard begins to define its own folder layout, or a dataset organization standard
 begins to define the internal structure of binary files, the technology is crossing a layer boundary.
 This can be the right choice, but it is best made deliberately and weighed against integrating an
-existing technology from the other layer, in the same way that a video platform adopts existing codecs
-rather than designing its own. For funders and program managers, the same view shows where investment in
+existing technology from the other layer, in the same way that a video platform usually adopts existing codecs
+rather than designing their own. For funders and program managers, the same view shows where investment in
 bridges between existing technologies can complement the development of new ones.
 
 ## Stakeholders shape standards
 
 Standards also differ in who drives them. NWB and BIDS grew out of research communities and are largely
 publicly funded; DICOM is driven by industry and clinical vendors; others are tied to a specific archive
-or consortium (Supplementary Table S1) [TODO-C5]. Whatever their origin, standards that succeed
-eventually have to serve stakeholders across the whole data lifecycle. Video codecs succeeded because
-camera makers, software developers, and platforms all adopted them, and neuroscience standards face the
-same test. Research-driven standards need support from acquisition-system vendors, and vendor-driven
-standards need to meet researchers' needs for analysis and sharing. Being explicit about which problem a
+or consortium (Supplementary Table S1) [TODO-C5]. Whatever their origin, a standard need not cover the
+whole data lifecycle, from acquisition to analysis, sharing, and reuse, but it needs clear transitions to
+the stages before and after the ones it serves. Video codecs succeeded because camera makers, software
+developers, and platforms all adopted them, so that a video moves from recording to editing to
+publishing without conversion. For neuroscience, this means that research-driven standards benefit from
+support by acquisition-system vendors, and vendor-driven standards from clear paths into analysis and
+sharing. Being explicit about which problem a
 standard solves and for whom gives it scope and helps set its future direction.
