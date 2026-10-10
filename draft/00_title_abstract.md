@@ -1,5 +1,11 @@
 # Navigating the neuroscience data standards ecosystem: a map and recommendations for multimodal Brain Behavior Quantification and Synchronization (BBQS)
 
+> **Title must change for Scientific Data** (≤110 characters incl. spaces; no colons, parentheses, or
+> uncommon acronyms; sentence case). The current title has 151 characters. Options (TODO D7):
+> - "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103)
+> - "A map of neuroscience data standards and recommendations for multimodal brain behavior quantification" (101)
+> - "Mapping neuroscience data standards and recommendations for multimodal brain and behavior data" (94)
+
 **Authors:** O. Rübel*, …, Y. O. Halchenko* — *full list from the SfN 2025 poster plus confirmed contributors
 (close by Nov 14, 2026; see `TODO.md` A1).*
 
@@ -11,21 +17,18 @@ in `../TODO.md`.
 
 ## Abstract
 
-*(~200 words)*
+*(≤170 words per Scientific Data guidelines)*
 
-"Data standard" means many different things in neuroscience: an archive's submission rules, a folder
-layout, a file schema, a vocabulary of terms, a binary encoding, or the language a schema is written in.
-This ambiguity makes it hard for researchers to decide what they need and for standards developers to
-see where their work ends and someone else's begins. We propose a map of the neuroscience data
-standards ecosystem with six layers — data archives, dataset organization standards, data standards,
-ontologies and terminologies, data formats, and schema languages — each defined by the problem it
-solves. Using the map, we show that FAIR data is a property that emerges from integrating technologies
-across layers rather than from any single standard. We then apply the map to the NIH BRAIN Initiative
-Brain Behavior Quantification and Synchronization (BBQS) program, whose projects combine naturalistic
-behavior, video, pose, audio, wearable sensors, and neural recordings across 13 species. We describe the
-BBQS standards stack (NWB, BIDS, Psych-DS, and HED, archived in EMBER), give concrete recommendations by
-data type, and identify the behavior types for which no standard yet offers clear guidance — including
-several of the behaviors BBQS projects record most often. We close with the bridges and investments
-needed to make multimodal brain–behavior data interoperable across communities.
+"Data standard" means many different things in neuroscience, from an archive's submission rules to a
+folder layout, a file schema, a vocabulary, a binary encoding, or a schema language. We propose a map of
+the neuroscience data standards ecosystem with six layers, each defined by the problem it solves: data
+archives, dataset organization standards, data standards, ontologies and terminologies, data formats,
+and schema languages. The map shows that FAIR data emerge from integrating technologies across layers
+rather than from any single standard. We apply it to the NIH BRAIN Initiative Brain Behavior
+Quantification and Synchronization program, whose projects combine naturalistic behavior, video, pose,
+audio, wearable sensors, and neural recordings across 13 species. We describe the program's standards
+stack, give recommendations by data type, and show that several of the behaviors projects record most
+often have no established representation in any of the recommended standards. We close with the bridges
+between standards and communities needed to make multimodal brain–behavior data interoperable.
 
 **Keywords:** data standards; FAIR; neuroinformatics; behavior; multimodal data; NWB; BIDS; BBQS

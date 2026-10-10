@@ -11,6 +11,7 @@
 | `06_recommendations.md` | 6. Recommendations (Table 2, R1–R11) |
 | `07_gaps_bridges.md` | 7. Gaps and bridges (Fig. 4c, Fig. 5, Suppl. Fig. S1) |
 | `08_future_conclusion.md` | 8. Future directions; 9. Conclusion |
+| `09_statements.md` | Data/Code Availability, contributions, competing interests, funding, ethics |
 | `10_methods.md` | Methods |
 | `11_figures_tables.md` | Display items: status, legends, Table 1 |
 | `12_references.md` | Working reference list |

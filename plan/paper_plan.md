@@ -17,9 +17,9 @@ standards guideline, with the ecosystem map as the frame. Consequences:
   descriptive.
 - **Knowledge graph:** supporting evidence (bridges/gaps section and Supplementary), no longer a headline
   result. Its open issues are tracked in `knowledge_graph/TODO.md` (branch `worktree-knowledge-graph`).
-- **Journal:** leading option **Scientific Data** (likely as an *Article*; *Comment* as a shorter
-  alternative) — limits to be verified (see `TODO.md`, decision D1). A program-focused recommendations
-  paper fits a Nature Communications Perspective less well.
+- **Journal: Scientific Data, Article** (decided 2026-10-09). No word limit; abstract ≤170 words;
+  ≤8 figures, ≤10 tables; title ≤110 characters without colons, parentheses, or uncommon acronyms
+  (the title therefore needs to change, `TODO.md` D7); Data and Code Availability statements required.
 - **Draft:** `draft/` (one Markdown file per section); open claims and questions in `TODO.md`.
 - Sections 1–4 below are kept for history; where they conflict with this section, this section wins.
 

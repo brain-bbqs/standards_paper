@@ -11,27 +11,38 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
 
 ## D. Decisions for the team
 
-- [ ] **D1 — Journal.** Leading option (2026-10-09): **Scientific Data (Nature Portfolio)**, which has
-      published BIDS, its modality extensions, and the FAIR principles.
-      - Likely article type: **Article** (fits map + BBQS inventory analysis + knowledge graph +
-        recommendations). Alternative: **Comment** (much shorter; would need ~half the length and most
-        of the BBQS analysis removed).
-      - [ ] Verify on nature.com/sdata (could not be fetched automatically): article types, word /
-            display-item / reference limits, whether Methods count, APC and funding source (Q6), and
-            whether a pre-submission enquiry is possible or useful.
-      - Other options if needed: eLife, PLOS Computational Biology, Neuroinformatics, Nature
-        Communications (Perspective; weaker fit after the BBQS pivot).
-      - Consequence if Article: keep the knowledge graph as evidence (D3) and resolve
-        `knowledge_graph/TODO.md` 1.1–1.3 before submission.
-- [ ] **D2 — Length.** Cut ~600 words or move Table 2 / the FAIR-ladder table to display items, depending on D1.
-- [ ] **D3 — Role of the knowledge graph.** Draft uses it as supporting evidence (Section 7, Suppl.
-      Fig. S1). Keep, shrink to a sentence, or drop? Depends on resolving `knowledge_graph/TODO.md` 1.1–1.3.
+- [x] **D1 — Journal: Scientific Data, article type "Article"** (confirmed 2026-10-09 against
+      nature.com/sdata/submission-guidelines). Requirements found there:
+      - Articles cover data standards, repositories, curation, and policy, and may be shorter or
+        speculative; the journal no longer has a Comment format. Peer reviewed.
+      - **No word limit**; Methods have no length limit.
+      - **Abstract ≤170 words** (draft now 160).
+      - **≤8 figures and ≤10 tables** recommended; **figure legends ≤350 words in total**.
+      - **Title ≤110 characters**, no colons, parentheses, or uncommon acronyms → D7.
+      - Required statements: Data Availability, Code Availability, Author Contributions, Competing
+        Interests, Funding, Ethics where relevant (draft in `draft/09_statements.md`).
+      - Nature reference style, numbered, DOIs as URLs; journal abbreviation *Sci. Data*.
+      - Data/code sharing required for Articles "if relevant to the results" → applies to the KG and
+        the BBQS aggregates.
+      - Not stated on the page: APC amount (Q6) and pre-submission enquiries — check "Open Access Fees
+        and Funding" and whether to replace the planned Nov 17 enquiry.
+- [ ] **D2 — Length.** No word limit at Scientific Data; no cuts needed for length. Still tighten for
+      readability, and move the in-text tables to formal tables (≤10 allowed).
+- [ ] **D3 — Role of the knowledge graph.** With Scientific Data (no word limit, 8 figures, analyses
+      welcome) it can be a main figure and a Results subsection rather than a supplement. Recommended:
+      keep, and resolve `knowledge_graph/TODO.md` 1.1–1.3 before submission.
 - [ ] **D4 — How prescriptive.** Part II now gives recommendations R1–R11 "derived from the BBQS
       guideline". Confirm the framing (community guidance vs. program requirements) with the BBQS
       Data Standards WG and program staff.
 - [ ] **D5 — Ontology layer.** Kept as one layer with the distinction explained (Section 2) per Q1;
       confirm wording.
-- [ ] **D6 — Figure count.** Seven candidate main items (Fig. 1–5, Tables 1–2); see F1.
+- [ ] **D6 — Figure count.** Five figures + Suppl. Fig. S1 (could become main Fig. 6) and two tables:
+      within the limits (≤8 figures, ≤10 tables).
+- [ ] **D7 — Title.** Current title (151 characters, colon, parentheses, "BBQS") does not meet the rules.
+      Options: "Navigating neuroscience data standards for multimodal brain behavior quantification and
+      synchronization" (103); "A map of neuroscience data standards and recommendations for multimodal
+      brain behavior quantification" (101); "Mapping neuroscience data standards and recommendations for
+      multimodal brain and behavior data" (94).
 
 ## A. Actions
 
@@ -44,11 +55,19 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
       guideline itself still has many "TODO — how to store?" entries and some unfinished parts.
 - [ ] **A6** Zenodo DOI for code and data (`ecokg`, `analysis/`).
 - [ ] **A7** Resolve references marked ? or — in `draft/12_references.md`.
+- [ ] **S1** Licence terms for redistributing RRID and FAIRsharing data (FAIRsharing CC BY-SA?).
+- [ ] **S2** Contact for access to the BBQS project inventory (Data Availability).
+- [ ] **S3** Licence for code (e.g., BSD-3 or MIT) and data (e.g., CC BY 4.0).
+- [ ] **S4** Competing-interest statements from all authors.
+- [ ] **S5** Complete funding list for all authors.
+- [ ] **S6** Convert references to Nature style with DOIs at the end (Zotero/BibTeX).
 - [ ] **A8** Move to Google Docs for the full author group once the core team has reviewed this draft.
 
 ## F. Figures
 
-- [ ] **F1** Main-item budget (D6): merge Table 1 into Fig. 1 or move to Supplement if limit is 6.
+- [x] **F1** Main-item budget: fits (≤8 figures, ≤10 tables).
+- [ ] **F6** Shorten legends: all figure legends together ≤350 words (draft legends in
+      `draft/11_figures_tables.md` are longer). Sans-serif fonts, white backgrounds.
 - [ ] **F2** Fig. 1, Fig. 2, Fig. 5b, Suppl. Table S1: redraw from the poster (designer / figure lead).
 - [ ] **F3** Fig. 3 (BBQS stack on the map): design from the spec in `draft/11_figures_tables.md`.
 - [ ] **F4** Fig. 4 draft (`analysis/output/fig4_bbqs.pdf`): review; decide whether to keep species
