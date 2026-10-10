@@ -26,7 +26,7 @@ whereas bridges between research communities concentrate in a few hubs. We apply
 BRAIN Initiative Brain Behavior Quantification and Synchronization program, whose projects combine
 video, pose, audio, wearable sensors, and neural recordings across 13 species. We describe the program's
 standards stack, give recommendations by data type, and show that several of the most frequently
-recorded behaviors have no established representation in the recommended standards. We close with the
-bridges needed to make multimodal brain–behavior data interoperable.
+recorded behaviors have no established representation yet. We close with the bridges needed to make
+multimodal brain–behavior data interoperable.
 
 **Keywords:** data standards; FAIR; neuroinformatics; behavior; multimodal data; NWB; BIDS; BBQS
