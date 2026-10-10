@@ -5,8 +5,9 @@
 Looking beyond the current gaps, we see five scientific directions that will shape the next generation
 of data standards, and three cross-cutting needs that determine whether they succeed (Fig. 6).
 
-**Living data.** Data are increasingly updated after publication with new annotations, re-processed
-versions, and corrected metadata. Standards need to support provenance, modular data that can be
+**Living data.** Data are increasingly updated and extended throughout their lifecycle, from
+acquisition through analysis to publication and reuse, with new annotations, re-processed versions, and
+corrected metadata. Standards need to support provenance, modular data that can be
 extended without rewriting files, incremental metadata, and integration with analysis tools and
 pipelines.
 
