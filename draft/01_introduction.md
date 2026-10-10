@@ -41,9 +41,8 @@ datasets and laboratories, but only when software can interpret how each dataset
 it contains. Data without that structure are difficult to include, however valuable they are [TODO-C3].
 
 This paper has two goals. First, we propose a **map of the data standards ecosystem** (Fig. 1, Table 1)
-that separates six layers by the problem each solves, illustrates each with its counterpart in online
-video sharing, and we use it to explain why FAIR data [REF: Wilkinson 2016] require integration across
-layers (Section 3). We then use a knowledge graph of the ecosystem to show where technologies are
+that separates six layers by the problem each solves, and we use it to explain why FAIR data
+[REF: Wilkinson 2016] require integration across layers (Section 3). We then use a knowledge graph of the ecosystem to show where technologies are
 connected today, and where they are not (Section 4). The map is meant to give technologists and
 practitioners a shared vocabulary, and to make visible when a project crosses a boundary, which is the
 point at which building a bridge to an existing solution may be better than expanding scope. Second, we
