@@ -63,5 +63,6 @@ the program's Data Standards Working Group [REF: BBQS guideline], we give recomm
 for choosing, combining, extending, and validating standards (Section 7). By comparing the guideline
 with the behaviors that projects actually record, we identify where standards support is still missing,
 for example for social interactions and other naturalistic behaviors, and which bridges between
-communities would close these gaps (Section 8). We conclude with the scientific directions and
-investments that will shape data standards for multimodal brain–behavior research (Section 9).
+communities would close these gaps (Section 8). Finally, we discuss how living data, data reuse at
+scale, multimodal experiments, and AI will shape the next generation of data standards, and why
+training, community engagement, and sustained maintenance are needed to support them (Section 9).
