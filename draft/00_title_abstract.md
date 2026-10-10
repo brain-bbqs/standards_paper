@@ -1,10 +1,7 @@
-# Navigating the neuroscience data standards ecosystem: a map and recommendations for multimodal Brain Behavior Quantification and Synchronization (BBQS)
+# Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization
 
-> **Title must change for Scientific Data** (≤110 characters incl. spaces; no colons, parentheses, or
-> uncommon acronyms; sentence case). The current title has 151 characters. Options (TODO D7):
-> - "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103)
-> - "A map of neuroscience data standards and recommendations for multimodal brain behavior quantification" (101)
-> - "Mapping neuroscience data standards and recommendations for multimodal brain and behavior data" (94)
+*Title decided 2026-10-09 (103 characters; meets Scientific Data rules: ≤110 characters, no colon,
+parentheses, or acronyms).*
 
 **Authors:** O. Rübel*, …, Y. O. Halchenko* — *full list from the SfN 2025 poster plus confirmed contributors
 (close by Nov 14, 2026; see `TODO.md` A1).*

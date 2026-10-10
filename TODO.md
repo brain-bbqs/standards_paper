@@ -38,11 +38,7 @@ insert (see `draft/12_references.md`; entries marked ? or — need work).
       confirm wording.
 - [ ] **D6 — Figure count.** Five figures + Suppl. Fig. S1 (could become main Fig. 6) and two tables:
       within the limits (≤8 figures, ≤10 tables).
-- [ ] **D7 — Title.** Current title (151 characters, colon, parentheses, "BBQS") does not meet the rules.
-      Options: "Navigating neuroscience data standards for multimodal brain behavior quantification and
-      synchronization" (103); "A map of neuroscience data standards and recommendations for multimodal
-      brain behavior quantification" (101); "Mapping neuroscience data standards and recommendations for
-      multimodal brain and behavior data" (94).
+- [x] **D7 — Title (decided 2026-10-09):** "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters).
 
 ## A. Actions
 

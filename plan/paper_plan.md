@@ -10,8 +10,9 @@ The overall direction stays (start with the map and classification of the ecosys
 now focus on **standards for BBQS**: recommendations for the BBQS community derived from the BBQS data
 standards guideline, with the ecosystem map as the frame. Consequences:
 
-- **Title:** *"Navigating the neuroscience data standards ecosystem: a map and recommendations for
-  multimodal Brain Behavior Quantification and Synchronization (BBQS)"*.
+- **Title:** *"Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization"* (2026-10-09; shortened from "Navigating the neuroscience data standards
+  ecosystem: a map and recommendations for multimodal Brain Behavior Quantification and Synchronization
+  (BBQS)" to meet Scientific Data's title rules).
 - **Q3 reversed for Part II:** the paper now *does* give recommendations (for BBQS data), presented as
   community guidance derived from the guideline, not a universal ranking of standards. Part I stays
   descriptive.
@@ -19,7 +20,7 @@ standards guideline, with the ecosystem map as the frame. Consequences:
   result. Its open issues are tracked in `knowledge_graph/TODO.md` (branch `worktree-knowledge-graph`).
 - **Journal: Scientific Data, Article** (decided 2026-10-09). No word limit; abstract ≤170 words;
   ≤8 figures, ≤10 tables; title ≤110 characters without colons, parentheses, or uncommon acronyms
-  (the title therefore needs to change, `TODO.md` D7); Data and Code Availability statements required.
+  (title updated accordingly, `TODO.md` D7); Data and Code Availability statements required.
 - **Draft:** `draft/` (one Markdown file per section); open claims and questions in `TODO.md`.
 - Sections 1–4 below are kept for history; where they conflict with this section, this section wins.
 
@@ -34,7 +35,7 @@ standards guideline, with the ecosystem map as the frame. Consequences:
 | Primary journal | **Nature Communications, Perspective** (open access) |
 | Preprint | **bioRxiv at submission** |
 | Timeline | **Submit ~late Feb – early Mar 2027** |
-| Working title | ~~"The ecosystem of standards in neuroscience: Current state and future directions"~~ → **"Navigating the neuroscience data standards ecosystem: a map and recommendations for multimodal Brain Behavior Quantification and Synchronization (BBQS)"** (2026-10-09) |
+| Working title | ~~"The ecosystem of standards in neuroscience: Current state and future directions"~~ → **"Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization"** (2026-10-09) |
 | Framing | *Superseded for Part II by §0.* **Landscape, not a selection guide**: the focus is the parts of the ecosystem and how they relate; no single standard does everything, so integration across components is essential |
 | Ontology layer | **One layer** ("Ontologies & Terminologies"), with the distinction made explicit: ontologies define terms *and* encode definitions and relationships; terminologies define the set of valid terms, often selected from ontologies |
 | Funding tone | **Needs- and science-focused**: say where investment is needed, not criticize current funding |
