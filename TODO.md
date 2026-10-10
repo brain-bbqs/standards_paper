@@ -172,7 +172,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 
 | Date | Item | Resolution |
 |---|---|---|
-| 2026-10-09 | Pivot | Map of the ecosystem first, then recommendations for BBQS (`plan/paper_plan.md` §0) |
+| 2026-10-09 | Pivot | Map of the ecosystem first, then recommendations for BBQS (`plan/paper_plan.md` §1) |
 | 2026-10-09 | D1 Journal | Scientific Data, article type "Article". No word limit; Methods unlimited; abstract ≤170 words; ≤8 figures, ≤10 tables; legends ≤350 words in total; title ≤110 characters without colons, parentheses, or uncommon acronyms; required statements (Data/Code Availability, contributions, competing interests, funding, ethics) in `draft/10_statements.md`; Nature reference style with DOIs; data/code sharing required where relevant to results |
 | 2026-10-09 | D7 Title | "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters) |
 | 2026-10-09 | D8 layer name | Layer 3 renamed "file organization standards" (parallel to "dataset organization standards"); "file" in the broad sense, single file vs. directory is a format choice; knowledge-graph taxonomy label updated (node id `data_standard` unchanged) |
@@ -191,7 +191,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 ## Notes for reviewers
 
 - Part I (Sections 1–4) maps the ecosystem; Part II (Sections 5–8) applies it to BBQS; Section 9 is the
-  outlook and Section 10 the conclusion. See `plan/paper_plan.md` §0 for the pivot.
+  outlook and Section 10 the conclusion. See `plan/paper_plan.md` for decisions and the timeline.
 - The BRAIN KB roundtable materials in `../brain_knowledge_base/` are marked "not for further
   distribution" and are used only as background; nothing from them is quoted or cited.
 - BBQS inventory: only aggregate counts are in the repository (`analysis/output/bbqs_aggregates.json`);

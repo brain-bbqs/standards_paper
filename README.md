@@ -5,7 +5,7 @@ quantification and synchronization"* (target: Scientific Data, Article).
 
 | Path | Content |
 |---|---|
-| `plan/paper_plan.md` | Paper plan, decisions, timeline (see §0 for the BBQS pivot) |
+| `plan/paper_plan.md` | Decisions not visible in the draft, and the steps and timeline to submission |
 | `draft/` | First full draft, one Markdown file per section (`draft/README.md`) |
 | `TODO.md` | Review list: decisions, actions, figures, and claims marked `[TODO-Cn]` in the draft |
 | `analysis/` | BBQS inventory aggregates for Section 5 and Fig. 4 (`analysis/bbqs_inventory.py`; aggregate data only) |
