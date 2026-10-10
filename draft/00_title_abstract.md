@@ -16,17 +16,17 @@ in `../TODO.md`.
 
 *(≤170 words per Scientific Data guidelines)*
 
-Sharing and integrating neuroscience data relies on a complex ecosystem of interdependent technologies:
-archives, file and folder conventions, metadata schemas, vocabularies, file formats, and schema
-languages. Because all of these are commonly called "data standards", it is often unclear what a data
-standard is, which ones a project needs, and how they fit together. We propose a map of this ecosystem
-with six layers, each defined by the problem it solves, and show that FAIR data emerge from integrating
-technologies across layers rather than from any single standard. We apply the map to the NIH BRAIN
-Initiative Brain Behavior Quantification and Synchronization program, whose projects combine
+Sharing and integrating neuroscience data relies on a complex ecosystem of interdependent technologies,
+including archives, file and folder conventions, metadata schemas, vocabularies, file formats, and
+schema languages. Because all of these are commonly called "data standards", it is often unclear what a
+data standard is, which ones a project needs, and how they fit together. We propose a map of this
+ecosystem with six layers, each defined by the problem it solves, and show that FAIR data emerge from
+integrating technologies across layers rather than from any single standard. We apply the map to the NIH
+BRAIN Initiative Brain Behavior Quantification and Synchronization program, whose projects combine
 naturalistic behavior, video, pose, audio, wearable sensors, and neural recordings across 13 species. We
 describe the program's standards stack, give recommendations by data type, and show that several of the
-behaviors projects record most often have no established representation in the recommended standards.
-We close with the bridges between standards and communities needed to make multimodal brain–behavior
-data interoperable.
+behaviors projects record most often have no established representation in the recommended standards. We
+close with the bridges between standards and communities needed to make multimodal brain–behavior data
+interoperable.
 
 **Keywords:** data standards; FAIR; neuroinformatics; behavior; multimodal data; NWB; BIDS; BBQS

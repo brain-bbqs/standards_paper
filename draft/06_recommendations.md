@@ -4,7 +4,7 @@
 
 The recommendations below summarize the BBQS data standards guideline [REF: BBQS guideline], written by
 the BBQS Data Standards Working Group, and place them on the ecosystem map. They are community guidance
-for BBQS, not a ranking of standards: other choices can be right for other programs, and the guideline
+for BBQS, not a ranking of standards. Other choices can be right for other programs, and the guideline
 is updated as standards evolve. Table 2 gives an overview by data type.
 
 **Table 2 — Recommended standards for common BBQS data types** (✓ supported; ext. = via an extension or
@@ -32,11 +32,11 @@ Psych-DS teams* [TODO-C17].
 
 **R1. Choose by the structure of the experiment, not only by modality.** If behavior must be aligned
 precisely with neural recordings from the same session, store both in **NWB**, which keeps all streams
-on one timeline in one file. If the study is organized around many subjects and sessions with imaging
-or EEG, use **BIDS** as the dataset organization and include other data (including NWB files) within
-it where supported. If behavioral data are mainly tables — questionnaires, task responses, ratings —
-use **Psych-DS**. The guideline gives detailed choices by recording technology and by behavior type
-[REF: BBQS guideline].
+on one timeline in one file. If the study is organized around many subjects and sessions with imaging or
+EEG, use **BIDS** as the dataset organization and include other data (including NWB files) within it
+where supported. If behavioral data are mainly tables, such as questionnaires, task responses, or
+ratings, use **Psych-DS**. The guideline gives detailed choices by recording technology and by behavior
+type [REF: BBQS guideline].
 
 **R2. Expect to combine standards, and link them explicitly.** Multimodal BBQS studies will often need
 more than one standard, for example BIDS for MRI and NWB for electrophysiology in the same
@@ -66,18 +66,18 @@ atlas for anatomical locations, and the Cell Ontology for cell types. For behavi
 the Neuro Behavior Ontology exist but are not yet widely used in BBQS [TODO-C20]; projects should at
 least define their behavior labels in machine-readable form so they can be mapped later.
 
-**R7. Describe every custom field.** All three standards allow custom metadata — additional table
-columns in NWB, custom JSON fields and TSV columns in BIDS, and user-defined variables in Psych-DS.
-Each custom field should have a clear name, a definition, units, type, and allowed values (a *data
-field descriptor*), so that it can be interpreted without the original lab.
+**R7. Describe every custom field.** All three standards allow custom metadata, for example additional
+table columns in NWB, custom JSON fields and TSV columns in BIDS, and user-defined variables in
+Psych-DS. Each custom field should have a clear name, a definition, units, type, and allowed values (a
+*data field descriptor*), so that it can be interpreted without the original lab.
 
 ## When the standard does not fit
 
 **R8. Extend before you invent.** If data mostly fit a standard but need a few more fields, use the
-standard's built-in mechanisms: custom columns or generic `TimeSeries` in NWB, custom sidecar fields or
-"unspecified data" files following BIDS naming in BIDS, and documented variables in Psych-DS. If a new
-data type is needed, check the NWB Extension Catalog and the list of BIDS Extension Proposals before
-creating a new one, and develop extensions in the open — as Neurodata Extensions (NDX) and NWB
+standard's built-in mechanisms, such as custom columns or generic `TimeSeries` in NWB, custom sidecar
+fields or "unspecified data" files following BIDS naming in BIDS, and documented variables in Psych-DS.
+If a new data type is needed, check the NWB Extension Catalog and the list of BIDS Extension Proposals
+before creating a new one, and develop extensions in the open, as Neurodata Extensions (NDX) and NWB
 Enhancement Proposals for NWB, as BIDS Extension Proposals for BIDS [REF: BBQS guideline; NWB
 extensions; BIDS BEP process]. Ask the BBQS Data Coordination and AI Center (DCAIC) and the standards'
 help desks early; others may already be working on the same data type.
