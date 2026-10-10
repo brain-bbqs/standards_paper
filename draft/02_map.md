@@ -50,16 +50,16 @@ forebrain in Uberon. Terminologies are often selected from ontologies. Annotatio
 Hierarchical Event Descriptors (HED) also belong here, because they define a vocabulary and grammar for
 annotating events. Although ontologies and terminologies are distinct concepts, we group them in one
 layer because both serve the same purpose in data sharing, which is to give metadata values a shared,
-well-defined meaning [TODO-C4]. A typical use is to annotate data so that the meaning of each term is defined. On a video
-platform, a fixed list of categories corresponds to a terminology and a hierarchy of categories, in which
-"tennis" is a kind of "sport", corresponds to an ontology, in contrast to free-form hashtags that anyone
-can invent.
+well-defined meaning [TODO-C4]. A typical use is to annotate data so that the meaning of each term is 
+defined. Continuing with our analogy, on a video-sharing platform, a fixed list of categories corresponds 
+to a terminology and a hierarchy of categories, in which "tennis" is a kind of "sport", corresponds to
+an ontology, in contrast to free-form hashtags that anyone can invent.
 
 **Data formats** solve the problem of mapping data to storage. Formats such as HDF5, Zarr, TIFF, NIfTI,
 JSON, YAML, CSV/TSV, and MP4 define how generic data structures such as arrays, tables, key–value pairs,
-images, and video are encoded as bytes. They are usually domain-agnostic and shared across all of
+images, and video are encoded as bytes. They are usually domain-agnostic and used across all of
 science. A typical use is to serialize generic data structures. The video counterpart is the codec, such
-as H.264 or AV1, which defines how pixels are encoded as bytes and is shared across platforms.
+as H.264 or AV1, which defines how pixels are encoded as bytes and is supported across platforms.
 
 **Schema languages** solve the problem of describing the structure and rules of data formally. Languages
 such as JSON Schema, XML Schema, RDF/OWL, LinkML, and the HDMF specification language specify which
