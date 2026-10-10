@@ -1,0 +1,85 @@
+{
+ "awards": 28,
+ "mechanisms": {
+  "R34": 15,
+  "R61": 10,
+  "U01": 3
+ },
+ "species": {
+  "human": 11,
+  "mouse": 8,
+  "fish": 1,
+  "fly": 1,
+  "rat": 1,
+  "cowbird (songbird)": 1,
+  "cichlid (lake malawi)": 1,
+  "gerbil": 1,
+  "sheep": 1,
+  "ferret": 1,
+  "capuchin monkey (wild)": 1,
+  "acoel worm (hofstenia miamia)": 1,
+  "marmoset": 1
+ },
+ "species_groups": 13,
+ "human_only_awards": 11,
+ "nonhuman_only_awards": 17,
+ "behavior_awards": 22,
+ "behaviors": {
+  "locomotion and movement": 16,
+  "social interactions": 15,
+  "exploratory behavior": 14,
+  "feeding and drinking": 9,
+  "posture and balance": 8,
+  "vocalizations and speech": 8,
+  "emotional and stress responses": 8,
+  "cognitive and memory tasks": 6,
+  "gait analysis": 5,
+  "eye movements": 5,
+  "facial expressions": 4,
+  "reproductive behaviors": 3,
+  "physical activity levels": 3,
+  "operant conditioning and learning": 3,
+  "sleep and rest": 2,
+  "reproductive b": 1,
+  "cognitive": 1,
+  "motivational": 1,
+  "exploratory": 1,
+  "affective": 1,
+  "learning": 1,
+  "effort-based decision making": 1,
+  "locomotion": 1,
+  "affective and clinical domains": 1,
+  "motivational deficits": 1,
+  "pain and discomfort indicators": 1
+ },
+ "modalities": {
+  "Video": 25,
+  "Wearable / inertial sensors": 18,
+  "Pose estimation": 13,
+  "Audio": 13,
+  "Eye tracking": 10,
+  "Extracellular ephys": 13,
+  "EEG": 8,
+  "Optical physiology": 5,
+  "EMG": 4,
+  "GPS": 3,
+  "RFID": 1
+ },
+ "tools": {
+  "DeepLabCut": 12,
+  "SLEAP": 7
+ },
+ "standards_answers": 18,
+ "standards": {
+  "NWB": 11,
+  "BIDS": 4,
+  "HED (any field)": 3,
+  "Psych-DS": 0,
+  "none yet": 3
+ },
+ "sharing_among_standards_answers": {
+  "Neuroscience archive (DANDI, EMBER, OpenNeuro, NDA)": 13,
+  "Cloud drive (Dropbox, Box, Google Drive)": 14,
+  "GitHub": 14
+ }
+}

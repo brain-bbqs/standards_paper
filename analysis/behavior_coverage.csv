@@ -1,0 +1,17 @@
+behavior,nwb,bids,psychds,guideline_entry,note
+locomotion and movement,none,none,none,Locomotion and Movement data,TODO in guideline; positions/pose possible via SpatialSeries/ndx-pose or Motion-BIDS but no representation of derived measures
+social interactions,none,none,none,Social Interactions data,TODO in guideline
+exploratory behavior,none,none,none,(no entry),not listed in guideline
+feeding and drinking,none,none,none,Feeding and Drinking behavior,TODO in guideline
+posture and balance,none,none,none,Posture and Balance data,TODO in guideline
+vocalizations and speech,supported,none,none,Vocalizations and Speech data,NWB TimeSeries + TimeIntervals; BIDS/Psych-DS TODO
+emotional and stress responses,none,none,none,Emotional and Stress Responses,TODO in guideline
+cognitive and memory tasks,supported,supported,none,Experiments involving structured behavioral tasks,mapped to structured tasks; Psych-DS TODO in guideline although Psych-DS lists behavioral task data as supported (check)
+gait analysis,none,none,none,Gait Analysis data,TODO in guideline
+eye movements,supported,in_progress,none,Eye Movements data / Eye Tracking,NWB EyeTracking; BIDS BEP020
+facial expressions,none,none,none,Facial Expressions data,TODO in guideline
+reproductive behaviors,none,none,none,Reproductive Behaviors,TODO in guideline
+physical activity levels,none,none,none,Physical Activity Levels,TODO in guideline
+operant conditioning and learning,none,none,none,Operant Conditioning and Learning data,TODO in guideline
+sleep and rest,supported,none,none,Sleep and Rest data,NWB TimeIntervals; EDF as interchange
+pain and discomfort indicators,none,none,supported,Pain and Discomfort Indicators,Psych-DS
