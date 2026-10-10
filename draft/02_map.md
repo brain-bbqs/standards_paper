@@ -85,7 +85,7 @@ such as BBQS require.
 
 ## Boundaries are fuzzy, and that is useful
 
-No categorization is perfect, and many technologies span layers. DICOM defines both how medical imaging
+No categorization is perfect, and many technologies span layers. For example DICOM defines both how medical imaging
 data and metadata are organized (a file organization standard) and its own binary encoding (a data
 format), much as an animated GIF is both a container and an encoding. BIDS is primarily a dataset
 organization standard, but it also specifies the contents of many sidecar files. NWB and OME build on
@@ -95,15 +95,19 @@ point of view. In the analogy, MP4 is the container, but for a neuroscientist a 
 as MP4 is simply data in a generic media format, which a file organization standard such as NWB
 references and places on the experiment's timeline.
 
-The point of the map is not to put each technology in exactly one box. It is to make clear which
-*problem* a given part of a technology addresses. Distinguishing "how bytes are written to disk" (DICOM
-as a format) from "which metadata fields are required" (DICOM as a file organization standard) makes it
-easier to discuss each aspect, to compare it with alternatives, and to reuse it. The map also makes
-boundary crossings visible. When a file organization standard starts to define its own folder layout, or
-a dataset organization standard starts to define the internal structure of binary files, the developers
-are crossing a layer boundary. That is sometimes the right choice, but it should be a deliberate one,
-weighed against building a bridge to an existing technology in the other layer, in the same way that a
-video platform adopts existing codecs rather than designing its own.
+Rather than placing each technology in exactly one box, the map helps readers identify which *problem*
+each part of a technology addresses. For researchers, this clarifies what a technology does and does not
+provide. A researcher who adopts DICOM, for example, obtains both an encoding of the bytes on disk (DICOM
+as a format) and a set of required metadata fields (DICOM as a file organization standard), but may
+still need a dataset organization standard and shared terminologies to publish a complete study.
+Knowing which layers a technology covers makes it easier to compare it with alternatives and to see what
+else is needed. For developers of standards and tools, the map makes boundary crossings visible. When a
+file organization standard begins to define its own folder layout, or a dataset organization standard
+begins to define the internal structure of binary files, the technology is crossing a layer boundary.
+This can be the right choice, but it is best made deliberately and weighed against integrating an
+existing technology from the other layer, in the same way that a video platform adopts existing codecs
+rather than designing its own. For funders and program managers, the same view shows where investment in
+bridges between existing technologies can complement the development of new ones.
 
 ## Stakeholders shape standards
 
