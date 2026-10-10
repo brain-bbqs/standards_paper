@@ -21,7 +21,7 @@ uv venv && uv pip install -e '.[test]'
 ecokg validate                          # check YAML against the taxonomy
 ecokg -v rrid-check                     # resolve every RRID and flag name mismatches
 ecokg harvest-rrid                      # no account needed
-export FAIRSHARING_LOGIN=... FAIRSHARING_PASSWORD=...
+read -rs FAIRSHARING_TOKEN && export FAIRSHARING_TOKEN   # or FAIRSHARING_LOGIN/PASSWORD (see sources/fairsharing.py)
 ecokg harvest-fairsharing --resolve     # list candidate records for seeds without a FAIRsharing id
 ecokg harvest-fairsharing               # harvest associations for seeds with a FAIRsharing id
 ecokg report                            # output/: graph.{graphml,json}, nodes/edges.csv, stats.md, gaps.md

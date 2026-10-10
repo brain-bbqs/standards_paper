@@ -70,3 +70,40 @@ def test_parse_fairsharing_rest_snake_case():
 def test_strip_doi():
     assert fairsharing.strip_doi("https://doi.org/10.25504/FAIRsharing.abc") == "FAIRsharing.abc"
     assert fairsharing.strip_doi(None) is None
+
+
+def test_fairsharing_token_auth_skips_sign_in(monkeypatch, tmp_path):
+    from ecokg.http import CachedJsonClient
+
+    monkeypatch.setenv("FAIRSHARING_TOKEN", "  Bearer eyJabc.def  ")
+    http = CachedJsonClient(tmp_path)
+    monkeypatch.setattr(http.session, "post", lambda *a, **k: (_ for _ in ()).throw(AssertionError("sign_in called")))
+    client = fairsharing.FairsharingClient(http)
+    client._authenticate()
+    assert http.session.headers["Authorization"] == "Bearer eyJabc.def"
+
+
+def test_fairsharing_requires_credentials(monkeypatch, tmp_path):
+    from ecokg.http import CachedJsonClient
+
+    for var in ("FAIRSHARING_TOKEN", "FAIRSHARING_LOGIN", "FAIRSHARING_PASSWORD"):
+        monkeypatch.delenv(var, raising=False)
+    try:
+        fairsharing.FairsharingClient(CachedJsonClient(tmp_path))._authenticate()
+    except RuntimeError as exc:
+        assert "FAIRSHARING_TOKEN" in str(exc)
+    else:
+        raise AssertionError("expected RuntimeError")
+
+
+def test_fairsharing_graphql_errors_not_cached(monkeypatch, tmp_path):
+    from ecokg.http import CachedJsonClient
+
+    http = CachedJsonClient(tmp_path)
+    monkeypatch.setattr(http, "request", lambda *a, **k: {"errors": [{"message": "bad field"}]})
+    client = fairsharing.FairsharingClient(http, token="t")
+    try:
+        client.get_record(1)
+    except RuntimeError:
+        pass
+    assert http.cached("fairsharing_record_1") is None

@@ -1,8 +1,14 @@
 """FAIRsharing harvesting.
 
-The FAIRsharing API requires a (free) account. Credentials are read from the
-``FAIRSHARING_LOGIN`` and ``FAIRSHARING_PASSWORD`` environment variables and exchanged
-for a JWT via ``POST /users/sign_in`` (same flow as the ``fairsharing-client`` package).
+The FAIRsharing API requires a (free) account. Authentication, in order of preference:
+
+* ``FAIRSHARING_TOKEN`` - a JWT used as-is. Needed for accounts that log in via GitHub/ORCID
+  (no password). Copy it from the ``Authorization: Bearer ...`` header of any request to
+  api.fairsharing.org in the browser's developer tools while logged in to fairsharing.org.
+* ``FAIRSHARING_LOGIN`` / ``FAIRSHARING_PASSWORD`` - exchanged for a JWT via
+  ``POST /users/sign_in`` (same flow as the ``fairsharing-client`` package).
+
+The token is only kept in the session headers; it is never written to the cache or logs.
 
 Record relationships are requested through the GraphQL endpoint using the field names
 used by FAIRsharing's own web front-end (``recordAssociations`` /
@@ -129,28 +135,40 @@ def parse_record(raw: dict) -> FairsharingRecord:
     )
 
 
+def _clean_token(token: str | None) -> str | None:
+    """Accept a bare JWT or a pasted header value (``Bearer eyJ...``)."""
+    if not token:
+        return None
+    token = token.strip()
+    return token.split(None, 1)[1] if token.lower().startswith("bearer ") else token
+
+
 class FairsharingClient:
-    def __init__(self, http: CachedJsonClient, login: str | None = None, password: str | None = None):
+    def __init__(self, http: CachedJsonClient, login: str | None = None, password: str | None = None,
+                 token: str | None = None):
         self.http = http
         self.login = login or os.environ.get("FAIRSHARING_LOGIN")
         self.password = password or os.environ.get("FAIRSHARING_PASSWORD")
-        self._jwt = None
+        self._jwt = _clean_token(token or os.environ.get("FAIRSHARING_TOKEN"))
+        self._authenticated = False
 
     def _authenticate(self) -> None:
-        if self._jwt:
+        if self._authenticated:
             return
-        if not (self.login and self.password):
-            raise RuntimeError(
-                "FAIRsharing requires an account: set FAIRSHARING_LOGIN and FAIRSHARING_PASSWORD "
-                "(register for free at https://fairsharing.org)."
+        if not self._jwt:
+            if not (self.login and self.password):
+                raise RuntimeError(
+                    "FAIRsharing requires an account: set FAIRSHARING_TOKEN (GitHub/ORCID logins) or "
+                    "FAIRSHARING_LOGIN and FAIRSHARING_PASSWORD (register for free at https://fairsharing.org)."
+                )
+            resp = self.http.session.post(
+                f"{API_URL}/users/sign_in",
+                json={"user": {"login": self.login, "password": self.password}},
+                timeout=60,
             )
-        resp = self.http.session.post(
-            f"{API_URL}/users/sign_in",
-            json={"user": {"login": self.login, "password": self.password}},
-            timeout=60,
-        )
-        resp.raise_for_status()
-        self._jwt = resp.json()["jwt"]
+            resp.raise_for_status()
+            self._jwt = resp.json()["jwt"]
+        self._authenticated = True
         self.http.session.headers["Authorization"] = f"Bearer {self._jwt}"
         self.http.session.headers["Content-Type"] = "application/json"
 
@@ -172,10 +190,10 @@ class FairsharingClient:
         if raw is None:
             self._authenticate()
             raw = self.http.request("POST", f"{API_URL}/graphql",
-                                    json={"query": RECORD_QUERY, "variables": {"id": int(record_id)}},
-                                    cache_key=cache_key, refresh=True)
+                                    json={"query": RECORD_QUERY, "variables": {"id": int(record_id)}})
             if raw.get("errors"):
                 raise RuntimeError(f"FAIRsharing GraphQL error for {record_id}: {raw['errors']}")
+            self.http.store(cache_key, raw)  # only successful responses are cached
         return parse_record(raw.get("data", raw))
 
     def resolve(self, name: str, abbreviation: str | None) -> list[FairsharingRecord]:
