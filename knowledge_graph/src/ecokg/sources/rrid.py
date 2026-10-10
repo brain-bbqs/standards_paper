@@ -22,7 +22,7 @@ import requests
 from ..http import CachedJsonClient
 
 RESOLVER_URL = "https://scicrunch.org/resolver/RRID:{rrid}.json"
-SEARCH_URL = "https://api.scicrunch.io/elastic/v1/SCR_nlx_144509-1/_search"  # SciCrunch Registry index
+SEARCH_URL = "https://api.scicrunch.io/elastic/v1/RIN_Tool_pr/_search"  # SciCrunch tools/resources index
 
 
 @dataclass

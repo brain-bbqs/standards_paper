@@ -123,7 +123,7 @@ def cmd_rrid_search_check(args) -> int:
         ("GET q=, apikey header", "GET", rr.SEARCH_URL, {"headers": {"apikey": key}, "params": {"q": "BIDS"}}),
         ("GET q=, key param", "GET", rr.SEARCH_URL, {"params": {"key": key, "q": "BIDS"}}),
         ("POST json, key param (scicrunch.org)", "POST",
-         "https://scicrunch.org/api/1/elastic/SCR_nlx_144509-1/_search", {"params": {"key": key}, "json": simple}),
+         "https://scicrunch.org/api/1/elastic/RIN_Tool_pr/_search", {"params": {"key": key}, "json": simple}),
     ]
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
