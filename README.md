@@ -1,5 +1,11 @@
 # Neuroscience data standards paper (BBQS)
 
+> [!WARNING]
+> **This paper is in active development.** The draft, figures, and knowledge graph are
+> work in progress and change frequently. Content has not yet been reviewed or approved by
+> all authors, claims and relationships are still being verified, and nothing here should be
+> cited or treated as the authors' final position.
+
 Working repository for the paper *"Navigating neuroscience data standards for multimodal brain behavior
 quantification and synchronization"* (target: Scientific Data, Article).
 
