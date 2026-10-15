@@ -42,7 +42,7 @@ it contains. Data without that structure are difficult to include, however valua
 
 Here we address these challenges in two parts. In the first part, we develop a **map of the data
 standards ecosystem** (Fig. 1, Table 1) that distinguishes six layers by the problem each layer solves,
-from public archives to the schema languages in which standards are defined. Community registries
+from data formats to public archives, plus the schema languages in which standards are defined. Community registries
 such as FAIRsharing [REF: Sansone 2019] and the Research Resource Identifier (RRID) registry
 [REF: Bandrowski 2016] catalog many research standards and resources, and we use them as the basis for
 the map, focusing on the technologies used in neuroscience. The map provides a common vocabulary for

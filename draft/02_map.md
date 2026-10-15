@@ -11,28 +11,15 @@ playlist organizes related videos, categories and tags describe the content, and
 specifies which information must accompany each video. Sharing neuroscience data relies on an analogous
 combination of technologies.
 
-**Data archives** solve the problem of publishing, sharing, and discovering data. Neuroscience archives
-such as DANDI, OpenNeuro, EMBER, NEMAR, BossDB, the Brain Image Library, and the NIMH Data Archive store
-datasets and usually require them to follow specific standards and to include rich metadata, which they
-then expose for search [REF: Subash 2023; archive papers]. A typical use is to publish a series of
-datasets on a topic. The video platform (e.g., YouTube) plays the analogous role, storing videos, indexing 
-them for search, and accepting only certain file types with certain accompanying information.
-
-**Dataset organization standards** solve the problem of organizing collections of files from whole
-experiments. They define folder hierarchies and file names that encode the experimental design, specify
-which file organization standards and formats are allowed, and define the dataset-level metadata that
-must accompany the files, often in sidecar JSON and TSV files. BIDS is the most widely used example in
-neuroscience. Its file names, such as `sub-01_ses-02_task-rest`, encode the subject, session, and task.
-Psych-DS adapts the approach to psychological data, and several archives define simplified,
-BIDS-inspired layouts such as the DANDI layout, the SPARC Dataset Structure, and NeuroBlueprint. A typical
-use is to organize the data from a full experiment. The video counterpart is a playlist or series, which
-groups related videos and names them, for example "season 1, episode 2", so that viewers know where each
-one belongs.
+**Data formats** solve the problem of mapping data to storage. Formats such as HDF5, Zarr, TIFF, NIfTI,
+JSON, YAML, CSV/TSV, and MP4 define how generic data structures such as arrays, tables, key–value pairs,
+images, and video are encoded as bytes. They are usually domain-agnostic and used across all of
+science. A typical use is to serialize generic data structures. The video counterpart is the codec, such
+as H.264 or AV1, which defines how pixels are encoded as bytes and is supported across platforms.
 
 **File organization standards** solve the problem of organizing data and metadata *within* a file, using
 the primitives a data format offers, such as arrays, tables, and dictionaries, and the links between
-them. Where dataset organization standards arrange files in folders, file organization standards define
-what goes inside each file. An NWB file, for example, holds the neural recordings, behavioral
+them. An NWB file, for example, holds the neural recordings, behavioral
 measurements, stimuli, trials and events, and metadata of one session, all aligned on a common timeline.
 OME-TIFF and OME-Zarr (bioimaging), NIX, odML, openMINDS, DICOM, and EDF are further examples. A typical
 use is to organize the data from one session or modality. We use "file" in the broad sense of a
@@ -41,6 +28,18 @@ directory. NWB, for example, can be stored as a single HDF5 file or as a Zarr di
 between the two is made at the data format layer, not by the file organization standard. The video
 counterpart is a container such as MP4, which holds video, audio, subtitle, and chapter tracks on a
 shared timeline so that they stay in sync, regardless of the codec used to compress the video.
+
+**Dataset organization standards** solve the problem of organizing collections of files from whole
+experiments. Where file organization standards define what goes inside each file, dataset organization
+standards arrange the files in folders. They define folder hierarchies and file names that encode the experimental design, specify
+which file organization standards and formats are allowed, and define the dataset-level metadata that
+must accompany the files, often in sidecar JSON and TSV files. BIDS is the most widely used example in
+neuroscience. Its file names, such as `sub-01_ses-02_task-rest`, encode the subject, session, and task.
+Psych-DS adapts the approach to psychological data, and several archives define simplified,
+BIDS-inspired layouts such as the DANDI layout, the SPARC Dataset Structure, and NeuroBlueprint. A typical
+use is to organize the data from a full experiment. The video counterpart is a playlist or series, which
+groups related videos and names them, for example "season 1, episode 2", so that viewers know where each
+one belongs.
 
 **Ontologies and terminologies** solve the problem of defining what terms mean. Terminologies define the
 set of valid terms for a metadata field, for example species names from the NCBI Taxonomy or brain
@@ -55,11 +54,12 @@ defined. Continuing with our analogy, on a video-sharing platform, a fixed list 
 to a terminology and a hierarchy of categories, in which "tennis" is a kind of "sport", corresponds to
 an ontology, in contrast to free-form hashtags that anyone can invent.
 
-**Data formats** solve the problem of mapping data to storage. Formats such as HDF5, Zarr, TIFF, NIfTI,
-JSON, YAML, CSV/TSV, and MP4 define how generic data structures such as arrays, tables, key–value pairs,
-images, and video are encoded as bytes. They are usually domain-agnostic and used across all of
-science. A typical use is to serialize generic data structures. The video counterpart is the codec, such
-as H.264 or AV1, which defines how pixels are encoded as bytes and is supported across platforms.
+**Data archives** solve the problem of publishing, sharing, and discovering data. Neuroscience archives
+such as DANDI, OpenNeuro, EMBER, NEMAR, BossDB, the Brain Image Library, and the NIMH Data Archive store
+datasets and usually require them to follow specific standards and to include rich metadata, which they
+then expose for search [REF: Subash 2023; archive papers]. A typical use is to publish a series of
+datasets on a topic. The video platform (e.g., YouTube) plays the analogous role, storing videos, indexing 
+them for search, and accepting only certain file types with certain accompanying information.
 
 **Schema languages** solve the problem of describing the structure and rules of data formally. Languages
 such as JSON Schema, XML Schema, RDF/OWL, LinkML, and the HDMF specification language specify which
