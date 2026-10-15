@@ -6,7 +6,7 @@ must total ≤350 words (F6).
 
 | # | Item | Section | Status | Source / file |
 |---|---|---|---|---|
-| Fig. 1 | The ecosystem seen through a video-sharing app (single panel) | 2 | spec (analogy from poster slide 6) | `figures/fig1_ecosystem_map/` |
+| Fig. 1 | The ecosystem seen through a video-sharing app (single panel) | 2 | design draft (PowerPoint) | `figures/fig1_ecosystem_map/` |
 | Table 1 | Layer definitions | 2 | draft (below) | poster table |
 | Fig. 2 | The six layers as a stack, and the levels of FAIRness each enables | 3 | spec (replaces poster "FAIR Data Score") | `figures/fig2_fair_levels/` |
 | Table 2 | Levels of FAIRness mapped to layers and FAIR principles | 3 | draft (in `03_fair_integration.md`) | |
@@ -22,13 +22,16 @@ must total ≤350 words (F6).
 
 ## Fig. 1 — The data standards ecosystem seen through a video-sharing app
 
-One screen of a generic video-sharing app, with callouts to the technologies behind each element. Each
-callout names the matching layer of the map and neuroscience examples: the platform that hosts and
-searches videos (data archives; DANDI, EMBER, OpenNeuro); a series with episodes named S1E2 (dataset
-organization standards; BIDS, Psych-DS); the MP4 file that keeps video, audio, and subtitles in sync
-(file organization standards; NWB, OME-Zarr); categories and hashtags (ontologies and terminologies;
-NCBI Taxonomy, HED); the H.264 or AV1 codec (data formats; HDF5, Zarr); and the upload form, whose fields
-and rules come from a specification (schema languages; LinkML, JSON Schema). Table 1 defines the layers.
+![Fig. 1 design draft](../figures/fig1_ecosystem_map/fig1_ecosystem_map_design.png)
+
+**Sharing data, like sharing a video, relies on several technologies that each solve one problem.**
+Uploading a video looks like a single step but depends on six independently developed technologies: the
+platform that hosts and searches videos (1), playlists that organize videos into series of episodes (2),
+the MP4 file that keeps synchronized video, audio, and subtitles together (3), standardized categories
+and hashtags (4), the codec that encodes the bytes (5), and the upload form whose fields and rules come
+from a formal specification (6). Each corresponds to one layer of the neuroscience data standards
+ecosystem, numbered as in Table 1; callouts give neuroscience examples. No single technology makes a video
+shareable; it works because the layers fit together. The same holds for neuroscience data.
 
 ## Table 1 — Layers of the ecosystem
 
@@ -43,6 +46,8 @@ and rules come from a specification (schema languages; LinkML, JSON Schema). Tab
 
 ## Fig. 2 — The layers of the ecosystem and the levels of FAIRness they enable
 
+*Not yet drawn (spec only).*
+
 **Left**, the six layers of the map drawn as a stack in the order of Table 1, from data archives to data
 formats, with schema languages as a column alongside the file and dataset organization standards they
 define. **Right**, a staircase of six levels of FAIRness (0 opaque, 1 readable, 2 interpretable files,
@@ -54,6 +59,8 @@ assessment scores each principle separately (RDA indicators, F-UJI).
 
 ## Fig. 3 — Connections in the ecosystem
 
+![Fig. 3 draft](../figures/fig3_knowledge_graph/fig3_knowledge_graph.png)
+
 Knowledge graph of 72 technologies (nodes) and the 110 connections between them (edges; one line per pair
 of technologies, which may be linked by several relationships), drawn with the six layers as
 rows and the community in which each technology originated as columns; shared, domain-agnostic
@@ -64,12 +71,16 @@ on BIDS, NWB, HED, and EMBER.
 
 ## Fig. 4 — BBQS data and standards coverage
 
+![Fig. 4 draft](../figures/fig4_bbqs_data/fig4_bbqs_data.png)
+
 **(a)** Species groups across 28 awards. **(b)** Behavioral and neural modalities (awards mentioning
 each). **(c)** Behavior types reported by projects (bars: number of awards, n = 22) and, for each, the
 level of guidance in NWB, BIDS, and Psych-DS (supported / in progress / no guidance). Aggregate data
 only.
 
 ## Fig. 5 — The BBQS standards stack
+
+*Not yet drawn (spec only).*
 
 The layer stack from Fig. 2 with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
 (dataset organization); NWB (file organization standard); HED, NCBI Taxonomy, atlases, Cell Ontology
@@ -79,6 +90,8 @@ layout → EMBER; MRI + EEG + events → BIDS + HED → EMBER; questionnaires �
 
 ## Fig. 6 — Bridges and future directions
 
+*Not yet drawn (spec only).*
+
 **(a)** Six types of bridges placed on the map (structural; schema language; semantic — schema
 elements; semantic — values; archive linking; dataset-level common data elements). **(b)** Future
 directions (living data, data reuse, integration across modalities and archives, AI and new technologies, coordination centers)
@@ -86,6 +99,8 @@ and cross-cutting needs (education and training, outreach and community engageme
 support), redrawn from the poster.
 
 ## Supplementary Fig. S1 — Sensitivity to the community rule
+
+![Suppl. Fig. S1 draft](../figures/supplementary/figS1_knowledge_graph_lenient/figS1_knowledge_graph_lenient.png)
 
 As Fig. 3, but classifying a relationship as within community whenever the two technologies share any
 community tag (lenient rule) instead of comparing the communities in which they originated. Most bridges
