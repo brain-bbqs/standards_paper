@@ -8,7 +8,7 @@ must total ≤350 words (F6).
 |---|---|---|---|---|
 | Fig. 1 | The ecosystem seen through a video-sharing app (single panel) | 2 | design draft (PowerPoint) | `figures/fig1_ecosystem_map/` |
 | Table 1 | Layer definitions | 2 | draft (below) | poster table |
-| Fig. 2 | The six layers as a stack, and the levels of FAIRness each enables | 3 | design draft (PowerPoint) | `figures/fig2_fair_levels/` |
+| Fig. 2 | Levels of FAIRness as a staircase, with the layer that adds each level | 3 | design draft (PowerPoint) | `figures/fig2_fair_levels/` |
 | Table 2 | Levels of FAIRness, the layers that enable them, FAIR principles and RDA indicators | 3 | draft (below) | RDA FAIR Data Maturity Model |
 | Fig. 3 | Ecosystem knowledge graph (layers × communities) | 4 | draft | `figures/fig3_knowledge_graph/` (`make fig3`) |
 | Fig. 4 | BBQS data: (a) species, (b) modalities, (c) behaviors × guideline coverage | 5, 8 | draft | `figures/fig4_bbqs_data/` (`make fig4`) |
@@ -49,14 +49,12 @@ shareable; it works because the layers fit together. The same holds for neurosci
 
 ![Fig. 2 design draft](../figures/fig2_fair_levels/fig2_fair_levels_design.png)
 
-**Each level of FAIRness requires technologies from an additional layer.** **Left**, the layers of the
-map as a stack in the order of Table 1, with schema languages beside the file and dataset organization
-standards they define. **Right**, six levels of FAIRness (Table 2) as a staircase. Each step is coloured
-by the layer that adds it and labelled with the FAIR principles and the main RDA FAIR Data Maturity Model
-indicators it addresses; an example dataset climbs the steps (raw binary file → bare HDF5 → validated NWB
-file → BIDS or DANDI-layout dataset → terms from NCBI Taxonomy, an atlas, and HED → DOI on DANDI or
-EMBER). Schema languages make levels 2 and 3 machine-checkable. Suppl. Table S2 shows all indicators by
-layer.
+**Each level of FAIRness requires technologies from an additional layer.** Six levels of FAIRness
+(Table 2) drawn as a staircase. Each step is styled and numbered like the layer in Fig. 1 that adds it, and
+labelled with the FAIR principles and main RDA FAIR Data Maturity Model indicators it addresses. An example
+dataset climbs the steps (raw binary file → bare HDF5 → validated NWB file → BIDS or DANDI-layout dataset →
+terms from NCBI Taxonomy, an atlas, and HED → DOI on DANDI or EMBER). Schema languages make levels 2 and 3
+machine-checkable. Suppl. Table S2 shows all indicators by layer.
 
 ## Table 2 — Levels of FAIRness and the layers that enable them
 
@@ -99,7 +97,7 @@ only.
 
 *Not yet drawn (spec only).*
 
-The layer stack from Fig. 2 with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
+The six layers of the map as a stack (Table 1 order) with BBQS technologies highlighted: EMBER (archive); BIDS, Psych-DS, DANDI layout
 (dataset organization); NWB (file organization standard); HED, NCBI Taxonomy, atlases, Cell Ontology
 (terminologies); HDF5/Zarr, JSON/TSV/CSV, MP4, NIfTI (formats); HDMF, LinkML, BIDS schema (schema
 languages). Arrows show supported paths for typical BBQS data (e.g., video + pose + ephys → NWB → DANDI

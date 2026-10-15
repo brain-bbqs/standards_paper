@@ -53,7 +53,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
             ARRIVE, CDEs; persistent identifiers; access protocols / APIs; provenance; policies and
             licences) in one paragraph and a note under Table 1, not as more layers. State that
             modelling standards (NeuroML, SONATA, PyNN) are out of scope.
-      - [ ] Stack geometry for Fig. 2 and Fig. 5 (Fig. 1 is no longer a layered diagram): keep six stacked
+      - [ ] Stack geometry for Fig. 5, now the only stack diagram (Figs. 1 and 2 have none): keep six stacked
             layers, or draw a four-level structural stack (archives, dataset organization, file
             organization, formats) with ontologies/terminologies and schema languages as cross-cutting
             columns.
@@ -106,17 +106,17 @@ Rebuild generated figures with `make figures`.
       No real platform name, logo, or look in the artwork. Redraw from the poster: Fig. 6b
       (`figures/fig6_bridges_future/`), Suppl. Table S1 (`figures/supplementary/tableS1_standards_comparison/`).
       Use "file organization standards" and the outcome of D8 *(designer / figure lead)*.
-- [ ] **F3** Design Fig. 2 (layer stack beside the six FAIR levels, `figures/fig2_fair_levels/`) and Fig. 5 (BBQS stack,
-      `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
+- [ ] **F3** Final artwork for Fig. 2 (FAIR staircase, `figures/fig2_fair_levels/`, design draft exists) and design of
+      Fig. 5 (BBQS stack, `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
 - [ ] **F4** Review Fig. 4 (`figures/fig4_bbqs_data/fig4_bbqs_data.pdf`): keep the species panel? show
       "exploratory behavior" (no guideline entry) as a gap? *(OR, core)*.
 - [ ] **F5** Polish Fig. 3 and Suppl. Fig. S1 (`figures/fig3_knowledge_graph/`,
       `figures/supplementary/figS1_knowledge_graph_lenient/`): label collisions, how to show shared
       infrastructure edges, colour-blind palette; after D10 and edge verification *(Claude, then OR)*.
 - [ ] **F6** Shorten legends to ≤350 words in total; sans-serif fonts, white backgrounds *(Claude)*.
-- [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): steps are
-      linked to layers by colour instead of connector lines (avoids crossings); confirm or ask the designer for
-      connectors *(OR)*.
+- [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): staircase only,
+      steps styled and numbered like Fig. 1, climbing arrow and summit flag; check the level-to-indicator mapping in
+      the speaker notes *(OR)*.
 - [ ] **F8** Suppl. Table S2 (`figures/supplementary/tableS2_rda_contributions/`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
@@ -186,6 +186,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | D7 Title | "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters) |
 | 2026-10-09 | D8 layer name | Layer 3 renamed "file organization standards" (parallel to "dataset organization standards"); "file" in the broad sense, single file vs. directory is a format choice; knowledge-graph taxonomy label updated (node id `data_standard` unchanged) |
 | 2026-10-09 | FAIR levels | Six levels (0–5) mapped to layers and FAIR principles; presented as an illustration of integration, not a new metric; related to 5-star Linked Open Data, Data Readiness Levels, and FAIR assessment tools |
+| 2026-10-15 | Fig. 2 | Layer stack removed (repeated Fig. 1 and the step labels); steps styled and numbered like Fig. 1; climbing arrow and summit flag; full mapping in the speaker notes. Fig. 5 is now the only stack diagram |
 | 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model: Table 2 lists the main RDA indicators per level; Suppl. Table S2 maps all 41 indicators to the layers that contribute (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
 | 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
 | 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table; numbered in order of first citation; within journal limits |
