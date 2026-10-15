@@ -115,8 +115,8 @@ Rebuild generated figures with `make figures`.
       infrastructure edges, colour-blind palette; after D10 and edge verification *(Claude, then OR)*.
 - [ ] **F6** Shorten legends to ≤350 words in total; sans-serif fonts, white backgrounds *(Claude)*.
 - [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): staircase only,
-      steps styled and numbered like Fig. 1, climbing arrow and summit flag; check the level-to-indicator mapping in
-      the speaker notes *(OR)*.
+      steps styled and numbered like Fig. 1, climbing arrow and summit flag; check the FAIR principles per step (definitions in
+      the speaker notes; the RDA mapping is only in Suppl. Table S2) *(OR)*.
 - [ ] **F8** Suppl. Table S2 (`figures/supplementary/tableS2_rda_contributions/`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
@@ -129,7 +129,7 @@ Rebuild generated figures with `make figures`.
 | C3 | 1 | AI raises the value of consistently structured data | Citation (AI-readiness / foundation models) or soften | Claude |
 | C4 | 2 | Ontologies and terminologies in one layer | Team confirmation (D5); optional citation | core |
 | C5 | 2 | Origin and funding of standards (research vs. vendor vs. archive) | Suppl. Table S1 from the poster; check each entry | core |
-| C6 | 3 | Six levels of FAIRness (Table 2), one per layer that adds a capability, aligned with the RDA FAIR Data Maturity Model; schema languages enable levels 2–3 | Check the main RDA indicators per level (Table 2) and the layer contributions in Suppl. Table S2 with a FAIR expert; check FAIRsFAIR v0.8 metric IDs against the specification. F-UJI demonstration on example datasets deferred until after this review | core (FAIR expert); Claude for F-UJI |
+| C6 | 3 | Six levels of FAIRness (Table 2), one per layer that adds a capability; mapped to the RDA FAIR Data Maturity Model in Suppl. Table S2; schema languages enable levels 2–3 | Check the level and layer assignments of the RDA indicators in Suppl. Table S2 with a FAIR expert; check FAIRsFAIR v0.8 metric IDs against the specification. F-UJI demonstration on example datasets deferred until after this review | core (FAIR expert); Claude for F-UJI |
 | C7 | 5, Methods | BBQS inventory statistics | Clearance (A2); name, date, and maintainer of the inventory | BBQS |
 | C8 | 5 | 13 species groups | Check "fish" and "fly" entries (is "fish" zebrafish?) and whether any award is missed | Claude |
 | C9 | 5 | Terminologies and atlases are sparse for many BBQS species | Citation or examples (atlases for mouse, rat, human, marmoset; few for cowbird, cichlid, acoel) | Claude |
@@ -160,7 +160,7 @@ Rebuild generated figures with `make figures`.
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
 | C35 | 4 | The lenient community rule hides most bridges (26 vs. 2 connections) | Depends on D10 | core |
 | C36 | 7 | R11: DANDI accepts NWB; OpenNeuro, NEMAR, and DABI accept BIDS | Check which standards each archive accepts (DABI: BIDS and NWB?); cite archive pages | Claude |
-| C38 | 3 | RDA indicators condense the contribution of file and dataset organization standards into a few community-standard indicators (R1.3-01D, R1.3-01M); content can be checked only with each standard's validators | FAIR-expert check; optionally cite a discussion of domain-specific FAIR assessment (e.g., FAIR-IMPACT discipline-specific metrics) | core (FAIR expert); Claude |
+| C38 | 3 | RDA indicators condense the contribution of file and dataset organization standards into a few community-standard indicators (R1.3-01D, R1.3-01M; Suppl. Table S2); content can be checked only with each standard's validators | FAIR-expert check; optionally cite a discussion of domain-specific FAIR assessment (e.g., FAIR-IMPACT discipline-specific metrics) | core (FAIR expert); Claude |
 | C37 | 8 | Gaps are being addressed: events/annotations, links to external vocabularies, multi-subject data, via NWB proposals/extensions and BIDS BEPs | OR to pick 2–4 representative examples to cite (e.g., NWBEP001 / PyNWB 4.0 core events; relevant BEPs such as BEP042 or behavior/multi-subject BEPs; NWB multi-subject work) | OR |
 
 ## 5. Knowledge graph (summary of `knowledge_graph/TODO.md`)
@@ -187,7 +187,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | D8 layer name | Layer 3 renamed "file organization standards" (parallel to "dataset organization standards"); "file" in the broad sense, single file vs. directory is a format choice; knowledge-graph taxonomy label updated (node id `data_standard` unchanged) |
 | 2026-10-09 | FAIR levels | Six levels (0–5) mapped to layers and FAIR principles; presented as an illustration of integration, not a new metric; related to 5-star Linked Open Data, Data Readiness Levels, and FAIR assessment tools |
 | 2026-10-15 | Fig. 2 | Layer stack removed (repeated Fig. 1 and the step labels); steps styled and numbered like Fig. 1; climbing arrow and summit flag; full mapping in the speaker notes. Fig. 5 is now the only stack diagram |
-| 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model: Table 2 lists the main RDA indicators per level; Suppl. Table S2 maps all 41 indicators to the layers that contribute (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
+| 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model in Suppl. Table S2 only (level and contributing layers for all 41 indicators; removed from Table 2 and Fig. 2 as too complex for the main text) (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
 | 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
 | 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table; numbered in order of first citation; within journal limits |
 | 2026-10-09 | Figures folder | `figures/` with one folder per item, `make figures`, `make check` |

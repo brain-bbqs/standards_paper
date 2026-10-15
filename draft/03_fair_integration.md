@@ -43,11 +43,11 @@ To illustrate why integration across layers is needed, Table 2 describes six lev
 neuroscience data. The levels are not a new metric. Their purpose is to show which layer of the map
 contributes at each step, so each level is defined by what a third party can do with the data and tied
 to the layer whose technologies make it possible (Fig. 2) [TODO-C6]. To anchor the levels in established
-practice, Table 2 lists for each level the main indicators it adds from the Research Data Alliance (RDA)
-FAIR Data Maturity Model, which translates the FAIR principles into 41 indicators for data and metadata
-[REF: RDA FDMM 2020; Bahim 2020]. The same indicators underlie the FAIRsFAIR metrics implemented by the
-automated assessment tool F-UJI [REF: Devaraju 2021a; Devaraju 2021b]. Many indicators depend on more
-than one layer, and Suppl. Table S2 shows which layers contribute to each. Staged scales of this kind
+practice, Suppl. Table S2 maps them to the Research Data Alliance (RDA) FAIR Data Maturity Model, which
+translates the FAIR principles into 41 indicators for data and metadata [REF: RDA FDMM 2020; Bahim
+2020] and underlies the FAIRsFAIR metrics implemented by the automated assessment tool F-UJI
+[REF: Devaraju 2021a; Devaraju 2021b]. The table also shows that many indicators depend on more than
+one layer. Staged scales of this kind
 are also familiar from Data Readiness Levels, which adapt the Technology Readiness Levels used in
 engineering to data [REF: Lawrence 2017; Mankins 1995]. Assessment tools, in contrast, score each
 principle separately, and different tools can give different results for the same dataset
@@ -69,7 +69,7 @@ The alignment with the RDA indicators also shows where standards carry the most 
 for findability and accessibility concern the published record, are met mainly by archives, and are
 well suited to automated testing. The contribution of file and dataset organization standards, by
 contrast, is condensed into a few indicators, chiefly that data and metadata comply with a community
-standard (RDA-R1.3-01D, RDA-R1.3-01M). Whether data actually have the structure, units, timing, and
+standard (Suppl. Table S2). Whether data actually have the structure, units, timing, and
 required metadata that a standard defines can be checked only with that standard's own validators, such
 as the NWB Inspector and the BIDS Validator [TODO-C38].
 
