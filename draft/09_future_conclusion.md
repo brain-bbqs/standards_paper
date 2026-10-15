@@ -52,8 +52,8 @@ Three needs cut across these directions.
 *(target ~200 words)*
 
 The neuroscience data standards ecosystem is complex, and much of the confusion about what a data
-standard is comes from treating its parts as one. Distinguishing six layers, namely archives, dataset
-organization standards, file organization standards, ontologies and terminologies, data formats, and
+standard is comes from treating its parts as one. Distinguishing six layers, namely data formats, file
+organization standards, dataset organization standards, ontologies and terminologies, archives, and
 schema languages, each of which solves a different problem, gives researchers and developers a shared
 map, shows that FAIR data come from integrating technologies across layers rather than from any single
 standard, and makes visible where a project crosses a boundary and should build a bridge instead of

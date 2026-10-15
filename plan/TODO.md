@@ -117,6 +117,8 @@ Rebuild generated figures with `make figures`.
 - [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): staircase only,
       steps styled and numbered like Fig. 1, climbing arrow and summit flag; check the FAIR principles per step (definitions in
       the speaker notes; the RDA mapping is only in Suppl. Table S2) *(OR)*.
+- [ ] **F9** Re-export the PNG previews of Fig. 1 and Fig. 2 from PowerPoint after the layer renumbering
+      (the .pptx files are updated; the PNGs still show the old numbers) *(OR)*.
 - [ ] **F8** Suppl. Table S2 (in `draft/12_figures_tables.md`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
@@ -186,6 +188,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | D7 Title | "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters) |
 | 2026-10-09 | D8 layer name | Layer 3 renamed "file organization standards" (parallel to "dataset organization standards"); "file" in the broad sense, single file vs. directory is a format choice; knowledge-graph taxonomy label updated (node id `data_standard` unchanged) |
 | 2026-10-09 | FAIR levels | Six levels (0–5) mapped to layers and FAIR principles; presented as an illustration of integration, not a new metric; related to 5-star Linked Open Data, Data Readiness Levels, and FAIR assessment tools |
+| 2026-10-15 | Layer order | Layers numbered bottom-up to match the levels of FAIRness: 1 data formats, 2 file organization, 3 dataset organization, 4 ontologies & terminologies, 5 data archives, 6 schema languages. Applied to Table 1 (new # column), Section 2 (paragraph order), Fig. 1 and Fig. 2 badges, Fig. 1 caption, Fig. 5 legend, Sections 1 and 9 |
 | 2026-10-15 | Fig. 2 | Layer stack removed (repeated Fig. 1 and the step labels); steps styled and numbered like Fig. 1; climbing arrow and summit flag; full mapping in the speaker notes. Fig. 5 is now the only stack diagram |
 | 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model in Suppl. Table S2 only (level and contributing layers for all 41 indicators; removed from Table 2 and Fig. 2 as too complex for the main text) (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
 | 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
