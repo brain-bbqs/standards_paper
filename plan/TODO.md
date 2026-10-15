@@ -117,7 +117,7 @@ Rebuild generated figures with `make figures`.
 - [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): staircase only,
       steps styled and numbered like Fig. 1, climbing arrow and summit flag; check the FAIR principles per step (definitions in
       the speaker notes; the RDA mapping is only in Suppl. Table S2) *(OR)*.
-- [ ] **F8** Suppl. Table S2 (`figures/supplementary/tableS2_rda_contributions/`): review the layer contributions
+- [ ] **F8** Suppl. Table S2 (in `draft/12_figures_tables.md`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
 ## 4. Claims that need support

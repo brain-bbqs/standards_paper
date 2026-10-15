@@ -18,7 +18,6 @@ be drawn or redrawn by hand should be saved here together with their editable so
 | Fig. 6 | [`fig6_bridges_future/`](fig6_bridges_future/) | Bridges at every layer (a) and future directions and needs (b) | 8, 9 | to design / redraw (designer) |
 | Suppl. Fig. S1 | [`supplementary/figS1_knowledge_graph_lenient/`](supplementary/figS1_knowledge_graph_lenient/) | Knowledge graph with the lenient community rule (sensitivity) | 4 | generated draft |
 | Suppl. Table S1 | [`supplementary/tableS1_standards_comparison/`](supplementary/tableS1_standards_comparison/) | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | to transcribe from poster |
-| Suppl. Table S2 | [`supplementary/tableS2_rda_contributions/`](supplementary/tableS2_rda_contributions/) | Contributions of each layer to the 41 RDA FAIR indicators | 3 | draft (Markdown table) |
 
 If figures are renumbered, rename the folder and the files in it, and update this table, the
 Makefile, `draft/12_figures_tables.md`, and `plan/TODO.md` (`make check` reports broken paths).

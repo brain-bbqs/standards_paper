@@ -17,7 +17,7 @@ must total ≤350 words (F6).
 | Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | `figures/fig6_bridges_future/` |
 | Suppl. Fig. S1 | Knowledge graph with the lenient community rule (sensitivity) | 4 | draft | `figures/supplementary/figS1_knowledge_graph_lenient/` (`make figS1`) |
 | Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | poster | `figures/supplementary/tableS1_standards_comparison/` |
-| Suppl. Table S2 | The 41 RDA FAIR indicators mapped to the levels of FAIRness and the layers that contribute | 3 | draft (below) | `figures/supplementary/tableS2_rda_contributions/` |
+| Suppl. Table S2 | The 41 RDA FAIR indicators mapped to the levels of FAIRness and the layers that contribute | 3 | draft (below) | RDA FAIR Data Maturity Model v1.0; FAIRsFAIR metrics v0.8 |
 
 ---
 
