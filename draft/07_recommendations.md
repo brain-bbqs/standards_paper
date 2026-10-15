@@ -10,27 +10,6 @@ how BBQS implements these recommendation at the end of this section. They are
 community guidance, not a ranking of standards, and the guideline is updated as standards evolve.
 Table 3 gives an overview by data type.
 
-**Table 3. Recommended standards for common BBQS data types** (✓ supported; ext. = via an extension or
-proposal in progress; — no established representation yet). *Draft; to be checked by the NWB, BIDS, and
-Psych-DS teams* [TODO-C17].
-
-| Data type | NWB | BIDS | Psych-DS | Notes |
-|---|---|---|---|---|
-| Extracellular ephys (spikes, LFP) | ✓ (recommended) | ext. (BEP032) | — | |
-| Intracellular ephys (patch clamp) | ✓ (recommended) | — | — | |
-| Calcium / optical physiology | ✓ (recommended) | — | — | |
-| EEG / MEG / iEEG, standalone | ✓ (combined studies) | ✓ (recommended) | — | EDF as interchange format |
-| MRI / fMRI / PET | — | ✓ (recommended) | — | |
-| Optogenetic / electrical stimulation | ✓ (recommended) | — | — | |
-| Raw behavioral video | ✓ (linked MP4 etc.) | ext. (proposals in progress) | ✓ (raw folder) | |
-| Pose / motion tracking | ✓ (ndx-pose) | ✓ (Motion-BIDS) | tabular only | |
-| Eye tracking | ✓ | ext. (BEP020) | tabular only | |
-| Wearable sensors | ✓ (TimeSeries) | ✓ (physio recordings) | ✓ (CSV) | |
-| Audio / vocalizations | ✓ (TimeSeries + intervals) | — | — | |
-| Structured tasks / events | ✓ (core events since NWB 2.10; ndx-structured-behavior) | ✓ (task events) | — | HED in both |
-| Questionnaires / surveys | — | partial | ✓ (recommended) | |
-| Social interactions, feeding, facial expressions, home-cage monitoring, VR, force plates, EMG | — | — / ext. | — | **Gaps** (Section 8) |
-
 ## Choosing standards
 
 **R1. Choose by the structure of the experiment, not only by modality.** If behavior must be aligned
