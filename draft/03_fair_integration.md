@@ -47,15 +47,17 @@ practice, Suppl. Table S2 maps them to the Research Data Alliance (RDA) FAIR Dat
 translates the FAIR principles into 41 indicators for data and metadata [REF: RDA FDMM 2020; Bahim
 2020] and underlies the FAIRsFAIR metrics implemented by the automated assessment tool F-UJI
 [REF: Devaraju 2021a; Devaraju 2021b]. The table also shows that many indicators depend on more than
-one layer. Staged scales of this kind
-are also familiar from Data Readiness Levels, which adapt the Technology Readiness Levels used in
-engineering to data [REF: Lawrence 2017; Mankins 1995]. Assessment tools, in contrast, score each
+one layer. Staged scales of this kind are also familiar from Data Readiness Levels, which adapt the
+Technology Readiness Levels used in engineering to data [REF: Lawrence 2017; Mankins 1995]. Assessment tools, in contrast, score each
 principle separately, and different tools can give different results for the same dataset
 [REF: Wilkinson 2019; Sun 2022].
 
 File and dataset organization standards are defined in schema languages, which make conformance at
 levels 2 and 3 machine-checkable by validators such as the NWB Inspector and the BIDS Validator. Schema
-languages therefore do not add a level of their own but make levels 2 and 3 verifiable.
+languages therefore do not add a level of their own but make levels 2 and 3 verifiable. These
+validators are also the only way to check whether data actually have the structure, units, timing, and
+metadata that a standard requires; general FAIR assessments can test only whether data follow a
+community standard [TODO-C38].
 
 Two caveats apply. First, the levels describe a typical path, not a strict sequence. Levels 2 and 3
 complement each other. In a BIDS dataset of NIfTI images, for example, much of the metadata lives in
@@ -64,14 +66,6 @@ general-purpose repository makes it findable and accessible but not interoperabl
 why formal assessments score each principle separately. Second, the levels describe data, not the
 standards themselves. The maturity of a standard, including its specification, tools, validators, and
 adoption, is a separate question that technology readiness scales are better suited to [TODO-C34].
-
-The alignment with the RDA indicators also shows where standards carry the most weight. Most indicators
-for findability and accessibility concern the published record, are met mainly by archives, and are
-well suited to automated testing. The contribution of file and dataset organization standards, by
-contrast, is condensed into a few indicators, chiefly that data and metadata comply with a community
-standard (Suppl. Table S2). Whether data actually have the structure, units, timing, and
-required metadata that a standard defines can be checked only with that standard's own validators, such
-as the NWB Inspector and the BIDS Validator [TODO-C38].
 
 Read from top to bottom, Table 2 shows that each step up requires technologies from an additional
 layer of the map. A format alone reaches level 1, a file organization standard is needed for level 2, a
