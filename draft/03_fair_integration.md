@@ -39,25 +39,19 @@ each consortium builds and maintains the integration itself.
 
 ## Levels of FAIRness, and where each layer contributes
 
-To illustrate why integration across layers is needed, Table 2 describes six levels of FAIRness for neuroscience data. 
-The levels are not a new metric. Their purpose is to illustrate which layer of the map
-contributes at each step, so each level is defined by what a third party can do with the data, mapped to
-the FAIR principles it mainly addresses, and tied to the layer whose technologies make it possible (Fig.
-2) [TODO-C6]. The idea of a staged scale is familiar from five-star Linked Open Data [REF: Berners-Lee
-2006] and from Data Readiness Levels, which adapt the Technology Readiness Levels used in engineering to
-data [REF: Lawrence 2017; Mankins 1995]. For assessing the FAIRness of a specific dataset, the community
-has developed maturity indicators, the Research Data Alliance FAIR Data Maturity Model, and automated
-tools such as F-UJI, which score each principle separately [REF: Wilkinson 2019; Bahim 2020; Devaraju
-2021].
-
-| Level | What the data offer | Layer that adds it | FAIR principles mainly addressed | Example |
-|---|---|---|---|---|
-| 0, opaque | Bytes that can only be read with the original software or documentation | None | None | Proprietary acquisition files without a public specification; raw `.bin` voltage traces |
-| 1, readable | Data in an open, documented format that generic tools can read, with technical metadata such as data types and dimensions | Data formats | I1 (formal, shared representation) | Bare HDF5, Zarr, TIFF, or CSV files |
-| 2, interpretable files | Each file, for example one recording session, has a standardized structure and contains the metadata needed to understand it | File organization standards\* | R1 (rich metadata), R1.3 (community standards) | A validated NWB file |
-| 3, organized dataset | The whole experiment can be navigated, with consistent file names, folder structure, and dataset-level metadata | Dataset organization standards\* | R1, R1.3, F2 (data described with rich metadata) | A validated BIDS or DANDI-layout dataset |
-| 4, interoperable | Metadata values are drawn from shared terminologies and ontologies, so that datasets can be searched and combined with others | Ontologies and terminologies | I2 (FAIR vocabularies), I3 (qualified references) | NWB or BIDS data with species from the NCBI Taxonomy, locations from an atlas, and events annotated with HED |
-| 5, findable and reusable record | Data are deposited with a persistent identifier, searchable metadata, licence, and provenance, and can be retrieved through a standard protocol | Data archives (with persistent identifiers) | F1–F4, A1–A2, R1.1 (licence), R1.2 (provenance) | An annotated BIDS and NWB dataset with a DOI on DANDI or EMBER |
+To illustrate why integration across layers is needed, Table 2 describes six levels of FAIRness for
+neuroscience data. The levels are not a new metric. Their purpose is to show which layer of the map
+contributes at each step, so each level is defined by what a third party can do with the data and tied
+to the layer whose technologies make it possible (Fig. 2) [TODO-C6]. To anchor the levels in established
+practice, Table 2 lists for each level the main indicators it adds from the Research Data Alliance (RDA)
+FAIR Data Maturity Model, which translates the FAIR principles into 41 indicators for data and metadata
+[REF: RDA FDMM 2020; Bahim 2020]. The same indicators underlie the FAIRsFAIR metrics implemented by the
+automated assessment tool F-UJI [REF: Devaraju 2021a; Devaraju 2021b]. Many indicators depend on more
+than one layer, and Suppl. Table S2 shows which layers contribute to each. Staged scales of this kind
+are also familiar from Data Readiness Levels, which adapt the Technology Readiness Levels used in
+engineering to data [REF: Lawrence 2017; Mankins 1995]. Assessment tools, in contrast, score each
+principle separately, and different tools can give different results for the same dataset
+[REF: Wilkinson 2019; Sun 2022].
 
 File and dataset organization standards are defined in schema languages, which make conformance at
 levels 2 and 3 machine-checkable by validators such as the NWB Inspector and the BIDS Validator. Schema
@@ -71,7 +65,15 @@ why formal assessments score each principle separately. Second, the levels descr
 standards themselves. The maturity of a standard, including its specification, tools, validators, and
 adoption, is a separate question that technology readiness scales are better suited to [TODO-C34].
 
-Read from top to bottom, the table shows that each step up requires technologies from an additional
+The alignment with the RDA indicators also shows where standards carry the most weight. Most indicators
+for findability and accessibility concern the published record, are met mainly by archives, and are
+well suited to automated testing. The contribution of file and dataset organization standards, by
+contrast, is condensed into a few indicators, chiefly that data and metadata comply with a community
+standard (RDA-R1.3-01D, RDA-R1.3-01M). Whether data actually have the structure, units, timing, and
+required metadata that a standard defines can be checked only with that standard's own validators, such
+as the NWB Inspector and the BIDS Validator [TODO-C38].
+
+Read from top to bottom, Table 2 shows that each step up requires technologies from an additional
 layer of the map. A format alone reaches level 1, a file organization standard is needed for level 2, a
 dataset organization standard for level 3, terminologies and ontologies for level 4, and an archive for
 level 5. This is the practical reason why **integration across the ecosystem matters more than the

@@ -1,22 +1,23 @@
 # Display items
 
 Files: `figures/` (one folder per item; `figures/README.md`). Status: **spec** = described only; **draft** = generated draft exists; **poster** = redraw from poster.
-Scientific Data recommends at most 8 figures and 10 tables; the 6 figures and 3 tables fit. Figure legends
+Scientific Data recommends at most 8 figures and 10 tables; the 6 figures and 3 tables fit (tables are kept here, not in the section files). Figure legends
 must total ≤350 words (F6).
 
 | # | Item | Section | Status | Source / file |
 |---|---|---|---|---|
 | Fig. 1 | The ecosystem seen through a video-sharing app (single panel) | 2 | design draft (PowerPoint) | `figures/fig1_ecosystem_map/` |
 | Table 1 | Layer definitions | 2 | draft (below) | poster table |
-| Fig. 2 | The six layers as a stack, and the levels of FAIRness each enables | 3 | spec (replaces poster "FAIR Data Score") | `figures/fig2_fair_levels/` |
-| Table 2 | Levels of FAIRness mapped to layers and FAIR principles | 3 | draft (in `03_fair_integration.md`) | |
+| Fig. 2 | The six layers as a stack, and the levels of FAIRness each enables | 3 | design draft (PowerPoint) | `figures/fig2_fair_levels/` |
+| Table 2 | Levels of FAIRness, the layers that enable them, FAIR principles and RDA indicators | 3 | draft (below) | RDA FAIR Data Maturity Model |
 | Fig. 3 | Ecosystem knowledge graph (layers × communities) | 4 | draft | `figures/fig3_knowledge_graph/` (`make fig3`) |
 | Fig. 4 | BBQS data: (a) species, (b) modalities, (c) behaviors × guideline coverage | 5, 8 | draft | `figures/fig4_bbqs_data/` (`make fig4`) |
 | Fig. 5 | BBQS standards stack on the map | 6 | spec | `figures/fig5_bbqs_stack/` |
-| Table 3 | Recommended standards by BBQS data type | 7 | draft (in `07_recommendations.md`) | BBQS guideline |
+| Table 3 | Recommended standards by BBQS data type | 7 | draft (below) | BBQS guideline |
 | Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | `figures/fig6_bridges_future/` |
 | Suppl. Fig. S1 | Knowledge graph with the lenient community rule (sensitivity) | 4 | draft | `figures/supplementary/figS1_knowledge_graph_lenient/` (`make figS1`) |
 | Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | poster | `figures/supplementary/tableS1_standards_comparison/` |
+| Suppl. Table S2 | Contributions of each layer to the 41 RDA FAIR indicators | 3 | draft (below) | `figures/supplementary/tableS2_rda_contributions/` |
 
 ---
 
@@ -46,16 +47,32 @@ shareable; it works because the layers fit together. The same holds for neurosci
 
 ## Fig. 2 — The layers of the ecosystem and the levels of FAIRness they enable
 
-*Not yet drawn (spec only).*
+![Fig. 2 design draft](../figures/fig2_fair_levels/fig2_fair_levels_design.png)
 
-**Left**, the six layers of the map drawn as a stack in the order of Table 1, from data archives to data
-formats, with schema languages as a column alongside the file and dataset organization standards they
-define. **Right**, a staircase of six levels of FAIRness (0 opaque, 1 readable, 2 interpretable files,
-3 organized dataset, 4 interoperable, 5 findable and reusable record; Table 2), each labeled with the
-FAIR principles it mainly addresses. Connectors link each step to the layer whose technologies make it
-possible. An example neuroscience dataset climbs the steps (bare HDF5 → validated NWB file → BIDS or
-DANDI-layout dataset → NCBI Taxonomy, atlas, and HED annotations → DOI on DANDI or EMBER). Formal
-assessment scores each principle separately (RDA indicators, F-UJI).
+**Each level of FAIRness requires technologies from an additional layer.** **Left**, the layers of the
+map as a stack in the order of Table 1, with schema languages beside the file and dataset organization
+standards they define. **Right**, six levels of FAIRness (Table 2) as a staircase. Each step is coloured
+by the layer that adds it and labelled with the FAIR principles and the main RDA FAIR Data Maturity Model
+indicators it addresses; an example dataset climbs the steps (raw binary file → bare HDF5 → validated NWB
+file → BIDS or DANDI-layout dataset → terms from NCBI Taxonomy, an atlas, and HED → DOI on DANDI or
+EMBER). Schema languages make levels 2 and 3 machine-checkable. Suppl. Table S2 shows all indicators by
+layer.
+
+## Table 2 — Levels of FAIRness and the layers that enable them
+
+Each level is defined by what a third party can do with the data. *Main RDA indicators* lists the
+indicators of the RDA FAIR Data Maturity Model [REF: RDA FDMM 2020] that a level mainly adds (prefix
+"RDA-" omitted; M = metadata, D = data). Many indicators depend on several layers (Suppl. Table S2).
+\* Schema languages make conformance at levels 2 and 3 machine-checkable.
+
+| Level | What the data offer | Layer that adds it | FAIR principles mainly addressed | Main RDA indicators | Example |
+|---|---|---|---|---|---|
+| 0, opaque | Bytes that can only be read with the original software or documentation | None | None | None | Proprietary acquisition files without a public specification; raw `.bin` voltage traces |
+| 1, readable | Data in an open, documented format that generic tools can read, with technical metadata such as data types and dimensions | Data formats | I1 (formal, shared representation) | I1-01D | Bare HDF5, Zarr, TIFF, or CSV files |
+| 2, interpretable files | Each file, for example one recording session, has a standardized structure and contains the metadata needed to understand it | File organization standards\* | R1 (rich metadata), R1.3 (community standards) | R1.3-01D, R1.3-02D, I1-02D | A validated NWB file |
+| 3, organized dataset | The whole experiment can be navigated, with consistent file names, folder structure, and dataset-level metadata | Dataset organization standards\* | R1, R1.3, F2 (data described with rich metadata) | R1.3-01M, R1.3-02M, I1-01M, I1-02M, R1-01M | A validated BIDS or DANDI-layout dataset |
+| 4, interoperable | Metadata values are drawn from shared terminologies and ontologies, so that datasets can be searched and combined with others | Ontologies and terminologies | I2 (FAIR vocabularies), I3 (qualified references) | I2-01M, I2-01D, I3-01M to I3-04M, I3-01D, I3-02D | NWB or BIDS data with species from the NCBI Taxonomy, locations from an atlas, and events annotated with HED |
+| 5, findable and reusable record | Data are deposited with a persistent identifier, searchable metadata, licence, and provenance, and can be retrieved through a standard protocol | Data archives (with persistent identifiers) | F1–F4, A1–A2, R1.1 (licence), R1.2 (provenance) | F1-01M to F4-01M, A1-01M to A2-01M, R1.1-01M to R1.1-03M, R1.2-01M, R1.2-02M (F2 and R1.2 jointly with levels 2–3) | An annotated BIDS and NWB dataset with a DOI on DANDI or EMBER |
 
 ## Fig. 3 — Connections in the ecosystem
 
@@ -88,6 +105,29 @@ The layer stack from Fig. 2 with BBQS technologies highlighted: EMBER (archive);
 languages). Arrows show supported paths for typical BBQS data (e.g., video + pose + ephys → NWB → DANDI
 layout → EMBER; MRI + EEG + events → BIDS + HED → EMBER; questionnaires → Psych-DS → EMBER).
 
+## Table 3 — Recommended standards for common BBQS data types
+
+✓ supported; ext. = via an extension or proposal in progress; — no established representation yet.
+*Draft; to be checked by the NWB, BIDS, and
+Psych-DS teams* [TODO-C17].
+
+| Data type | NWB | BIDS | Psych-DS | Notes |
+|---|---|---|---|---|
+| Extracellular ephys (spikes, LFP) | ✓ (recommended) | ext. (BEP032) | — | |
+| Intracellular ephys (patch clamp) | ✓ (recommended) | — | — | |
+| Calcium / optical physiology | ✓ (recommended) | — | — | |
+| EEG / MEG / iEEG, standalone | ✓ (combined studies) | ✓ (recommended) | — | EDF as interchange format |
+| MRI / fMRI / PET | — | ✓ (recommended) | — | |
+| Optogenetic / electrical stimulation | ✓ (recommended) | — | — | |
+| Raw behavioral video | ✓ (linked MP4 etc.) | ext. (proposals in progress) | ✓ (raw folder) | |
+| Pose / motion tracking | ✓ (ndx-pose) | ✓ (Motion-BIDS) | tabular only | |
+| Eye tracking | ✓ | ext. (BEP020) | tabular only | |
+| Wearable sensors | ✓ (TimeSeries) | ✓ (physio recordings) | ✓ (CSV) | |
+| Audio / vocalizations | ✓ (TimeSeries + intervals) | — | — | |
+| Structured tasks / events | ✓ (core events since NWB 2.10; ndx-structured-behavior) | ✓ (task events) | — | HED in both |
+| Questionnaires / surveys | — | partial | ✓ (recommended) | |
+| Social interactions, feeding, facial expressions, home-cage monitoring, VR, force plates, EMG | — | — / ext. | — | **Gaps** (Section 8) |
+
 ## Fig. 6 — Bridges and future directions
 
 *Not yet drawn (spec only).*
@@ -105,3 +145,55 @@ support), redrawn from the poster.
 As Fig. 3, but classifying a relationship as within community whenever the two technologies share any
 community tag (lenient rule) instead of comparing the communities in which they originated. Most bridges
 disappear, because technologies are often tagged with the communities they reached through those bridges.
+
+## Supplementary Table S2 — Contributions of each layer to the RDA FAIR indicators
+
+All 41 indicators of the RDA FAIR Data Maturity Model [REF: RDA FDMM 2020] (prefix "RDA-" omitted; M =
+metadata, D = data) with their RDA priority, the layers that contribute (● primary, ○ supporting), and the
+closest FAIRsFAIR metric used by F-UJI (v0.8; — none) [REF: FAIRsFAIR metrics v0.8]. Primary / any
+contribution: Archives 24 / 32; Dataset org. 9 / 19; File org. 12 / 17; Ontologies & terms 3 / 8; Formats 2 / 4; Schema languages 5 / 7. *Draft; to be checked
+with a FAIR expert* [TODO-C6].
+
+| Indicator | Short text | Priority | Archives | Dataset org. | File org. | Ontologies & terms | Formats | Schema lang. | How the layers contribute | FAIRsFAIR metric |
+|---|---|---|:-:|:-:|:-:|:-:|:-:|:-:|---|---|
+| F1-01M | Metadata identified by a persistent identifier | essential | ● |  |  |  |  |  | Archive mints a DOI for the dataset record | FsF-F1-02MD |
+| F1-01D | Data identified by a persistent identifier | essential | ● |  |  |  |  |  | DOI for each published dataset version | FsF-F1-02MD |
+| F1-02M | Metadata identified by a globally unique identifier | essential | ● | ○ |  |  |  |  | Archive identifiers; dataset description can record the DOI (BIDS) | FsF-F1-01MD |
+| F1-02D | Data identified by a globally unique identifier | essential | ● |  | ○ |  |  |  | Archive asset identifiers; files carry their own UUID (NWB `object_id`) | FsF-F1-01MD |
+| F2-01M | Rich metadata is provided to allow discovery | essential | ● | ● | ● | ○ |  |  | Archives index metadata extracted from NWB files and BIDS/Psych-DS descriptions; terms add searchable meaning | FsF-F2-01M |
+| F3-01M | Metadata includes the identifier for the data | essential | ● |  |  |  |  |  | Landing page links record and data | FsF-F3-01M |
+| F4-01M | Metadata can be harvested and indexed | essential | ● |  |  |  |  | ○ | Archive exposes metadata (e.g., schema.org JSON-LD) to search engines | FsF-F4-01M |
+| A1-01M | Metadata contains information on how to access the data | important | ● |  |  |  |  |  | Access conditions on the landing page | FsF-A1-01M |
+| A1-02M | Metadata can be accessed manually | essential | ● |  |  |  |  |  | Web portal | — |
+| A1-02D | Data can be accessed manually | essential | ● |  |  |  |  |  | Download from the portal | — |
+| A1-03M | Metadata identifier resolves to a metadata record | essential | ● |  |  |  |  |  | DOI resolves to landing page | FsF-A1-02MD |
+| A1-03D | Data identifier resolves to a digital object | essential | ● |  |  |  |  |  | Identifier resolves to the data | FsF-A1-02MD |
+| A1-04M | Metadata accessed through a standardised protocol | essential | ● |  |  |  |  |  | HTTPS / REST API | FsF-A1-02MD |
+| A1-04D | Data accessible through a standardised protocol | essential | ● |  |  |  | ○ |  | HTTPS / S3; cloud-friendly formats (Zarr, HDF5) allow partial reads | FsF-A1-02MD |
+| A1-05D | Data can be accessed automatically | important | ● |  |  |  | ○ |  | APIs and command-line clients; cloud-friendly formats | — |
+| A1.1-01M | Metadata accessible through a free access protocol | essential | ● |  |  |  |  |  | Open web protocols | FsF-A1.1-01MD |
+| A1.1-01D | Data accessible through a free access protocol | important | ● |  |  |  |  |  | Open web protocols | FsF-A1.1-01MD |
+| A1.2-01D | Data access supports authentication and authorisation | useful | ● |  |  |  |  |  | Controlled-access tiers (e.g., for human data) | FsF-A1.2-01MD |
+| A2-01M | Metadata remains available after data are no longer available | essential | ● |  |  |  |  |  | Archive preservation policy | — |
+| I1-01M | Metadata uses knowledge representation in a standardised format | important | ○ | ● | ● |  | ● |  | Metadata in JSON/TSV sidecars (BIDS, Psych-DS) or HDF5 attributes (NWB) | FsF-I1-01M |
+| I1-01D | Data uses knowledge representation in a standardised format | important |  |  | ○ |  | ● |  | Open, documented formats (HDF5, Zarr, NIfTI, TIFF, CSV) | FsF-R1.3-02D |
+| I1-02M | Metadata uses machine-understandable knowledge representation | important | ○ | ● | ● |  |  | ● | Metadata fields defined in machine-readable schemas (BIDS schema, HDMF/NWB specification, LinkML, JSON-LD) | FsF-I1-01M |
+| I1-02D | Data uses machine-understandable knowledge representation | important |  | ○ | ● |  |  | ● | Data types defined in a schema language (e.g., NWB types in the HDMF language) | — |
+| I2-01M | Metadata uses FAIR-compliant vocabularies | important |  | ○ | ○ | ● |  |  | Terms from NCBI Taxonomy, Uberon, atlases, Cognitive Atlas; standards define the fields that hold them | FsF-I2-01M |
+| I2-01D | Data uses FAIR-compliant vocabularies | useful |  | ○ | ○ | ● |  |  | Annotations in the data, e.g., HED strings for events | — |
+| I3-01M | Metadata includes references to other metadata | important | ● | ○ |  | ○ |  |  | Archive links related datasets and publications | FsF-I3-01M |
+| I3-02M | Metadata includes references to other data | useful | ● | ● |  |  |  |  | Dataset descriptions reference source data (BIDS `Sources`, derivatives) | FsF-I3-01M |
+| I3-03M | Metadata includes qualified references to other metadata | important | ○ | ○ |  | ● |  |  | Typed relations from ontologies; DataCite relation types | FsF-I3-01M |
+| I3-04M | Metadata includes qualified references to other data | useful | ○ | ● | ○ |  |  |  | Typed links between files (BIDS `IntendedFor`); DataCite relation types | FsF-I3-01M |
+| I3-01D | Data includes references to other data | useful |  | ○ | ● |  |  |  | Links inside files (NWB links, external video files) | — |
+| I3-02D | Data includes qualified references to other data | useful |  | ○ | ● | ○ |  |  | Typed links in NWB; links to ontology terms (HERD) | — |
+| R1-01M | Plurality of accurate and relevant attributes for reuse | essential | ○ | ● | ● | ○ |  |  | Required and recommended metadata defined by the standards | FsF-R1-01M |
+| R1.1-01M | Metadata includes the licence | essential | ● | ○ |  |  |  |  | Archive licence; BIDS `License` field | FsF-R1.1-01M |
+| R1.1-02M | Metadata refers to a standard reuse licence | important | ● |  |  |  |  |  | Standard licences (e.g., CC0, CC-BY) | FsF-R1.1-01M |
+| R1.1-03M | Metadata refers to a machine-understandable reuse licence | important | ● |  |  |  |  |  | Licence as SPDX identifier or URI | FsF-R1.1-01M |
+| R1.2-01M | Provenance according to community-specific standards | important | ○ | ● | ● |  |  |  | NWB source and processing metadata; BIDS `GeneratedBy` and derivatives | FsF-R1.2-01M |
+| R1.2-02M | Provenance according to a cross-domain language | useful | ○ |  |  | ○ |  | ● | PROV-based models (W3C PROV, NIDM) | FsF-R1.2-01M |
+| R1.3-01M | Metadata complies with a community standard | essential | ○ | ● | ● |  |  | ○ | Dataset and file metadata follow BIDS, Psych-DS, or NWB | FsF-R1.3-01M |
+| R1.3-02M | Metadata expressed in a machine-understandable community standard | essential |  | ● | ● |  |  | ● | Validators check metadata against the standard's schema | FsF-R1.3-01M |
+| R1.3-01D | Data complies with a community standard | essential |  | ○ | ● |  |  |  | Files follow NWB, OME-Zarr, or other file organization standards | FsF-R1.3-02D |
+| R1.3-02D | Data expressed in a machine-understandable community standard | important |  |  | ● |  |  | ● | File structure defined in a schema and checked by validators (NWB Inspector) | FsF-R1.3-02D |

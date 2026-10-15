@@ -23,7 +23,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 | 1. Decisions | D2, D4, D5, D8, D9, D10 | D4, D8, D10 |
 | 2. Actions | A1–A8, S1–S6 | A1, A2, A4, A5, A6, S1–S5 |
 | 3. Figures | F2–F6 | all |
-| 4. Claims | C1–C35 (35) | all, before submission |
+| 4. Claims | C1–C38 (38) | all, before submission |
 | 5. Knowledge graph | see `knowledge_graph/TODO.md` | 1.1–1.3 (Fig. 3, Section 4 results) |
 
 ---
@@ -75,6 +75,9 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
       discussed in the paper *(authors)*.
 - [ ] **S5** Complete funding list for all authors (`draft/10_statements.md`) *(authors)*.
 - [ ] **A8** Move to Google Docs for the full author group once the core team has reviewed *(OR)*.
+- [ ] **A9** *(later)* Consider a BBQS FAIR Implementation Profile (Schultes 2020) as a supplement: one row per
+      FAIR principle with the BBQS technology choices from Sections 6–7; needs BBQS WG endorsement (D4) and EMBER
+      for archive-policy rows (access, metadata longevity, licence, provenance) *(OR, WG, EMBER)*.
 
 **External input**
 - [ ] **A2** BBQS clearance to publish the **aggregate** inventory statistics (Section 5, Fig. 4), and
@@ -111,6 +114,11 @@ Rebuild generated figures with `make figures`.
       `figures/supplementary/figS1_knowledge_graph_lenient/`): label collisions, how to show shared
       infrastructure edges, colour-blind palette; after D10 and edge verification *(Claude, then OR)*.
 - [ ] **F6** Shorten legends to ≤350 words in total; sans-serif fonts, white backgrounds *(Claude)*.
+- [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): steps are
+      linked to layers by colour instead of connector lines (avoids crossings); confirm or ask the designer for
+      connectors *(OR)*.
+- [ ] **F8** Suppl. Table S2 (`figures/supplementary/tableS2_rda_contributions/`): review the layer contributions
+      with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
 ## 4. Claims that need support
 
@@ -121,7 +129,7 @@ Rebuild generated figures with `make figures`.
 | C3 | 1 | AI raises the value of consistently structured data | Citation (AI-readiness / foundation models) or soften | Claude |
 | C4 | 2 | Ontologies and terminologies in one layer | Team confirmation (D5); optional citation | core |
 | C5 | 2 | Origin and funding of standards (research vs. vendor vs. archive) | Suppl. Table S1 from the poster; check each entry | core |
-| C6 | 3 | Six levels of FAIRness (Table 2), one per layer that adds a capability; schema languages enable levels 2–3 | Check the FAIR-principle mapping with a FAIR expert; optionally run F-UJI on an example dataset at each level as a demonstration | core (FAIR expert); Claude for F-UJI |
+| C6 | 3 | Six levels of FAIRness (Table 2), one per layer that adds a capability, aligned with the RDA FAIR Data Maturity Model; schema languages enable levels 2–3 | Check the main RDA indicators per level (Table 2) and the layer contributions in Suppl. Table S2 with a FAIR expert; check FAIRsFAIR v0.8 metric IDs against the specification. F-UJI demonstration on example datasets deferred until after this review | core (FAIR expert); Claude for F-UJI |
 | C7 | 5, Methods | BBQS inventory statistics | Clearance (A2); name, date, and maintainer of the inventory | BBQS |
 | C8 | 5 | 13 species groups | Check "fish" and "fly" entries (is "fish" zebrafish?) and whether any award is missed | Claude |
 | C9 | 5 | Terminologies and atlases are sparse for many BBQS species | Citation or examples (atlases for mouse, rat, human, marmoset; few for cowbird, cichlid, acoel) | Claude |
@@ -152,6 +160,7 @@ Rebuild generated figures with `make figures`.
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
 | C35 | 4 | The lenient community rule hides most bridges (26 vs. 2 connections) | Depends on D10 | core |
 | C36 | 7 | R11: DANDI accepts NWB; OpenNeuro, NEMAR, and DABI accept BIDS | Check which standards each archive accepts (DABI: BIDS and NWB?); cite archive pages | Claude |
+| C38 | 3 | RDA indicators condense the contribution of file and dataset organization standards into a few community-standard indicators (R1.3-01D, R1.3-01M); content can be checked only with each standard's validators | FAIR-expert check; optionally cite a discussion of domain-specific FAIR assessment (e.g., FAIR-IMPACT discipline-specific metrics) | core (FAIR expert); Claude |
 | C37 | 8 | Gaps are being addressed: events/annotations, links to external vocabularies, multi-subject data, via NWB proposals/extensions and BIDS BEPs | OR to pick 2–4 representative examples to cite (e.g., NWBEP001 / PyNWB 4.0 core events; relevant BEPs such as BEP042 or behavior/multi-subject BEPs; NWB multi-subject work) | OR |
 
 ## 5. Knowledge graph (summary of `knowledge_graph/TODO.md`)
@@ -177,6 +186,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-09 | D7 Title | "Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization" (103 characters) |
 | 2026-10-09 | D8 layer name | Layer 3 renamed "file organization standards" (parallel to "dataset organization standards"); "file" in the broad sense, single file vs. directory is a format choice; knowledge-graph taxonomy label updated (node id `data_standard` unchanged) |
 | 2026-10-09 | FAIR levels | Six levels (0–5) mapped to layers and FAIR principles; presented as an illustration of integration, not a new metric; related to 5-star Linked Open Data, Data Readiness Levels, and FAIR assessment tools |
+| 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model: Table 2 lists the main RDA indicators per level; Suppl. Table S2 maps all 41 indicators to the layers that contribute (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
 | 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
 | 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table; numbered in order of first citation; within journal limits |
 | 2026-10-09 | Figures folder | `figures/` with one folder per item, `make figures`, `make check` |
