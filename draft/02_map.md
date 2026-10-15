@@ -9,9 +9,7 @@ by a particular technology. To illustrate the layers, we use online video sharin
 technologies. A codec compresses the images, a container file packages video and sound together, a
 playlist organizes related videos, categories and tags describe the content, and the upload form
 specifies which information must accompany each video. Sharing neuroscience data relies on an analogous
-combination of technologies. We describe the layers from the bytes up, numbered in the order in which
-they add levels of FAIRness (Section 3, Fig. 2), and end with the schema languages in which standards are
-defined.
+combination of technologies.
 
 **Data formats** solve the problem of mapping data to storage. Formats such as HDF5, Zarr, TIFF, NIfTI,
 JSON, YAML, CSV/TSV, and MP4 define how generic data structures such as arrays, tables, key–value pairs,

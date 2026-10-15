@@ -31,14 +31,10 @@ codec that encodes the bytes (1), the MP4 file that keeps synchronized video, au
 together (2), playlists that organize videos into series of episodes (3), standardized categories and
 hashtags (4), the platform that hosts and searches videos (5), and the upload form whose fields and rules
 come from a formal specification (6). Each corresponds to one layer of the neuroscience data standards
-ecosystem, numbered as in Table 1 and in the order of the levels of FAIRness (Fig. 2); callouts give
-neuroscience examples. No single technology makes a video
+ecosystem, numbered as in Table 1; callouts give neuroscience examples. No single technology makes a video
 shareable; it works because the layers fit together. The same holds for neuroscience data.
 
 ## Table 1 — Layers of the ecosystem
-
-Layers are listed and numbered from the bytes up, in the order in which they add levels of FAIRness
-(Table 2); schema languages, which define the standards, come last.
 
 | # | Layer | Problem | Use case | Examples |
 |---|---|---|---|---|
