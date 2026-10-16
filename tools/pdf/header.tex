@@ -13,5 +13,8 @@
 \newunicodechar{→}{\ensuremath{\rightarrow}}
 \newunicodechar{≤}{\ensuremath{\leq}}
 \floatplacement{figure}{H}
+% Figure captions carry their own "Fig. N." label (tools/pdf/figures.lua), so LaTeX adds none.
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty, font=small, justification=justified}
 \AtBeginEnvironment{longtable}{\footnotesize}
 \setlength{\emergencystretch}{3em}
