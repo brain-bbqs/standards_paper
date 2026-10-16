@@ -56,7 +56,8 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
       - [ ] Stack geometry for Fig. 5, now the only stack diagram (Figs. 1 and 2 have none): keep six stacked
             layers, or draw a four-level structural stack (archives, dataset organization, file
             organization, formats) with ontologies/terminologies and schema languages as cross-cutting
-            columns.
+            columns. The design draft (F10) uses five stacked rows with schema languages as a box across
+            rows 2–3, as in Fig. 2.
 - [ ] **D9 — Journal logistics** *(OR)*. Scientific Data APC and who pays (plan Q6); whether to send a
       pre-submission enquiry (planned ~Nov 17) or submit directly.
 - [ ] **D10 — Community rule for bridges** *(OR, core)*. Adopt the proposal in
@@ -120,8 +121,8 @@ Rebuild generated figures with `make figures`.
       No real platform name, logo, or look in the artwork. Redraw from the poster: Fig. 6b
       (`figures/fig6_bridges_future/`).
       Use "file organization standards" and the outcome of D8 *(designer / figure lead)*.
-- [ ] **F3** Final artwork for Fig. 2 (FAIR staircase, `figures/fig2_fair_levels/`, design draft exists) and design of
-      Fig. 5 (BBQS stack, `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
+- [ ] **F3** Final artwork for Fig. 2 (FAIR staircase, `figures/fig2_fair_levels/`) and Fig. 5 (BBQS stack,
+      `figures/fig5_bbqs_stack/`); design drafts exist for both *(designer)*.
 - [ ] **F4** Review Fig. 4 (`figures/fig4_bbqs_data/fig4_bbqs_data.pdf`): keep the species panel? show
       "exploratory behavior" (no guideline entry) as a gap? *(OR, core)*.
 - [ ] **F5** Polish Fig. 3 (`figures/fig3_knowledge_graph/`): label collisions, how to show shared
@@ -132,6 +133,9 @@ Rebuild generated figures with `make figures`.
       the speaker notes; the RDA mapping is only in Suppl. Table S1) *(OR)*.
 - [ ] **F9** Re-export the PNG previews of Fig. 1 and Fig. 2 from PowerPoint after the layer renumbering
       (the .pptx files are updated; the PNGs still show the old numbers) *(OR)*.
+- [ ] **F10** Review the Fig. 5 design draft (`figures/fig5_bbqs_stack/fig5_bbqs_stack_design.pptx`): stack
+      geometry (D8), the technologies in each row, and the three data paths; check with the BBQS WG that these
+      are the recommended paths (Section 6, Table 3) *(OR, WG)*.
 - [ ] **F8** Suppl. Table S1 (in `draft/12_figures_tables.md`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
