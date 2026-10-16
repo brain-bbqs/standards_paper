@@ -67,7 +67,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 ## 2. Actions (open)
 
 **People and authorship**
-- [ ] **A1** Author list and CRediT roles: poster authors + confirmed contributors; close Nov 14 *(OR)*.
+- [ ] **A1** Author list and CRediT roles: to be decided (not necessarily all poster authors); close Nov 14 *(OR)*.
       The draft says "we developed" the BBQS guideline (Sections 1, 7) and thanks WG members "who are not
       authors" (Acknowledgements). Check this still fits once the author list is final *(OR)*.
 - [ ] **A3** Assign section leads from the contributor list to review each section *(OR)*.
