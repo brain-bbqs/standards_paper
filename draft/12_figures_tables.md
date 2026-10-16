@@ -15,8 +15,7 @@ must total ≤350 words (F6).
 | Fig. 5 | BBQS standards stack on the map | 6 | spec | `figures/fig5_bbqs_stack/` |
 | Table 3 | Recommended standards by BBQS data type | 7 | draft (below) | BBQS guideline |
 | Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | `figures/fig6_bridges_future/` |
-| Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | poster | `figures/supplementary/tableS1_standards_comparison/` |
-| Suppl. Table S2 | The 41 RDA FAIR indicators mapped to the levels of FAIRness and the layers that contribute | 3 | draft (below) | RDA FAIR Data Maturity Model v1.0; FAIRsFAIR metrics v0.8 |
+| Suppl. Table S1 | The 41 RDA FAIR indicators mapped to the levels of FAIRness and the layers that contribute | 3 | draft (below) | RDA FAIR Data Maturity Model v1.0; FAIRsFAIR metrics v0.8 |
 
 ---
 
@@ -57,7 +56,7 @@ machine-checkable.
 
 ## Table 2 — Levels of FAIRness and the layers that enable them
 
-Each level is defined by what a third party can do with the data. Suppl. Table S2 maps the levels and
+Each level is defined by what a third party can do with the data. Suppl. Table S1 maps the levels and
 layers to the indicators of the RDA FAIR Data Maturity Model.
 \* Schema languages make conformance at levels 2 and 3 machine-checkable.
 
@@ -134,7 +133,7 @@ directions (living data, data reuse, integration across modalities and archives,
 and cross-cutting needs (education and training, outreach and community engagement, maintenance and
 support), redrawn from the poster.
 
-## Supplementary Table S2 — The RDA FAIR indicators by level of FAIRness and layer
+## Supplementary Table S1 — The RDA FAIR indicators by level of FAIRness and layer
 
 All 41 indicators of the RDA FAIR Data Maturity Model [REF: RDA FDMM 2020] (prefix "RDA-" omitted; M =
 metadata, D = data) with their RDA priority, the level of FAIRness (Table 2) that mainly adds each indicator, the layers that contribute (● primary, ○ supporting; columns 1–6 are the layers numbered as in Table 1: 1 data formats, 2 file organization, 3 dataset organization, 4 ontologies & terminologies, 5 data archives, 6 schema languages), and the

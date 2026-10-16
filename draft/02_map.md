@@ -111,9 +111,9 @@ bridges between existing technologies can complement the development of new ones
 
 ## Stakeholders shape standards
 
-Standards also differ in who drives them. NWB and BIDS grew out of research communities and are largely
-publicly funded; DICOM is driven by industry and clinical vendors; others are tied to a specific archive
-or consortium (Supplementary Table S1) [TODO-C5]. Whatever their origin, standards succeed by serving 
+Standards also differ in who drives them. NWB [REF: Rübel 2022] and BIDS [REF: Gorgolewski 2016] grew out of research communities and are largely
+publicly funded; DICOM [REF: Bidgood 1997] is driven by industry and clinical vendors; others are tied to a specific archive
+or consortium [TODO-C5]. Whatever their origin, standards succeed by serving 
 the use cases of their stakeholders. Together, these use cases span the whole data lifecycle, from
 acquisition to analysis, sharing, and reuse, and the ecosystem as a whole must support all of these phases.
 A single standard can focus on some of them, provided it integrates with the technologies that support 

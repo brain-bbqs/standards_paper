@@ -43,7 +43,7 @@ To illustrate why integration across layers is needed, Table 2 describes six lev
 neuroscience data. The levels are not a new metric. Their purpose is to show which layer of the map
 contributes at each step, so each level is defined by what a third party can do with the data and tied
 to the layer whose technologies make it possible (Fig. 2) [TODO-C6]. To anchor the levels in established
-practice, Suppl. Table S2 maps them to the Research Data Alliance (RDA) FAIR Data Maturity Model, which
+practice, Suppl. Table S1 maps them to the Research Data Alliance (RDA) FAIR Data Maturity Model, which
 translates the FAIR principles into 41 indicators for data and metadata [REF: RDA FDMM 2020; Bahim
 2020] and underlies the FAIRsFAIR metrics implemented by the automated assessment tool F-UJI
 [REF: Devaraju 2021a; Devaraju 2021b]. The table also shows that many indicators depend on more than
