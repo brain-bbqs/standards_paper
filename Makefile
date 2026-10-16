@@ -8,9 +8,9 @@ KG       := knowledge_graph
 ECOKG    := $(KG)/.venv/bin/ecokg
 UVRUN    := uv run -q --no-project --with openpyxl --with matplotlib python
 
-.PHONY: figures fig3 figS1 fig4 check kg-env
+.PHONY: figures fig3 fig4 check kg-env
 
-figures: fig3 figS1 fig4
+figures: fig3 fig4
 
 kg-env: $(ECOKG)
 
@@ -19,10 +19,6 @@ $(ECOKG):
 
 fig3: $(ECOKG)
 	$(ECOKG) figure --out figures/fig3_knowledge_graph --name fig3_knowledge_graph
-
-figS1: $(ECOKG)
-	$(ECOKG) figure --mode lenient --out figures/supplementary/figS1_knowledge_graph_lenient \
-		--name figS1_knowledge_graph_lenient
 
 fig4:
 	$(UVRUN) analysis/bbqs_inventory.py

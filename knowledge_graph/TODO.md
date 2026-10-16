@@ -21,8 +21,7 @@ Everything that waits on a person, in one place; details are in the sections ref
       MRIO and Allen Human Brain Atlas have no edges (2.4).
 
 **Reviews**
-- [ ] Figure drafts: `../figures/fig3_knowledge_graph/fig3_knowledge_graph.pdf` (strict; paper Fig. 3) and
-      `../figures/supplementary/figS1_knowledge_graph_lenient/figS1_knowledge_graph_lenient.pdf` (Suppl. Fig. S1); rebuild with `make figures` from the paper root — layout,
+- [ ] Figure draft: `../figures/fig3_knowledge_graph/fig3_knowledge_graph.pdf` (strict; paper Fig. 3); rebuild with `make figures` from the paper root — layout,
       misplaced nodes, missing bridges (3).
 - [ ] Home community of the 21 multi-community nodes (1.2).
 - [ ] All 101 curated edges (`verified: false`) and node layers/kinds, by domain experts (1.3).

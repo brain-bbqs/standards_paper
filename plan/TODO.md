@@ -62,7 +62,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 - [ ] **D10 — Community rule for bridges** *(OR, core)*. Adopt the proposal in
       `knowledge_graph/TODO.md` 1.2: a technology's *home* community is where it originated and is
       governed; other tags mean "communities served" and are reported separately. Determines the
-      numbers in Section 4 (claims C25, C35) and Fig. 3 / Suppl. Fig. S1.
+      numbers in Section 4 (claims C25, C35) and Fig. 3.
 
 ## 2. Actions (open)
 
@@ -110,8 +110,7 @@ Rebuild generated figures with `make figures`.
       Fig. 5 (BBQS stack, `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
 - [ ] **F4** Review Fig. 4 (`figures/fig4_bbqs_data/fig4_bbqs_data.pdf`): keep the species panel? show
       "exploratory behavior" (no guideline entry) as a gap? *(OR, core)*.
-- [ ] **F5** Polish Fig. 3 and Suppl. Fig. S1 (`figures/fig3_knowledge_graph/`,
-      `figures/supplementary/figS1_knowledge_graph_lenient/`): label collisions, how to show shared
+- [ ] **F5** Polish Fig. 3 (`figures/fig3_knowledge_graph/`): label collisions, how to show shared
       infrastructure edges, colour-blind palette; after D10 and edge verification *(Claude, then OR)*.
 - [ ] **F6** Shorten legends to ≤350 words in total; sans-serif fonts, white backgrounds *(Claude)*.
 - [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): staircase only,
@@ -191,8 +190,9 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-15 | Layer order | Layers numbered bottom-up to match the levels of FAIRness: 1 data formats, 2 file organization, 3 dataset organization, 4 ontologies & terminologies, 5 data archives, 6 schema languages. Applied to Table 1 (new # column), Section 2 (paragraph order), Fig. 1 and Fig. 2 badges, Fig. 1 caption, Fig. 5 legend, Sections 1 and 9 |
 | 2026-10-15 | Fig. 2 | Layer stack removed (repeated Fig. 1 and the step labels); steps styled and numbered like Fig. 1; climbing arrow and summit flag; full mapping in the speaker notes. Fig. 5 is now the only stack diagram |
 | 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model in Suppl. Table S2 only (level and contributing layers for all 41 indicators; removed from Table 2 and Fig. 2 as too complex for the main text) (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
-| 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
-| 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table; numbered in order of first citation; within journal limits |
+| 2026-10-16 | Suppl. Fig. S1 | Dropped (lenient community rule not needed as a supplementary figure). Section 4 keeps the sentence on the lenient rule (C35); `ecokg figure --mode lenient` still produces it |
+| 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 (dropped 2026-10-16) |
+| 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table (Suppl. Fig. S1 dropped 2026-10-16); numbered in order of first citation; within journal limits |
 | 2026-10-09 | Figures folder | `figures/` with one folder per item, `make figures`, `make check` |
 | 2026-10-09 | KG counting | Undirected relations (*related to*, *interoperates with*) counted once per pair; 11 RRID links had been stored in both directions (133 → 122 relationships, 33 → 31 bridges) |
 | 2026-10-09 | KG unit | Section 4 counts connections (pairs of technologies), matching Fig. 3; the stats report gives both connections and relationships |

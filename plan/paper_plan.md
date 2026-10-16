@@ -26,7 +26,7 @@
 
 ### Figures
 
-- Fig. 3, Suppl. Fig. S1, Fig. 4 are built from code (`make figures`)
+- Fig. 3 and Fig. 4 are built from code (`make figures`)
 - Other figures are currently only described as ideas/concepts in README files and captions but need to be prepared
 
 ### Authorship

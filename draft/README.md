@@ -6,7 +6,7 @@
 | `01_introduction.md` | 1. Introduction |
 | `02_map.md` | 2. A map of the data standards ecosystem (Fig. 1, Table 1) |
 | `03_fair_integration.md` | 3. FAIR data requires integration across layers (Fig. 2, Table 2) |
-| `04_knowledge_graph.md` | 4. Mapping the connections in the ecosystem (Fig. 3, Suppl. Fig. S1) |
+| `04_knowledge_graph.md` | 4. Mapping the connections in the ecosystem (Fig. 3) |
 | `05_bbqs_data.md` | 5. BBQS data (Fig. 4) |
 | `06_bbqs_stack.md` | 6. The BBQS standards stack (Fig. 5) |
 | `07_recommendations.md` | 7. Recommendations for multimodal brain–behavior data (Table 3, R1–R11; implementation in BBQS) |

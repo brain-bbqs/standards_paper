@@ -1,6 +1,6 @@
 # 4. Mapping the connections in the ecosystem
 
-*(~600 words; Fig. 3, Supplementary Fig. S1)*
+*(~600 words; Fig. 3)*
 
 The map describes the layers of the ecosystem, but FAIR data depend on how technologies in different
 layers connect. To see where these connections exist, we compiled a knowledge graph of the ecosystem
@@ -55,5 +55,5 @@ domain experts, and registry coverage is incomplete. Whether a connection crosse
 depends on how each technology's community is assigned. We classify by the community in which a
 technology originated. A more lenient classification, which treats any shared community as within
 community, hides most bridges because technologies are often tagged with the communities they have
-reached through exactly these bridges (Supplementary Fig. S1) [TODO-C35]. The graph, the code, and the
+reached through exactly these bridges [TODO-C35]. The graph, the code, and the
 gap report are released so that the community can extend and correct it (Data Availability).
