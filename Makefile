@@ -2,14 +2,16 @@
 #
 #   make figures     regenerate all generated figures into figures/ (paper figures and alternates)
 #   make alternates  regenerate only the alternate figures (figures/alternates/, not in the paper)
+#   make pdf         render the full draft (draft/*.md) as build/paper.tex and build/paper.pdf for review
 #   make check       check that every [TODO-Cn] marker in draft/ has an entry in plan/TODO.md and vice versa
 #   make kg-env      set up the knowledge-graph Python environment (first time only)
 
 KG       := knowledge_graph
 ECOKG    := $(KG)/.venv/bin/ecokg
 UVRUN    := uv run -q --no-project --with openpyxl --with matplotlib python
+PDF_DATE := $(shell date +%Y-%m-%d), commit $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 
-.PHONY: figures fig3 fig4 alternates alt-kg-lenient check kg-env
+.PHONY: figures fig3 fig4 alternates alt-kg-lenient pdf check kg-env
 
 figures: fig3 fig4 alternates
 
@@ -29,6 +31,14 @@ alt-kg-lenient: $(ECOKG)
 
 fig4:
 	$(UVRUN) analysis/bbqs_inventory.py
+
+pdf:
+	mkdir -p build
+	pandoc --defaults tools/pdf/defaults.yaml -M date="Review draft, $(PDF_DATE)" \
+		-o build/paper.tex $(sort $(wildcard draft/[0-9][0-9]_*.md))
+	cd build && for i in 1 2; do xelatex -interaction=nonstopmode -halt-on-error paper.tex > /dev/null \
+		|| { tail -40 paper.log; exit 1; }; done
+	@! grep "Missing character" build/paper.log || { echo "Characters missing from the font (map them in tools/pdf/header.tex)"; exit 1; }
 
 check:
 	python3 tools/check_todo.py

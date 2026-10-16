@@ -1,0 +1,15 @@
+# pandoc defaults for the review PDF (make pdf): writes build/paper.tex, which make compiles with XeLaTeX.
+# Run from the paper root.
+from: markdown
+to: latex
+standalone: true
+resource-path: [draft]
+include-in-header: [tools/pdf/header.tex]
+filters: [tools/pdf/toc.lua, tools/pdf/figures.lua]
+variables:
+  documentclass: article
+  papersize: letter
+  fontsize: 10pt
+  geometry: margin=2cm
+  linestretch: 1.15
+  colorlinks: true

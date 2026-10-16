@@ -17,5 +17,5 @@
 | `12_figures_tables.md` | Display items: registry, legends, Table 1 |
 | `13_references.md` | Working reference list |
 
-Open claims and decisions: `../plan/TODO.md`. Build a single file with
-`cat 0*.md 10_statements.md 11_methods.md > /tmp/draft.md` (or pandoc).
+Open claims and decisions: `../plan/TODO.md`. Render all section files as one PDF with `make pdf` from
+the paper root (output `build/paper.tex` and `build/paper.pdf`; see the root README).

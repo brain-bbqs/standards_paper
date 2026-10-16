@@ -18,7 +18,26 @@ quantification and synchronization"* (target: Scientific Data, Article).
 | `figures/` | One folder per figure and supplementary item (`figures/README.md`); legends in `draft/12_figures_tables.md` |
 | `knowledge_graph/` | Ecosystem knowledge graph package `ecokg` (README, `TODO.md`, tests); Fig. 3 |
 | `tools/check_todo.py` | Consistency check between `plan/TODO.md` and the draft |
-| `Makefile` | `make figures` rebuilds generated figures; `make check` checks the TODO list |
+| `tools/pdf/` | pandoc settings for the review PDF |
+| `Makefile` | `make figures` rebuilds generated figures; `make pdf` renders the draft as `build/paper.tex` and `build/paper.pdf`; `make check` checks the TODO list |
+
+## Review PDF
+
+[![Review PDF](https://github.com/brain-bbqs/standards_paper/actions/workflows/review-pdf.yml/badge.svg?branch=main)](https://github.com/brain-bbqs/standards_paper/actions/workflows/review-pdf.yml?query=branch%3Amain)
+
+**Latest PDF of `main`:** open the [Review PDF runs on `main`](https://github.com/brain-bbqs/standards_paper/actions/workflows/review-pdf.yml?query=branch%3Amain),
+click the top run, and download `paper.pdf` under **Artifacts** (sign in to GitHub to download).
+
+The full draft is rendered as one PDF for review by the **Review PDF** GitHub workflow
+(`.github/workflows/review-pdf.yml`) on every pull request and push to `main` that touches the draft or
+figures. On a pull request, a comment from the workflow links to the latest PDF (updated on each push).
+Downloads expire after 90 days; to rebuild, use **Run workflow** on the runs page (write access needed).
+The PDF has continuous line numbers, so please refer to page and line numbers in comments. The run
+also has `paper.tex`, the single LaTeX file the PDF is built from.
+
+To build it locally, run `make pdf` (needs pandoc and XeLaTeX). The PDF uses LaTeX's standard font (Latin
+Modern); symbols it lacks (✓, ●, ○, →, ≤) are mapped to LaTeX symbols in `tools/pdf/header.tex`, and the
+build fails if the draft uses another character the font does not have.
 
 Source materials (poster, guideline, BBQS inventory, BRAIN KB documents) live in the parent folder and
 are not part of this repository.

@@ -1,0 +1,70 @@
+# Render the full draft (draft/*.md) as a PDF for co-authors to review.
+# The PDF (with line numbers) and the LaTeX file it is built from are attached to each workflow run as two
+# unzipped artifacts, paper.pdf and paper.tex (Actions tab -> run -> Artifacts). On pull requests, a comment
+# links to both (one comment per PR, updated on each push).
+
+name: Review PDF
+
+on:
+  push:
+    branches: [main]
+    paths: ["draft/**", "figures/**", "tools/pdf/**", "Makefile", ".github/workflows/review-pdf.yml"]
+  pull_request:
+    paths: ["draft/**", "figures/**", "tools/pdf/**", "Makefile", ".github/workflows/review-pdf.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: review-pdf-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pdf:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pandoc and LaTeX
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends pandoc texlive-xetex texlive-latex-recommended \
+            texlive-latex-extra texlive-fonts-recommended lmodern
+
+      - name: Render PDF
+        run: make pdf
+
+      - id: upload-pdf
+        uses: actions/upload-artifact@v7
+        with:
+          path: build/paper.pdf
+          archive: false
+
+      - id: upload-tex
+        uses: actions/upload-artifact@v7
+        with:
+          path: build/paper.tex
+          archive: false
+
+      # Pull requests from forks get a read-only token, so they skip the comment.
+      - name: Comment with a link to the PDF
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          PDF_URL: ${{ steps.upload-pdf.outputs.artifact-url }}
+          TEX_URL: ${{ steps.upload-tex.outputs.artifact-url }}
+          SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          marker='<!-- review-pdf -->'
+          body="$marker
+          **Review PDF** for ${SHA::7}: [paper.pdf]($PDF_URL) · [paper.tex]($TEX_URL) (sign in to GitHub to download). Updated on each push."
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" --paginate \
+            --jq ".[] | select(.body | startswith(\"$marker\")) | .id" | head -1)
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" -f body="$body" > /dev/null
+          else
+            gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "$body"
+          fi

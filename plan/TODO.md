@@ -67,7 +67,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 ## 2. Actions (open)
 
 **People and authorship**
-- [ ] **A1** Author list and CRediT roles: poster authors + confirmed contributors; close Nov 14 *(OR)*.
+- [ ] **A1** Author list and CRediT roles: to be decided (not necessarily all poster authors); close Nov 14 *(OR)*.
       The draft says "we developed" the BBQS guideline (Sections 1, 7) and thanks WG members "who are not
       authors" (Acknowledgements). Check this still fits once the author list is final *(OR)*.
 - [ ] **A3** Assign section leads from the contributor list to review each section *(OR)*.
@@ -96,6 +96,20 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 - [ ] **A7** Resolve references marked ? or — in `draft/13_references.md` *(Claude)*.
 - [ ] **S6** Convert references to Nature style with DOIs (BibTeX/Zotero) *(Claude)*.
 
+**Submission files**
+- [ ] **A10** Add a submission build (e.g., `make submission`) next to the review build (`make pdf`), which
+      already has line numbers *(Claude)*:
+      - Leave out working notes: `[TODO-Cn]` and `[REF: …]` markers, word-count targets, draft-status
+        lines, the display-items table in `draft/12_figures_tables.md`, and the table of contents.
+      - References in Nature style, cited by number in the text (after S6); leave out the working list in
+        `draft/13_references.md`.
+      - Suppl. Table S1 (RDA indicators): Scientific Data discourages supplementary files unless they add
+        ~10 pages or more, so keep it in the manuscript as a regular table (or decide otherwise).
+      - Initial submission: PDF is accepted. Revision: `.docx` or one self-contained `.tex` with the
+        references written into it (no separate `.bib`/`.bbl` files or style files).
+      - Check the required headings for an Article (Data Availability, Code Availability, Author
+        Contributions, Competing Interests) and the figure-legend limit (F6).
+
 ## 3. Figures (open)
 
 Files: `figures/` (one folder per item, see `figures/README.md`). Legends: `draft/12_figures_tables.md`.
@@ -104,7 +118,7 @@ Rebuild generated figures with `make figures`.
 - [ ] **F2** Design Fig. 1 as a single panel: a generic video-sharing app with callouts to the six
       layers and neuroscience examples (`figures/fig1_ecosystem_map/README.md`; analogy from poster slide 6).
       No real platform name, logo, or look in the artwork. Redraw from the poster: Fig. 6b
-      (`figures/fig6_bridges_future/`), Suppl. Table S1 (`figures/supplementary/tableS1_standards_comparison/`).
+      (`figures/fig6_bridges_future/`).
       Use "file organization standards" and the outcome of D8 *(designer / figure lead)*.
 - [ ] **F3** Final artwork for Fig. 2 (FAIR staircase, `figures/fig2_fair_levels/`, design draft exists) and design of
       Fig. 5 (BBQS stack, `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
@@ -115,10 +129,10 @@ Rebuild generated figures with `make figures`.
 - [ ] **F6** Shorten legends to ≤350 words in total; sans-serif fonts, white backgrounds *(Claude)*.
 - [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): staircase only,
       steps styled and numbered like Fig. 1, climbing arrow and summit flag; check the FAIR principles per step (definitions in
-      the speaker notes; the RDA mapping is only in Suppl. Table S2) *(OR)*.
+      the speaker notes; the RDA mapping is only in Suppl. Table S1) *(OR)*.
 - [ ] **F9** Re-export the PNG previews of Fig. 1 and Fig. 2 from PowerPoint after the layer renumbering
       (the .pptx files are updated; the PNGs still show the old numbers) *(OR)*.
-- [ ] **F8** Suppl. Table S2 (in `draft/12_figures_tables.md`): review the layer contributions
+- [ ] **F8** Suppl. Table S1 (in `draft/12_figures_tables.md`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
 ## 4. Claims that need support
@@ -129,8 +143,8 @@ Rebuild generated figures with `make figures`.
 | C2 | 1 | BRAIN archive sizes | **DANDI** 1,197 Dandisets, 2.44 PB from `api.dandiarchive.org/api/stats/` (authoritative; cite with access date). **BossDB** ~1.03 PB, >10 petavoxels and **NeMO** >1 PB, >3 M files: from search snippets, verify. **BIL** petascale, ~7,000 datasets (Kenney 2024): verify. **OpenNeuro**: get an official figure. Consider DABI, NEMAR, EMBER. Do not use the BRAIN KB roundtable summary (not for distribution) | core (archive contacts); Claude for re-checks |
 | C3 | 1 | AI raises the value of consistently structured data | Citation (AI-readiness / foundation models) or soften | Claude |
 | C4 | 2 | Ontologies and terminologies in one layer | Team confirmation (D5); optional citation | core |
-| C5 | 2 | Origin and funding of standards (research vs. vendor vs. archive) | Suppl. Table S1 from the poster; check each entry | core |
-| C6 | 3 | Six levels of FAIRness (Table 2), one per layer that adds a capability; mapped to the RDA FAIR Data Maturity Model in Suppl. Table S2; schema languages enable levels 2–3 | Check the level and layer assignments of the RDA indicators in Suppl. Table S2 with a FAIR expert; check FAIRsFAIR v0.8 metric IDs against the specification. F-UJI demonstration on example datasets deferred until after this review | core (FAIR expert); Claude for F-UJI |
+| C5 | 2 | Origin and funding of standards (research vs. vendor vs. archive) | NWB, BIDS, and DICOM are cited; name and cite one or two archive- or consortium-specific standards (e.g., DANDI layout, SPARC SDS) | Claude |
+| C6 | 3 | Six levels of FAIRness (Table 2), one per layer that adds a capability; mapped to the RDA FAIR Data Maturity Model in Suppl. Table S1; schema languages enable levels 2–3 | Check the level and layer assignments of the RDA indicators in Suppl. Table S1 with a FAIR expert; check FAIRsFAIR v0.8 metric IDs against the specification. F-UJI demonstration on example datasets deferred until after this review | core (FAIR expert); Claude for F-UJI |
 | C7 | 5, Methods | BBQS inventory statistics | Clearance (A2); name, date, and maintainer of the inventory | BBQS |
 | C8 | 5 | 13 species groups | Check "fish" and "fly" entries (is "fish" zebrafish?) and whether any award is missed | Claude |
 | C9 | 5 | Terminologies and atlases are sparse for many BBQS species | Citation or examples (atlases for mouse, rat, human, marmoset; few for cowbird, cichlid, acoel) | Claude |
@@ -190,6 +204,7 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-15 | Fig. 2 | Layer stack removed (repeated Fig. 1 and the step labels); steps styled and numbered like Fig. 1; climbing arrow and summit flag; full mapping in the speaker notes. Fig. 5 is now the only stack diagram |
 | 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model in Suppl. Table S2 only (level and contributing layers for all 41 indicators; removed from Table 2 and Fig. 2 as too complex for the main text) (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
 | 2026-10-16 | Suppl. Fig. S1 | Dropped (lenient community rule not needed as a supplementary figure). Section 4 no longer discusses the lenient rule (C35 removed); it explains that each technology is assigned to the community in which it originated so the graph shows which connections cross communities. The lenient-rule graph is kept for review as an alternate figure, `figures/alternates/kg_lenient_community_rule/` (`make alt-kg-lenient`) |
+| 2026-10-16 | Suppl. Table S1 | Dropped (standards comparison from the poster: modalities, formats, languages, funding/origin; supported one sentence in Section 2, which now cites NWB, BIDS, and DICOM directly). The RDA indicator table (Suppl. Table S2 in earlier entries) is renumbered Suppl. Table S1 |
 | 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 (dropped 2026-10-16) |
 | 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table (Suppl. Fig. S1 dropped 2026-10-16); numbered in order of first citation; within journal limits |
 | 2026-10-09 | Figures folder | `figures/` with one folder per item, `make figures`, `make check` |
