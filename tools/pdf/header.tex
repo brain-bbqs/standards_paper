@@ -1,0 +1,7 @@
+% Review PDF tweaks: small table text, break long paths and URLs, keep figures in place.
+\usepackage{etoolbox}
+\usepackage{xurl}
+\usepackage{float}
+\floatplacement{figure}{H}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\setlength{\emergencystretch}{3em}
