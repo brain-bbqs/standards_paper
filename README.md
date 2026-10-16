@@ -25,7 +25,8 @@ quantification and synchronization"* (target: Scientific Data, Article).
 
 The full draft is rendered as one PDF for review by the **Review PDF** GitHub workflow
 (`.github/workflows/review-pdf.yml`) on every pull request and push to `main` that touches the draft or
-figures. Download it from the workflow run: Actions → Review PDF → latest run → Artifacts → `paper-pdf`.
+figures. On a pull request, a comment from the workflow links to the latest PDF (updated on each push);
+otherwise download it from the workflow run: Actions → Review PDF → latest run → Artifacts → `paper-pdf`.
 The PDF has continuous line numbers, so please refer to page and line numbers in comments. The artifact
 also contains `paper.tex`, the single LaTeX file the PDF is built from.
 
