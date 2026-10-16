@@ -5,7 +5,7 @@ to: latex
 standalone: true
 resource-path: [draft]
 include-in-header: [tools/pdf/header.tex]
-filters: [tools/pdf/title.lua]
+filters: [tools/pdf/title.lua, tools/pdf/figures.lua]
 toc: true
 toc-depth: 2
 variables:
