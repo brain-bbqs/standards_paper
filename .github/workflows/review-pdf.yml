@@ -29,7 +29,7 @@ jobs:
         run: |
           sudo apt-get update -q
           sudo apt-get install -y -q --no-install-recommends pandoc texlive-xetex texlive-latex-recommended \
-            texlive-latex-extra texlive-fonts-recommended lmodern fonts-dejavu
+            texlive-latex-extra texlive-fonts-recommended lmodern
 
       - name: Render PDF
         run: make pdf

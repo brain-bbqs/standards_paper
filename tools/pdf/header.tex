@@ -4,6 +4,14 @@
 \usepackage{etoolbox}
 \usepackage{xurl}
 \usepackage{float}
+% The default font (Latin Modern) lacks these symbols used in the draft; draw them with standard LaTeX symbols.
+\usepackage{pifont}
+\usepackage{newunicodechar}
+\newunicodechar{✓}{\ding{51}}
+\newunicodechar{●}{\scalebox{0.6}{\ding{108}}}
+\newunicodechar{○}{\scalebox{0.55}{$\bigcirc$}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{≤}{\ensuremath{\leq}}
 \floatplacement{figure}{H}
 \AtBeginEnvironment{longtable}{\footnotesize}
 \setlength{\emergencystretch}{3em}

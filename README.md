@@ -29,8 +29,9 @@ figures. Download it from the workflow run: Actions → Review PDF → latest ru
 The PDF has continuous line numbers, so please refer to page and line numbers in comments. The artifact
 also contains `paper.tex`, the single LaTeX file the PDF is built from.
 
-To build it locally, run `make pdf` (needs pandoc and XeLaTeX). The default font is DejaVu Serif. On macOS
-without DejaVu, use `make pdf PDF_FONT="Arial Unicode MS"` (the draft uses symbols such as ✓, ●, and ○).
+To build it locally, run `make pdf` (needs pandoc and XeLaTeX). The PDF uses LaTeX's standard font (Latin
+Modern); symbols it lacks (✓, ●, ○, →, ≤) are mapped to LaTeX symbols in `tools/pdf/header.tex`, and the
+build fails if the draft uses another character the font does not have.
 
 Source materials (poster, guideline, BBQS inventory, BRAIN KB documents) live in the parent folder and
 are not part of this repository.
