@@ -39,5 +39,9 @@ To build it locally, run `make pdf` (needs pandoc and XeLaTeX). The PDF uses LaT
 Modern); symbols it lacks (✓, ●, ○, →, ≤) are mapped to LaTeX symbols in `tools/pdf/header.tex`, and the
 build fails if the draft uses another character the font does not have.
 
-Source materials (poster, guideline, BBQS inventory, BRAIN KB documents) live in the parent folder and
-are not part of this repository.
+Source materials (poster, guideline, BBQS inventory, BRAIN KB documents) are not part of this repository
+and are maintained in the BBQS google drive. Online resources:
+
+- BBQS Working groups: https://brain-bbqs.org/working-groups
+- BBQS Standards Guide: https://docs.google.com/document/d/1vIJ01La9G76FfGywS3IbG4o1GR4qquS31MoJ2B4_4os/edit?tab=t.0#heading=h.8n78hvh4fohm
+- BBQS standards poster (SfN 2025): https://zenodo.org/records/18333008
