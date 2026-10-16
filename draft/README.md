@@ -18,4 +18,4 @@
 | `13_references.md` | Working reference list |
 
 Open claims and decisions: `../plan/TODO.md`. Render all section files as one PDF with `make pdf` from
-the paper root (output `build/paper.pdf`; see the root README).
+the paper root (output `build/paper.tex` and `build/paper.pdf`; see the root README).

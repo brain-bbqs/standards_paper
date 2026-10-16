@@ -1,7 +1,8 @@
-# pandoc defaults for the review PDF (make pdf). Run from the paper root.
+# pandoc defaults for the review PDF (make pdf): writes build/paper.tex, which make compiles with XeLaTeX.
+# Run from the paper root.
 from: markdown
-to: pdf
-pdf-engine: xelatex
+to: latex
+standalone: true
 resource-path: [draft]
 include-in-header: [tools/pdf/header.tex]
 filters: [tools/pdf/title.lua]

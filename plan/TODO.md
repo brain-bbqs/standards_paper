@@ -96,6 +96,19 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 - [ ] **A7** Resolve references marked ? or — in `draft/13_references.md` *(Claude)*.
 - [ ] **S6** Convert references to Nature style with DOIs (BibTeX/Zotero) *(Claude)*.
 
+**Submission files**
+- [ ] **A10** Add a submission build (e.g., `make submission`) next to the review build (`make pdf`), which
+      already has line numbers *(Claude)*:
+      - Leave out working notes: `[TODO-Cn]` and `[REF: …]` markers, word-count targets, draft-status
+        lines, the display-items table in `draft/12_figures_tables.md`, and the table of contents.
+      - References in Nature style, cited by number in the text (after S6); leave out the working list in
+        `draft/13_references.md`.
+      - Supplementary items (Suppl. Tables S1 and S2) as a separate file, not in the main manuscript.
+      - Initial submission: PDF is accepted. Revision: `.docx` or one self-contained `.tex` with the
+        references written into it (no separate `.bib`/`.bbl` files or style files).
+      - Check the required headings for an Article (Data Availability, Code Availability, Author
+        Contributions, Competing Interests) and the figure-legend limit (F6).
+
 ## 3. Figures (open)
 
 Files: `figures/` (one folder per item, see `figures/README.md`). Legends: `draft/12_figures_tables.md`.

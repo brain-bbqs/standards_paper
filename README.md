@@ -19,13 +19,15 @@ quantification and synchronization"* (target: Scientific Data, Article).
 | `knowledge_graph/` | Ecosystem knowledge graph package `ecokg` (README, `TODO.md`, tests); Fig. 3 |
 | `tools/check_todo.py` | Consistency check between `plan/TODO.md` and the draft |
 | `tools/pdf/` | pandoc settings for the review PDF |
-| `Makefile` | `make figures` rebuilds generated figures; `make pdf` renders the draft as `build/paper.pdf`; `make check` checks the TODO list |
+| `Makefile` | `make figures` rebuilds generated figures; `make pdf` renders the draft as `build/paper.tex` and `build/paper.pdf`; `make check` checks the TODO list |
 
 ## Review PDF
 
 The full draft is rendered as one PDF for review by the **Review PDF** GitHub workflow
 (`.github/workflows/review-pdf.yml`) on every pull request and push to `main` that touches the draft or
 figures. Download it from the workflow run: Actions → Review PDF → latest run → Artifacts → `paper-pdf`.
+The PDF has continuous line numbers, so please refer to page and line numbers in comments. The artifact
+also contains `paper.tex`, the single LaTeX file the PDF is built from.
 
 To build it locally, run `make pdf` (needs pandoc and XeLaTeX). The default font is DejaVu Serif. On macOS
 without DejaVu, use `make pdf PDF_FONT="Arial Unicode MS"` (the draft uses symbols such as ✓, ●, and ○).

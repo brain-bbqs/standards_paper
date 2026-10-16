@@ -1,5 +1,6 @@
 # Render the full draft (draft/*.md) as a PDF for co-authors to review.
-# The PDF is attached to each workflow run as the "paper-pdf" artifact (Actions tab -> run -> Artifacts).
+# The PDF (with line numbers) and the LaTeX file it is built from are attached to each workflow run as the
+# "paper-pdf" artifact (Actions tab -> run -> Artifacts).
 
 name: Review PDF
 
@@ -36,4 +37,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: paper-pdf
-          path: build/paper.pdf
+          path: |
+            build/paper.pdf
+            build/paper.tex
