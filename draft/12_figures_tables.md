@@ -137,51 +137,51 @@ support), redrawn from the poster.
 ## Supplementary Table S2 — The RDA FAIR indicators by level of FAIRness and layer
 
 All 41 indicators of the RDA FAIR Data Maturity Model [REF: RDA FDMM 2020] (prefix "RDA-" omitted; M =
-metadata, D = data) with their RDA priority, the level of FAIRness (Table 2) that mainly adds each indicator, the layers that contribute (● primary, ○ supporting), and the
-closest FAIRsFAIR metric used by F-UJI (v0.8; — none) [REF: FAIRsFAIR metrics v0.8]. Primary / any
-contribution: Archives 24 / 32; Dataset org. 9 / 19; File org. 12 / 17; Ontologies & terms 3 / 8; Formats 2 / 4; Schema languages 5 / 7. Level 5 indicators (F, A, R1.1, R1.2) are met when an archive publishes the record; F2 and R1.2 also
+metadata, D = data) with their RDA priority, the level of FAIRness (Table 2) that mainly adds each indicator, the layers that contribute (● primary, ○ supporting; columns 1–6 are the layers numbered as in Table 1: 1 data formats, 2 file organization, 3 dataset organization, 4 ontologies & terminologies, 5 data archives, 6 schema languages), and the
+closest FAIRsFAIR metric used by F-UJI (v0.8; prefix "FsF-" omitted; — none) [REF: FAIRsFAIR metrics v0.8]. Primary / any
+contribution: (1) formats 2 / 4; (2) file organization 12 / 17; (3) dataset organization 9 / 19; (4) ontologies & terminologies 3 / 8; (5) archives 24 / 32; (6) schema languages 5 / 7. Level 5 indicators (F, A, R1.1, R1.2) are met when an archive publishes the record; F2 and R1.2 also
 rely on content from levels 2–3. *Draft; to be checked with a FAIR expert* [TODO-C6].
 
-| Indicator | Short text | Priority | Level | Archives | Dataset org. | File org. | Ontologies & terms | Formats | Schema lang. | How the layers contribute | FAIRsFAIR metric |
-|---|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|---|---|
-| F1-01M | Metadata identified by a persistent identifier | essential | 5 | ● |  |  |  |  |  | Archive mints a DOI for the dataset record | FsF-F1-02MD |
-| F1-01D | Data identified by a persistent identifier | essential | 5 | ● |  |  |  |  |  | DOI for each published dataset version | FsF-F1-02MD |
-| F1-02M | Metadata identified by a globally unique identifier | essential | 5 | ● | ○ |  |  |  |  | Archive identifiers; dataset description can record the DOI (BIDS) | FsF-F1-01MD |
-| F1-02D | Data identified by a globally unique identifier | essential | 5 | ● |  | ○ |  |  |  | Archive asset identifiers; files carry their own UUID (NWB `object_id`) | FsF-F1-01MD |
-| F2-01M | Rich metadata is provided to allow discovery | essential | 5 | ● | ● | ● | ○ |  |  | Archives index metadata extracted from NWB files and BIDS/Psych-DS descriptions; terms add searchable meaning | FsF-F2-01M |
-| F3-01M | Metadata includes the identifier for the data | essential | 5 | ● |  |  |  |  |  | Landing page links record and data | FsF-F3-01M |
-| F4-01M | Metadata can be harvested and indexed | essential | 5 | ● |  |  |  |  | ○ | Archive exposes metadata (e.g., schema.org JSON-LD) to search engines | FsF-F4-01M |
-| A1-01M | Metadata contains information on how to access the data | important | 5 | ● |  |  |  |  |  | Access conditions on the landing page | FsF-A1-01M |
-| A1-02M | Metadata can be accessed manually | essential | 5 | ● |  |  |  |  |  | Web portal | — |
-| A1-02D | Data can be accessed manually | essential | 5 | ● |  |  |  |  |  | Download from the portal | — |
-| A1-03M | Metadata identifier resolves to a metadata record | essential | 5 | ● |  |  |  |  |  | DOI resolves to landing page | FsF-A1-02MD |
-| A1-03D | Data identifier resolves to a digital object | essential | 5 | ● |  |  |  |  |  | Identifier resolves to the data | FsF-A1-02MD |
-| A1-04M | Metadata accessed through a standardised protocol | essential | 5 | ● |  |  |  |  |  | HTTPS / REST API | FsF-A1-02MD |
-| A1-04D | Data accessible through a standardised protocol | essential | 5 | ● |  |  |  | ○ |  | HTTPS / S3; cloud-friendly formats (Zarr, HDF5) allow partial reads | FsF-A1-02MD |
-| A1-05D | Data can be accessed automatically | important | 5 | ● |  |  |  | ○ |  | APIs and command-line clients; cloud-friendly formats | — |
-| A1.1-01M | Metadata accessible through a free access protocol | essential | 5 | ● |  |  |  |  |  | Open web protocols | FsF-A1.1-01MD |
-| A1.1-01D | Data accessible through a free access protocol | important | 5 | ● |  |  |  |  |  | Open web protocols | FsF-A1.1-01MD |
-| A1.2-01D | Data access supports authentication and authorisation | useful | 5 | ● |  |  |  |  |  | Controlled-access tiers (e.g., for human data) | FsF-A1.2-01MD |
-| A2-01M | Metadata remains available after data are no longer available | essential | 5 | ● |  |  |  |  |  | Archive preservation policy | — |
-| I1-01M | Metadata uses knowledge representation in a standardised format | important | 3 | ○ | ● | ● |  | ● |  | Metadata in JSON/TSV sidecars (BIDS, Psych-DS) or HDF5 attributes (NWB) | FsF-I1-01M |
-| I1-01D | Data uses knowledge representation in a standardised format | important | 1 |  |  | ○ |  | ● |  | Open, documented formats (HDF5, Zarr, NIfTI, TIFF, CSV) | FsF-R1.3-02D |
-| I1-02M | Metadata uses machine-understandable knowledge representation | important | 3 | ○ | ● | ● |  |  | ● | Metadata fields defined in machine-readable schemas (BIDS schema, HDMF/NWB specification, LinkML, JSON-LD) | FsF-I1-01M |
-| I1-02D | Data uses machine-understandable knowledge representation | important | 2 |  | ○ | ● |  |  | ● | Data types defined in a schema language (e.g., NWB types in the HDMF language) | — |
-| I2-01M | Metadata uses FAIR-compliant vocabularies | important | 4 |  | ○ | ○ | ● |  |  | Terms from NCBI Taxonomy, Uberon, atlases, Cognitive Atlas; standards define the fields that hold them | FsF-I2-01M |
+| Indicator | Short text | Priority | Level | 1 | 2 | 3 | 4 | 5 | 6 | How the layers contribute | FAIRsFAIR metric |
+|-----------|--------------------------|---------|:---:|:-:|:-:|:-:|:-:|:-:|:-:|-----------------------------|-------------|
+| F1-01M | Metadata identified by a persistent identifier | essential | 5 |  |  |  |  | ● |  | Archive mints a DOI for the dataset record | F1-02MD |
+| F1-01D | Data identified by a persistent identifier | essential | 5 |  |  |  |  | ● |  | DOI for each published dataset version | F1-02MD |
+| F1-02M | Metadata identified by a globally unique identifier | essential | 5 |  |  | ○ |  | ● |  | Archive identifiers; dataset description can record the DOI (BIDS) | F1-01MD |
+| F1-02D | Data identified by a globally unique identifier | essential | 5 |  | ○ |  |  | ● |  | Archive asset identifiers; files carry their own UUID (NWB `object_id`) | F1-01MD |
+| F2-01M | Rich metadata is provided to allow discovery | essential | 5 |  | ● | ● | ○ | ● |  | Archives index metadata extracted from NWB files and BIDS/Psych-DS descriptions; terms add searchable meaning | F2-01M |
+| F3-01M | Metadata includes the identifier for the data | essential | 5 |  |  |  |  | ● |  | Landing page links record and data | F3-01M |
+| F4-01M | Metadata can be harvested and indexed | essential | 5 |  |  |  |  | ● | ○ | Archive exposes metadata (e.g., schema.org JSON-LD) to search engines | F4-01M |
+| A1-01M | Metadata contains information on how to access the data | important | 5 |  |  |  |  | ● |  | Access conditions on the landing page | A1-01M |
+| A1-02M | Metadata can be accessed manually | essential | 5 |  |  |  |  | ● |  | Web portal | — |
+| A1-02D | Data can be accessed manually | essential | 5 |  |  |  |  | ● |  | Download from the portal | — |
+| A1-03M | Metadata identifier resolves to a metadata record | essential | 5 |  |  |  |  | ● |  | DOI resolves to landing page | A1-02MD |
+| A1-03D | Data identifier resolves to a digital object | essential | 5 |  |  |  |  | ● |  | Identifier resolves to the data | A1-02MD |
+| A1-04M | Metadata accessed through a standardised protocol | essential | 5 |  |  |  |  | ● |  | HTTPS / REST API | A1-02MD |
+| A1-04D | Data accessible through a standardised protocol | essential | 5 | ○ |  |  |  | ● |  | HTTPS / S3; cloud-friendly formats (Zarr, HDF5) allow partial reads | A1-02MD |
+| A1-05D | Data can be accessed automatically | important | 5 | ○ |  |  |  | ● |  | APIs and command-line clients; cloud-friendly formats | — |
+| A1.1-01M | Metadata accessible through a free access protocol | essential | 5 |  |  |  |  | ● |  | Open web protocols | A1.1-01MD |
+| A1.1-01D | Data accessible through a free access protocol | important | 5 |  |  |  |  | ● |  | Open web protocols | A1.1-01MD |
+| A1.2-01D | Data access supports authentication and authorisation | useful | 5 |  |  |  |  | ● |  | Controlled-access tiers (e.g., for human data) | A1.2-01MD |
+| A2-01M | Metadata remains available after data are no longer available | essential | 5 |  |  |  |  | ● |  | Archive preservation policy | — |
+| I1-01M | Metadata uses knowledge representation in a standardised format | important | 3 | ● | ● | ● |  | ○ |  | Metadata in JSON/TSV sidecars (BIDS, Psych-DS) or HDF5 attributes (NWB) | I1-01M |
+| I1-01D | Data uses knowledge representation in a standardised format | important | 1 | ● | ○ |  |  |  |  | Open, documented formats (HDF5, Zarr, NIfTI, TIFF, CSV) | R1.3-02D |
+| I1-02M | Metadata uses machine-understandable knowledge representation | important | 3 |  | ● | ● |  | ○ | ● | Metadata fields defined in machine-readable schemas (BIDS schema, HDMF/NWB specification, LinkML, JSON-LD) | I1-01M |
+| I1-02D | Data uses machine-understandable knowledge representation | important | 2 |  | ● | ○ |  |  | ● | Data types defined in a schema language (e.g., NWB types in the HDMF language) | — |
+| I2-01M | Metadata uses FAIR-compliant vocabularies | important | 4 |  | ○ | ○ | ● |  |  | Terms from NCBI Taxonomy, Uberon, atlases, Cognitive Atlas; standards define the fields that hold them | I2-01M |
 | I2-01D | Data uses FAIR-compliant vocabularies | useful | 4 |  | ○ | ○ | ● |  |  | Annotations in the data, e.g., HED strings for events | — |
-| I3-01M | Metadata includes references to other metadata | important | 4 | ● | ○ |  | ○ |  |  | Archive links related datasets and publications | FsF-I3-01M |
-| I3-02M | Metadata includes references to other data | useful | 4 | ● | ● |  |  |  |  | Dataset descriptions reference source data (BIDS `Sources`, derivatives) | FsF-I3-01M |
-| I3-03M | Metadata includes qualified references to other metadata | important | 4 | ○ | ○ |  | ● |  |  | Typed relations from ontologies; DataCite relation types | FsF-I3-01M |
-| I3-04M | Metadata includes qualified references to other data | useful | 4 | ○ | ● | ○ |  |  |  | Typed links between files (BIDS `IntendedFor`); DataCite relation types | FsF-I3-01M |
-| I3-01D | Data includes references to other data | useful | 4 |  | ○ | ● |  |  |  | Links inside files (NWB links, external video files) | — |
-| I3-02D | Data includes qualified references to other data | useful | 4 |  | ○ | ● | ○ |  |  | Typed links in NWB; links to ontology terms (HERD) | — |
-| R1-01M | Plurality of accurate and relevant attributes for reuse | essential | 3 | ○ | ● | ● | ○ |  |  | Required and recommended metadata defined by the standards | FsF-R1-01M |
-| R1.1-01M | Metadata includes the licence | essential | 5 | ● | ○ |  |  |  |  | Archive licence; BIDS `License` field | FsF-R1.1-01M |
-| R1.1-02M | Metadata refers to a standard reuse licence | important | 5 | ● |  |  |  |  |  | Standard licences (e.g., CC0, CC-BY) | FsF-R1.1-01M |
-| R1.1-03M | Metadata refers to a machine-understandable reuse licence | important | 5 | ● |  |  |  |  |  | Licence as SPDX identifier or URI | FsF-R1.1-01M |
-| R1.2-01M | Provenance according to community-specific standards | important | 5 | ○ | ● | ● |  |  |  | NWB source and processing metadata; BIDS `GeneratedBy` and derivatives | FsF-R1.2-01M |
-| R1.2-02M | Provenance according to a cross-domain language | useful | 5 | ○ |  |  | ○ |  | ● | PROV-based models (W3C PROV, NIDM) | FsF-R1.2-01M |
-| R1.3-01M | Metadata complies with a community standard | essential | 3 | ○ | ● | ● |  |  | ○ | Dataset and file metadata follow BIDS, Psych-DS, or NWB | FsF-R1.3-01M |
-| R1.3-02M | Metadata expressed in a machine-understandable community standard | essential | 3 |  | ● | ● |  |  | ● | Validators check metadata against the standard's schema | FsF-R1.3-01M |
-| R1.3-01D | Data complies with a community standard | essential | 2 |  | ○ | ● |  |  |  | Files follow NWB, OME-Zarr, or other file organization standards | FsF-R1.3-02D |
-| R1.3-02D | Data expressed in a machine-understandable community standard | important | 2 |  |  | ● |  |  | ● | File structure defined in a schema and checked by validators (NWB Inspector) | FsF-R1.3-02D |
+| I3-01M | Metadata includes references to other metadata | important | 4 |  |  | ○ | ○ | ● |  | Archive links related datasets and publications | I3-01M |
+| I3-02M | Metadata includes references to other data | useful | 4 |  |  | ● |  | ● |  | Dataset descriptions reference source data (BIDS `Sources`, derivatives) | I3-01M |
+| I3-03M | Metadata includes qualified references to other metadata | important | 4 |  |  | ○ | ● | ○ |  | Typed relations from ontologies; DataCite relation types | I3-01M |
+| I3-04M | Metadata includes qualified references to other data | useful | 4 |  | ○ | ● |  | ○ |  | Typed links between files (BIDS `IntendedFor`); DataCite relation types | I3-01M |
+| I3-01D | Data includes references to other data | useful | 4 |  | ● | ○ |  |  |  | Links inside files (NWB links, external video files) | — |
+| I3-02D | Data includes qualified references to other data | useful | 4 |  | ● | ○ | ○ |  |  | Typed links in NWB; links to ontology terms (HERD) | — |
+| R1-01M | Plurality of accurate and relevant attributes for reuse | essential | 3 |  | ● | ● | ○ | ○ |  | Required and recommended metadata defined by the standards | R1-01M |
+| R1.1-01M | Metadata includes the licence | essential | 5 |  |  | ○ |  | ● |  | Archive licence; BIDS `License` field | R1.1-01M |
+| R1.1-02M | Metadata refers to a standard reuse licence | important | 5 |  |  |  |  | ● |  | Standard licences (e.g., CC0, CC-BY) | R1.1-01M |
+| R1.1-03M | Metadata refers to a machine-understandable reuse licence | important | 5 |  |  |  |  | ● |  | Licence as SPDX identifier or URI | R1.1-01M |
+| R1.2-01M | Provenance according to community-specific standards | important | 5 |  | ● | ● |  | ○ |  | NWB source and processing metadata; BIDS `GeneratedBy` and derivatives | R1.2-01M |
+| R1.2-02M | Provenance according to a cross-domain language | useful | 5 |  |  |  | ○ | ○ | ● | PROV-based models (W3C PROV, NIDM) | R1.2-01M |
+| R1.3-01M | Metadata complies with a community standard | essential | 3 |  | ● | ● |  | ○ | ○ | Dataset and file metadata follow BIDS, Psych-DS, or NWB | R1.3-01M |
+| R1.3-02M | Metadata expressed in a machine-understandable community standard | essential | 3 |  | ● | ● |  |  | ● | Validators check metadata against the standard's schema | R1.3-01M |
+| R1.3-01D | Data complies with a community standard | essential | 2 |  | ● | ○ |  |  |  | Files follow NWB, OME-Zarr, or other file organization standards | R1.3-02D |
+| R1.3-02D | Data expressed in a machine-understandable community standard | important | 2 |  | ● |  |  |  | ● | File structure defined in a schema and checked by validators (NWB Inspector) | R1.3-02D |
