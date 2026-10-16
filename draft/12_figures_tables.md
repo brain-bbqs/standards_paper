@@ -15,7 +15,6 @@ must total ≤350 words (F6).
 | Fig. 5 | BBQS standards stack on the map | 6 | spec | `figures/fig5_bbqs_stack/` |
 | Table 3 | Recommended standards by BBQS data type | 7 | draft (below) | BBQS guideline |
 | Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | `figures/fig6_bridges_future/` |
-| Suppl. Fig. S1 | Knowledge graph with the lenient community rule (sensitivity) | 4 | draft | `figures/supplementary/figS1_knowledge_graph_lenient/` (`make figS1`) |
 | Suppl. Table S1 | Standards and archives comparison (modalities, formats, languages, funding/origin) | 2 | poster | `figures/supplementary/tableS1_standards_comparison/` |
 | Suppl. Table S2 | The 41 RDA FAIR indicators mapped to the levels of FAIRness and the layers that contribute | 3 | draft (below) | RDA FAIR Data Maturity Model v1.0; FAIRsFAIR metrics v0.8 |
 
@@ -134,14 +133,6 @@ elements; semantic — values; archive linking; dataset-level common data elemen
 directions (living data, data reuse, integration across modalities and archives, AI and new technologies, coordination centers)
 and cross-cutting needs (education and training, outreach and community engagement, maintenance and
 support), redrawn from the poster.
-
-## Supplementary Fig. S1 — Sensitivity to the community rule
-
-![Suppl. Fig. S1 draft](../figures/supplementary/figS1_knowledge_graph_lenient/figS1_knowledge_graph_lenient.png)
-
-As Fig. 3, but classifying a relationship as within community whenever the two technologies share any
-community tag (lenient rule) instead of comparing the communities in which they originated. Most bridges
-disappear, because technologies are often tagged with the communities they reached through those bridges.
 
 ## Supplementary Table S2 — The RDA FAIR indicators by level of FAIRness and layer
 

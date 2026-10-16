@@ -62,7 +62,7 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
 - [ ] **D10 — Community rule for bridges** *(OR, core)*. Adopt the proposal in
       `knowledge_graph/TODO.md` 1.2: a technology's *home* community is where it originated and is
       governed; other tags mean "communities served" and are reported separately. Determines the
-      numbers in Section 4 (claims C25, C35) and Fig. 3 / Suppl. Fig. S1.
+      numbers in Section 4 (claim C25) and Fig. 3.
 
 ## 2. Actions (open)
 
@@ -110,8 +110,7 @@ Rebuild generated figures with `make figures`.
       Fig. 5 (BBQS stack, `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
 - [ ] **F4** Review Fig. 4 (`figures/fig4_bbqs_data/fig4_bbqs_data.pdf`): keep the species panel? show
       "exploratory behavior" (no guideline entry) as a gap? *(OR, core)*.
-- [ ] **F5** Polish Fig. 3 and Suppl. Fig. S1 (`figures/fig3_knowledge_graph/`,
-      `figures/supplementary/figS1_knowledge_graph_lenient/`): label collisions, how to show shared
+- [ ] **F5** Polish Fig. 3 (`figures/fig3_knowledge_graph/`): label collisions, how to show shared
       infrastructure edges, colour-blind palette; after D10 and edge verification *(Claude, then OR)*.
 - [ ] **F6** Shorten legends to ≤350 words in total; sans-serif fonts, white backgrounds *(Claude)*.
 - [ ] **F7** Review the Fig. 2 design draft (`figures/fig2_fair_levels/fig2_fair_levels_design.pptx`): staircase only,
@@ -160,7 +159,6 @@ Rebuild generated figures with `make figures`.
 | C32 | 9 | Knowledge bases connecting data, metadata, and derived findings across archives are a natural next step (BRAIN Initiative mention removed by OR) | Cite a public source only (e.g., the BRAIN KB paper when available); never the roundtable summary | core |
 | C33 | 3 | BICCN/BICAN multi-archive stacks (NeMO, BIL, DANDI, BossDB; catalog; NIMP) | Confirm NIMP description and whether BICAN uses BossDB; cite BICCN 2021 and the portals | core (BICAN contact); Claude for citations |
 | C34 | 3 | Maturity of standards is better described by technology readiness scales | Citation, or remove | Claude |
-| C35 | 4 | The lenient community rule hides most bridges (26 vs. 2 connections) | Depends on D10 | core |
 | C36 | 7 | R11: DANDI accepts NWB; OpenNeuro, NEMAR, and DABI accept BIDS | Check which standards each archive accepts (DABI: BIDS and NWB?); cite archive pages | Claude |
 | C38 | 3 | General FAIR assessments can test only whether data follow a community standard; whether data have the structure, units, timing, and metadata a standard requires can be checked only with that standard's validators | FAIR-expert check; optionally cite a discussion of domain-specific FAIR assessment (e.g., FAIR-IMPACT discipline-specific metrics) | core (FAIR expert); Claude |
 | C37 | 8 | Gaps are being addressed: events/annotations, links to external vocabularies, multi-subject data, via NWB proposals/extensions and BIDS BEPs | OR to pick 2–4 representative examples to cite (e.g., NWBEP001 / PyNWB 4.0 core events; relevant BEPs such as BEP042 or behavior/multi-subject BEPs; NWB multi-subject work) | OR |
@@ -191,8 +189,9 @@ are in `knowledge_graph/TODO.md`, section 0.
 | 2026-10-15 | Layer order | Layers numbered bottom-up to match the levels of FAIRness: 1 data formats, 2 file organization, 3 dataset organization, 4 ontologies & terminologies, 5 data archives, 6 schema languages. Applied to Table 1 (new # column), Section 2 (paragraph order), Fig. 1 and Fig. 2 badges, Fig. 1 caption, Fig. 5 legend, Sections 1 and 9 |
 | 2026-10-15 | Fig. 2 | Layer stack removed (repeated Fig. 1 and the step labels); steps styled and numbered like Fig. 1; climbing arrow and summit flag; full mapping in the speaker notes. Fig. 5 is now the only stack diagram |
 | 2026-10-15 | FAIR alignment | Levels aligned with the RDA FAIR Data Maturity Model in Suppl. Table S2 only (level and contributing layers for all 41 indicators; removed from Table 2 and Fig. 2 as too complex for the main text) (not one level per indicator, which under-credited standards); F-UJI named as one implementation (tools disagree, Sun 2022). Five-star Open Data removed (open/linked data, not FAIR). Tables 2 and 3 moved to `draft/12_figures_tables.md` |
-| 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 |
-| 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table; numbered in order of first citation; within journal limits |
+| 2026-10-16 | Suppl. Fig. S1 | Dropped (lenient community rule not needed as a supplementary figure). Section 4 no longer discusses the lenient rule (C35 removed); it explains that each technology is assigned to the community in which it originated so the graph shows which connections cross communities. The lenient-rule graph is kept for review as an alternate figure, `figures/alternates/kg_lenient_community_rule/` (`make alt-kg-lenient`) |
+| 2026-10-09 | D3 Knowledge graph | Main result: Section 4 and Fig. 3; lenient rule as Suppl. Fig. S1 (dropped 2026-10-16) |
+| 2026-10-09 | D6, F1 Display items | 6 figures, 3 tables, 1 supplementary figure and table (Suppl. Fig. S1 dropped 2026-10-16); numbered in order of first citation; within journal limits |
 | 2026-10-09 | Figures folder | `figures/` with one folder per item, `make figures`, `make check` |
 | 2026-10-09 | KG counting | Undirected relations (*related to*, *interoperates with*) counted once per pair; 11 RRID links had been stored in both directions (133 → 122 relationships, 33 → 31 bridges) |
 | 2026-10-09 | KG unit | Section 4 counts connections (pairs of technologies), matching Fig. 3; the stats report gives both connections and relationships |
