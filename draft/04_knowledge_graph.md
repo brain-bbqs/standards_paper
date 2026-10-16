@@ -52,8 +52,8 @@ in the same way that the registries already make the technologies themselves fin
 The graph is a first version and has limitations. Its coverage reflects the technologies most relevant
 to this paper rather than the whole of neuroscience. Curated relationships are still being confirmed by
 domain experts, and registry coverage is incomplete. Whether a connection crosses communities also
-depends on how each technology's community is assigned. We classify by the community in which a
-technology originated. A more lenient classification, which treats any shared community as within
-community, hides most bridges because technologies are often tagged with the communities they have
-reached through exactly these bridges [TODO-C35]. The graph, the code, and the
+depends on how each technology's community is assigned. Many technologies now serve several
+communities, often because of the very connections the graph records. We therefore assign each
+technology to the community in which it originated, so that the graph shows which connections cross
+communities and which do not. The graph, the code, and the
 gap report are released so that the community can extend and correct it (Data Availability).

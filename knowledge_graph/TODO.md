@@ -4,7 +4,7 @@
 see `output/stats.md` and `output/gaps.md` (`ecokg report`). Items are ordered by how much they
 affect the paper's Section 4 and Fig. 3 ("bridges between communities concentrate in a few hubs").
 Paper-level decisions and claims that depend on this list are tracked in `../plan/TODO.md` (D10, C25, C26,
-C35, F5).*
+F5).*
 
 ---
 

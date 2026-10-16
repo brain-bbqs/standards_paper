@@ -42,7 +42,7 @@
 
 ### Phase 1 — Core-team review (Oct 13 – Nov 14, 2026)
 1. Complete the knowledge-graph inputs: FAIRsharing relations (KG 1.1), RRID gaps (KG 2.x). Re-run
-   `make figures` and update Section 4 numbers (C25, C26, C35).
+   `make figures` and update Section 4 numbers (C25, C26).
 2. Core team reads the full draft and comments section by section; OR assigns section leads (A3).
 3. Settle the open framing decisions: D4 (how prescriptive), D5 (ontology wording), D8 (relation to
    existing classifications, what the map leaves out, stack geometry), D10 (community rule).
