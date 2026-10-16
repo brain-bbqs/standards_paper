@@ -5,9 +5,7 @@ to: latex
 standalone: true
 resource-path: [draft]
 include-in-header: [tools/pdf/header.tex]
-filters: [tools/pdf/figures.lua]
-toc: true
-toc-depth: 2
+filters: [tools/pdf/toc.lua, tools/pdf/figures.lua]
 variables:
   documentclass: article
   papersize: letter
