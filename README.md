@@ -23,10 +23,15 @@ quantification and synchronization"* (target: Scientific Data, Article).
 
 ## Review PDF
 
+[![Review PDF](https://github.com/brain-bbqs/standards_paper/actions/workflows/review-pdf.yml/badge.svg?branch=main)](https://github.com/brain-bbqs/standards_paper/actions/workflows/review-pdf.yml?query=branch%3Amain)
+
+**Latest PDF of `main`:** open the [Review PDF runs on `main`](https://github.com/brain-bbqs/standards_paper/actions/workflows/review-pdf.yml?query=branch%3Amain),
+click the top run, and download `paper-pdf` under **Artifacts** (sign in to GitHub to download).
+
 The full draft is rendered as one PDF for review by the **Review PDF** GitHub workflow
 (`.github/workflows/review-pdf.yml`) on every pull request and push to `main` that touches the draft or
-figures. On a pull request, a comment from the workflow links to the latest PDF (updated on each push);
-otherwise download it from the workflow run: Actions → Review PDF → latest run → Artifacts → `paper-pdf`.
+figures. On a pull request, a comment from the workflow links to the latest PDF (updated on each push).
+Downloads expire after 90 days; to rebuild, use **Run workflow** on the runs page (write access needed).
 The PDF has continuous line numbers, so please refer to page and line numbers in comments. The artifact
 also contains `paper.tex`, the single LaTeX file the PDF is built from.
 
