@@ -1,10 +1,9 @@
 ---
 title: Navigating neuroscience data standards for multimodal brain behavior quantification and synchronization
-author: 'O. Rübel\*, …, Y. O. Halchenko\*'
+author: 'O. Rübel, Y. O. Halchenko, …'
 ---
 
-*Title decided 2026-10-09 (103 characters; meets Scientific Data rules: ≤110 characters, no colon,
-parentheses, or acronyms).*
+*Title Scientific Data rules: ≤110 characters, no colon, parentheses, or acronyms.*
 
 *Author list to be decided (close by Nov 14, 2026; see `plan/TODO.md` A1).*
 
