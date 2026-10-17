@@ -2,11 +2,11 @@
 
 *(target ~1,200 words; Table 3)*
 
-We developed the below recommendations as part of the BBQS Data Standards Working Group
+We developed the recommendations below in the BBQS Data Standards Working Group,
 as part of the BBQS data standards guideline [REF: BBQS guideline]. Although they
-were developed for BBQS, they apply much more broadly to any study that combines neural 
-and behavioral data, so we state them in general terms. We then describe afterwards
-how BBQS implements these recommendation at the end of this section. They are
+were developed for BBQS, they apply much more broadly to any study that combines neural
+and behavioral data, so we state them in general terms. At the end of this section, we
+describe how BBQS implements them. They are
 community guidance, not a ranking of standards, and the guideline is updated as standards evolve.
 Table 3 gives an overview by data type.
 
@@ -23,8 +23,8 @@ type [REF: BBQS guideline].
 **R2. Expect to combine standards, and link them explicitly.** Multimodal studies will often need
 more than one standard, for example BIDS for MRI and NWB for electrophysiology in the same
 participants. Use the same subject and session identifiers throughout, and record how datasets relate.
-Emerging integrations such as BEP032 (NWB within BIDS) make this easier and should be used where they
-apply [TODO-C15].
+Emerging integrations such as BEP032 (NWB within BIDS) will make this easier once released
+[TODO-C15].
 
 **R3. Keep raw video in standard formats and link it.** Store video in widely supported containers
 (e.g., MP4) rather than embedding it in other files, and reference it from the file organization

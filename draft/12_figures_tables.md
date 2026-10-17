@@ -116,12 +116,13 @@ Psych-DS teams* [TODO-C17].
 | Optogenetic / electrical stimulation | ✓ (recommended) | — | — | |
 | Raw behavioral video | ✓ (linked MP4 etc.) | ext. (proposals in progress) | ✓ (raw folder) | |
 | Pose / motion tracking | ✓ (ndx-pose) | ✓ (Motion-BIDS) | tabular only | |
-| Eye tracking | ✓ | ext. (BEP020) | tabular only | |
+| Eye tracking | ✓ | ✓ (since BIDS 1.11) | tabular only | BIDS support not yet in the BBQS guideline |
 | Wearable sensors | ✓ (TimeSeries) | ✓ (physio recordings) | ✓ (CSV) | |
 | Audio / vocalizations | ✓ (TimeSeries + intervals) | — | — | |
 | Structured tasks / events | ✓ (core events since NWB 2.10; ndx-structured-behavior) | ✓ (task events) | — | HED in both |
 | Questionnaires / surveys | — | partial | ✓ (recommended) | |
-| Social interactions, feeding, facial expressions, home-cage monitoring, VR, force plates, EMG | — | — / ext. | — | **Gaps** (Section 8) |
+| EMG | — | ✓ (since BIDS 1.11) | — | Not yet in the BBQS guideline (Section 8) |
+| Social interactions, feeding, facial expressions, home-cage monitoring, VR, force plates | — | — | — | **Gaps** (Section 8) |
 
 ## Fig. 6 — Bridges and future directions
 
