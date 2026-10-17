@@ -32,7 +32,7 @@ edges:
   - {source: bids, target: json, relation: uses_format, provenance: poster, evidence: "Sidecar metadata in JSON.", confidence: high, verified: false}
   - {source: bids, target: tsv_csv, relation: uses_format, provenance: poster, evidence: "Tabular metadata (participants, events) in TSV.", confidence: high, verified: false}
   - {source: bids, target: edf, relation: organizes, provenance: docs, evidence: "EDF is a permitted EEG/iEEG format in BIDS.", confidence: high, verified: false}
-  - {source: bids, target: nwb, relation: organizes, provenance: docs, evidence: "NWB permitted for iEEG and in BIDS microelectrode electrophysiology (BEP032).", confidence: medium, verified: false}
+  - {source: bids, target: nwb, relation: organizes, provenance: docs, evidence: "NWB permitted for iEEG; proposed for microelectrode electrophysiology in BEP032.", confidence: medium, verified: false}
   - {source: bids, target: ome_tiff, relation: organizes, provenance: docs, evidence: "BIDS microscopy permits OME-TIFF.", confidence: high, verified: false}
   - {source: bids, target: ome_zarr, relation: organizes, provenance: docs, evidence: "BIDS microscopy permits OME-Zarr.", confidence: high, verified: false}
   - {source: bids, target: hed, relation: uses_terminology, provenance: poster, evidence: "HED annotation of BIDS events.tsv (poster archive table, BBQS inventory).", confidence: high, verified: false}

@@ -30,11 +30,11 @@ declaring these roles.*
 
 *From the SfN 2025 poster acknowledgements; complete and update with all authors' grants (TODO-S5):*
 NIH 1U24MH136628 (BBQS AI Resource and Data Coordinating Center, BARD.CC); NIH 1R24MH117295 (DANDI);
-NIH 2R24DA064430 (EMBER); NIH 2R24MH117179-06 (OpenNeuro); NIH 1RF1MH132747-01 (Psych-DS); NIH
-3OT2OD030541 (K-CORE, SPARC); NIH U24NS120057 (NWB dissemination); NIH U24NS140384 (BRAIN CONNECTS,
-APEX); NIH R01MH126699 (BIDS); NIH UM1NS132207 (BRAIN CONNECTS, Center for Mesoscale Connectomics);
-European Union Horizon Europe Grant Agreement No. 101147319 (EBRAINS 2.0, openMINDS); NIH RF1MH133701
-(ezBIDS, NiiVue, dcm2niix); NIH R24MH114785 (BossDB).
+NIH R24MH136632 and NIH 2R24DA064430 (EMBER); NIH 2R24MH117179-06 (OpenNeuro); NIH 1RF1MH132747-01
+(Psych-DS); NIH 3OT2OD030541 (K-CORE, SPARC); NIH U24NS120057 (NWB dissemination); NIH U24NS140384
+(BRAIN CONNECTS, APEX); NIH R01MH126699 (BIDS); NIH UM1NS132207 (BRAIN CONNECTS, Center for Mesoscale
+Connectomics); European Union Horizon Europe Grant Agreement No. 101147319 (EBRAINS 2.0, openMINDS); NIH
+RF1MH133701 (ezBIDS, NiiVue, dcm2niix); NIH R24MH114785 (BossDB).
 
 ## Acknowledgements
 
