@@ -133,9 +133,12 @@ Rebuild generated figures with `make figures`.
       the speaker notes; the RDA mapping is only in Suppl. Table S1) *(OR)*.
 - [ ] **F9** Re-export the PNG previews of Fig. 1 and Fig. 2 from PowerPoint after the layer renumbering
       (the .pptx files are updated; the PNGs still show the old numbers) *(OR)*.
-- [ ] **F10** Review the Fig. 5 design draft (`figures/fig5_bbqs_stack/fig5_bbqs_stack_design.pptx`): stack
-      geometry (D8), the technologies in each row, and the three data paths; check with the BBQS WG that these
-      are the recommended paths (Section 6, Table 3) *(OR, WG)*.
+- [ ] **F10** Review the Fig. 5 design draft v2 (`figures/fig5_bbqs_stack/fig5_bbqs_stack_design.pptx`): stack
+      geometry (D8), the data groups and paths (Table 3), and the status of each in-progress item (NWBEPs, BEPs,
+      Neuro Termsets, BIDS PR #2367, Psych-DS extensions; status as of the Oct 2026 forum). Check with the
+      BBQS WG and the NWB, BIDS, and Psych-DS teams (C17, C37); recheck status before submission *(OR, WG)*.
+      Table 3 follow-ups the figure raises: raw video and audio in BIDS → "ext. (BEP047)"; questionnaires in
+      BIDS "partial" (phenotype/); a row or note for multi-subject data (ndx-multisubjects, planned BEP).
 - [ ] **F8** Suppl. Table S1 (in `draft/12_figures_tables.md`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 

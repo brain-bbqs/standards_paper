@@ -94,12 +94,14 @@ only.
 
 ![Fig. 5 design draft](../figures/fig5_bbqs_stack/fig5_bbqs_stack_design.png)
 
-**BBQS has at least one recommended technology in every layer.** The layers of the map stacked in
-Table 1 order, from data formats (1) at the bottom to data archives (5) at the top, with the technologies
-recommended for BBQS; schema languages (6) define the file and dataset organization standards. Arrows
-show three typical paths from raw data to the EMBER archive: video, pose, and electrophysiology through
-NWB and the DANDI layout; MRI, EEG, and events through BIDS; and questionnaires and task responses
-through Psych-DS. A path that crosses a row without a technology does not use that layer.
+**BBQS has at least one recommended technology in every layer, and work in progress targets the gaps.**
+The layers of the map stacked in Table 1 order, from data formats (1) at the bottom to data archives (5)
+at the top; schema languages (6) define the file and dataset organization standards. BBQS data types
+(bottom) are grouped by the standard Table 3 recommends, and arrows show their paths to the EMBER archive
+through NWB and the DANDI layout, BIDS, and Psych-DS. Solid boxes are recommended today. Dashed boxes are
+extensions and proposals in progress, such as NWB Enhancement Proposals (NWBEP) and BIDS Extension
+Proposals (BEP). Grey dashed boxes are data and metadata that have no recommended standard yet (Section 8).
+The status of proposals is as of October 2026.
 
 ## Table 3 — Recommended standards for common BBQS data types
 
