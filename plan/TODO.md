@@ -56,8 +56,8 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
       - [ ] Stack geometry for Fig. 5, now the only stack diagram (Figs. 1 and 2 have none): keep six stacked
             layers, or draw a four-level structural stack (archives, dataset organization, file
             organization, formats) with ontologies/terminologies and schema languages as cross-cutting
-            columns. The design draft (F10) uses five stacked rows with schema languages as a box across
-            rows 2–3, as in Fig. 2.
+            columns. The design draft (F10, v3) uses the four-level structural stack, with ontologies (4) and
+            schema languages (6) as side panels next to the file and dataset organization rows.
 - [ ] **D9 — Journal logistics** *(OR)*. Scientific Data APC and who pays (plan Q6); whether to send a
       pre-submission enquiry (planned ~Nov 17) or submit directly.
 - [ ] **D10 — Community rule for bridges** *(OR, core)*. Adopt the proposal in

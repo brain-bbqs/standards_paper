@@ -95,13 +95,14 @@ only.
 ![Fig. 5 design draft](../figures/fig5_bbqs_stack/fig5_bbqs_stack_design.png)
 
 **BBQS has at least one recommended technology in every layer, and work in progress targets the gaps.**
-The layers of the map stacked in Table 1 order, from data formats (1) at the bottom to data archives (5)
-at the top; schema languages (6) define the file and dataset organization standards. BBQS data types
-(bottom) are grouped by the standard Table 3 recommends, and arrows show their paths to the EMBER archive
-through NWB and the DANDI layout, BIDS, and Psych-DS. Solid boxes are recommended today. Dashed boxes are
-extensions and proposals in progress, such as NWB Enhancement Proposals (NWBEP) and BIDS Extension
-Proposals (BEP). Grey dashed boxes are data and metadata that have no recommended standard yet (Section 8).
-The status of proposals is as of October 2026.
+Data formats (1), file organization standards (2), dataset organization standards (3), and data archives
+(5) are stacked in Table 1 order; ontologies and terminologies (4) and schema languages (6) serve both
+organization layers and are shown alongside them. Each BBQS data type (bottom) appears once, joined by thin
+lines to every standard that can hold it (Table 3); thick arrows lead from NWB and the DANDI layout, BIDS,
+and Psych-DS to the EMBER archive. Solid boxes are recommended today; dashed boxes are extensions and
+proposals in progress, labeled by what they add, such as NWB extensions (ndx-) and Enhancement Proposals
+(NWBEP) and BIDS Extension Proposals (BEP); grey dashed boxes have no recommended standard yet (Section 8).
+Status as of October 2026.
 
 ## Table 3 — Recommended standards for common BBQS data types
 
