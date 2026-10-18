@@ -94,13 +94,13 @@ only.
 
 ![Fig. 5 design draft](../figures/fig5_bbqs_stack/fig5_bbqs_stack_design.png)
 
-**Most BBQS data have a standard path to the archive, and work is under way to close some of the gaps.**
+Most BBQS data have a standard path to the archive, while work is under way to close some of the gaps.
 With a recommended technology in every layer, BBQS data types (bottom) reach the EMBER archive through NWB
 and the DANDI layout (orange), BIDS (green), or Psych-DS (grey). Many behavioral data, such as video, pose,
 events, and wearable sensors, fit more than one standard (thin lines, Table 3). The neural data then
-usually decide. Behavior recorded with electrophysiology goes into the same NWB files, and behavior
+usually decide, i.e., behavior recorded with electrophysiology goes into the same NWB files, and behavior
 recorded with MRI or EEG into the same BIDS dataset, so that all streams share one timeline and one set of
-identifiers (R1, R2). NWB and BIDS are being extended for some BBQS data (dashed), in some cases through
+identifiers (Section 7). NWB and BIDS are being extended for some BBQS data (dashed), in some cases through
 companion proposals that keep the two standards aligned. Several common behaviors and behavior labels still
 have no standard (grey, Section 8). Ontologies (4) and schema languages (6) serve both organization layers,
 and LinkML translations of the DANDI and NWB schemas are planned. Status as of October 2026.
