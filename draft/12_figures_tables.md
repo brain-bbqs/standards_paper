@@ -94,17 +94,16 @@ only.
 
 ![Fig. 5 design draft](../figures/fig5_bbqs_stack/fig5_bbqs_stack_design.png)
 
-**Most BBQS data have a standard path to the archive, and the remaining gaps are being worked on.**
+**Most BBQS data have a standard path to the archive, and work is under way to close some of the gaps.**
 With a recommended technology in every layer, BBQS data types (bottom) reach the EMBER archive through NWB
 and the DANDI layout (orange), BIDS (green), or Psych-DS (grey). Many behavioral data, such as video, pose,
-events, and wearable sensors, fit more than one standard (thin lines; Table 3). The neural data then
-usually decide: behavior recorded with electrophysiology goes into the same NWB files, behavior recorded
-with MRI or EEG into the same BIDS dataset, so that all streams share one timeline and one set of
-identifiers (R1, R2). Where BBQS data do not yet fit, NWB and BIDS are being extended (dashed), in some
-cases through companion proposals that keep the two standards aligned, while several common behaviors and
-behavior labels have no standard yet (grey; Section 8). Ontologies (4) and schema languages (6) serve both
-organization layers; LinkML translations of the DANDI and NWB schemas are planned. Status as of October
-2026.
+events, and wearable sensors, fit more than one standard (thin lines, Table 3). The neural data then
+usually decide. Behavior recorded with electrophysiology goes into the same NWB files, and behavior
+recorded with MRI or EEG into the same BIDS dataset, so that all streams share one timeline and one set of
+identifiers (R1, R2). NWB and BIDS are being extended for some BBQS data (dashed), in some cases through
+companion proposals that keep the two standards aligned. Several common behaviors and behavior labels still
+have no standard (grey, Section 8). Ontologies (4) and schema languages (6) serve both organization layers,
+and LinkML translations of the DANDI and NWB schemas are planned. Status as of October 2026.
 
 ## Table 3 — Recommended standards for common BBQS data types
 
