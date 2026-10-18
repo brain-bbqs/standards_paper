@@ -102,7 +102,9 @@ lines to every standard that can hold it (Table 3). Arrows show the paths to the
 and the DANDI layout (orange), BIDS (green), and Psych-DS (grey); the arrow from NWB to the BIDS path shows
 that BIDS datasets can include NWB files. Solid boxes are recommended today; dashed boxes are extensions and
 proposals in progress, labeled by what they add; grey dashed boxes have no recommended standard yet
-(Section 8). Arrows in panel 4 show the terminologies that Neuro Termsets draws on. Status as of October 2026.
+(Section 8). Arrows in panel 4 show the terminologies that Neuro Termsets draws on. In panel 6, the DANDI metadata
+model is written as Pydantic models from which JSON Schema is generated; translations of the DANDI and NWB
+schemas to LinkML are planned. Status as of October 2026.
 
 ## Table 3 — Recommended standards for common BBQS data types
 
