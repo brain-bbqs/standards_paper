@@ -12,7 +12,7 @@ must total ≤350 words (F6).
 | Table 2 | Levels of FAIRness, the layers that enable them, and the FAIR principles they address | 3 | draft (below) | |
 | Fig. 3 | Ecosystem knowledge graph (layers × communities) | 4 | draft | `figures/fig3_knowledge_graph/` (`make fig3`) |
 | Fig. 4 | BBQS data: (a) species, (b) modalities, (c) behaviors × guideline coverage | 5, 8 | draft | `figures/fig4_bbqs_data/` (`make fig4`) |
-| Fig. 5 | BBQS standards stack on the map | 6 | spec | `figures/fig5_bbqs_stack/` |
+| Fig. 5 | BBQS standards stack on the map | 6 | design draft (PowerPoint) | `figures/fig5_bbqs_stack/` |
 | Table 3 | Recommended standards by BBQS data type | 7 | draft (below) | BBQS guideline |
 | Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | `figures/fig6_bridges_future/` |
 | Suppl. Table S1 | The 41 RDA FAIR indicators mapped to the levels of FAIRness and the layers that contribute | 3 | draft (below) | RDA FAIR Data Maturity Model v1.0; FAIRsFAIR metrics v0.8 |
@@ -92,13 +92,18 @@ only.
 
 ## Fig. 5 — The BBQS standards stack
 
-*Not yet drawn (spec only).*
+![Fig. 5 design draft](../figures/fig5_bbqs_stack/fig5_bbqs_stack_design.png)
 
-The six layers of the map as a stack, from data formats at the bottom to archives at the top (Table 1
-order), with BBQS technologies highlighted: HDF5/Zarr, JSON/TSV/CSV, MP4, NIfTI (formats); NWB (file
-organization standard); BIDS, Psych-DS, DANDI layout (dataset organization); HED, NCBI Taxonomy, atlases,
-Cell Ontology (terminologies); EMBER (archive); HDMF, LinkML, BIDS schema (schema languages). Arrows show supported paths for typical BBQS data (e.g., video + pose + ephys → NWB → DANDI
-layout → EMBER; MRI + EEG + events → BIDS + HED → EMBER; questionnaires → Psych-DS → EMBER).
+Most BBQS data have a standard path to the archive, while work is under way to close some of the gaps.
+With a recommended technology in every layer, BBQS data types (bottom) reach the EMBER archive through NWB
+and the DANDI layout (orange), BIDS (green), or Psych-DS (grey). Many behavioral data, such as video, pose,
+events, and wearable sensors, fit more than one standard (thin lines, Table 3). The neural data then
+usually decide, i.e., behavior recorded with electrophysiology goes into the same NWB files, and behavior
+recorded with MRI or EEG into the same BIDS dataset, so that all streams share one timeline and one set of
+identifiers (Section 7). NWB and BIDS are being extended for some BBQS data (dashed), in some cases through
+companion proposals that keep the two standards aligned. Several common behaviors and behavior labels still
+have no standard (grey, Section 8). Ontologies (4) and schema languages (6) serve both organization layers,
+and LinkML translations of the DANDI and NWB schemas are planned. Status as of October 2026.
 
 ## Table 3 — Recommended standards for common BBQS data types
 

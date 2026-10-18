@@ -56,7 +56,8 @@ Knowledge-graph issues: `knowledge_graph/TODO.md` (summarized in section 5 below
       - [ ] Stack geometry for Fig. 5, now the only stack diagram (Figs. 1 and 2 have none): keep six stacked
             layers, or draw a four-level structural stack (archives, dataset organization, file
             organization, formats) with ontologies/terminologies and schema languages as cross-cutting
-            columns.
+            columns. The design draft (F10, v3) uses the four-level structural stack, with ontologies (4) and
+            schema languages (6) as side panels next to the file and dataset organization rows.
 - [ ] **D9 — Journal logistics** *(OR)*. Scientific Data APC and who pays (plan Q6); whether to send a
       pre-submission enquiry (planned ~Nov 17) or submit directly.
 - [ ] **D10 — Community rule for bridges** *(OR, core)*. Adopt the proposal in
@@ -120,8 +121,8 @@ Rebuild generated figures with `make figures`.
       No real platform name, logo, or look in the artwork. Redraw from the poster: Fig. 6b
       (`figures/fig6_bridges_future/`).
       Use "file organization standards" and the outcome of D8 *(designer / figure lead)*.
-- [ ] **F3** Final artwork for Fig. 2 (FAIR staircase, `figures/fig2_fair_levels/`, design draft exists) and design of
-      Fig. 5 (BBQS stack, `figures/fig5_bbqs_stack/`) from the specs in `draft/12_figures_tables.md` *(designer)*.
+- [ ] **F3** Final artwork for Fig. 2 (FAIR staircase, `figures/fig2_fair_levels/`) and Fig. 5 (BBQS stack,
+      `figures/fig5_bbqs_stack/`); design drafts exist for both *(designer)*.
 - [ ] **F4** Review Fig. 4 (`figures/fig4_bbqs_data/fig4_bbqs_data.pdf`): keep the species panel? show
       "exploratory behavior" (no guideline entry) as a gap? *(OR, core)*.
 - [ ] **F5** Polish Fig. 3 (`figures/fig3_knowledge_graph/`): label collisions, how to show shared
@@ -132,6 +133,12 @@ Rebuild generated figures with `make figures`.
       the speaker notes; the RDA mapping is only in Suppl. Table S1) *(OR)*.
 - [ ] **F9** Re-export the PNG previews of Fig. 1 and Fig. 2 from PowerPoint after the layer renumbering
       (the .pptx files are updated; the PNGs still show the old numbers) *(OR)*.
+- [ ] **F10** Review the Fig. 5 design draft v2 (`figures/fig5_bbqs_stack/fig5_bbqs_stack_design.pptx`): stack
+      geometry (D8), the data groups and paths (Table 3), and the status of each in-progress item (NWBEPs, BEPs,
+      Neuro Termsets, BIDS PR #2367, Psych-DS extensions; status as of the Oct 2026 forum). Check with the
+      BBQS WG and the NWB, BIDS, and Psych-DS teams (C17, C37); recheck status before submission *(OR, WG)*.
+      Table 3 follow-ups the figure raises: raw video and audio in BIDS → "ext. (BEP047)"; questionnaires in
+      BIDS "partial" (phenotype/); a row or note for multi-subject data (ndx-multisubjects, planned BEP).
 - [ ] **F8** Suppl. Table S1 (in `draft/12_figures_tables.md`): review the layer contributions
       with a FAIR expert (C6); export as a spreadsheet for the supplement *(core, Claude)*.
 
