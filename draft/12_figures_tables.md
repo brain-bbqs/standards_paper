@@ -94,17 +94,17 @@ only.
 
 ![Fig. 5 design draft](../figures/fig5_bbqs_stack/fig5_bbqs_stack_design.png)
 
-**BBQS has at least one recommended technology in every layer, and work in progress targets the gaps.**
-Data formats (1), file organization standards (2), dataset organization standards (3), and data archives
-(5) are stacked in Table 1 order; ontologies and terminologies (4) and schema languages (6) serve both
-organization layers and are shown alongside them. Each BBQS data type (bottom) appears once, joined by thin
-lines to every standard that can hold it (Table 3). Arrows show the paths to the EMBER archive through NWB
-and the DANDI layout (orange), BIDS (green), and Psych-DS (grey); the arrow from NWB to the BIDS path shows
-that BIDS datasets can include NWB files. Solid boxes are recommended today; dashed boxes are extensions and
-proposals in progress, labeled by what they add; grey dashed boxes have no recommended standard yet
-(Section 8). Arrows in panel 4 show the terminologies that Neuro Termsets draws on. In panel 6, the DANDI metadata
-model is written as Pydantic models from which JSON Schema is generated; translations of the DANDI and NWB
-schemas to LinkML are planned. Status as of October 2026.
+**Most BBQS data have a standard path to the archive, and the remaining gaps are being worked on.**
+With a recommended technology in every layer, BBQS data types (bottom) reach the EMBER archive through NWB
+and the DANDI layout (orange), BIDS (green), or Psych-DS (grey). Many behavioral data, such as video, pose,
+events, and wearable sensors, fit more than one standard (thin lines; Table 3). The neural data then
+usually decide: behavior recorded with electrophysiology goes into the same NWB files, behavior recorded
+with MRI or EEG into the same BIDS dataset, so that all streams share one timeline and one set of
+identifiers (R1, R2). Where BBQS data do not yet fit, NWB and BIDS are being extended (dashed), in some
+cases through companion proposals that keep the two standards aligned, while several common behaviors and
+behavior labels have no standard yet (grey; Section 8). Ontologies (4) and schema languages (6) serve both
+organization layers; LinkML translations of the DANDI and NWB schemas are planned. Status as of October
+2026.
 
 ## Table 3 — Recommended standards for common BBQS data types
 
