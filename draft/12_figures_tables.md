@@ -98,11 +98,11 @@ only.
 Data formats (1), file organization standards (2), dataset organization standards (3), and data archives
 (5) are stacked in Table 1 order; ontologies and terminologies (4) and schema languages (6) serve both
 organization layers and are shown alongside them. Each BBQS data type (bottom) appears once, joined by thin
-lines to every standard that can hold it (Table 3); thick arrows lead from NWB and the DANDI layout, BIDS,
-and Psych-DS to the EMBER archive. Solid boxes are recommended today; dashed boxes are extensions and
-proposals in progress, labeled by what they add, such as NWB extensions (ndx-) and Enhancement Proposals
-(NWBEP) and BIDS Extension Proposals (BEP); grey dashed boxes have no recommended standard yet (Section 8).
-Status as of October 2026.
+lines to every standard that can hold it (Table 3). Arrows show the paths to the EMBER archive through NWB
+and the DANDI layout (orange), BIDS (green), and Psych-DS (grey); the arrow from NWB to the BIDS path shows
+that BIDS datasets can include NWB files. Solid boxes are recommended today; dashed boxes are extensions and
+proposals in progress, labeled by what they add; grey dashed boxes have no recommended standard yet
+(Section 8). Arrows in panel 4 show the terminologies that Neuro Termsets draws on. Status as of October 2026.
 
 ## Table 3 — Recommended standards for common BBQS data types
 
