@@ -35,8 +35,9 @@ standards arrange the files in folders. They define folder hierarchies and file 
 which file organization standards and formats are allowed, and define the dataset-level metadata that
 must accompany the files, often in sidecar JSON and TSV files. BIDS is the most widely used example in
 neuroscience. Its file names, such as `sub-01_ses-02_task-rest`, encode the subject, session, and task.
-Psych-DS adapts the approach to psychological data, and several archives define simplified,
-BIDS-inspired layouts such as the DANDI layout, the SPARC Dataset Structure, and NeuroBlueprint. A typical
+Psych-DS adapts the approach to psychological data. Archives and research groups define lightweight,
+BIDS-inspired layouts, such as the DANDI layout, the SPARC Dataset Structure, and NeuroBlueprint from the
+Neuroinformatics Unit at the Sainsbury Wellcome Centre [REF: NeuroBlueprint]. A typical
 use is to organize the data from a full experiment. The video counterpart is a playlist or series, which
 groups related videos and names them, for example "season 1, episode 2", so that viewers know where each
 one belongs.
