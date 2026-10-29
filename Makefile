@@ -1,6 +1,7 @@
 # Build generated figures and check the TODO list against the draft.
 #
 #   make figures     regenerate all generated figures into figures/ (paper figures and alternates)
+#   make fig5        Fig. 5 SVG (links, layers) from its .pptx, and its walkthrough with svgtune if installed
 #   make alternates  regenerate only the alternate figures (figures/alternates/, not in the paper)
 #   make pdf         render the full draft (draft/*.md) as build/paper.tex and build/paper.pdf for review
 #   make check       check that every [TODO-Cn] marker in draft/ has an entry in plan/TODO.md and vice versa
@@ -11,9 +12,9 @@ ECOKG    := $(KG)/.venv/bin/ecokg
 UVRUN    := uv run -q --no-project --with openpyxl --with matplotlib python
 PDF_DATE := $(shell date +%Y-%m-%d), commit $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 
-.PHONY: figures fig3 fig4 alternates alt-kg-lenient pdf check kg-env
+.PHONY: figures fig3 fig4 fig5 alternates alt-kg-lenient pdf check kg-env
 
-figures: fig3 fig4 alternates
+figures: fig3 fig4 fig5 alternates
 
 alternates: alt-kg-lenient
 
@@ -31,6 +32,13 @@ alt-kg-lenient: $(ECOKG)
 
 fig4:
 	$(UVRUN) analysis/bbqs_inventory.py
+
+FIG5 := figures/fig5_bbqs_stack
+
+fig5:
+	python3 tools/pptx2svg.py $(FIG5)/fig5_bbqs_stack.yaml
+	@if command -v svgtune >/dev/null; then cd $(FIG5) && svgtune fig5_bbqs_stack.svgtune; \
+	 else echo "svgtune (https://github.com/yarikoptic/svgtune) not found: walkthrough not generated"; fi
 
 pdf:
 	mkdir -p build
