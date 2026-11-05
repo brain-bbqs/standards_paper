@@ -23,9 +23,11 @@ with the journal).
 | iEEG-BIDS | Holdgraf C et al. iEEG-BIDS. *Sci Data* 6, 102 (2019). | ✓ |
 | Microscopy-BIDS | Bourget M-H et al. Microscopy-BIDS. *Front Neurosci* 16, 871228 (2022). | ? |
 | Motion-BIDS | Jeung S et al. Motion-BIDS. *Sci Data* 11, 716 (2024). | ? |
+| BIDS v1.11 | BIDS Contributors. Brain Imaging Data Structure specification, version 1.11.0 (2026-02-04): adds eye tracking (BEP020), atlases (BEP038), and electromyography (BEP042). https://bids-specification.readthedocs.io/en/v1.11.0/ (cite the Zenodo DOI of the release) | ✓ (checked 2026-10-17 against the specification changelog, `src/CHANGES.md`; BEP032 not in a release as of v1.11.2) |
+| NeuroBlueprint | Neuroinformatics Unit, Sainsbury Wellcome Centre and Gatsby Computational Neuroscience Unit. NeuroBlueprint: a lightweight data specification for systems neuroscience, inspired by BIDS. https://neuroblueprint.neuroinformatics.dev (cite a versioned release if available) | ? (web resource; check title and version) |
 | Psych-DS | Psych-DS specification / paper (Kline Struhl M et al.?) | — |
 | DANDI docs | DANDI Archive documentation / Zenodo software DOI | — |
-| EMBER | EMBER archive (emberarchive.org); paper or grant NIH 2R24DA064430 | — |
+| EMBER | EMBER archive (emberarchive.org); paper or grants NIH R24MH136632 and 2R24DA064430 (RRID:SCR_026700) | — |
 | Markiewicz 2021 | Markiewicz CJ et al. The OpenNeuro resource for sharing of neuroscience data. *eLife* 10, e71774 (2021). | ✓ |
 | Subash 2023 | Subash P et al. A comparison of neuroelectrophysiology databases. *Sci Data* 10, 719 (2023). | ✓ (from poster) |
 | Robbins 2022 | Robbins K et al. Building FAIR functionality: annotating events in time series data using Hierarchical Event Descriptors (HED). *Neuroinformatics* 20, 463–481 (2022). | ? |

@@ -17,7 +17,8 @@ Comparing these entries with the behaviors BBQS projects actually record
   but there is no agreed representation of the derived measures (bouts, speeds, stride parameters).
 - Recording technologies including **EMG, force plates, virtual reality systems, automated home-cage
   monitoring, behavioral coding software, thermal imaging, and smartphone or smart-device data** lack
-  guidance; for some, extensions are in development (e.g., BIDS BEP042 for surface EMG) [TODO-C24].
+  guidance. BIDS has supported EMG since version 1.11 [REF: BIDS v1.11], but the guideline does not
+  yet cover it [TODO-C24].
 
 In short, the standards support the *raw signals* of behavior well, including video, positions, time
 series, and events, but not yet the *behavioral constructs* that BBQS projects study, which are
@@ -61,8 +62,8 @@ Bridges between technologies are being built at every layer of the map, and BBQS
 them (Fig. 6).
 
 1. **Structural bridges** connect file organization standards and dataset organization standards, for
-   example NWB files inside BIDS datasets (BEP032) and BIDS-inspired layouts for NWB data (DANDI
-   layout).
+   example NWB files inside BIDS datasets (allowed for iEEG, proposed for microelectrode recordings in
+   BEP032) and BIDS-inspired layouts for NWB data (DANDI layout).
 2. **Schema-language bridges** express schemas in a common language such as LinkML, so that equivalent
    concepts in different standards can be mapped and translated. Psych-DS is already defined in LinkML,
    efforts are under way to express the NWB schema in LinkML, and exploratory work has begun for BIDS

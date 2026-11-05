@@ -23,10 +23,11 @@ referenced from the NWB file. NWB is defined in the HDMF schema language and sto
 
 **BIDS (dataset organization for imaging, EEG, and multi-subject studies).** BIDS organizes the files of
 a whole study into a predictable folder hierarchy with key metadata encoded in file names and JSON and
-TSV sidecars [REF: Gorgolewski 2016]. Beyond MRI it covers EEG, MEG, iEEG, PET, microscopy, and motion
-capture, as well as behavioral experiments and task events [REF: EEG-BIDS, MEG-BIDS, iEEG-BIDS,
-Microscopy-BIDS, Motion-BIDS]. BIDS can include NWB files for some modalities, and a BIDS extension for
-microelectrode electrophysiology (BEP032) brings NWB data into BIDS datasets [TODO-C15].
+TSV sidecars [REF: Gorgolewski 2016]. Beyond MRI it covers EEG, MEG, iEEG, PET, microscopy, motion
+capture, EMG, and eye tracking, as well as behavioral experiments and task events [REF: EEG-BIDS,
+MEG-BIDS, iEEG-BIDS, Microscopy-BIDS, Motion-BIDS]. EMG and eye tracking were added in version 1.11
+[REF: BIDS v1.11]. BIDS already allows NWB files for iEEG, and a proposed BIDS extension for
+microelectrode electrophysiology (BEP032) would extend this to microelectrode recordings [TODO-C15].
 
 **Psych-DS (dataset organization for psychological and tabular behavioral data).** Psych-DS is a
 BIDS-inspired standard for tabular psychological and behavioral data such as questionnaires, task
