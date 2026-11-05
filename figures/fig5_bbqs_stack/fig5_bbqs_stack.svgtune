@@ -1,0 +1,55 @@
+# Walk through Fig. 5, one path to the archive at a time: NWB, BIDS, Psych-DS.
+# Run: svgtune fig5_bbqs_stack.svgtune   (https://github.com/yarikoptic/svgtune)
+# -> fig5_bbqs_stack_tuned/<step>.svg, in the order of %save below.
+# Layers (steps) come from fig5_bbqs_stack.yaml; a step may have several
+# layers (the z-order of the slide is kept), hence "label:re=^<step>$".
+%file fig5_bbqs_stack.svg
+
+# The stack: legend and empty layers 1-6
+layers style=display:none
+layer label:re=^base$ style=display:inline
+%save stack
+
+# BBQS data types at the bottom
+layer label:re=^data$ style=display:inline
+%save data
+
+# --- Path 1: NWB (orange) ---
+# data formats: HDF5 / Zarr files, linked video
+layer label:re=^nwb-format$ style=display:inline
+%save nwb-format
+# NWB files, their extensions, and HDMF which defines NWB
+layer label:re=^nwb-file$ style=display:inline
+%save nwb-file
+# DANDI layout: one NWB file per subject and session
+layer label:re=^nwb-dataset$ style=display:inline
+%save nwb-dataset
+# EMBER, with archive metadata in JSON Schema (Pydantic)
+layer label:re=^archive$ style=display:inline
+%save archive
+
+# --- Path 2: BIDS (green); NWB is dimmed ---
+layer label:re=^nwb- style=opacity:0.3
+layer label:re=^bids-format$ style=display:inline
+%save bids-format
+# BIDS, its proposals (BEPs), the BIDS schema; NWB files in BIDS
+layer label:re=^bids-dataset$ style=display:inline
+%save bids-dataset
+# companion proposals keep NWB and BIDS aligned (multi-subject)
+layer label:re=^nwb-file$ style=opacity:1
+layer label:re=^companion$ style=display:inline
+%save companion
+
+# --- Path 3: Psych-DS (slate); NWB and BIDS are dimmed ---
+layer label:re=^(nwb-|bids-|companion$) style=opacity:0.3
+layer label:re=^psychds$ style=display:inline
+%save psychds
+
+# Ontologies and terminologies serve both organization layers
+layers style=opacity:1
+layer label:re=^ontologies$ style=display:inline
+%save ontologies
+
+# What still needs a standard: the whole figure
+layer label:re=^gaps$ style=display:inline
+%save gaps

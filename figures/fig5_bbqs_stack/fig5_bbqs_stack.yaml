@@ -1,0 +1,101 @@
+# Links and build steps of Fig. 5 for tools/pptx2svg.py (run: make fig5).
+# The .pptx is the editable source of the drawing; this file adds what
+# PowerPoint does not keep well: a link for every element, and the Inkscape
+# layers (steps) which fig5_bbqs_stack.svgtune shows one after another.
+source: fig5_bbqs_stack_design.pptx
+output: fig5_bbqs_stack.svg
+title: "Fig. 5: The BBQS standards stack"
+
+# Shape name (regex) -> step; the first match wins, everything else is "base"
+# (legend, layer rows and their titles).
+steps:
+  - [gaps, '^Behavior labels$|^Data without a standard$']
+  - [data, '^Data: |^Text 78$']
+  - [nwb-format, '^(Bus|Feed|Join) A$|^HDF5 Zarr$|^Video formats$']
+  - [nwb-file, '^NWB$|^NWB extension: |^HDMF$']
+  - [nwb-dataset, '^DANDI layout$']
+  - [archive, '^EMBER$|^JSON Schema']
+  - [bids-format, '^(Bus|Feed|Join) B$|^NIfTI$|^EDF$|^JSON TSV$|^BIDS media$']
+  - [bids-dataset, '^BIDS$|^BIDS BEP0|^BIDS schema$|^NWB in BIDS$|^Text 48$']
+  - [companion, '^BIDS Multi-subject BEP$|^Companion proposals|^Text 58$']
+  - [psychds, '^Path C$|^(Bus|Feed|Join) C$|^CSV JSON$|^Psych-DS$|^LinkML$']
+  - [ontologies, '^HED$|^Neuro Termsets|^Terminology: ']
+
+# Long paths are cut where they enter a box, so each part shows with its step.
+split:
+  'Path A: data to NWB': {at: [449.3], steps: [nwb-format, nwb-file]}
+  'Path A: NWB to EMBER': {at: [119.5], steps: [nwb-dataset, archive]}
+  'Path B': {at: [449.3], steps: [bids-format, bids-dataset]}
+
+links:
+  # 5 archives
+  EMBER: https://emberarchive.org/
+  # 3 dataset organization
+  DANDI layout: https://dandi.readthedocs.io/en/latest/cmdline/organize.html
+  BIDS:
+    _: https://bids-specification.readthedocs.io/en/stable/
+    iEEG: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html
+    eye tracking: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/physiological-recordings.html#eye-tracking
+    EMG: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/electromyography.html
+  BIDS BEP032: https://bids.neuroimaging.io/extensions/beps/bep_032.html
+  BIDS BEP047: https://bids.neuroimaging.io/extensions/beps/bep_047.html
+  BIDS BEP044: https://bids.neuroimaging.io/extensions/beps/bep_044.html
+  BIDS Multi-subject BEP: https://github.com/bids-standard/bids-specification/issues/2512
+  Psych-DS: https://psychds-docs.readthedocs.io/
+  Text 48:  # NWB files in BIDS
+    _: https://bids.neuroimaging.io/extensions/beps/bep_032.html
+    iEEG: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/intracranial-electroencephalography.html
+  # 2 file organization
+  NWB: https://www.nwb.org/
+  'NWB extension: Pose estimation': https://github.com/rly/ndx-pose
+  'NWB extension: Structured behavior': https://github.com/rly/ndx-structured-behavior
+  'NWB extension: Microscopy': https://github.com/nwb-extensions/nwbep-review/tree/main/NWBEP004
+  'NWB extension: HED annotation': https://github.com/hed-standard/ndx-hed
+  'NWB extension: Fiber photometry': https://github.com/catalystneuro/ndx-fiber-photometry
+  'NWB extension: Wearable devices': https://github.com/BCM-Neurosurgery/ndx-wearables
+  'NWB extension: Multi-subject': https://github.com/nehatk17/ndx-multisubjects
+  'NWB extension: Ethogram': https://github.com/catalystneuro/ndx-ethogram
+  # 1 formats
+  HDF5 Zarr:
+    HDF5: https://www.hdfgroup.org/solutions/hdf5/
+    Zarr: https://zarr.dev/
+  Video formats:
+    MP4: https://www.loc.gov/preservation/digital/formats/fdd/fdd000155.shtml
+    AVI: https://www.loc.gov/preservation/digital/formats/fdd/fdd000059.shtml
+    MOV: https://developer.apple.com/documentation/quicktime-file-format
+  NIfTI:
+    NIfTI: https://nifti.nimh.nih.gov/nifti-1
+    OME-Zarr: https://ngff.openmicroscopy.org/specifications/
+  EDF:
+    EDF: https://www.edfplus.info/
+    BrainVision: https://www.brainproducts.com/support-resources/brainvision-core-data-format-1-0/
+    EMG: https://bids-specification.readthedocs.io/en/stable/modality-specific-files/electromyography.html
+  JSON TSV:
+    JSON: https://www.json.org/json-en.html
+    TSV: https://www.iana.org/assignments/media-types/text/tab-separated-values
+  BIDS media: https://github.com/bids-standard/bids-specification/pull/2367
+  CSV JSON:
+    CSV: https://www.rfc-editor.org/info/rfc4180
+    JSON: https://www.json.org/json-en.html
+  # 4 ontologies and terminologies
+  HED: https://www.hedtags.org/
+  Neuro Termsets: https://github.com/NeurodataWithoutBorders/neuro-termsets
+  'Terminology: NCBI Taxonomy': https://www.ncbi.nlm.nih.gov/taxonomy
+  'Terminology: UBERON': https://obofoundry.org/ontology/uberon
+  'Terminology: Allen atlases': https://atlas.brain-map.org/
+  'Terminology: RRID': https://www.rrids.org/
+  'Terminology: ORCID · ROR':
+    ORCID: https://orcid.org/
+    ROR: https://ror.org/
+  'Terminology: Cell Ontology': https://obophenotype.github.io/cell-ontology/
+  # 6 schema languages
+  HDMF: https://hdmf-schema-language.readthedocs.io/en/latest/
+  BIDS schema: https://bids-specification.readthedocs.io/en/stable/appendices/schema.html
+  LinkML: https://linkml.io/
+  JSON Schema (Pydantic):
+    _: https://github.com/dandi/dandi-schema
+    JSON Schema: https://json-schema.org/specification
+    Pydantic: https://pydantic.dev/docs/validation/latest/
+    metadata: https://github.com/dandi/schema
+  # BBQS
+  Text 78: https://braininitiative.nih.gov/research/systems-neuroscience/brain-behavior-quantification-and-synchronization-program
