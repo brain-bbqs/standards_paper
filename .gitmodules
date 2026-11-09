@@ -1,0 +1,4 @@
+[submodule "bbqs-standards"]
+	path = bbqs-standards
+	url = https://github.com/brain-bbqs/bbqs-standards
+	branch = main

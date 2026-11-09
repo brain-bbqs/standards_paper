@@ -8,9 +8,9 @@ name: Review PDF
 on:
   push:
     branches: [main]
-    paths: ["draft/**", "figures/**", "tools/pdf/**", "Makefile", ".github/workflows/review-pdf.yml"]
+    paths: ["draft/**", "figures/**", "bbqs-standards", "tools/pdf/**", "Makefile", ".github/workflows/review-pdf.yml"]
   pull_request:
-    paths: ["draft/**", "figures/**", "tools/pdf/**", "Makefile", ".github/workflows/review-pdf.yml"]
+    paths: ["draft/**", "figures/**", "bbqs-standards", "tools/pdf/**", "Makefile", ".github/workflows/review-pdf.yml"]
   workflow_dispatch:
 
 permissions:
@@ -25,9 +25,12 @@ jobs:
   pdf:
     runs-on: ubuntu-24.04
     steps:
+      # bbqs-standards (submodule) holds Fig. 5
       - uses: actions/checkout@v4
+        with:
+          submodules: true
 
-      # librsvg2-bin, fonts-liberation, python3-pypdf: SVG figures with their links (Makefile, build/figures/)
+      # librsvg2-bin, fonts-liberation, python3-pypdf: SVG figures with their links (Makefile, tools/pdf/)
       - name: Install pandoc and LaTeX
         run: |
           sudo apt-get update -q

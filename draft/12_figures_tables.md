@@ -12,7 +12,7 @@ must total ≤350 words (F6).
 | Table 2 | Levels of FAIRness, the layers that enable them, and the FAIR principles they address | 3 | draft (below) | |
 | Fig. 3 | Ecosystem knowledge graph (layers × communities) | 4 | draft | `figures/fig3_knowledge_graph/` (`make fig3`) |
 | Fig. 4 | BBQS data: (a) species, (b) modalities, (c) behaviors × guideline coverage | 5, 8 | draft | `figures/fig4_bbqs_data/` (`make fig4`) |
-| Fig. 5 | BBQS standards stack on the map | 6 | design draft (PowerPoint) | `figures/fig5_bbqs_stack/` |
+| Fig. 5 | BBQS standards stack on the map | 6 | design draft (SVG) | `bbqs-standards/content/guidelines/figures/bbqs-standards-stack.svg` (`figures/fig5_bbqs_stack/`) |
 | Table 3 | Recommended standards by BBQS data type | 7 | draft (below) | BBQS guideline |
 | Fig. 6 | Bridges at every layer + future directions | 8, 9 | spec / poster | `figures/fig6_bridges_future/` |
 | Suppl. Table S1 | The 41 RDA FAIR indicators mapped to the levels of FAIRness and the layers that contribute | 3 | draft (below) | RDA FAIR Data Maturity Model v1.0; FAIRsFAIR metrics v0.8 |
@@ -92,7 +92,7 @@ only.
 
 ## Fig. 5 — The BBQS standards stack
 
-![Fig. 5](../figures/fig5_bbqs_stack/fig5_bbqs_stack.svg)
+![Fig. 5](../bbqs-standards/content/guidelines/figures/bbqs-standards-stack.svg)
 
 Most BBQS data have a standard path to the archive, while work is under way to close some of the gaps.
 With a recommended technology in every layer, BBQS data types (bottom) reach the EMBER archive through NWB
