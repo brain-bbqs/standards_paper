@@ -10,6 +10,7 @@
 KG       := knowledge_graph
 ECOKG    := $(KG)/.venv/bin/ecokg
 UVRUN    := uv run -q --no-project --with openpyxl --with matplotlib python
+PYTHON   := python3
 PDF_DATE := $(shell date +%Y-%m-%d), commit $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 
 .PHONY: figures fig3 fig4 fig5 alternates alt-kg-lenient pdf check kg-env
@@ -40,13 +41,22 @@ fig5:
 	@if command -v svgtune >/dev/null; then cd $(FIG5) && svgtune fig5_bbqs_stack.svgtune; \
 	 else echo "svgtune (https://github.com/yarikoptic/svgtune) not found: walkthrough not generated"; fi
 
-pdf:
+# SVG figures of the draft go into the PDF as PDFs, with their links (tools/pdf/figures.lua): rendered with
+# rsvg-convert, which keeps the links of the SVG, and the links listed for LaTeX with tools/pdf/pdflinks.py.
+SVG_FIGS := $(patsubst ../%,%,$(sort $(shell grep -ho '\.\./[[:alnum:]_./-]*\.svg' draft/*.md)))
+
+pdf: $(SVG_FIGS:%.svg=build/%.pdf)
 	mkdir -p build
 	pandoc --defaults tools/pdf/defaults.yaml -M date="Review draft, $(PDF_DATE)" \
 		-o build/paper.tex $(sort $(wildcard draft/[0-9][0-9]_*.md))
 	cd build && for i in 1 2; do xelatex -interaction=nonstopmode -halt-on-error paper.tex > /dev/null \
 		|| { tail -40 paper.log; exit 1; }; done
 	@! grep "Missing character" build/paper.log || { echo "Characters missing from the font (map them in tools/pdf/header.tex)"; exit 1; }
+
+build/%.pdf: %.svg tools/pdf/pdflinks.py
+	mkdir -p $(@D)
+	rsvg-convert -f pdf -o $@ $<
+	$(PYTHON) tools/pdf/pdflinks.py $@ > $(@:.pdf=.links.tex)
 
 check:
 	python3 tools/check_todo.py

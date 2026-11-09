@@ -92,7 +92,7 @@ only.
 
 ## Fig. 5 — The BBQS standards stack
 
-![Fig. 5 design draft](../figures/fig5_bbqs_stack/fig5_bbqs_stack_design.png)
+![Fig. 5](../figures/fig5_bbqs_stack/fig5_bbqs_stack.svg)
 
 Most BBQS data have a standard path to the archive, while work is under way to close some of the gaps.
 With a recommended technology in every layer, BBQS data types (bottom) reach the EMBER archive through NWB
