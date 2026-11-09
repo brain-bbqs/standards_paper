@@ -7,6 +7,16 @@ local function label(header)
   return text:match("^(Supplementary Fig%. [^%s]+)") or text:match("^(Fig%. [^%s]+)")
 end
 
+-- An SVG figure goes into the PDF as the PDF which make renders from it under build/ (where paper.tex is
+-- compiled), with its links (\linkedgraphics in tools/pdf/header.tex): "../figures/x/y.svg" -> "figures/x/y.pdf".
+function Image(img)
+  if FORMAT:match("latex") and img.src:match("%.svg$") then
+    local pdf = img.src:gsub("^%.%./", ""):gsub("%.svg$", ".pdf")
+    local links = pdf:gsub("%.pdf$", ".links.tex")
+    return pandoc.RawInline("latex", "\\linkedgraphics{" .. pdf .. "}{" .. links .. "}")
+  end
+end
+
 function Pandoc(doc)
   local blocks = doc.blocks
   local out = pandoc.Blocks({})

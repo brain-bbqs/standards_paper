@@ -18,3 +18,20 @@
 \captionsetup[figure]{labelformat=empty, font=small, justification=justified}
 \AtBeginEnvironment{longtable}{\footnotesize}
 \setlength{\emergencystretch}{3em}
+% Links in figures: \includegraphics keeps the drawing of a PDF figure but drops its links, so
+% \linkedgraphics[options]{figure.pdf}{figure.links.tex} draws them again over the figure, as invisible link
+% annotations of explicit size (tools/pdf/figures.lua uses it for SVG figures; tools/pdf/pdflinks.py writes
+% figure.links.tex, one \figlink{x}{y}{w}{h}{hex URL} per link, in fractions of the figure width).
+\usepackage{iftex}
+\ifXeTeX
+  \newcommand\figannot[3]{\special{pdf:ann width #1 height #2 depth 0pt <</Type/Annot #3>>}}
+\else\ifLuaTeX
+  \newcommand\figannot[3]{\pdfextension annot width #1 height #2 depth 0pt {#3}}
+\else
+  \newcommand\figannot[3]{\pdfannot width #1 height #2 depth 0pt {#3}}
+\fi\fi
+\newcommand\figlink[5]{\put(#1,#2){\figannot{\the\dimexpr#3\unitlength\relax}{\the\dimexpr#4\unitlength\relax}%
+  {/Subtype/Link/Border[0 0 0]/A<</S/URI/URI<#5>>>}}}
+\newcommand\linkedgraphics[3][]{\begingroup
+  \sbox0{\includegraphics[#1]{#2}}\setlength\unitlength{\wd0}%
+  \leavevmode\usebox0\llap{\begin{picture}(1,0)\input{#3}\end{picture}}\endgroup}
