@@ -16,6 +16,7 @@ quantification and synchronization"* (target: Scientific Data, Article).
 | `plan/TODO.md` | Review list: decisions, actions, figures, and claims marked `[TODO-Cn]` in the draft |
 | `analysis/` | BBQS inventory aggregates for Section 5 and Fig. 4 (`analysis/bbqs_inventory.py`; aggregate data only) |
 | `figures/` | One folder per figure and supplementary item (`figures/README.md`); legends in `draft/12_figures_tables.md` |
+| `bbqs-standards/` | Git submodule: [brain-bbqs/bbqs-standards](https://github.com/brain-bbqs/bbqs-standards), the BBQS standards guideline, which holds Fig. 5 (`content/guidelines/figures/bbqs-standards-stack.svg`) |
 | `knowledge_graph/` | Ecosystem knowledge graph package `ecokg` (README, `TODO.md`, tests); Fig. 3 |
 | `tools/check_todo.py` | Consistency check between `plan/TODO.md` and the draft |
 | `tools/pdf/` | pandoc settings for the review PDF |
@@ -35,7 +36,9 @@ Downloads expire after 90 days; to rebuild, use **Run workflow** on the runs pag
 The PDF has continuous line numbers, so please refer to page and line numbers in comments. The run
 also has `paper.tex`, the single LaTeX file the PDF is built from.
 
-To build it locally, run `make pdf` (needs pandoc and XeLaTeX). The PDF uses LaTeX's standard font (Latin
+To build it locally, run `make pdf` (needs pandoc, XeLaTeX, `rsvg-convert` (librsvg), and Python with pypdf; Fig. 5
+comes from the `bbqs-standards` submodule, so clone with `git clone --recurse-submodules` or run
+`git submodule update --init` first). The PDF uses LaTeX's standard font (Latin
 Modern); symbols it lacks (✓, ●, ○, →, ≤) are mapped to LaTeX symbols in `tools/pdf/header.tex`, and the
 build fails if the draft uses another character the font does not have.
 

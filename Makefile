@@ -1,7 +1,7 @@
 # Build generated figures and check the TODO list against the draft.
 #
 #   make figures     regenerate all generated figures into figures/ (paper figures and alternates)
-#   make fig5        Fig. 5 SVG (links, layers) from its .pptx, and its walkthrough with svgtune if installed
+#   make fig5        walkthrough of Fig. 5 (the SVG in the bbqs-standards submodule) with svgtune
 #   make alternates  regenerate only the alternate figures (figures/alternates/, not in the paper)
 #   make pdf         render the full draft (draft/*.md) as build/paper.tex and build/paper.pdf for review
 #   make check       check that every [TODO-Cn] marker in draft/ has an entry in plan/TODO.md and vice versa
@@ -10,11 +10,12 @@
 KG       := knowledge_graph
 ECOKG    := $(KG)/.venv/bin/ecokg
 UVRUN    := uv run -q --no-project --with openpyxl --with matplotlib python
+PYTHON   := python3
 PDF_DATE := $(shell date +%Y-%m-%d), commit $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 
 .PHONY: figures fig3 fig4 fig5 alternates alt-kg-lenient pdf check kg-env
 
-figures: fig3 fig4 fig5 alternates
+figures: fig3 fig4 alternates
 
 alternates: alt-kg-lenient
 
@@ -33,20 +34,28 @@ alt-kg-lenient: $(ECOKG)
 fig4:
 	$(UVRUN) analysis/bbqs_inventory.py
 
-FIG5 := figures/fig5_bbqs_stack
+FIG5 := bbqs-standards/content/guidelines/figures
 
 fig5:
-	python3 tools/pptx2svg.py $(FIG5)/fig5_bbqs_stack.yaml
-	@if command -v svgtune >/dev/null; then cd $(FIG5) && svgtune fig5_bbqs_stack.svgtune; \
+	@if command -v svgtune >/dev/null; then cd $(FIG5) && svgtune bbqs-standards-stack.svgtune; \
 	 else echo "svgtune (https://github.com/yarikoptic/svgtune) not found: walkthrough not generated"; fi
 
-pdf:
+# SVG figures of the draft go into the PDF as PDFs, with their links (tools/pdf/figures.lua): rendered with
+# rsvg-convert, which keeps the links of the SVG, and the links listed for LaTeX with tools/pdf/pdflinks.py.
+SVG_FIGS := $(patsubst ../%,%,$(sort $(shell grep -ho '\.\./[[:alnum:]_./-]*\.svg' draft/*.md)))
+
+pdf: $(SVG_FIGS:%.svg=build/%.pdf)
 	mkdir -p build
 	pandoc --defaults tools/pdf/defaults.yaml -M date="Review draft, $(PDF_DATE)" \
 		-o build/paper.tex $(sort $(wildcard draft/[0-9][0-9]_*.md))
 	cd build && for i in 1 2; do xelatex -interaction=nonstopmode -halt-on-error paper.tex > /dev/null \
 		|| { tail -40 paper.log; exit 1; }; done
 	@! grep "Missing character" build/paper.log || { echo "Characters missing from the font (map them in tools/pdf/header.tex)"; exit 1; }
+
+build/%.pdf: %.svg tools/pdf/pdflinks.py
+	mkdir -p $(@D)
+	rsvg-convert -f pdf -o $@ $<
+	$(PYTHON) tools/pdf/pdflinks.py $@ > $(@:.pdf=.links.tex)
 
 check:
 	python3 tools/check_todo.py
